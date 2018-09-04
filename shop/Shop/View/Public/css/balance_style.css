@@ -1,0 +1,187 @@
+@charset "UTF-8";
+html,head,body{margin: 0px;padding: 0px;max-width: 640px;margin: 0 auto;}
+body{font-size: 12px;font-family: "Microsoft YaHei，Helvitica,Verdana,Tohoma,Arial;"color:#000;height: 100%;width: 100%;}
+img{border:0;}
+ol,ul {list-style:none outside none;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+a {color:#000；;text-decoration:none;cursor:pointer;}
+em,i{font-style: normal; font-size:4.2vmin; font-family:"微软雅黑"; font-weight:bold;}
+*{padding: 0;margin: 0;}
+input,select,a{border:0;outline:none;/*去除蓝色边框*/}
+a{color: #333333;}
+
+/*头部*/
+.fxm_header{width: 100%;height: 13vmin;background: #1b1b1b;background-size: 100% 100%;position: fixed;top: 0;z-index: 1111;max-width: 640px;}
+.fxm_header .fxm_left{width: 10%;float: left;text-align: center}
+.fxm_header .fxm_left img{width: 40%;margin-top: 3vmin;}
+.fxm_header .fxm_center {width: 80%;font-size: 5vmin;color: #fff;line-height: 13vmin;text-align: center;float: left;}
+
+/*余额买卖首页－头部*/
+.balance_top{
+	position:fixed;
+	float:left;
+	width:100%; 
+	height:56vmin;	
+	background:linear-gradient(top,#3aa7f9,＃2974eb);
+	background-color:#36F;
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#3aa7f9), to(rgba(41, 116, 235, 1))); 
+}
+.balance_top .top1, .top2{width:100%;text-align:center; margin:0 auto; position:relative; top:0;}
+.balance_top .top1{
+	height:38vmin;
+	
+}
+.balance_top .top2{background-color:#fff; height:18vmin;}
+.balance_top ul{
+	display:block; 
+	position:relative; 
+	height:28vmin; 
+	width:94%; 
+	border-radius:6px;
+	margin:-12vmin auto;
+	background-color:#fff;
+	z-index:99;
+	box-shadow: 1px 3px 2px #e4f0fd;
+	}
+.balance_top h1{display:block; width:100%; height:12vmin; color:#fff; font-size:7vmin; font-weight:200; text-align:center; margin-top:12vmin; font-family: "微软雅黑", Arial, Helvetica, sans-serif,}
+.balance_top a{display:block; color:#fff; font-size:3.6vmin;}
+.balance_top ul li{display:block; width:33%; margin:0 auto; text-align:center; float:left;}
+.balance_top ul li img{width:16vmin; height:16vmin; margin-top:3.4vmin;}
+.balance_top ul li h2{font-size:3.4vmin; color:#5c5c5c; font-weight:normal;}
+/*记录列表*/
+.balance_record {
+	display:block;
+	width:100%;
+	background-color:#fff;
+	position:relative;
+	float:left;
+	margin-top:72vmin;
+	min-height:40vmin;
+	padding-top:8vmin;
+	padding-bottom:8vmin;
+	
+}
+.balance_record p{
+margin-top:3.6vmin; 
+margin-bottom:4vmin; 
+font-size:3.5vmin;
+	line-height:6.8vmin;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	color:#333;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;}
+.shengming{display:block; width:auto;  margin:0 6vmin;}
+.right{text-align:right;}
+
+.balance_record .record_title{display:block; width:100%; line-height:14vmin; color:#FFF; clear:both;}
+.balance_record img{width:4vmin; height:4vmin; margin-right:2vmin; margin-top:4.5vmin; margin-left:4vmin; float:left; }
+.balance_record h3{display:block; width:80%; clear:right; color:#333; font-size:4vmin;}
+.balance_record ul{width:100%; overflow:hidden;}
+.balance_record ul li{display:block; height:16vmin; width:100%; padding-bottom:1.7vmin; border-top:1px solid #ebebeb; background-color:#fff; overflow:hidden;}
+.balance_record span{font-size:3vmin; color:#999; line-height:5.5vmin; display:block; width:70%; float:left; margin-bottom:3vmin;  font-family:Arial, Helvetica, sans-serif; font-weight:100; margin-left:6vmin;}
+.balance_record h4{font-size:4.1vmin; color:#333; margin-top:4.5vmin; font-weight:400; font-family:"微软雅黑";}
+.balance_record i{display:block; width:20%; float:left; line-height:16vmin; font-size:5vmin; color:#2c8fdd; text-align:right;}
+
+/*充值余额*/
+.whitebg{background-color:#fff;}
+.rechargeForm{width:100%; text-align:center; padding-top:7vmin; padding-bottom:3vmin;}
+.rechargeForm input{
+	width:92%; 
+	margin:1.5vmin auto;
+	border:1px solid #dedede;
+	border-radius:1vmin;
+	line-height:12vmin;
+	font-size:3.6vmin;
+	color:#888;
+	text-indent:2vmin;	
+}
+.btn_ok{
+	display:block;
+	width:92%;
+	margin:0 auto;
+	line-height:12vmin;
+	height:12vmin;
+	border-radius:6vmin;
+	background-color:#498aff;
+	color:#fff;
+	font-size:4.2vmin;
+	text-align:center;
+	margin-bottom:10vmin;
+}
+.rechargeForm2{width:100%; padding-top:7vmin; padding-bottom:13vmin;}
+.rechargeForm2 i{display:block; width:94%; padding:2vmin 0 3vmin 4vmin; font-size:3.4vmin; color:#e60012; line-height:4vmin; clear:both; }
+.rechargeForm2 ul{width:100%; margin:0 auto;}
+.rechargeForm2 ul li{display:block; width:92%; height:26vmin; margin:0 auto; margin-left:3.5vmin;  clear:both;}
+.rechargeForm2 ul li a{display:block; width:100%; height:23vmin; border:1px solid #e3e4e6; border-radius:2vmin; background-color:#fff; color:#666; font-size:3.5vmin; line-height:5.5vmin; margin:0 auto;}
+.rechargeForm2 h6{ font-weight:bold; margin-top:4vmin; padding-left:4vmin; color:#333; font-size:3.8vmin;}
+.rechargeForm2 ul li span{display:block; padding-left:4vmin;}
+.rechargeForm2 ul li a:active{
+	border:1px solid #25c13f; 
+	background:url(../images/icon_chosed.png);
+	background-size:8vmin 8vmin;
+	background-position:92% 50%;
+	background-repeat:no-repeat;
+}
+.rechargeForm2 .pingzheng{height:auto; border:1px solid #e3e4e6; background-color:#f0f1f3; border-radius:2vmin; font-size:3.5vmin; color:#666}
+
+.pingzheng{width:auto; height:auto; margin:0 4vmin; margin-bottom:8vmin; border:1px solid #e3e4e6; background-color:#f0f1f3; border-radius:2vmin; font-size:3.5vmin; color:#666; padding-bottom:2vmin; padding-top:2vmin;}
+
+.pingzheng span{display:block; margin:2vmin;}
+.pingzheng_img{width:38vmin; height:38vmin; background-color:#e3e3e3; margin:4vmin auto;}
+.pingzheng_img img{width:38vmin; height:38vmin;}
+.pingzheng .btn_upload{
+	display:block;
+	width:40vmin;
+	margin:6vmin auto;
+	line-height:12vmin;
+	height:12vmin;
+	border-radius:6vmin;
+	background-color:#959595;
+	color:#fff;
+	font-size:4vmin;
+	text-align:center;
+	
+}
+  .pingzheng .col-sm-2{display:block; padding-top:1vmin; padding-bottom:1vmin; text-indent:2vmin; font-size:3.7vmin;}
+  .pingzheng .form-control{display:block; float:right; width:18.5vmin; text-align:right; margin-top:-6vmin; padding-bottom:1vmin; cursor:pointer; overflow:hidden; color:#06F; margin-right:1vmin; font-size:3.7vmin;}
+  .pingzheng input{color:#06F; font-size:3.7vmin;}
+/*充值成功页*/
+.ok_img{display:block; width:30vmin; height:30vmin; margin:0 auto; margin-top:26vmin;}
+.text_ok{display:block; width:100%; text-align:center; font-size:5vmin; font-weight:400; color:#00aeff; margin:1.6vmin auto;}
+.tiaozhuan{display:block; width:100%; text-align:center; font-size:3.6vmin; color:#a1a1a1;}
+.tiaozhuan i{color:#F00; font-weight:200;}
+.zhuming{display:block; width:auto; margin:0 6vmin; margin-bottom:8vmin; font-size:3.1vmin; color:#999; line-height:5vmin;}
+/*出售申请弹出层*/
+.apply_pop{width:100%; height:100%; display:block; position:fixed; _position:absolute; left:0; top:0; background-color:rgba(0,0,0,0.5); z-index:99;}
+.apply_pop .box{width:80%; height:auto; background-color:#fff; margin:0 auto; margin-top:35%; text-align:center; border-radius:3vmin; padding-top:4vmin; padding-bottom:3vmin;}
+.apply_pop .box img{ width:36vmin; height:36vmin; marign:0 auto;}
+.apply_pop span{display:block; color:#333; font-size:3.8vmin; margin:3vmin auto}
+.apply_pop .box a{
+	display:block;
+	width:60%;
+	margin:6vmin auto;
+	line-height:10vmin;
+	height:10vmin;
+	border-radius:5vmin;
+	background-color:#e8e8e8;
+	color:#666;
+	font-size:4vmin;
+	text-align:center;
+	}
+/*余额详情*/
+.divpad{width:100%; padding-bottom:15vmin; }
+.balance_list{display:block; width:92%; height:auto; padding-top:4vmin; margin:0 auto;}
+.balance_list li{line-height:14vmin; font-size:4vmin; color:#1b1b1b; border-bottom:1px solid #dbdbdb; font-family:"微软雅黑", Arial}
+.balance_list span{display:block; float:right;}
+.red{color:#F00;}
+.pingzheng2{display:block; width:90%; height:auto; margin:0 auto;}
+.balance_list .noborder{border:none;}
+/*帮助中心*/
+.help_div{width:100%; height:auto; padding-top:13vmin; background-color:#fff; padding-bottom:12vmin;}
+.help_pad{width:90%; margin:0 auto; color:#333; font-size:3.8vmin; line-height:6.5vmin; text-align:justify;
+text-justify:inter-ideograph; font-family: "微软雅黑", Arial, Helvetica, sans-serif;}
+.help_pad p{margin:4vmin 0; font-family: "微软雅黑", Arial, Helvetica, sans-serif;}
+.help_pad h1{font-weight:bold; font-size:4.2vmin; margin:4vmin 0;}
+
+
+  

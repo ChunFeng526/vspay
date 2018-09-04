@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+            <title>商城</title>
+            <meta name="Keywords" content=""/>
+            <meta name="description" content="" />
+            <script src="__JS__/mui.min.js"></script>
+            <link href="__CSS__/mui.min.css" rel="stylesheet"/>
+            <link rel="stylesheet" href="__CSS__/styleshop.css" />
+            <link rel="stylesheet" href="__ICON__/iconfont.css">
+            <script type="text/javascript">
+                !function(J){function H(){var d=E.getBoundingClientRect().width;var e=(d/7.5>100*B?100*B:(d/7.5<42?42:d/7.5));E.style.fontSize=e+"px",J.rem=e}var G,F=J.document,E=F.documentElement,D=F.querySelector('meta[name="viewport"]'),B=0,A=0;if(D){var y=D.getAttribute("content").match(/initial\-scale=([\d\.]+)/);y&&(A=parseFloat(y[1]),B=parseInt(1/A))}if(!B&&!A){var u=(J.navigator.appVersion.match(/android/gi),J.navigator.appVersion.match(/iphone/gi)),t=J.devicePixelRatio;B=u?t>=3&&(!B||B>=3)?3:t>=2&&(!B||B>=2)?2:1:1,A=1/B}if(E.setAttribute("data-dpr",B),!D){if(D=F.createElement("meta"),D.setAttribute("name","viewport"),D.setAttribute("content","initial-scale="+A+", maximum-scale="+A+", minimum-scale="+A+", user-scalable=no"),E.firstElementChild){E.firstElementChild.appendChild(D)}else{var s=F.createElement("div");s.appendChild(D),F.write(s.innerHTML)}}J.addEventListener("resize",function(){clearTimeout(G),G=setTimeout(H,300)},!1),J.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(G),G=setTimeout(H,300))},!1),H()}(window);
+                if (typeof(M) == 'undefined' || !M){
+                    window.M = {};
+                }
+            </script>
+        </head>
+<body>
+<div class="search">
+    <input type="text" placeholder="请输入搜索内容" />
+</div>
+<!--搜索分类列表-->
+<div class="mui-content mui-row mui-fullscreen search-menu">
+    <div class="mui-col-xs-3">
+        <div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+
+        </div>
+    </div>
+    <div id="segmentedControlContents" class="mui-col-xs-9" >
+    </div>
+</div>
+<div class="h50"></div>
+
+<include file="Public:shop_foot" />
+
+<script src="__JS__/jquery-1.10.1.min.js"></script>
+<script src="__JS__/mui.min.js"></script>
+<script type="text/javascript" src="__JS__/comment.js" ></script>
+<script>
+    //链接跳转问题
+    mui('body').on('tap', 'a', function() {
+        document.location.href = this.href;
+    });
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    var controls = document.getElementById("segmentedControls");
+    var contents = document.getElementById("segmentedControlContents");
+    var menulist=new Array("厨房用品,生活用品","水果蔬菜","肉禽蛋类","水产海鲜","烘焙熟食","粮油副食","零食酒水","乳品母婴","数码产品");
+
+    var arr = new Array();
+
+
+    var html = [];
+    var i = 1,
+        j = 1,
+        m = 10, //左侧选项卡数量+1
+        n = 10; //每个选项卡列表数量+1
+    for (; i < m; i++) {
+        html.push('<a class="mui-control-item" data-index="' + (i - 1) + '" href="#content' + i + '"> ' + menulist[i-1] + '' +  '</a>');
+    }
+    controls.innerHTML = html.join('');
+    html = [];
+    for (i = 1; i < m; i++) {
+        html.push('<div id="content' + i + '" class="mui-control-content"><ul class="mui-table-view">'+'<h2><span class="fl">' + menulist[i-1] + '</span><a href="" class="fr mui-navigate-right"></a></h2>');
+        for (j = 1; j < n; j++) {
+            var small= new Array("莓类","百香果","草莓","橙.柚.柑","瓜类","梨","芒果","苹果","葡萄/提子");
+            var imgArr = ['__IMG__/f1.jpg','__IMG__/f2.jpg','__IMG__/f3.jpg','__IMG__/f4.jpg','__IMG__/f5.jpg','__IMG__/f6.jpg','__IMG__/f7.jpg','__IMG__/f8.jpg','__IMG__/f9.jpg'];
+            html.push('<a href="">'+'<li class="mui-table-view-cell">' + '<img src="' + imgArr[j-1] + '"/>' +'<p> '+small[j-1] +'</p> ' + '</li>'+ '</a>');
+        }
+        html.push('</ul></div>');
+    }
+    contents.innerHTML = html.join('');
+    //默认选中第一个
+    controls.querySelector('.mui-control-item').classList.add('mui-active');
+    //			contents.querySelector('.mui-control-content').classList.add('mui-active');
+    (	function() {
+        var controlsElem = document.getElementById("segmentedControls");
+        var contentsElem = document.getElementById("segmentedControlContents");
+        var controlListElem = controlsElem.querySelectorAll('.mui-control-item');
+        var contentListElem = contentsElem.querySelectorAll('.mui-control-content');
+        var controlWrapperElem = controlsElem.parentNode;
+        var controlWrapperHeight = controlWrapperElem.offsetHeight;
+        var controlMaxScroll = controlWrapperElem.scrollHeight - controlWrapperHeight;//左侧类别最大可滚动高度
+        var controlHeight = controlListElem[0].offsetHeight;//左侧类别每一项的高度
+        contentsElem.addEventListener('scroll', function() {
+            var scrollTop = contentsElem.scrollTop;
+            for (var i = 0; i < contentListElem.length; i++) {
+                var offsetTop = contentListElem[i].offsetTop - 80;
+                var offset = Math.abs(offsetTop - scrollTop);
+//						console.log("i:"+i+",scrollTop:"+scrollTop+",offsetTop:"+offsetTop+",offset:"+offset);
+                console.log(offsetTop);
+                console.log(scrollTop-(contentListElem[i].offsetHeight / 2));
+                console.log(i);
+                if (scrollTop-(contentListElem[i].offsetHeight / 2) + 50 <= offsetTop) {
+                    onScroll(i);
+                    break;
+                }
+            }
+        });
+        var lastIndex = 0;
+        //监听content滚动
+        var onScroll = function(index) {
+            if (lastIndex !== index) {
+                lastIndex = index;
+                var lastActiveElem = controlsElem.querySelector('.mui-active');
+                lastActiveElem && (lastActiveElem.classList.remove('mui-active'));
+                var currentElem = controlsElem.querySelector('.mui-control-item:nth-child(' + (index + 1) + ')');
+                currentElem.classList.add('mui-active');
+                //简单处理左侧分类滚动，要么滚动到底，要么滚动到顶
+            }
+        };
+        //滚动到指定content
+        var scrollTo = function(index) {
+            contentsElem.scrollTop = contentListElem[index].offsetTop;
+        };
+        mui(controlsElem).on('tap', '.mui-control-item', function(e) {
+            scrollTo(this.getAttribute('data-index'));
+            return false;
+        });
+    })();
+</script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>{$config['SITE_TITLE']}</title>
+    <meta name="Keywords" content=""/>
+    <meta name="description" content="" />
+    <script src="__JS__/mui.min.js"></script>
+    <link href="__CSS__/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/styleshop.css" />
+      <link rel="stylesheet" href="__CSS__/style1.css">
+  <link rel="stylesheet" href="__ICON1__/iconfont.css">
+    <script type="text/javascript">
+        !function(J){function H(){var d=E.getBoundingClientRect().width;var e=(d/7.5>100*B?100*B:(d/7.5<42?42:d/7.5));E.style.fontSize=e+"px",J.rem=e}var G,F=J.document,E=F.documentElement,D=F.querySelector('meta[name="viewport"]'),B=0,A=0;if(D){var y=D.getAttribute("content").match(/initial\-scale=([\d\.]+)/);y&&(A=parseFloat(y[1]),B=parseInt(1/A))}if(!B&&!A){var u=(J.navigator.appVersion.match(/android/gi),J.navigator.appVersion.match(/iphone/gi)),t=J.devicePixelRatio;B=u?t>=3&&(!B||B>=3)?3:t>=2&&(!B||B>=2)?2:1:1,A=1/B}if(E.setAttribute("data-dpr",B),!D){if(D=F.createElement("meta"),D.setAttribute("name","viewport"),D.setAttribute("content","initial-scale="+A+", maximum-scale="+A+", minimum-scale="+A+", user-scalable=no"),E.firstElementChild){E.firstElementChild.appendChild(D)}else{var s=F.createElement("div");s.appendChild(D),F.write(s.innerHTML)}}J.addEventListener("resize",function(){clearTimeout(G),G=setTimeout(H,300)},!1),J.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(G),G=setTimeout(H,300))},!1),H()}(window);
+        if (typeof(M) == 'undefined' || !M){
+            window.M = {};
+        }
+    </script>
+    <style>
+    .fxm_left img {
+    width: 4vmin;
+    margin-top: 3vmin;
+    height: 6vmin;
+    float: left;
+    margin-left: 3vmin;}
+    </style>
+</head>
+
+<body>
+<div class="member-top">
+	<div class="fxm_left"><a href="javascript:void(0)"><img src="__IMG__/left0.png"></a></div>
+    <div class="header-r">
+        <a href=""><i class="iconfont"></i></a>
+    </div>
+    <div class="member-info">
+        <div class="user-avatar"><img src="__IMGHEAD__/{$uinfo['img_head']}"></div>
+        <div class="user-name"><span>{$member['uname']}
+            <a href="{:U('Shop/Member/level')}"><sup>升级商家</sup>
+ <!--  <if condition="$member['member_grade'] eq 0">
+     <sup>普通会员</sup>
+ <elseif condition="$member['member_grade'] eq 1" />
+     <sup>体验会员</sup>
+ <elseif condition="$member['member_grade'] eq 2" />
+     <sup>钻石会员</sup>
+ <elseif condition="$member['member_grade'] eq 3" />
+     <sup>联盟会员</sup>
+ <else/>
+                   <sup>升级商家</sup>
+      </if> -->
+            </a>
+        </span></div>
+    </div>
+<!--     <div class="member-collect">
+    <span><a href="javascript:void(0)"><em id="surplus_div">{$memberjifens['farmlink_jifen']}元</em><p>积分</p></a></span>
+    <span><a href="javascript:void(0)"><em>{$memberjifens['xiaofei_jifen']}</em><p>消费积分</p></a></span>
+</div> -->
+</div>
+<div class="user-order-box">
+    <dl>
+        <a href="{:U('Member/allorder')}">
+            <dt>
+                <strong>全部订单</strong>
+                <span>查看全部订单</span>
+            </dt>
+        </a>
+    </dl>
+    <ul>
+        <li>
+            <a href="{:U('Member/allorder',array('s'=>0))}">
+                <div class="user_order">
+                    <i class="iconfont">&#xe631;</i>
+                </div>
+                <span>待付款</span>
+            </a>
+        </li>
+        <li>
+            <a href="{:U('Member/allorder',array('s'=>1))}">
+                <div class="user_order">
+                    <i class="iconfont">&#xe67b;</i>
+                </div>
+                <span>待发货</span>
+            </a>
+        </li>
+        <li>
+            <a href="{:U('Member/allorder',array('s'=>2))}">
+                <div class="user_order">
+                    <i class="iconfont">&#xe775;</i>
+                </div>
+                <span>待收货</span>
+            </a>
+        </li>
+        <li>
+            <a href="{:U('Member/allorder',array('s'=>3))}">
+                <div class="user_order">
+                    <i class="iconfont">&#xe663;</i>
+                </div>
+                <span>待评价</span>
+            </a>
+        </li>
+        <li>
+            <a href="{:U('Member/allorder')}">
+                <div class="user_order">
+                    <i class="iconfont">&#xe605;</i>
+                </div>
+                <span>退换货</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="uset-center-content">
+<!--     <a href="{:U('Member/collection')}">
+    <em class="goods-collection-icon"></em>
+    <dl>
+        <dt>我的收藏</dt>
+        <dd>商品收藏/店铺收藏</dd>
+    </dl>
+</a>
+ -->
+    <!--<a href="">-->
+    <!--<em class="groupon-icon"></em>-->
+    <!--<dl>-->
+    <!--<dt>我的拼团</dt>-->
+    <!--<dd></dd>-->
+    <!--</dl>-->
+    <!--</a>-->
+     <a href="{:U('Member/myAward')}">
+        <em class="exchange-icon"></em>
+        <dl>
+            <dt>我的奖金</dt>
+            <dd></dd>
+        </dl>
+    </a>
+    <a href="{:U('Member/moneydets')}">
+        <em class="exchange-icon"></em>
+        <dl>
+            <dt>商城收益</dt>
+            <dd></dd>
+        </dl>
+    </a>
+    <a href="{:U('Member/dotixian/type')}">
+        <em class="recharge-card-icon"></em>
+        <dl>
+            <dt>提现管理</dt>
+            <dd></dd>
+        </dl>
+    </a>
+
+    <a href="{:U('Member/Tixiandecors')}">
+        <em class="bargain-icon"></em>
+        <dl>
+            <dt>提现记录</dt>
+            <dd></dd>
+        </dl>
+    </a>
+    <a href="{:U('Member/addresslist')}">
+        <em class="consignee-address-icon"></em>
+        <dl class="border_bottm">
+            <dt>收货地址</dt>
+            <dd>添加/修改</dd>
+        </dl>
+    </a>
+            <a href="{:U('Shop/Member/Mineorders')}">
+            <em class="groupon-icon"></em>
+            <dl>
+                <dt>我的订单</dt>
+            </dl>
+        </a>
+    <!--<a href="">-->
+    <!--<em class="review-icon"></em>-->
+    <!--<dl class="border_bottm">-->
+    <!--<dt>评价/晒单</dt>-->
+    <!--<dd>查看评价/晒单</dd>-->
+    <!--</dl>-->
+    <!--</a>-->
+    <a href="{:U('Member/Personal')}">
+        <em class="user-info-icon"></em>
+        <dl>
+            <dt>个人资料</dt>
+            <dd>查看/修改</dd>
+        </dl>
+    </a>
+
+
+    <a href="{:U('Member/verify')}">
+        <em class="user-info-icon"></em>
+        <dl>
+            <dt>认证中心</dt>
+            <dd>前往认证</dd>
+        </dl>
+    </a>
+
+    <eq name="member['is_dailishang']" value="2">
+        <a href="{:U('Shop/Home/Business')}">
+            <em class="product-upload-icon"></em>
+            <dl>
+                <dt>产品上传</dt>
+            </dl>
+        </a>
+
+        <a href="{:U('Shop/Home/Minepros')}">
+            <em class="product-manage-icon"></em>
+            <dl>
+                <dt>产品管理</dt>
+            </dl>
+        </a>
+
+        <a href="{:U('Shop/Dianpu/dp_info')}">
+            <em class="myshop-icon"></em>
+            <dl>
+                <dt>我的店铺</dt>
+            </dl>
+        </a>
+
+
+
+
+    </eq>
+
+</div>
+
+<!--<div class="uset-center-content">-->
+<!--<a href="">-->
+<!--<em class="btn-popularize-icon"></em>-->
+<!--<dl>-->
+<!--<dt>我的推广</dt>-->
+<!--<dd></dd>-->
+<!--</dl>-->
+<!--</a>-->
+<!--<a href="">-->
+<!--<em class="btn-recommend-icon"></em>-->
+<!--<dl>-->
+<!--<dt>我的推荐</dt>-->
+<!--<dd></dd>-->
+<!--</dl>-->
+<!--</a>-->
+<!--<a href="">-->
+<!--<em class="btn-distribution-icon"></em>-->
+<!--<dl>-->
+<!--<dt>申请合伙人12</dt>-->
+<!--<dd></dd>-->
+<!--</dl>-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="uset-center-content">-->
+<!--<a href="">-->
+<!--<em class="btn-shop-apply-icon"></em>-->
+<!--<dl>-->
+<!--<dt>商家入驻</dt>-->
+<!--</dl>-->
+<!--</a>-->
+
+<!--<a href="">-->
+<!--<em class="btn-recommend-shop-icon"></em>-->
+<!--<dl>-->
+<!--<dt>推荐店铺</dt>-->
+<!--</dl>-->
+<!--</a>-->
+<!--</div>-->
+<div class="uset-center-content">
+    <a href="{:U('Member/loginout')}">
+        <em class="sign-off-icon"></em>
+        <dl>
+            <dt>注销登录</dt>
+        </dl>
+    </a>
+</div>
+<div class="h50"></div>
+<include file="Public:shop_foot" />
+
+<script type="text/javascript">
+    //链接跳转问题
+    mui('body').on('tap', 'a', function() {
+        document.location.href = this.href;
+    });
+    $(function () {
+        var elm = $('#shortbar');
+        var startPos = $(elm).offset().top;
+        $.event.add(window, "scroll", function(){
+            var p = $(window).scrollTop();
+            if (p > startPos) {
+                elm.addClass('sortbar-fixed');
+            }
+            else {
+                elm.removeClass('sortbar-fixed');
+            }
+        });
+    });
+</script>

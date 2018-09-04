@@ -1,0 +1,43 @@
+<include file="Common/Common"/>
+
+<!--==========内容开始=============-->
+
+ <div style="height:0.27rem;"></div>
+    <div class="login">
+       <form action="__URL__/mibaoshezhi" method="post">
+            <dl>
+                <dd>
+                <dd>
+                        <span>问题一：</span>
+                        <input type="text" name="problem1" value="{$userinfo['problem1']}">
+                        </dd>
+                        <dd>
+                            <span>答案：</span>
+                            <input type="text" name="answer1" value="{$userinfo['answer1']}">
+                        </dd>     
+                        <dd>
+                            <span>问题二：</span>
+                            <input type="text" name="problem2" value="{$userinfo['problem2']}">
+                        </dd>
+                        <dd>
+                            <span>答案：</span>
+                            <input type="text" name="answer2" value="{$userinfo['answer2']}">
+                        </dd>  
+                        <dd>
+                            <span>问题三：</span>
+                            <input type="text" name="problem3" value="{$userinfo['problem3']}">
+                        </dd>
+                        <dd>
+                            <span>答案：</span>
+                            <input type="text" name="answer3" value="{$userinfo['answer3']}">
+                        </dd>  
+            </dl>
+            <input type="submit" class="submit submit3" value="保存">
+            <a href="{:U('Datamodify/wode')}" class="cancle"> 取消</a>
+        </form>
+    </div>
+<div style="height:0.4rem"></div>
+</body> 
+</html>
+
+

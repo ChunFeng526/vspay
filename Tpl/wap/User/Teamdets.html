@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>转入记录</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96">
+
+<div class="header">
+    <div class="header_l">
+        <a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>分享记录</h2></div>
+    <div class="header_r"></div>
+</div>
+
+<div class="big_width100 por">
+
+    <form action="{:U('User/Teamdets')}" method="post">
+        <div class="zySearch">
+            <input id="searchInput" name="uinfo" class="search-input" value="{$uinfo}" type="text" placeholder="搜索UID/手机号码">
+            <button class="search-btn btn">搜索</button>
+        </div>
+    </form>
+
+    <foreach name="muinfo" item="v">
+        <div class="share_ul">
+            <div class="share_ul_l">
+                <img src="__IMGHEAD__/{$v['img_head']}" alt="">
+                <div class="share_p">
+                    <p>{$v['username']}</p>
+                    <p>UID:{$v['userid']}</p>
+                    <p>电话:{$v['mobile']}</p>
+                    
+                </div>
+            </div>
+            <div class="shijin">{$v['reg_date']|date="Y-m-d H:i:s",###}</div>
+
+                <if condition="$v['vip_grade'] eq 0">
+                <div class="dengjxias">
+                普通用户
+                <else />
+                <div class="dengjxias dengjxiasa">
+                VIP
+                </if>
+            </div>
+        </div>
+    </foreach>
+</div>
+</body>
+</html>

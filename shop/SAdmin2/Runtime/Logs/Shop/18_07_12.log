@@ -1,0 +1,11 @@
+[ 2018-07-12T23:59:58+08:00 ] 59.32.95.100 /Shop/home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+

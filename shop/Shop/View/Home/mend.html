@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>商品</title>
+    <link rel="stylesheet" type="text/css" href="__CSS__/stylelist.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/swiper-3.4.2.min.css">
+    <script src="__JS__/jquery-1.12.1.min.js"></script>
+    <script src="__JS__/swiper-3.4.2.jquery.min.js"></script>
+    <script src="__JS__/jquery.lazyload.min.js"></script>
+</head>
+
+<body>
+<script>
+    $("body").css({background: "#f4f4f4"})
+</script>
+<div class="width100 font16 tcenter relative"
+     style="height:44px;background:url(__IMG__/bjx.jpg) repeat-x;line-height:44px;position:fixed;top:0;left:0;">
+    商品列表
+    <a href="javascript:window.history.go(-1);" id="return"></a>
+</div>
+<div class="width100 hidden" style="margin-top:54px;">
+    <div class="width96 center hidden" id="new_xz">
+        <notempty name="goodsdet">
+            <foreach name="goodsdet" item="product">
+                <a href="{:U('/Shop/Home/details',array('proid'=>$product['id']))}">
+                    <!--<img data-original="__IMG__/sp6.jpg">-->
+                    <img src="{$product['pic']}" alt="" class="product_img">
+                    <div class="width96 hidden center">
+                        <p class="yihang block center font12 c33">{$product['name']}</p>
+
+                 <!--        <?php         
+                 $userid['userid']=$product['shangjia'];
+                 $dianpu=M('gerenshangpu')->where($userid)->find();
+                        
+                                        ?>
+                                          <p class="yihang block center font12 c33 dp_name" style="color:#999; font-size:2.8vmin"><img src="__PROIMGS__{$dianpu.shop_logo}" class="dp_slogo" style="width:5vmin; height:5vmin; border-radius: 10vmin; margin:auto; padding:auto; margin-right:4px; float:left;">{$dianpu.shop_name}</p> -->
+                        <p class="yihang block center font12 c33 hidden">
+                	<span class="left c_33">
+                    	<font class="red">¥  {$product['price']}</font>
+                    	<font class="font12 red">元</font>
+                    </span>
+                            <span class="right c_33">
+                    	<!-- 赠送积分:<font class="red">{$product['jifen_nums']}</font> -->
+                        <font class="font12 red"></font>
+                    </span>
+                        </p>
+                    </div>
+                </a>
+            </foreach>
+            <else />
+            <p>暂无商品哦,亲</p>
+        </notempty>
+            <!--<a href="#">-->
+            <!--<img data-original="__IMG__/sp7.jpg">-->
+            <!--<div class="width96 hidden center">-->
+            <!--<p class="yihang block center font12 c33">妙洁 吸水拖把卡槽型</p>-->
+            <!--<p class="yihang block center font12 c33 hidden">-->
+            <!--<span class="left c_33">-->
+            <!--商城价:<font class="red">29.6</font>-->
+            <!--<font class="font12 red">元</font>-->
+            <!--</span>-->
+            <!--<span class="right c_33">-->
+            <!--优惠卷:<font class="red">20</font>-->
+            <!--<font class="font12 red">元</font>-->
+            <!--</span>-->
+            <!--</p>-->
+            <!--</div>-->
+            <!--</a>-->
+    </div>
+</div>
+<script src="__JS__/lazyload.js"></script>
+</body>
+</html>

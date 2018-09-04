@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>我的奖金</title>
+  <link rel="stylesheet" href="__CSS__/dstyle.css">
+  <script type="text/javascript" src="__JS__/jquery.js"></script>
+
+
+</head>
+<body id="color">
+    <div class="fxm_header">
+       <div class="fxm_left"><a href="{:U('/Shop/Member/mine')}"><img src="__IMG__/dleft.png"></a></div>
+       <div class="fxm_center">我的奖金</div>
+       <!-- <div class="fxm_right"><img src="images/zf.png"></div> -->
+    </div>
+
+    <div style="padding-top: 13vmin;"></div>
+
+
+    <div class="mywallet-top">
+      <strong>{$store['tg_money']+$store['dl_money']+$store['gl_money']}<p class="qian">合计金额（元）</p></strong>
+    </div>
+    <div class="wallet-cards">
+      <a href="">
+        <p>{$store['tg_money']+0}元</p>
+        <p>推广金</p>
+
+      </a>
+      <a href="">
+      <p>{$store['dl_money']+0}元</p>
+        <p>代理服务费</p>
+      </a>
+      <a href="">
+        <p>{$store['gl_money']+0}元</p>
+        <p>管理服务费</p>
+
+      </a>
+
+
+    </div>
+<!--
+    <div class="wallet-buttons">
+      <a href="mingxi.html">明细</a>
+    </div> -->
+
+
+
+
+
+    <div style="padding-bottom: 5vmin;width: 100%;float: left;"></div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<!-- 控制浏览器缓.存 -->
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<script src="__WJS__/jquery1.11.1.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- 页面描述 -->
+	<meta name="description" content="不超过150个字符" />
+	<!-- 页面关键词 -->
+	<meta name="keywords" content="" />
+	<script src="__WJS__/jquery1.11.1.min.js"></script>
+	<script type="text/javascript" src="__COM__/js/index.js" ></script>
+	<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+	<title>APP下载</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html{
+			min-height: 100%;
+			background: url('/Public/home/wap/images/appxz-bg.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 100% 100%;
+		}
+		body{
+			min-height: 100%;
+		}
+
+		.clearfix:after {
+			content: "\200B";
+			display: block;
+			height: 0;
+			clear: both;
+		}
+
+		.clearfix {
+			*zoom: 1;
+		}
+
+
+		/*IE/7/6*/
+		.shuru div::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+			-webkit-transition: 1s;
+		}
+
+		.shuru div::-webkit-scrollbar-thumb {
+			background-color: #a7afb4;
+			background-clip: padding-box;
+			min-height: 28px;
+		}
+
+		.shuru div::-webkit-scrollbar-thumb:hover {
+			background-color: #525252;
+			background-clip: padding-box;
+			min-height: 28px;
+		}
+
+		.shuru div::-webkit-scrollbar-track-piece {
+			background-color: #ccd0d2;
+		}
+
+		.wrap {
+			position: relative;
+			margin: auto;
+			max-width: 640px;
+			min-width: 320px;
+			width: 100%;
+			min-height: 100%;
+
+
+		}
+		.xz-a{ width: 35%; margin: 5rem auto 3rem;}
+		.xz-a img{ width: 100%;  display: block;}
+		.xz-a p{ color: #fff; font-size: 1.34rem; text-align: center; line-height: 2; text-shadow: 0.1em 0.1em 0.05em #333;
+			font-weight: 800;}
+		.yaoqm{ width:35%; margin: 0 auto 3rem; border: 1px solid #fff; color: #fff; height: 2rem; font-size: 1rem; text-align: center; line-height: 2rem;}
+		.xz-b{ width: 90%; margin: 0 auto;}
+		.xz-b a{    width: 100%;
+    display: block;
+    margin-top: 5vmin;
+        background-color: rgb(251, 195, 3);
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #006ffd;
+    font-size: .9rem;
+    text-decoration: none;}
+		.xz-b a img{ width: 100%;}
+		.yiesqdqb{ width: 100%; color: #fff; height: 2rem; font-size: 1.2rem; text-align: center; line-height: 2rem; margin-top: 6rem; margin-bottom: 3rem ;text-shadow: 0.1em 0.1em 0.05em #333}
+		#dig_xiala_xs{position: fixed; width: 100%;top:0 ; left:0;  display: none; height: 100%; background: #fff;}
+		#dig_xiala_xs img{ width: 100%;}
+
+	</style>
+
+</head>
+<body>
+<div class="wrap">
+	<div class="xz-a">
+		<img src="__WIMG__/logo.png">
+		<p> svpay</p>
+	</div>
+	<div class="xz-b">
+		<!--a href="javascript:void(0)" id="dig_xiala">点击下载安卓</a-->
+		<a href="javascript:void(0)" id="dig_xiala">点击下载安卓</a>
+		<!--a href="https://fir.im/wfty">点击下载IOS</a-->
+		<!-- <a href="https://fir.im/47md">点击下载IOS苹果</a> -->
+
+	</div>
+	<div class="yiesqdqb">
+		一个神奇的钱包
+	</div>
+
+
+
+</div>
+
+<div id="dig_xiala_xs">
+	<img src="__WIMG__/xztaz1.png">
+</div>
+
+<script>
+    $(document).ready(function(){
+        // $("#dig_xiala_xs").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+    });
+</script>
+
+<script type="text/javascript">
+    $("#dig_xiala").click(function(){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i)=="micromessenger") {
+            $("#dig_xiala_xs").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+        } else {
+            //window.location.href="http://www.ss.com/Public/home/zp/.apk";
+            window.location.href="https://www.bslyun.com/sbSsupO0tLTgwMTgyLS0wA%3D%3D";
+        }
+	})
+</script>
+</body>
+</html>

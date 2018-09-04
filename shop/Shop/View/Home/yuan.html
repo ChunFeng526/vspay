@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=1,mininum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+          name="viewport" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>一元夺宝</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/foot.css"> -->
+    <!-- <script type="text/javascript" src="js/bannerList.js"></script> -->
+    <!-- Link Swiper's CSS -->
+
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/style.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/foot.css">-->
+    <script src="__JS__/mui.min.js"></script>
+    <link href="__CSS__/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="__CSS__/styleshop.css"/>
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__YYCSS__/index.css">
+    <link rel="stylesheet" href="__YYICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="__LAYERJS__layer.js"></script>
+
+    <!-- Demo styles -->
+
+    <style type="text/css">
+        body {
+            background: #e63f30;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="return"><a href="{:U('shop/home/index')}" style="color:white"><i class="iconfont"
+                                                                                 style="font-size:9vmin">&#xe518;</i></a>
+    </div>
+    <h1>一元夺宝</h1>
+    <div class="circles">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+<div class="yydb_banner">
+    <img src="__YYIMG__/top.png" alt="">
+</div>
+<div class="yydb_hot">
+    <img src="__YYIMG__/hot.png" alt="">
+</div>
+<div class="yydb_goods">
+    <ul>
+        <foreach name="goodslist" item="v">
+            <li>
+                <gt name="v['kaijiang_nums']" value="0">
+                    <a href="{:U('Home/yuandets',array('id'=>$v['id']))}">
+                        <div class="goods_tu">
+                            <img src="{$v['pic']}" alt="">
+                        </div>
+                        <h1>{$v['s_desc']}</h1>
+                        <h2>距离开奖需<span><?php echo $v['kaijiang_nums'] ?></span>人次</h2>
+                        <div class="duobao">去夺宝<i class="iconfont" style="font-size:6vmin">&#xe505;</i>
+                        </div>
+                    </a>
+
+                <else />
+                    <a href="{:U('Home/kaijiang',array('id'=>$v['id']))}">
+                        <div class="goods_tu">
+                            <img src="{$v['pic']}" alt="">
+                        </div>
+                        <h1>{$v['s_desc']}</h1>
+                        <h2>已开奖</h2>
+                        <div class="duobao">查看详情<i class="iconfont" style="font-size:6vmin">&#xe505;</i>
+                        </div>
+                    </a>
+                </gt>
+            </li>
+        </foreach>
+    </ul>
+</div>
+<div class="yydb_goods">
+<div style="margin-top: 15vmin"></div>
+<include file="Public:shop_foot"/>

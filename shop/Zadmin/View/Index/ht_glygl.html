@@ -1,0 +1,67 @@
+
+       <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>管理员管理</h3>
+				<div class="hygg_bottom_t">
+					<p style="margin-left:380px;"><a href="{:U('Index/ht_Zadmin')}">添加管理</a></p>
+					<p><a href="#">管理列表</a></p>
+				</div>
+				
+				<table class="content_table5">
+				
+				  <div class="hygg_bottom_c">
+					<dl>
+						<dt style="width: 600px;">管理员</dt>
+					</dl>
+					
+					
+					<dl>
+						<dt style="width: 220px;">相关操作 </dt>
+					</dl>		
+				</div>
+				
+				
+				  <foreach name="Zadmin" item="value"  key="k">
+				  
+				  
+					<tr>
+						<td style="width: 700px;">{$value.zusername}</td>
+						
+						<td style="width: 200px;"><a href="__MODULE__/Index/ht_Zadmin/id/{$value.id}">修改</a>| <a href="__MODULE__/Index/Zadmin_delete/id/{$value.id}" onclick ="return confirm('确认删除？');">删除</a></td>
+					</tr>
+					
+					
+					</foreach>
+				</table>
+				
+				</div>
+				  <div class="page">
+					{$page}				
+					
+				</div>
+				 <style>
+				  	.page{text-align: center;margin-bottom: 15px;}
+				  	.page a{color: #a4a4a4;}
+				  	.prev{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  	.num{  padding: 0 10px;  border: 1px solid #ddd;}
+				  	.page .current{ padding: 0 10px;  border: 1px solid #fff;  margin: 0px 10px;}
+				  	.next{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  </style>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	 <include file="common:js" />	
+</body>
+</html>
+

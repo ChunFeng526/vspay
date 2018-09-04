@@ -1,0 +1,162 @@
+
+.waitPay{font-size: 0.12rem;}
+
+.waitPay dl.dl1{display:-webkit-box;margin: 0.05rem 0 0.08rem 0;}
+.waitPay dl.dl1 dd{-webkit-box-flex: 1;text-align: center;}
+.waitPay dl.dl1 dd a{display: block;padding: 0.08rem 0;background-color: #fff;}
+.waitPay dl.dl1 dd.select a{background-color: #006633;color: #fff;}
+
+
+
+.orderwrap{font-size: 0.12rem;color: #818181;}
+.orderwrap .panel{padding: 0 0.12rem;background-color: #fff;margin-bottom: 0.1rem;}
+
+.orderwrap .time{padding: 0.08rem 0;position: relative;} 
+.orderwrap .time p{line-height: 1.5;}
+.orderwrap .time input.sub{background-color: #cc3300;color: #fff;padding: 0.04rem 0.14rem;border-radius: 3px;
+    font-size: 0.1rem;position: absolute;right: 0;bottom: 0.08rem;}
+.orderwrap .time img.pos{position: absolute;right: 0;top: 0.08rem;width: 0.14rem;}
+
+
+.orderwrap .freight{font-size: 0.1rem;display: -webkit-box;-webkit-box-align: center;padding: 0.1rem 0;
+    border-top: 1px solid #eeeeee;position: relative;}
+.orderwrap .freight img{width: 0.75rem;height: 0.75rem;-webkit-box-flex: 1;margin-right: 0.07rem;}
+.orderwrap .freight .detail{width: 2rem;}
+.orderwrap .freight .detail p{margin-bottom: 0.03rem;}
+.orderwrap .freight .detail p.first{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 2rem;}
+.orderwrap .freight .detail p.last{margin-bottom: 0;}
+
+.orderwrap .freight em.pos{position: absolute;right: 0;top: 0.5rem;font-size: 0.12rem;}
+
+.orderwrap .money{font-size: 0.11rem;padding: 0.07rem 0;border-top: 1px solid #eeeeee;}
+
+
+.buyfix{background-color: #006633;position: fixed;left: 0;bottom: 0;font-size: 0.15rem;color: #fff;
+    padding-left: 0.2rem;width: 100%;box-sizing:border-box;}
+.buyfix span{padding: 0.14rem 0;}
+.buyfix .buy{float: right;padding: 0.14rem 0;background-color: #fff;width: 0.76rem;text-align: center;}
+.buyfix input[type="submit"]{font-size: 0.12rem;border: none;background-color: transparent;color: #fff;
+    color: #ff0000;background-color: #fff;}
+
+.titlenav input[type="text"]{height: 0.27rem;line-height: 0.27rem;text-indent: 1em;border: 1px solid #006633;
+ background-color: #fff;border-radius: 5px;font-size: 0.12rem;width: 2rem;}
+    
+.history,.baby{margin: 0 0.16rem;}
+.baby{border-top: 1px solid #efefef;margin-top: 0.16rem;}
+.history h1,.baby h1{margin-top: 0.13rem;font-size: 0.12rem;}
+.history h1 img{display: block;width: 0.11rem;}
+.history span,.baby span{background-color: #006633;padding: 0.03rem 0.06rem;font-size: 0.1rem;
+    color: #fff;border-radius: 5px;float: left;margin-right: 0.08rem;margin-top: 0.07rem;}
+
+.titlenav .bggreen i {display: inline-block;width: 0.28rem;height: 0.28rem;background-color: #006633;
+    line-height: 0.28rem;color: #fff;border-radius: 4px;}
+
+
+
+.packet{width: 100%;}
+.packet img{vertical-align:middle;width: 100%;display: block;margin-top: 1rem;}
+
+
+.openpacket{position: relative;}
+.openpacket img{display: block;width: 100%;}
+.openpacket input{width: 1.36rem;height: 0.32rem;background-color: transparent;position: absolute;left: 0.94rem;
+    bottom: 0.48rem;z-index: 100;border-radius: 5px;}
+
+.packetdetail{position: relative;}
+.packetdetail img{display: block;width: 100%;}
+.packetdetail .pos1 {width: 0.86rem;height: 0.21rem;background-color: transparent;position: absolute;
+    left: 1.17rem;top: 2.63rem;}
+
+.packetdetail .pos2 {width: 1.6rem;height: 0.40rem;background-color: transparent;position: absolute;
+    left: 0.8rem;bottom: 0.81rem;}
+
+
+
+.article{font-size: 0.12rem;background-color: #fff;padding: 0 0.17rem;padding-bottom: 1rem;color: #666666;
+line-height: 2;margin-top: 0.1rem;padding-top: 0.05rem;}
+
+.application{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top:3%;
+    background: #fff;
+    clear: both;
+    padding:5%;
+}
+.application h3{
+	line-height: 10vmin;
+	font-size: 5vmin;
+	color:#898989;
+}
+.application h3 img{
+    width: 7%;
+    vertical-align: middle;
+    margin-right: 2%;
+}
+.application p{
+    width: 100%;
+    height: 12vmin;
+    border:1px solid #d0d0d0;
+    border-radius: 25px;
+    margin-top:3vmin;
+}
+.application p span{
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    padding-left: 3%;
+    width: 25%;
+    display: block;
+    float: left;
+    color:#898989;
+}
+.application p input{
+    vertical-align: middle;
+    margin-top: 1.5vmin;
+    line-height: 8vmin;
+    width: 65%;
+    border:none;
+    background: #fff;
+}
+#introducebb {
+    width: 97%;
+    height: 30vmin;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    line-height: 8vmin;
+    padding-left: 3%;
+    font-size: 4vmin;
+    font-family: "微软雅黑";
+    margin-top:3vmin;
+}
+.tionan{
+    width: 100%;
+    height: 12vmin;
+    background: #50b71e;
+    text-align: center;
+    line-height: 12vmin;
+    font-size: 5vmin;
+    border-radius: 25px;
+    margin-top:3vmin;
+}
+
+
+.tionan a{
+    display: block;
+    color:#fff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

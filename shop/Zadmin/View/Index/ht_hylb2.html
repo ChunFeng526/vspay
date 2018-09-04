@@ -1,0 +1,86 @@
+       <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>会员登录记录列表</h3>
+				<div class="xxgl_bottom_t">
+					<span style="float: left;">搜索</span>
+	           		<form action="{:U('Index/ht_hylb2')}" method="post">   
+	             	<select class="form-select" input class="btn3" name="vip" value="会员类型" type="text" style="width: 131px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4;font-size: 12px;margin-top: 14px;"/>   
+						<option value="">会员类型</option>
+					
+						<option value="4">金牌会员</option>
+						<option value="3">银牌会员</option>
+						<option value="2">铜牌会员</option>
+						<option value="1">vip会员</option>
+						<option value="0">普通会员</option>
+		            </select>
+	             	<input class="btn3" name="username" placeholder="会员名称" type="text" style="width: 169px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4;margin-top: 14px;"/>
+	                <div class="an3"><input type="submit" value="提交搜索" class="sll" ></div>
+	            	</form>
+				</div>
+				<div class="hylb_bottom_c">
+						<dl>
+							<dt style="width: 121px;">会员手机号</dt>
+						</dl>
+						<dl>
+							<dt style="width: 165px;">真实姓名</dt>
+						</dl>
+						<dl>
+							<dt style="width: 116px;">会员上级手机号</dt>
+						</dl>
+						<dl>
+							<dt style="width: 116px;">注册时间</dt>
+						</dl>
+						<dl>
+							<dt style="width: 121px;">上次登录时间</dt>
+						</dl>
+						<dl>
+							<dt style="width: 100px;">登录次数 </dt>
+						</dl>
+					<table class="content_table">
+					
+					   <foreach name="arrData_news" item="arrData_news">
+						<tr>
+							<td>{$arrData_news.mobile}</td>
+							<td style="width: 116px;">{$arrData_news.username}</td>
+							<td>
+							<?php if(!empty($arrData_news['c_mobile'])){ ?>
+					       {$arrData_news.c_mobile}
+					       <?php }else{
+					       echo "<a style='color:#c71585'>无上级</a>";
+				           } ?>
+							</td>
+							
+							
+							<td>{$arrData_news['regdate']|date='Y-m-d',###}</td>
+							<td>{$arrData_news['lastdate']|date='Y-m-d',###} </td>
+							<td><a style='color:#c71585'>{$arrData_news.loginnum}</a>（次）</td>
+						</tr>
+					   </foreach>
+					</table>
+				</div>
+				  <div class="page">
+					{$page}				
+					
+				</div>
+				 <style>
+				  	.page{text-align: center;margin-bottom: 15px;}
+				  	.page a{color: #a4a4a4;}
+				  	.prev{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  	.num{  padding: 0 10px;  border: 1px solid #ddd;}
+				  	.page .current{ padding: 0 10px;  border: 1px solid #fff;  margin: 0px 10px;}
+				  	.next{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  </style>
+			</div>
+		</div>
+	</div>
+	<include file="common:js" />	
+</body>
+</html>
+

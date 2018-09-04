@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>    
+    <!-- Demo styles -->
+    <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+    <script type="text/javascript" src="__JS__/upload.js"></script>
+
+    <script type="text/javascript" src="__LAYERJS__layer.js"></script>
+
+
+</head>
+
+<body style="background: #f4f4f4;">
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+      <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>发表评论</span></a>
+   
+    </div>
+    <div class="header_c" style="width: 70%;"> <h1 style="color:#000"></h1></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<div class="fbym">
+    <div class="fbyminput"><textarea name="introduce" class="fbyminputbb" rows="8" placeholder="宝贝满足你的期待吗？说说它的优点和美中不足的地方吧！"></textarea></div>
+
+    <!--<div class="replace">-->
+        <!--<div class="container">-->
+            <!--<div class="row main">     -->
+                <!--<div class="demo">-->
+                    <!--<div id="uploader">-->
+                        <!--<div class="queueList">-->
+                            <!--<div id="dndArea" class="placeholder">-->
+                                <!--<div id="filePicker"></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="submit_ccv" data-id = {$id} style="margin-top:10%;"><a href="javascript:void(0)">评价</a></div>
+
+
+<!-- 提醒发货 -->
+<div id="light" class="white_contentbb" style="top:26%;background: #d6d6d6;">
+    <p>感谢你的评价！</p>
+</div>
+
+</body>
+</html>
+<script>
+    $('.submit_ccv').click(function () {
+        var content = $('.fbyminputbb').val();
+        var id = $(this).attr('data-id');
+        $.ajax({
+            url:"/Shop/Member/Docontent",
+            type:"post",
+            data:{'content':content,'id':id},
+            datatype:"json",
+            success:function (mes) {
+                if(mes.status == 1){
+                    layer.msg(mes.info,{icon:1,time:1200},function () {
+                        location.href ='/shop/member/allorder' ;
+                    });
+                }else{
+                    layer.msg(mes.info,{icon:2,time:1200});
+                }
+            }
+        })
+    })
+</script>

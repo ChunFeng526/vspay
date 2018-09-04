@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <!-- Demo styles -->
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $(".main_visual").hover(function(){
+        $("#btn_prev,#btn_next").fadeIn()
+    },function(){
+        $("#btn_prev,#btn_next").fadeOut()
+    });
+
+    $dragBln = false;
+
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e){
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    });
+
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    });
+
+    $(".main_image a").click(function(){
+        if($dragBln) {
+            return false;
+        }
+    });
+
+    timer = setInterval(function(){
+        $("#btn_next").click();
+    }, 5000);
+
+    $(".main_visual").hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        },5000);
+    });
+
+    $(".main_image").bind("touchstart",function(){
+        clearInterval(timer);
+    }).bind("touchend", function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        }, 5000);
+    });
+
+});
+</script>
+</head>
+<body>
+
+<div class="head_bb">
+    <p><a href="javascript:window.history.go(-1);"><img src="__IMG__/b1.png" alt=""></a></p>
+    <p style="float: right;margin-right: 3%;"><a href=""><img src="__IMG__/b2.png" alt=""></a></p>
+</div>
+
+<!-- banner  s-->
+<div class="main_visual" style="height: 74vmin;">
+    <div class="flicking_con" style="left: 48%;top:90%;">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </div>
+    <div class="main_image" style="height: 74vmin;">
+        <ul>
+            <li><span class="img_3"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+            <li><span class="img_4"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+            <li><span class="img_1"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+            <li><span class="img_4"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+            <li><span class="img_1"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+        </ul>
+    </div>
+</div>
+<!-- banner  e-->
+<div class="spcs_nr">
+    <h3>产品参数</h3>
+    <table style="width: 100%;">
+        <tr>
+            <th>材质</th>
+            <td>雪纺</td>
+        </tr>
+        <tr>
+            <th>品牌</th>
+            <td>空气猫</td>
+        </tr>
+        <tr>
+            <th>上架时间</th>
+            <td>2017年夏季</td>
+        </tr>
+        <tr>
+            <th>颜色分类</th>
+            <td>深蓝 、 浅蓝</td>
+        </tr>
+        <tr>
+            <th>尺码</th>
+            <td>S、M、L、XL</td>
+        </tr>
+        <tr>
+            <th>厂家所在地</th>
+            <td>广东广州</td>
+        </tr>
+        <tr>
+            <th>货号</th>
+            <td>609/607</td>
+        </tr>
+    </table>
+</div>
+
+<div class="spcs_foor" onclick="javascript:window.history.go(-1);">
+    完成
+</div>
+
+</body>
+</html>

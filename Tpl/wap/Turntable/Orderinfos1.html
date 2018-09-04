@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>交易记录</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<link rel="stylesheet" href="__LAYERUI__/css/layui.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script src="__LAYERUI__/layui.js"></script>
+<body class="bg96">
+
+<div class="header">
+	<div class="header_l">
+		<a href="{:U('Turntable/Transaction')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	</div>
+	<div class="header_c"><h2>订单记录</h2></div>
+	<div class="header_r" ><a href="javascript:void(0)" id="hide" ><img src="__WIMG__/youmore_n1.png" alt=""></a>
+		<div id="p1">
+			<div class="down"></div>
+			<div class="xsh">
+				<ul class="coin">
+					<li><a href="javascript:void(0)"></a></li>
+					<li><a href="javascript:void(0)">比特币</a></li>
+					<li><a href="javascript:void(0)">菜特币</a></li>
+					<li><a href="javascript:void(0)">以太坊</a></li>
+					<li class="off"><a href="javascript:void(0)">狗狗币</a></li>
+				</ul>
+			</div>
+			<div class="reveal-modal-bg"></div>
+		</div>
+	</div>
+</div>
+
+<div class="big_width100">
+
+
+	<div class="investment_f" >
+		<div class="investment_title">
+			<div  <eq name="step" value="1">class="on"</eq> > <a href="{:U('Turntable/Orderinfos',array('step'=>1))}">进行中</a></div>
+			<div <eq name="step" value="2">class="on"</eq> ><a href="{:U('Turntable/Orderinfos',array('step'=>2))}">已完成</a></div>
+		</div>
+	</div>
+
+
+
+<div >
+
+    <div class="yugejil"  style="width: 100%;position: absolute;top:111px;" >
+        <p style="width:15%;">类型</p>
+        <p style="width:35%;">数量</p>
+  		<p style="width:20%;">总价</p>
+ 
+        <p style="width:30%;">时间</p> 
+     
+    </div>
+
+    <div id="wrapper" style="width: 100%;position: absolute;top:151px;" >
+        <div class="scroller">
+            <ul>
+            
+                <foreach name="list" item="v">
+
+				<?php 
+				$arrayn=array(1=>"",2=>"比特币",3=>"莱特币",4=>"以太坊",5=>"狗狗币");
+				$uu=$arrayn[$v['cid']];?>
+				<li>
+<p style="width:15%;"><eq name="v['type']" value='2'>购买<else />出售</eq></p>
+<p style="width:35%;">{$v['num']}{$uu}</p>
+<p style="width:20%;">{$v['tprice']}</p>
+
+<p style="line-height:160%;width:30%;">{$v['create_time']|date='Y-m-d H:i:s',###}</p>
+				</li>
+			</foreach>
+
+            </ul>
+         
+          <!--   <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div> -->
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("#p1").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+        });
+    });
+
+    $('.reveal-modal-bg').click(function () {
+        $("#p1").toggle();
+    })
+
+    $('.coin').click(function () {
+        $("#p1").toggle();
+    })
+</script>
+
+
+</body>
+
+</html>
+
+<script>
+</script>

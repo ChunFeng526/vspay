@@ -1,0 +1,122 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+            <li class="text-muted">{:isset($info)?'修改':新增}</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="__SELF__" method="post" class="form-horizontal form form-builder">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="id" value="{$info.id}">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="left control-label">角色：</label>
+                                                <div class="right">
+                                                    <select name="auth_id" class="form-control cui-select select">
+                                                        <empty name="info" >
+                                                        <option value="">请选择：</option>
+                                                        </empty>
+                                                        <foreach name="role" item="v" >
+                                                        <option <eq name="info['auth_id']" value="$v['id']" >selected="true"</eq> value="{$v.id}">{$v.title}</option>
+                                                        </foreach>.
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">昵称：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="nickname" value="{$info.nickname}" placeholder="昵称" >
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">用户名：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="username" value="{$info.username}" placeholder="用户名" >
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">密码：</label>
+                                                <div class="right">
+                                                    <input type="password" class="form-control input text" name="password" placeholder="<?php if(!$info) echo "密码"; else echo '留空则不做修改'; ?>" >
+                                                </div>
+                                            </div>
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">确认密码：</label>
+                                                <div class="right">
+                                                    <input type="password" class="form-control input text" name="repassword" value="" placeholder="确认密码">
+                                                </div>
+                                            </div>
+                                            
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">手机：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input text" name="mobile" value="{$info.mobile}" placeholder="手机">
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form-group item_type ">
+                                                <label class="left control-label">手机绑定：</label>
+                                                <div class="right">
+                                                    <div class="radio-inline cui-control cui-radio">
+                                                        <label for="typelink">
+                                                            <input type="radio" id="typelink" class="radio" name="type" value="link" checked=""> 
+                                                            <span class="cui-control-indicator"></span>
+                                                            <span>已绑定</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio-inline cui-control cui-radio">
+                                                        <label for="typemodule">
+                                                            <input type="radio" id="typemodule" class="radio" name="type" value="module"> 
+                                                            <span class="cui-control-indicator"></span>
+                                                            <span>未绑定</span>
+                                                        </label>
+                                                    </div>
+                                                            
+                                                </div>
+                                            </div> -->
+
+             
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    {$extra_html}
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

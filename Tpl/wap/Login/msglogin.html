@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>安全登录</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96">
+	<div class="header">
+	    <div class="header_l">
+	    <a href="javascript:void(0)"><img src="__WIMG__//jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>安全登录</h2></div>
+	    <div class="header_r"></div>
+	</div>
+		 </div>
+	 </div>
+
+	  <div class="big_width100">
+		  <form name="formlogin" id="loginForm" class="formlogin" method="post" action="{:U('Login/quickLogin')}">
+			  <div class="fill_sty">
+				<p>手机/UID</p>
+					<input type="text" name="account" class="mobile" value="{$account}" readonly  placeholder="输入手机号码" autocomplete="off" id="number"/>
+			   </div>
+
+			   <div class="fill_sty fill_stya">
+					<p>验证码</p>
+					<input type="number" id="code" class="code" name="code" placeholder="填写验证码" oncontextmenu="return false" onpaste="return false" />
+					<a href="javascript:void(0)" id="mycode">获取验证码</a>
+			   </div>
+
+		  </form>
+	       <div class="buttonGeoup">
+	       		<a href="#" class="not_next" onclick="quicklogin()">登录</a>
+	       </div>
+	   </div>
+</body>
+</html>
+<!--commonjs-->
+<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+
+<script>
+    $('#mycode').click(function(){
+        var mobile=$("input[name='account']").val();
+        if(mobile=='' || mobile==null){
+            layer.msg('请输入手机号码');
+        }
+        $.post("{:U('Login/sendCodelogin')}",{'mobile':mobile},function(data){
+            if(data.status==1){
+                layer.msg(data.message);
+                RemainTime();
+            }else{
+                layer.msg(data.message);
+            }
+        });
+    });
+
+    //验证码倒计时
+
+    var intime="{$Think.session.set_time}";
+    var timenow ="<?php echo time(); ?>";
+
+    var bet=(parseInt(intime)+60)-parseInt(timenow);
+    $(document).ready(function(){
+        if(bet>0){
+            RemainTime();
+        }
+    });
+    var iTime = 59;
+    var Account;
+    if(bet>0){
+        iTime=bet;
+    }
+    function RemainTime(){
+        var iSecond,sSecond="",sTime="";
+        if (iTime >= 0){
+            iSecond = parseInt(iTime%60);
+            iMinute = parseInt(iTime/60)
+            if (iSecond >= 0){
+                if(iMinute>0){
+                    sSecond = iMinute + "分" + iSecond + "秒";
+                }else{
+                    sSecond = iSecond + "秒";
+                }
+            }
+            sTime=sSecond;
+            if(iTime==0){
+                clearTimeout(Account);
+                sTime='获取验证码';
+                iTime = 59;
+            }else{
+                Account = setTimeout("RemainTime()",1000);
+                iTime=iTime-1;
+            }
+        }else{
+            sTime='没有倒计时';
+        }
+        $('#mycode').html(sTime);
+    }
+</script>

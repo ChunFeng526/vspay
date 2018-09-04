@@ -1,0 +1,382 @@
+
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>｜后台管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="generator" content="CoreThink">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="apple-touch-icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png">
+    <link rel="stylesheet" type="text/css" href="/Public/libs/lyui/dist/css/lyui.min.css">
+    <link rel="stylesheet" type="text/css" href="/shop/Admin/View/Public/css/admin.css">
+    
+    <link rel="stylesheet" type="text/css" href="/Public/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="/shop/Admin/View/Public/css/style.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/Public/libs/jquery/1.x/jquery.min.js"></script>
+     <link rel="stylesheet" href="/Public/plugin/themes/default/default.css" />
+    <script charset="utf-8" src="/Public/plugin/kindeditor-min.js"></script>
+    <script charset="utf-8" src="/Public/plugin/lang/zh_CN.js"></script>
+
+    <!-- 日期 -->
+    <script type="text/javascript" src="/Public/libs/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/Public/libs/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <!-- 日期js cs -->
+    <link href="/Public/libs/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="/Public/libs/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+
+</head>
+<!-- <body class="admin_index_index"> -->
+<body class="admin_config_group" >
+    <div class="clearfix full-header">
+        
+                <!-- 顶部导航 -->
+                <div class="navbar navbar-default navbar-fixed-top main-nav" role="navigation">
+                    <div class="container-fluid">
+                        <div>
+                            <div class="navbar-header navbar-header-inverse">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-top">
+                                    <span class="sr-only">切换导航</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" target="_blank" href="/">
+                                    <span><b><span style="color: #2699ed;">后台管理</span></b></span>
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse navbar-collapse-top">
+                                <ul class="nav navbar-nav">
+                                    <!-- 主导航 -->
+                                    <li  ><a href="/admin/Index/index.html"><i class="fa fa-home"></i> 首页</a></li>
+                                    <li class='active' >
+                                    <a href="/admin/Config/group4.html" target="">
+                                        <i class="fa fa-cog"></i>
+                                        <span>系统</span>
+                                    </a>
+                                    </li>                                                  
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="/admin/Index/removeRuntime.html" style="border: 0;text-align: left" class="btn ajax-get no-refresh"><i class="fa fa-trash"></i> 清空缓存</a></li>
+                                    <li><a target="_blank" href="/"><i class="fa fa-external-link"></i> 打开前台</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-user"></i>  <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a target="_blank" href="/"><i class="fa fa-external-link"></i> 打开前台</a></li>
+                                            <li><a href="/admin/Index/removeRuntime.html" style="border: 0;text-align: left;" class="btn text-left ajax-get no-refresh"><i class="fa fa-trash"></i> 清空缓存</a></li>
+                                            <li><a href="/admin/Pubss/logout.html" class="ajax-get"><i class="fa fa-sign-out"></i> 退出</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+    </div>
+
+    <div class="clearfix full-container" id="full-container">
+        
+            <input type="hidden" name="check_version_url" value="/admin/Update/checkVersion.html">
+            <div class="container-fluid with-top-navbar" style="height: 100%;overflow: hidden;">
+                <div class="row" style="height: 100%;">
+                    <!-- 后台左侧导航 S-->
+                    <div id="sidebar" class="col-xs-12 col-sm-3 sidebar tab-content">
+                        <!-- 模块菜单 -->
+                        <nav class="navside navside-default" role="navigation">
+                                                            <ul class="nav navside-nav navside-first">
+                                    <li>
+                                            <a data-toggle="collapse" href="#navside-collapse-3-1">
+                                                <i class="fa-folder-open-o"></i>
+                                                <span class="nav-label">统用功能</span>
+                                                <span class="angle fa fa-angle-down"></span>
+                                                <span class="angle-collapse fa fa-angle-left"></span>
+                                            </a>
+                                            <ul class="nav navside-nav navside-second collapse in" id="navside-collapse-3-1">
+                                                    <li >
+                                                            <a href="/admin/Config/group4.html" >
+                                                                <i class="fa-wrench"></i>
+                                                                <span class="nav-label">系统配置</span>
+                                                            </a>
+                                                        </li><li >
+                                                            <a href="/admin/Group/index.html" >
+                                                                <i class="fa-sitemap"></i>
+                                                                <span class="nav-label">角色管理</span>
+                                                            </a>
+                                                        </li><li >
+                                                            <a href="/admin/Manage/index.html" >
+                                                                <i class="fa fa-cog"></i>
+                                                                <span class="nav-label">管理员管理</span>
+                                                            </a>
+                                                        </li><li >
+                                                            <a href="/admin/Database/index.html" >
+                                                                <i class="fa fa-lock"></i>
+                                                                <span class="nav-label">数据库管理</span>
+                                                            </a>
+                                                        </li><li >
+                                                            <a href="/admin/Config/msgs.html" >
+                                                                <i class="fa fa-twitter-square"></i>
+                                                                <span class="nav-label">短信配置</span>
+                                                            </a>
+                                                        </li>                                                </ul>                                        </li><li>
+                                            <a data-toggle="collapse" href="#navside-collapse-7-2">
+                                                <i class="fa-folder-open-o"></i>
+                                                <span class="nav-label">会员管理</span>
+                                                <span class="angle fa fa-angle-down"></span>
+                                                <span class="angle-collapse fa fa-angle-left"></span>
+                                            </a>
+                                            <ul class="nav navside-nav navside-second collapse in" id="navside-collapse-7-2">
+                                                    <li >
+                                                            <a href="/admin/User/index.html" >
+                                                                <i class="fa-user"></i>
+                                                                <span class="nav-label">会员列表</span>
+                                                            </a>
+                                                        </li><li >
+                                                            <a href="/admin/Tree/index.html" >
+                                                                <i class="fa-th-large"></i>
+                                                                <span class="nav-label">推荐结构</span>
+                                                            </a>
+                                                        </li>                                                </ul>                                        </li><li>
+                                            <a data-toggle="collapse" href="#navside-collapse-316-3">
+                                                <i class="fa-folder-open-o"></i>
+                                                <span class="nav-label">反馈管理</span>
+                                                <span class="angle fa fa-angle-down"></span>
+                                                <span class="angle-collapse fa fa-angle-left"></span>
+                                            </a>
+                                            <ul class="nav navside-nav navside-second collapse in" id="navside-collapse-316-3">
+                                                    <li >
+                                                            <a href="/admin/Recyling/index.html" >
+                                                                <i class="fa-file-text"></i>
+                                                                <span class="nav-label">反馈列表</span>
+                                                            </a>
+                                                        </li><li >
+                                                            <a href="/admin/Complaint/index.html" >
+                                                                <i class="fa-file-text"></i>
+                                                                <span class="nav-label">投诉列表</span>
+                                                            </a>
+                                                        </li>                                                </ul>                                        </li><li>
+                                            <a data-toggle="collapse" href="#navside-collapse-322-4">
+                                                <i class="fa-folder-open-o"></i>
+                                                <span class="nav-label">公告管理</span>
+                                                <span class="angle fa fa-angle-down"></span>
+                                                <span class="angle-collapse fa fa-angle-left"></span>
+                                            </a>
+                                            <ul class="nav navside-nav navside-second collapse in" id="navside-collapse-322-4">
+                                                    <li >
+                                                            <a href="/admin/News/index.html" >
+                                                                <i class="fa-twitter-square"></i>
+                                                                <span class="nav-label">系统公告</span>
+                                                            </a>
+                                                        </li>                                                </ul>                                        </li><li>
+                                            <a data-toggle="collapse" href="#navside-collapse-335-5">
+                                                <i class="fa-folder-open-o"></i>
+                                                <span class="nav-label">轮播管理</span>
+                                                <span class="angle fa fa-angle-down"></span>
+                                                <span class="angle-collapse fa fa-angle-left"></span>
+                                            </a>
+                                            <ul class="nav navside-nav navside-second collapse in" id="navside-collapse-335-5">
+                                                    <li class="active">
+                                                            <a href="/admin/Banner/index.html" >
+                                                                <i class="fa-twitter-square"></i>
+                                                                <span class="nav-label">系统轮播</span>
+                                                            </a>
+                                                        </li>                                                </ul>                                        </li>                                </ul>
+                                                    </nav>
+                    </div>
+                    <!-- 后台左侧导航 E-->
+
+                    <!-- 右侧内容 S-->
+                    
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <li class="text-muted">系统</li><li class="text-muted">轮播管理</li><li class="text-muted">系统轮播</li>        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                        
+                        <div class="form-group"></div>
+
+                        <!-- 顶部工具栏按钮 -->
+                        <div class="builder-toolbar">
+                            <div class="row">
+                                <!-- 工具栏按钮 -->
+                                    <div class="col-xs-12 col-sm-8 button-list clearfix">
+                                        <div class="form-group">
+                                            <a title="新增" class="btn btn-primary-outline btn-pill" href="/admin/Banner/add.html">新增</a>&nbsp;
+                                        </div>
+                                    </div>
+
+                                <!-- 搜索框 -->
+                            </div>
+                        </div>
+                        
+                        <!-- 数据列表 -->
+                        <div class="builder-container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="builder-table">
+                                        <div class="panel panel-default table-responsive">
+                                            <table class="table table-bordered table-striped table-hover">
+                                              <thead>
+                                                <tr>
+                                                    <th>
+                                                        <input class="check-all" type="checkbox">
+                                                    </th>
+                                                    <th>ID</th>
+                                                    <th>图片</th>
+                                                    <th>日期</th>
+                                                    <th>名称</th>
+                                                    <th>状态</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                               
+                                            <tbody>
+                                                    
+                                                    <tr>
+                                                            <!--全选 ids[]-->
+                                                            <td>
+                                                                <input class="ids" type="checkbox" value="13" name="ids[]">
+                                                            </td>
+                                                            
+                                                            <td>13</td>
+                                                             
+                                                            
+                                                            <td><img height="40px" width="80px" src="/Uploads/2018-06-26/5b32069232969.png" /></td>
+                                                                                                                           
+
+                                                                 
+                                                            <td>2018-06-26</td>
+                    
+                                                            <td>多彩轮播</td>
+                                                            
+                                                            <td>
+
+                                                               <i class="fa fa-check text-success"></i>
+                                                               
+                                                            </td>
+
+                                                            <td>
+                                                                <a name="edit" title="编辑" class="label label-primary-outline label-pill" href="/admin/Banner/edit/id/13.html">编辑</a>
+
+                                                                <a name="forbid" title="禁用" class="label label-warning-outline label-pill ajax-get confirm" href="/admin/Banner/setStatus/status/forbid/ids/13/model/Banner.html">禁用</a>
+                                                              
+                                                                
+                                                                <a name="delete" title="删除" class="label label-danger-outline label-pill ajax-get confirm" model="Banner" href="/admin/Banner/setStatus/status/delete/ids/13/model/Banner.html">删除</a>
+                                                        </tr><tr>
+                                                            <!--全选 ids[]-->
+                                                            <td>
+                                                                <input class="ids" type="checkbox" value="11" name="ids[]">
+                                                            </td>
+                                                            
+                                                            <td>11</td>
+                                                             
+                                                            
+                                                            <td><img height="40px" width="80px" src="/Uploads/2018-06-26/5b32069b0bf82.png" /></td>
+                                                                                                                           
+
+                                                                 
+                                                            <td>2018-06-26</td>
+                    
+                                                            <td>华丽轮播</td>
+                                                            
+                                                            <td>
+
+                                                               <i class="fa fa-check text-success"></i>
+                                                               
+                                                            </td>
+
+                                                            <td>
+                                                                <a name="edit" title="编辑" class="label label-primary-outline label-pill" href="/admin/Banner/edit/id/11.html">编辑</a>
+
+                                                                <a name="forbid" title="禁用" class="label label-warning-outline label-pill ajax-get confirm" href="/admin/Banner/setStatus/status/forbid/ids/11/model/Banner.html">禁用</a>
+                                                              
+                                                                
+                                                                <a name="delete" title="删除" class="label label-danger-outline label-pill ajax-get confirm" model="Banner" href="/admin/Banner/setStatus/status/delete/ids/11/model/Banner.html">删除</a>
+                                                        </tr><tr>
+                                                            <!--全选 ids[]-->
+                                                            <td>
+                                                                <input class="ids" type="checkbox" value="9" name="ids[]">
+                                                            </td>
+                                                            
+                                                            <td>9</td>
+                                                             
+                                                            
+                                                            <td><img height="40px" width="80px" src="/Uploads/2018-06-26/5b319b28e4475.png" /></td>
+                                                                                                                           
+
+                                                                 
+                                                            <td>2018-06-26</td>
+                    
+                                                            <td>炫彩轮播</td>
+                                                            
+                                                            <td>
+
+                                                               <i class="fa fa-check text-success"></i>
+                                                               
+                                                            </td>
+
+                                                            <td>
+                                                                <a name="edit" title="编辑" class="label label-primary-outline label-pill" href="/admin/Banner/edit/id/9.html">编辑</a>
+
+                                                                <a name="forbid" title="禁用" class="label label-warning-outline label-pill ajax-get confirm" href="/admin/Banner/setStatus/status/forbid/ids/9/model/Banner.html">禁用</a>
+                                                              
+                                                                
+                                                                <a name="delete" title="删除" class="label label-danger-outline label-pill ajax-get confirm" model="Banner" href="/admin/Banner/setStatus/status/delete/ids/9/model/Banner.html">删除</a>
+                                                        </tr>
+                                                                                                    </tbody>
+                                            </table>
+                                        </div>
+
+                                        <ul class="pagination">     <li><span class="rows">共 3 条记录</span></li></ul>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+    </div>                   
+</div>
+
+                    <!-- 右侧内容 E-->
+                    
+                </div>
+
+
+            </div>
+        
+
+    </div>
+
+    <div class="clearfix full-footer">
+        
+    </div>
+
+    <div class="clearfix full-script">
+        <div class="container-fluid">
+            <input type="hidden" id="corethink_home_img" value="__HOME_IMG__">
+            <script type="text/javascript" src="/Public/libs/lyui/dist/js/lyui.min.js"></script>
+            <script type="text/javascript" src="/shop/Admin/View/Public/js/admin.js"></script>
+            
+    <script type="text/javascript" src="/Public/libs/lyui/dist/js/lyui.extend.min.js"></script>
+
+        </div>
+    </div>
+</body>
+</html>

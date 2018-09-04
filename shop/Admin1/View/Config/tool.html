@@ -1,0 +1,88 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+             <li class="text-muted">转盘概率配置</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="builder-tabs builder-form-tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="">
+                                <a href="{:U('Config/group',array('group'=>1))}">出售限制</a>
+                            </li>
+                            <li >
+                                <a href="{:U('Config/group',array('group'=>2))}">拆分倍数</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/group',array('group'=>4))}">手续费</a>
+                            </li>
+                            <li>
+                                <a href="{:U('Config/turntable')}">转盘配置</a>
+                            </li>
+                            <li class="active">
+                                <a href="{:U('Config/tool')}">道具配置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/group',array('group'=>3))}">网站开关</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                        <div class="row" >
+                            <div class="col-xs-12" >
+                                <div class="form-group">
+                                    <label class="left control-label">转盘概率配置</label>
+                                </div>
+
+                                <form action="{:U('Config/savetool')}" method="post" class="form-horizontal form form-builder">
+                                <div class="form-type-list">
+                                
+                                <foreach name="info" item="v">
+                                   <input type="hidden" name="id[]" value="{$v.id}" >
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">{$v.t_name}：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="num[]" class="form-control" value="{$v.t_num}" >
+                                            <if condition="($v['id'] eq 1) OR ($v['id'] eq 2)">
+                                            <span class="input-group-addon">￥/月</span>
+                                            <else />
+                                            <span class="input-group-addon">￥</span>
+                                            </if>
+                                        </div>
+                                    </div>
+                                </foreach>
+
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                    <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>余额记录</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script src="__WJS__/iscroll.js"></script>
+<body class="bg96">
+<div class="header">
+    <div class="header_l"><a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a></div>
+    <div class="header_c"><h2>余额记录</h2></div>
+    <div class="header_r"></div>
+</div>
+<style type="text/css">    .yugejil1 {
+    width: 100%;
+    height: 40px;
+    background: #ddd;
+    line-height: 40px;
+}
+
+.yugejil1 p {
+    float: left;
+    width: 24.3%;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+
+.p23 {
+    line-height: 40px;
+}
+
+#wrapper li p {
+    float: left;
+    width: 24.3%;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}</style>
+<div class=" ">
+    <div class="yugejil1"><p>业务类型</p>
+        <p>数额</p>
+        <p>当前余额</p>
+        <p>时间</p></div>
+    <div id="wrapper">
+        <div class="scroller">
+            <ul>
+                <foreach name="Chan_info" item="v">
+                    <if condition="($v['get_type']==4 && $v['get_id']==$uid) or ($v['get_type']==5 && $v['pay_id']==$uid) or ($v['get_type']==12)">
+                        <else/>
+                        <li>
+                            <eq name="v['get_type']" value="0">
+                                <eq name="v['trtype']" value="1"><p>转出({$v['get_id']})</p>
+                                    <p>-{$v['get_nums']}</p>
+                                    <else/>
+                                    <p>转入({$v['pay_id']})</p>
+                                    <p>+{$v['get_nums'] * 80 /100} </p></eq>
+                                <else/>
+                                <if condition="$v['get_type'] eq 2"><p>积分释放</p>
+                                    <p>+{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 3"/>
+                                    <p>余额-求购</p>
+                                    <p>-{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 4"/>
+                                    <p>余额-购买</p>
+                                    <p>-{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 5"/>
+                                    <p>余额-出售</p>
+                                    <p>+{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 6"/>
+                                    <p style="line-height: 1.5;">取消求购<span style="display: block;">(余额)</span></p>
+                                    <p>+{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 7"/>
+                                    <p>众筹购买</p>
+                                    <p>-{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 8"/>
+                                    <p>买入</p>
+                                    <p>+{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 9"/>
+                                    <p>卖出</p>
+                                    <p>-{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 10"/>
+                                    <p>取消卖出</p>
+                                    <p>+{$v['get_nums']}</p>
+                                    <elseif condition="$v['get_type'] eq 13"/>
+                                    <p>转换积分</p>
+                                    <p>-{$v['get_nums']}</p></if>
+                            </eq>
+                            <p class="p23">
+                                <if condition="$v['is_release'] eq 0 && $v['now_nums'] eq 0 && $v['now_nums_get'] eq 0">
+                                    暂无记录
+                                    <else/>
+                                    <eq name="v['trtype']" value="1">{$v['now_nums']}
+                                        <else/>
+                                        {$v['now_nums_get']}
+                                    </eq>
+                                </if>
+                            </p>
+                            <p class="p24">{$v['get_timeymd']}</br>{$v['get_timedate']}</p></li>
+                    </if>
+                </foreach>
+            </ul>                        <!--<notempty name="page">--><!--<ul class="pagination">{$page}</ul>-->
+            <!--</notempty>--> <input type="hidden" value="1" class="pagen"> <input type="hidden" value="0"
+                                                                                    class="isover">
+            <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div>
+        </div>
+    </div>
+</div>
+<script>    var myscroll = new iScroll("wrapper", {
+    onScrollMove: function () {
+        if (this.y < (this.maxScrollY)) {
+            $('.pull_icon').addClass('flip');
+            $('.pull_icon').removeClass('loading');
+        } else {
+            $('.pull_icon').removeClass('flip loading');
+            $('.more span').text('上拉加载...')
+        }
+    }, onScrollEnd: function () {
+        if ($('.pull_icon').hasClass('flip')) {
+            $('.pull_icon').addClass('loading');
+            $('.more span').text('加载中...');                //加载P+1                var pagen = Number($('.pagen').val());                $('.pagen').val(pagen + 1);                $('.more span').text('释放加载...');                pullUpAction();            }        },        onRefresh: function () {            $('.more').removeClass('flip');            $('.more span').text('上拉加载...');        }    });    function pullUpAction() {        var p = Number($('.pagen').val());        var isover = $('.isover').val();        if(isover == 1){            return;        }        setTimeout(function () {            //是否已经没有数据了            $.ajax({                url: '/Index/Bancerecord',                type: 'get',                dataType: 'json',                data: {'p': p},                success: function (data) {                    var str = '';                    if (data.status == 1) {                        $.each(data.message, function (key, val) {                            str += '<li>';                            if(val.trtype == 1){                                str += '<p >转出</p>';							}else{                                str += '<p >转入</p>';                            }                            str += '<p >' +val.get_nums + '</p>';                            str += '<p class="p24">' +val.get_timeymd+ '</br>' +val.get_timedate+ '</p>';                            str += '</li>';                        })                        $('.scroller ul').append(str);                        myscroll.refresh();                    }else{                        var isover = $('.isover').val();                        if(isover == 0) {                            $('.isover').val(1);                            str += '<div class="annalWa">';                            str += '<p>暂无更多记录</p></div>';                        }                        $('.scroller ul').append(str);                    }                },                error: function () {                    console.log('error');                },            })        }, 1000)    }    if ($('.scroller').height() < $('#wrapper').height()) {        $('.more').hide();        myscroll.destroy();    }</script>
+</body>
+</html>

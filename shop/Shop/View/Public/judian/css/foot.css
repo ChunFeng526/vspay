@@ -1,0 +1,73 @@
+html,body {font-family:Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif;font-size:100px;
+color:#333333;overflow-x:hidden;margin:0;padding:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none outside none;margin:0;padding:0;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+a {color:#333333;text-decoration:none;cursor:pointer;}
+em,i,b{font-style: normal;font-weight: normal;}
+input,textarea{outline: none;}
+input[type="submit"]{border: none;}
+.cf:after{content: ".";display: block;  clear: both;visibility: hidden;line-height: 0;height: 0;font-size:0;}
+.fr{ float:right}
+.cf{ clear:both}
+.fl{ float:left}
+
+
+footer {position:fixed;left:0; bottom:0px;width:100%;z-index:666;background-color: #fafafa;padding-top: 0.03rem;border-top:1px solid #dfdfdf;}
+footer dl{display: -webkit-box;-webkit-box-align: center;}
+footer dl dd{text-align: center;-webkit-box-flex: 1;}
+footer dl dd:last-child{border: none;}
+footer dl dd a{display: block;margin: 0;padding: 0;color: #666;}
+footer dl dd .iconfont{font-size: 0.22rem;display: block;color: #666;}
+footer dl dd p{font-size: 0.12rem;padding: 0.05rem 0 0.06rem 0;}
+
+footer dl dd.select a{color: #50b71e;}
+footer dl dd.select i{color: #50b71e;}
+
+
+.cred{color: #ff0000;}
+.cblue{color: #006633;}
+.corange{color: #cc3300;}
+
+
+.titlenav{font-size: 0.16rem;padding: 0.11rem 0;text-align: center;background-color: #50b71e;position: relative;}
+.titlenav i{font-size: 0.2rem;}
+.titlenav .posleft {
+    position: absolute;
+    top: 0.05rem;
+    color: #e1e1e1;
+    left: -0.1rem;
+}
+.titlenav .posleft i{color: #e1e1e1;}
+.titlenav .posright{position: absolute;right: 0.11rem;top: 0.1rem;}
+.titlenav .posright i{color: #fff;}
+.posleft img{
+	width: 65%;
+}
+
+.swiper-container{margin-bottom: 0.05rem;}    
+.swiper-wrapper .swiper-slide img{display: block;width: 100%;}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: -15px;}
+
+.swiper-pagination-bullet{    background: #fff;opacity: 1;}
+.swiper-pagination-bullet-active{background: #ff8a00;opacity: 1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

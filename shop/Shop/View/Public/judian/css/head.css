@@ -1,0 +1,245 @@
+html,body {font-family:"微软雅黑";margin:0;padding:0;font-size: 3vmin;color:#555555;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none outside none;margin:0;padding:0;}
+/*::-webkit-input-placeholder { color:#369; }*/
+input{outline: none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+a {color:#362e2b;text-decoration:none;cursor:pointer;}
+em,i,b{font-style: normal;font-weight: normal;}
+
+.header{
+	width:100%;
+	height:13vmin;
+	background: #2e2e2e;
+    /*position: fixed;
+    top:0;
+    z-index: 1000;*/
+}
+
+.headerqq{
+	width:100%;
+	height:13vmin;
+	background: #03b5e1;
+}
+
+.headerqq a span{
+    font-size: 4vmin;
+    color: #fff;
+    line-height: 13vmin;
+    position: absolute;
+    padding-left: 8%;
+
+}
+.headerqq a img {
+    position: absolute;
+    width: 3%;
+    top: 4vmin;
+    left: 3%;
+}
+.headerqq h1{
+    color:#fff;
+    text-align: center;
+    line-height: 13vmin;
+    font-size:4.5vmin;
+    font-family: "微软雅黑";
+}
+
+.header{
+    width:100%;
+    height:13vmin;
+    background: #000;
+}
+.header h1{
+    color:#fff;
+    text-align: center;
+    line-height: 13vmin;
+    font-size:4.5vmin;
+    font-family: "微软雅黑";
+}
+
+.header_l{
+    width: 28%;
+    height: 13vmin;
+    float: left;
+   /* position: relative;*/
+}
+
+.header_l a{
+    display: block;
+    float: left;
+    width: 40%;
+    height: 13vmin;
+
+}
+
+.header_c{
+    width: 45%;
+    height: 13vmin;
+    float: left;
+}
+
+.header_r{
+    width: 25%;
+    height: 13vmin;
+    float: right;
+}
+.header_r a{
+    line-height: 13vmin;
+    color:#fff;
+    /*text-align: center;*/
+    font-size:4vmin;
+    float: right;
+    margin-right: 15%;
+}
+
+.header a span{
+    font-size: 4vmin;
+    color: #fff;
+    line-height: 13vmin;
+    position: absolute;
+    padding-left: 8%;
+
+}
+.header_l a img {
+    position: absolute;
+    width: 3%;
+    top: 4vmin;
+    left: 3%;
+}
+
+.header_r a img {
+    position: absolute;
+    width: 7%;
+    top: 6.5vmin;
+    right: 4%;
+}
+
+
+/*微博号登录*/
+
+.headerwb{
+    width:100%;
+    height:13vmin;
+    background: #e83c34;
+}
+
+.header_c p{
+    text-align: center;
+}
+
+.header_c p img{
+    margin-top:4%;
+    width: 50%;
+}
+
+.header_ccc{
+    width: 100%;
+    height: 10vmin;
+    float: left;
+}
+
+
+/*微信注册*/
+
+.headerbbb{
+    background: #fff;
+    width: 100%;
+    height: 13vmin;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.header_lbb{
+    width: 28%;
+    height: 13vmin;
+    float: left;
+}
+
+.header_lbb a{
+    display: block;
+    float: left;
+    width: 40%;
+    height: 13vmin;
+
+}
+
+.headerbbb h1{
+    color:#000;
+    text-align: center;
+    line-height: 13vmin;
+    font-size:4.5vmin;
+    font-family: "微软雅黑";
+}
+
+.headerbbb a span{
+    font-size: 4vmin;
+    color: #fff;
+    line-height: 13vmin;
+    position: absolute;
+    padding-left: 8%;
+
+}
+.headerbbb a img {
+    position: absolute;
+    width: 3%;
+    top: 17vmin;
+    left: 3%;
+}
+.header_cnr {
+    width: 80%;
+    height: 8vmin;
+    border: 1px solid #fff;
+    margin:5% auto;
+    border-radius: 5px;
+}
+
+
+.header_cnr li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 8.5vmin;
+    font-size: 4vmin;
+    /*border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;*/
+    border-radius: 3px;
+}
+
+.header_cnr li a {
+    color: #fff;
+    padding: 8% 27%;
+}
+
+.lia{
+    background: #fff;
+}
+
+
+.header_cnrbb {
+    width: 40%;
+    height: 7vmin;
+    border: 1px solid #fff;
+    margin: 2% auto;
+    border-radius: 5px;
+}
+
+
+.header_cnrbb li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 7vmin;
+    font-size: 4vmin;
+}
+
+.header_cnrbb li a {
+    color: #fff;
+    padding: 8% 7%;
+}
+
+.lia{
+    background: #fff;
+}

@@ -1,0 +1,217 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+             <li class="text-muted">实时价格设置</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="builder-tabs builder-form-tabs">
+                        <ul class="nav nav-tabs">
+
+                        <li class="">
+                                <a href="{:U('Config/group2',array('group'=>1))}">基本设置</a>
+                            </li>
+                           <li class="">
+                                <a href="{:U('Config/group3')}">众筹设置</a>
+                            </li>
+                           <li class="">
+                                <a href="{:U('Config/group4')}">奖励设置</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="{:U('Config/group1',array('group1'=>5))}">实时价格设置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/group',array('group'=>3))}">网站开关</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                        <div class="row" >
+                            <div class="col-xs-12" >
+
+                                
+
+
+                                <form action="{:U('Config/groupSave1')}" method="post" class="form-horizontal form form-builder">
+                                <div class="form-type-list">
+                                    Vpay <hr style="margin-top: 0px;width: 100%">
+
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">每十二分钟增长不超过：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="growem" class="form-control" value="{$growem}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+
+
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">实时价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="s1" class="form-control" value="{$info.0.coin_price}" >
+                                            
+                                        </div>
+                                    </div>
+
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最高价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="g1" class="form-control" value="{$info.0.max}" >
+                                            
+                                        </div>
+                                    </div>
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最低价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="d1" class="form-control" value="{$info.0.min}" >
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    比特币<hr style="margin-top: 0px;width: 100%">
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">实时价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="s2" class="form-control" value="{$info.1.coin_price}" >
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最高价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="g2" class="form-control" value="{$info.1.max}" >
+                                            
+                                        </div>
+                                    </div>
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最低价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="d2" class="form-control" value="{$info.1.min}" >
+                                            
+                                        </div>
+                                    </div>
+                                    
+
+                                     莱特币<hr style="margin-top: 0px;width: 100%">
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">实时价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="s3" class="form-control" value="{$info.2.coin_price}" >
+                                            
+                                        </div>
+                                    </div>
+
+                                    
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最高价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="g3" class="form-control" value="{$info.2.max}" >
+                                            
+                                        </div>
+                                    </div>
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最低价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="d3" class="form-control" value="{$info.2.min}" >
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                   
+
+                                     以太坊<hr style="margin-top: 0px;width: 100%">
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">实时价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="s4" class="form-control" value="{$info.3.coin_price}" >
+                                            
+                                        </div>
+                                    </div>
+
+                                     
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最高价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="g4" class="form-control" value="{$info.3.max}" >
+                                            
+                                        </div>
+                                    </div>
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最低价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="d4" class="form-control" value="{$info.3.min}" >
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                  
+
+                                     狗狗币<hr style="margin-top: 0px;width: 100%">
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">实时价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="s5" class="form-control" value="{$info.4.coin_price}" >
+                                            
+                                        </div>
+                                    </div>
+
+                                      
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最高价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="g5" class="form-control" value="{$info.4.max}" >
+                                            
+                                        </div>
+                                    </div>
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">最低价格：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="d5" class="form-control" value="{$info.4.min}" >
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                 
+
+
+
+
+                                   
+                                   
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                    <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

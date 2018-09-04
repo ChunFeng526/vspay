@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$Think.lang.digitalasset}</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+
+<body class="bg96">
+
+<div class="header">
+    <div class="header_l">
+        <a href="{:U('Index/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+        <a href="{:U('Index/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>{$Think.lang.digitalasset}</h2></div>
+    <div class="header_r"><a href="{:U('Turntable/Trans')}">{$Think.lang.jrecord}</a></div>
+</div>
+
+
+<div class="big_width100">
+    <div class="shuzbzonge">
+        <img src="__WIMG__/toux-icon.png" class="icon">
+        <p>{$Think.lang.nowprice}：<span> ￥{$coindets[0]['coin_price']}</span></p>
+		<div  class="zichan">我的资产<span>{$minecoins[0]['c_nums']|default="0.0000"}</span></div>
+    </div>
+
+    <div class="wpaeyzic">
+        
+       
+        
+        <div class="dizhi">
+            <p id="content">{$waadd}</p>
+            <button id="copyBT">复制交易地址</button>
+        </div>
+
+    </div>
+    <div class="wpzicicon">
+        <ul class="clear_wl">
+            <li>
+                <a href="{:U('Turntable/Turnout')}">
+                    <img src="__WIMG__/index/out.png" alt="">
+                    <p>{$Think.lang.turnout}</p>
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Turntable/Crowds')}">
+                    <img src="__WIMG__/index/zhongchou.png" alt="">
+                    <p>{$Think.lang.zhongchou}</p>
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Turntable/Wbaobei')}">
+                    <img src="__WIMG__/index/qianbao.png" alt="">
+                    <p>U宝</p>
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Turntable/Transaction')}">
+                    <img src="__WIMG__/index/jiaoyi.png" alt="">
+                    <p>{$Think.lang.jiaoyi}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dis_biz">
+        <foreach name="coindets" item="v" key="k" >
+            <div class="dis_biz_wp">
+                <div class="Dbiz_titie">
+                    <p><b class="wpae_stc{$k}"></b>{$v['coin_name']}</p>
+                </div>
+
+                <?php 
+                 $mycoins = M('ucoins')->where(array('c_uid'=>$uid,"cid"=>$v['cid']))->getField('c_nums');?>
+                <div class="dis_biz_cop clear_wl">
+                    <div class="dis_biz_copa">
+                        <p>{$mycoins|default="0.0000"}</p>
+                        <p><span>{$v['coin_name']}</span></p>
+                    </div>
+                    <div class="dis_biz_copb">
+                        <p>{$v['coin_price']}</p>
+                        <p><span>{$Think.lang.nowprice}</span></p>
+                    </div>
+                    <div class="dis_biz_copc">
+                         <a href="{:U('Turntable/Transaction',array('cid'=>$v['cid']))}" class="yugejiaoy">{$Think.lang.jjfjy}</a>
+                           <a href="###"   class="xianzjiaoy">{$Think.lang.xjjy}</a>
+                       <!--  <a href="{:U('Turntable/Transaction1',array('cid'=>$v['cid']))}" class="xianzjiaoy">现金交易</a> -->
+                       
+                    </div>
+                </div>
+
+            </div>
+
+        </foreach>
+
+    </div>
+</div>
+<div class="footer-fan">
+    <a href="{:U('Index/index')}">
+        <img src="__WIMG__/index/shouye2.png" alt="首页">
+        <p>首页</p>
+    </a>
+    <a href="{:U('Turntable/index')}">
+        <img src="__WIMG__/index/zichan2.png" alt="资产">
+        <p>资产</p>
+    </a>
+    <a href="{:U('Shop/Home/index')}">
+        <img src="__WIMG__/index/shangcheng2.png" alt="商城">
+        <p>商城</p>
+    </a>
+    <a href="{:U('User/Personal')}">
+        <img src="__WIMG__/index/wo2.png" alt="我的">
+        <p>我的</p>
+    </a>
+</div>
+  <!-- <div class="big_width100" >
+   
+   <div class="qindHB">
+     <div class="qindHB_nb">
+         <img src="__WIMG__/hongbaoyema.png" class="qinb_imga">
+          <a href="javascript:void(0);" >
+            <a href="{:U('Index/index')}"><img src="__WIMG__/cunryuea.png"></a>
+          </a>
+          <div class="qiandHB_wz">
+            
+          </div>
+     </div>
+   </div>
+   <div class="qindHB_bg"> </div>
+
+
+
+ </div> -->
+  <script type="text/javascript">
+
+
+           $(document).ready(function(){
+  
+     $(".xianzjiaoy").click(function(){
+         msg_alert("暂时不支持现金交易");
+        });
+
+    });
+</script>
+<style type="text/css">
+    .qindHB_bg{
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 100;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.qindHB{
+    position: absolute;
+    z-index: 101;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+    
+}
+.qindHB_nb{
+   z-index: 102;
+   width: 100%; position: relative;
+}
+
+.qindHB_nb a {
+    width: 100%; display: block; margin-top: 20px;
+}
+.qindHB_nb a img{
+   z-index: 104;
+   width: 100%;
+}
+
+.qinb_imga{  height: 22rem;margin: 0 auto; display: block;  margin-top: 2rem; }
+
+.qiandHB_wz{ position:absolute; top:7rem; width: 50%; left: 25%; text-align: center; }
+.qiandHB_wz h3{ font-size: 1.8rem; padding-bottom: 1rem; border-bottom: 1px dotted rgba(217, 45, 45, 0.4); color: #d92d2d; line-height: 1.8rem; font-weight: 900;}
+.qiandHB_wz p{ font-size: 1rem; color: #d92d2d; line-height: 2.4rem; font-weight: 900;}
+
+</style>
+
+
+    
+    
+<script>
+    function copyArticle(event) {
+        const range = document.createRange();
+        range.selectNode(document.getElementById('content'));
+
+        const selection = window.getSelection();
+        if (selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        alert("复制成功！");
+    }
+
+    document.getElementById('copyBT').addEventListener('click', copyArticle, false);
+</script>
+
+
+</body>
+
+</html>

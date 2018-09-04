@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="Generator" />
+    <meta charset="utf-8" />
+    <title>悠享生态园林</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="__WCSS__/stylepay.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+</head>
+
+<body>
+<div id="page">
+  <header id="header">
+    <div class="header_l"> <a class="ico_10" href="javascript:history.back();"> 返回 </a> </div>
+    <h1>立即支付</h1>
+    <div class="header_r"></div>
+  </header>
+</div>
+
+<div class="blank3"></div>
+<section class="wrap">
+  <form id="formCart" name="formCart" method="post" action="flow.php">
+    <ul class="radius10 itemlist">
+      <li class="new-tbl-type">
+        <div class="itemlist_l new-tbl-cell"> 
+          <a  href="###" target="_blank"><img class="lazy" src="{$o_info.tool_img}" border="0" /> </a> 
+        </div>
+        <div class="desc new-tbl-cell"> 
+          <a href="###"  style="color:#333"target="_blank" class="fragment">
+            <h4>{$o_info.tool_name}</h4>
+          </a>
+          <div style="clear:both"> </div>
+          <div class="b"> 
+            <em class="price">￥<span>{$o_info['total_price']+0}</span></em> 
+          </div>
+        </div>
+      </li>
+    </ul>
+    <input type="hidden" name="step" value="update_cart" />
+  </form>
+</section>
+
+  <div class="tf_zhifu">
+      <form id="form" action="{:U('Index/gopay')}" >
+      <ul>
+        <li class="bt">选择支付方式</li>
+          <!--   <li><img src="__WIMG__/zf1.jpg">果子支付（剩：{$cangku_num+0}）<span><input type="radio" name="paytype" value="3"></span></li> -->
+            <li><img src="__WIMG__/zf2.jpg">微信支付<span><input type="radio" name="paytype" value="1"></span></li>
+            <!-- <li><img src="__WIMG__/zf3.jpg">支付宝支付<span><input type="radio" name="paytype" value="2"></span></li> -->
+        </if>
+      </ul>
+        <input type="hidden" name="order_no" value="{$_GET.order_no}" >
+      </form>
+  </div>
+
+
+
+
+  <footer class="sp_zhifu">
+   <a href="javascript:pay();">立即支付</a> 
+  </footer>
+
+  <script type="text/javascript">
+
+  $('.tf_zhifu li').click(function(){
+    $(this).find('input').attr('checked',true);
+  })
+
+  function pay(){
+    var val=$(":checked").val();
+    if(val==undefined){
+      layer.msg('请选择支付方式');
+      return false;
+    }
+    var post_url=$('#form').attr('action');
+    var post_data=$('#form').serialize();
+    //正在加载
+    var index = layer.load(1, {
+        shade: [0.1,'#fff']
+    });
+    $.ajax({
+         type: "POST",
+         url: post_url,
+         data:post_data,
+         dataType: "json",
+         success: function(data){
+            layer.close(index);//关闭加载
+            if(data.status==1){
+              window.location=data.url;
+            }else{
+              msg_alert(data.message);
+            }      
+          }     
+    });
+  }
+
+  </script>
+
+
+</body>
+</html>

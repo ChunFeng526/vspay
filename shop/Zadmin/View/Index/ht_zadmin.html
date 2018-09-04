@@ -1,0 +1,42 @@
+  <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3><?php if(!empty($_GET)){echo'编辑管理员';}else{echo'添加管理员';}?></h3>
+				<div class="xgmm_a">
+					
+					<!-- <form  action="{:U('Index/ht_xgmm')}" id="myform">-->
+					 <form action="{:U('Index/ht_Zadmin')}" method="post" id="form">
+						<div class="xgmm_a_a">
+							<span>管&nbsp;理&nbsp;员：&nbsp;</span>
+						<input type="zusername" class="xgmm_a_text requires" name="zusername" value="{$Zadmin.zusername}">
+						</div>
+						<div class="xgmm_a_a">
+							<span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：&nbsp;</span>
+						<input type="password" class="xgmm_a_text requires" name="password">
+						</div>
+						<?php if(!empty($_GET['id'])){ ?>
+						 <input type="hidden" name="id" value="{$Zadmin.id}"/>
+						<p><input style="width:175px;height:40px; background-color: #FF9D46;color: #fff;" type="submit" value="修改"></input></p>
+					<?php }else{ ?>
+					
+					<p><input style="width:175px;height:40px; background-color: #FF9D46;color: #fff;" type="submit" value="添加"></input></p>
+					<?php } ?>
+					
+					
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	  <include file="common:js" />	
+</body>
+</html>
+

@@ -1,0 +1,124 @@
+/* Ion.RangeSlider, Simple Skin
+// css version 2.0.3
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// © guybowden, 2014        https://github.com/guybowden
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+/*.irs {
+    height: 64px;
+}*/
+.irs-with-grid {
+    height: 30px;
+}
+.irs-line {
+    left: 1%;
+    width: 98%;
+    height: 6px;
+    top: -27px;
+    background: #48b1a4;
+    border-radius: 50px;
+}
+    .irs-line-left {
+        height: 8px;
+    }
+    .irs-line-mid {
+        height: 8px;
+    }
+    .irs-line-right {
+        height: 8px;
+    }
+
+.irs-bar {
+    top: -6.6px;
+   /* background: #00a9fa;*/
+    border-radius: 25px;
+    height: 6px;
+}
+    .irs-bar-edge {
+        height: 10px; top: 33px;
+        width: 14px;
+        border: 1px solid #428bca;
+        border-right: 0;
+        background: #428bca;
+        background: linear-gradient(to top, rgba(66,139,202,1) 0%,rgba(127,195,232,1) 100%); /* W3C */
+        border-radius: 16px 0 0 16px;
+        -moz-border-radius: 16px 0 0 16px;
+        display: none;
+    }
+
+.irs-shadow {
+    height: 2px; top: 38px;
+    background: #000;
+    opacity: 0.3;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.lt-ie9 .irs-shadow {
+    filter: alpha(opacity=30);
+}
+
+.irs-slider {
+    top: -14px;
+    width: 20px;
+    height: 20px;
+    background: #00BCD4;
+    border-radius: 27px;
+    -moz-border-radius: 27px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.irs-slider.state_hover, .irs-slider:hover {
+    background: #FFF;
+}
+
+.irs-min, .irs-max {
+     color: #78c831;
+  font-size: 1em;
+  line-height: 1.333;
+  text-shadow: none;
+  top: 18px;
+  padding: 1px 5px;
+  display: none;
+}
+
+.lt-ie9 .irs-min, .lt-ie9 .irs-max {
+    background: #ccc;
+}
+
+.irs-from, .irs-to, .irs-single {
+     color: #fff;
+  font-size: 1em;
+  line-height: 1.333;
+  text-shadow: none;
+  padding: 5px 15px;
+  background: #9bd467;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.lt-ie9 .irs-from, .lt-ie9 .irs-to, .lt-ie9 .irs-single {
+    background: #999;
+}
+
+.irs-grid {
+    height: 33px;
+}
+.irs-grid-pol {
+    opacity: 0.5;
+    background: #fffcfc;
+}
+.irs-grid-pol.small {
+    background: #999;
+}
+
+.irs-grid-text {
+    bottom: 5px;
+    color: #78c831;
+  font-size: 1em;
+}
+
+.irs-disabled {
+}

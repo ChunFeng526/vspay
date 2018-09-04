@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>  {$Think.lang.login}</title>
+<link rel="stylesheet" href="__WCSS__/login.css">
+<link rel="stylesheet" href="__WCSS__/normalize.css">
+<script src="__WJS__/rem.js"></script>
+<body class="bgf5">
+<style>
+
+</style>
+<div class="login-container">
+	<div class="language">
+		<div class="yuyan">
+			<!-- <span>{$Think.lang.lang}:</span>
+			<select   onchange="gradeChange(this.value)">
+				<option <?php  if($_GET['l']=="zh-cn"||!isset($_GET['l'])) echo "selected";?> 	value="zh-cn">{$Think.lang.lang1}</option>
+				<option  <?php  if($_GET['l']=="en-us") echo "selected";?>	value="en-us">{$Think.lang.lang2}</option>
+			</select> -->
+			<a href="?l=zh-cn" <?php if($_COOKIE['think_language'] == "zh-cn"){ ?> style="border-top-left-radius:30px;background:#038cd2;color:#fff;border-bottom-left-radius:30px;" <?php }?>>中文ss</a>
+			<a href="?l=en-us" <?php if($_COOKIE['think_language'] == "en-us"){ ?> style="border-top-right-radius:30px;background:#038cd2;color:#fff;border-bottom-right-radius:30px;" <?php }?>>ENG</a>
+	    </div>
+	</div>
+	<div class="formbox">
+		<div class="logo">
+          <div>
+			<img src="__WIMG__/logo.png">
+          </div>
+		</div>
+		<form name="formlogin" id="loginForm" class="formlogin" method="post" action="{:U('Login/checkLogin')}">
+			<div class="input_box">
+		
+				<input type="text" name="account" class="username" placeholder="{$Think.lang.mobile}/UID" autocomplete="off"/>
+			</div>
+			<div class="input_box">
+				
+				<input type="password" name="password" class="password" placeholder="{$Think.lang.loginpwd}" oncontextmenu="return false" onpaste="return false" />
+			</div>
+			<div  class="inde-btn">
+				<button id="submit" type="button" onclick="login()">{$Think.lang.login1}</button>
+			</div>
+			<div class="extra_btn">
+				<a href="{:U('Login/register')}">{$Think.lang.has_account}</a>
+				<a href="{:U('login/getpsw')}">{$Think.lang.forget_pwd}</a>
+		    </div>
+		</form>
+	</div>
+</div>
+
+</body>
+<script>
+function gradeChange(ss){
+
+       window.location.href="?l="+ss;
+       }
+
+</script>
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<!--<script src="__WJS__/common.js"></script>-->
+
+<!--表单验证-->
+<script src="__WJS__/jquery.validate.min.js?var1.14.0"></script>
+<!--commonjs-->
+<script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+</html>

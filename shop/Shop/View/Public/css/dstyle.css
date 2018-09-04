@@ -1,0 +1,40 @@
+@charset "UTF-8";
+html,head,body{margin: 0px;padding: 0px;max-width: 640px;margin: 0 auto;}
+body{font-size: 12px;font-family: "微软雅黑,Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial;"color:#000;height: 100%;width: 100%;}
+img{border:0;}
+ol,ul {list-style:none outside none;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+a {color:#000；;text-decoration:none;cursor:pointer;}
+em,i{font-style: normal;}
+*{padding: 0;margin: 0;}
+input,select,textarea{border:0;outline:none;/*去除蓝色边框*/}
+a{color: #333333;}
+select{font-size: 4vmin;}
+
+.fxm_header {width: 100%;height: 13vmin;background: #1b1b1b;background-size: 100% 100%;position: fixed;top: 0;z-index: 1111;max-width: 640px;}
+.fxm_header .fxm_left {width: 10%;float: left;text-align: center;}
+.fxm_header .fxm_left img {width: 40%;margin-top: 3vmin;}
+.fxm_header .fxm_center {width: 80%;font-size: 5vmin;color: #fff;line-height: 13vmin;text-align: center;float: left;}
+
+
+/*奖金*/
+.mywallet-top {width: 100%;height: 19vmin;background: #fff; padding: 5% 0;}
+.wallet-cards {border-top: 1px solid #ddd;width: 100%;float: left;font-size: 4vmin;clear: both;text-align: center;background: #fff;}
+.mywallet-top strong{margin-left: 6vmin;font-size: 6vmin;display: inline-block;width: 60%;color: #FF3102;float: left;}
+.mywallet-top p,.wallet-cards a p{margin-top: 2.5vmin;color: #555;}
+.wallet-cards a {display: block;float: left;width: 49.6%;border-right: 1px solid #ddd;height: 20vmin;border-bottom: 1px solid #ddd;}
+.wallet-buttons {width: 100%;float: left;}
+.wallet-buttons a {font-size: 5vmin;margin-top:20vmin;margin-left: 15vmin;margin-bottom: 3vmin;text-align: center;line-height: 12vmin;display: block;width: 70%;height: 12vmin;border: 0.2vmin solid #555;border-radius: 5vmin;color: #555;}
+.mywallet-top .qian{font-size: 4vmin;font-weight: normal;}
+
+/*明细*/
+.jilu {font-size: 4vmin;float: left;width: 100%;}
+.jilu ul li {border-bottom: 1px solid #f1f1f1;padding: 2%;background: #fff url(../images/right2.png) no-repeat 98% center;float: left;width: 96%;background-size: 4%;}
+.jilu ul li h3 {font-weight: bold;}
+.jilu ul li h3 i {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 75%;float: left;}
+.jilu ul li span {float: right;padding-right: 8%;color: #f19639;}
+
+.yubei_xq {margin: 2%;width: 96%;float: left;font-size: 4vmin;}
+.yubei_xq p {border-bottom: 1px solid #f1f1f1;padding-bottom: 3%;font-size: 4.5vmin;padding-top: 5%;}
+.yubei_xq p span {float: right;}
+.yubei_xq .lanse {color: #ff7800;}

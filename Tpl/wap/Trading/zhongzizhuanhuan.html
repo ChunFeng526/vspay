@@ -1,0 +1,32 @@
+<include file="Common/Common"/>
+
+<div style="height:0.1rem;"></div>
+
+<empty name="arr" >
+    <div class="item item2">
+        <div class="bh">
+            <p>没有记录</p>
+        </div>
+    </div>
+</empty>
+
+<foreach name="arr" item="value">
+<div class="item item2">
+    <div class="bh">
+        <p>{$value.create_time|date='Y-m-d H:i:s',###}</p>
+    </div>
+    <div class="bd clearfix">
+        <dl>
+            <dd>种子数量：<span>{$value['num']}</span></dd>
+            <dd>手续费：<span>{$value['fee']+0}</span></dd>
+        </dl>
+        <dl>
+            <dd>水果数量：<span>{$value['fruit']+0}</span></dd>
+        </dl>
+    </div>
+</div>
+</foreach>
+
+<div style="height:0.4rem"></div>
+</body> 
+</html>

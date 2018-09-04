@@ -1,0 +1,80 @@
+html,body {margin:0;padding:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none outside none;margin:0;padding:0;}
+/*::-webkit-input-placeholder { color:#369; }*/
+input{outline: none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+a {color:#362e2b;text-decoration:none;cursor:pointer;}
+em,i,b{font-style: normal;font-weight: normal;}
+.clearfix:after{content: ".";display: block;  clear: both;visibility: hidden;line-height: 0;height: 0;font-size:0;}
+.right{ float:right}
+.clearfix{ clear:both}
+.left{ float:left}
+
+footer {
+    display: -webkit-box;
+    background: #ffd131;
+    width: 100%;
+    height: 14vmin;
+    position: fixed;
+    bottom: 0;
+    font-size: 3.5vmin;
+    border-top: 1px solid #dcdcdc;
+    background-color: #ffd131;
+}
+
+footer a.active {
+    background-color: #ffd131;
+    color: #000000;
+    text-shadow:none;
+}
+footer a.activeli {
+    background-color: #ffd131;
+    color: #000000;
+    text-shadow:none;
+}
+footer a {
+    display: block;
+    font-size: 3.8vmin;
+    width: 25%;
+    height: 13vmin;
+    padding-top: 0px;
+    text-align: center;
+    background: no-repeat center 6px;
+    background-size: 21px;
+    color:#fff;
+    text-shadow: rgba(148, 148, 148, 0.86) 0 1px 0;
+}
+footer a i{
+    font-size: 7vmin;
+    text-shadow: rgba(148, 148, 148, 0.86) 0 1px 0;
+}
+#linno{border:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

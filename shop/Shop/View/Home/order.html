@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>商品订单</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="__RZCSS__/layer.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <!-- Demo styles -->
+
+</head>
+<body style="background: #f4f4f4;">
+<div class="header">
+    <div class="header_l">
+        <a href="{:U('car/shopping')}"><img src="__IMG__/lpg.png" alt=""><span>确认订单</span></a>
+    </div>
+    <div class="header_c"><h1></h1></div>
+    <div class="header_r"><a href=""></a></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<div class="receipt">
+    <eq name="addinfp['name']" value="">
+        <a href="{:U('member/addresslist')}"> <p class="shr">添加收货地址</p></a>
+        <else/>
+    <a href="{:U('member/addresslist',array('type'=>8))}">
+            <p class="shr">收货人：
+                <input type="hidden" name="uname" value="{$addinfp['name']}">
+                <input type="hidden" name="uphone" value="{$addinfp['telephone']}">
+                <input type="hidden" name="address" value="{$addinfp['province_id']}{$addinfp['city_id']}{$addinfp['country_id']} {$addinfp['address']}">
+
+                <i class="uname">{$addinfp['name']}</i>
+                <i class="uphone">{$addinfp['telephone']}</i></p>
+            <p class="shdz" onclick=""><i class="iconfont">&#xe619;</i><span class="address">收货地址：{$addinfp['province_id']}{$addinfp['city_id']}{$addinfp['country_id']} {$addinfp['address']}</span>
+            </p>
+    </a>
+    </eq>
+</div>
+<?php $allPrice = 0;?>
+<?php $allNum = 0;?>
+<foreach name="selProductList" item="selProd">
+    <foreach name="selProd" item="product">
+        <div class="receipt_nr">
+            <div class="receipt_nrl">
+                <img src="{$product['pic']}" alt="">
+            </div>
+                    <?php 
+                        $sp_id=$product['pid'];
+                        $shop=M('product_detail')->where(array('id'=>$sp_id))->find();
+                        $uid=$shop['shangjia'];
+                        $dianpu=M('gerenshangpu')->where('userid='.$uid)->find();
+                    ?>
+            <div class="receipt_nrr">
+            
+                <h3 onclick="window.location.href='{:U('Home/details',array('proid'=>$product['pid']))}'">
+                    {$product['name']}</h3>
+                <p><img style="width: 100%" src="{$dianpu['shop_logo']}">店铺：{$dianpu['shop_name']}</p>
+                <p>
+                    <neq name="product['color']" value="">颜色分类：{$product['color']}</neq>
+                    <neq name="product['size']" value=''><span>尺码：{$product['size']}</span></neq>
+                </p>
+                <p class="ssjg">￥{$product['price']*$product['num']} <span>x{$product['num']}</span></p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+       <p> <?php $allPrice=$allPrice+$product['num']*$product['price']; ?>
+        <?php $allNum = $allNum+$product['num']; ?></p>
+       
+    </foreach>
+</foreach>
+<div class="order_bb">
+    <ul>
+        <li>购买数量
+            <span>
+        <div id="content">
+        <div class="aab">
+        <input readonly="readonly" class="num" name="num[]" type="text" value="{$allNum}">
+        </div>
+        </div>
+        </span>
+        </li>
+      <!--   <li>配送方法<span class="spr">包邮</span></li> -->
+        <!--<li>选择积分-->
+            <!--<span class="spr">-->
+            <!--<select id="jifentype">-->
+              <!--<option value="0" type="0">请选择类型</option>-->
+              <!--<option jifen-type="1" jifen-nums="400">鸡场积分400</option>-->
+              <!--<option jifen-type="2" jifen-nums="280">果园积分280</option>-->
+              <!--<option jifen-type="3" jifen-nums="186">渔场积分186</option>-->
+            <!--</select>-->
+        <!--</span>-->
+        <!--</li>-->
+    </ul>
+</div>
+
+<div style="height: 15vmin;"></div>
+<div class="order_foor">
+    <p>合计：<span>￥{$allPrice}.00</span></p>
+    <a class="uporder" href="javascript:void(0)">提交订单</a>
+    <!--<a href="{:U('Car/addOrder')}">提交订单</a>-->
+</div>
+
+
+<script type="text/javascript">
+    /*提交订单*/
+    $('.uporder').click(function () {
+        var uphone = $('.uphone').text();
+        var uname = $('.uname').text();
+        var jifentype = $("#jifentype").find('option:selected').attr('jifen-type');
+        var jifennums = $("#jifentype").find('option:selected').attr('jifen-nums');
+
+        if (uname == '') {
+            layer.msg('请先添加收货地址', {shift: -1, time: 1200}, function () {
+                location.href = "{:U('member/address',array('type'=>8))}";
+            });
+            return;
+        }
+        location.href = "{:U('Car/addOrder',array('address_id'=>$addinfp['address_id']))}";
+    })
+
+</script>
+
+</body>
+</html>

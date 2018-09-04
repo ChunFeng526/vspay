@@ -1,0 +1,51 @@
+
+<!-- saved from url=(0086)https://api.map.baidu.com/res/staticPages/location.html?timeout=5000&maximumAge=600000 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <style type="text/css">
+        body{width:0;height:0;overflow: hidden;margin:0;padding:0;}
+    </style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    window.onload = function () {
+        function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        }
+        var source = window.parent;
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var success = {
+                coords: {
+                    speed: position.coords.speed,
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude,
+                    altitude: position.coords.altitude,
+                    accuracy: position.coords.accuracy,
+                    altitudeAccuracy: position.coords. altitudeAccuracy,
+                    heading: position.coords.heading
+                },
+                timestamp: position.timestamp
+            }
+            source.postMessage(JSON.stringify(success), '*');
+        }, function (error) {
+            var error = {
+                code: error.code,
+                message: error.message
+            };
+            source.postMessage(JSON.stringify(error), '*');
+        }, {
+            enableHighAccuracy: false,
+            timeout: getQueryString('timeout'),
+            maximumAge: getQueryString('maximumAge')
+        });
+    };
+</script>
+</body></html>

@@ -1,0 +1,126 @@
+      <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3><a style="color:#ff9d46;float: right;width: 50px;" href="{:U('Thedetail/showmoney',array('userid'=>$userid))}">返回</a></h3>
+
+				<div class="xxgl_bottom_t">
+	           		<form id="f1" action="{:U('Thedetail/detail')}" method="post" >
+	           			<span>查找:</span>
+		          		 <input class="input1" name="username" placeholder="姓名"></input>
+
+		             	 <span>日期:</span>
+		             	<input type="text" name="stert_date" class="input1 date" placeholder="开始日期"/>至
+                        <input type="text" name="end_date" class="input1 date" placeholder="结束日期"/>
+                        <input type="hidden" name="userid" value="{$userid}">
+                        <input type="hidden" name="type" value="{$type}">
+		            	<div class="an3" style="left: 70%"><a id="btn" href="javascript:void">搜索</a></div>
+	            	</form>
+
+	            	
+				</div>
+				<div class="jhm_bottom_c">
+					<div>
+						<h3 style="font-size: 20px;text-align: center;font-weight: 900;">
+							<?php 
+							/*
+								名称配置
+							 */
+								$arr_config= array(
+									1=>'一级', 
+									2=>'二级', 
+									3=>'三级', 
+									300=>'伯乐奖', 
+							);
+								echo $arr_config[$type].'收益';
+							 ?>
+						</h3>
+					</div>
+					<table id="table1" class="content_table">
+						<dl>
+							<dt style="width: 16%">下单者</dt>
+							<dt style="width: 16%">订单号</dt>
+							<dt style="width: 16%">商品名称</dt>
+							<dt style="width: 16%">订单总额</dt>
+							<dt style="width: 16%">收益金额</dt>
+							<dt style="width: 19%">时间</dt>
+						</dl>
+					<foreach name="list" item="v">
+						<tr>
+							
+							<td style="width: 16%">
+							[{$v.t_userid}] {$v['username']}
+			
+							</td>
+							<td style="width: 16%">{$v['order_no']}</td>
+							<td style="width: 16%">{$v.order_shopname}</td>
+							<td style="width: 16%">{$v.order_total_price|default=0}</td>
+							<td style="color: #f0602e;width: 16%">{$v['and_num']|default=0}元</td>
+							<td style="width: 16%">{$v['t_time']|date='Y-m-d H:i:s',###}</td>
+						</tr>
+					</foreach>
+					
+					</table>
+				</div>
+				<div class="xxgl_bottom_b">
+				
+				    <div class="page">
+                      {$page}
+                    </div>
+
+                   <style>
+				  	.page{text-align: center;}
+				  	.page a{color: #a4a4a4;}
+				  	.prev{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  	.num{  padding: 0 10px;  border: 1px solid #ddd;}
+				  	.page .current{ padding: 0 10px;  border: 1px solid #ddd;  margin: 0px 10px;}
+				  	.next{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  </style>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	 <include file="common:js" />	
+	   
+</body>
+</html>
+
+<!-- js 控制表格隔行变色 -->
+	<script type="text/javascript">
+
+		$("#table1 tr:odd").css('background','#DBEAF9');
+		$("#table1 tr:even").css('background','#FEF8BA');
+	</script>	
+
+
+ <!-- 日期 -->
+  <script type="text/javascript" src="__PUBLIC__/admin/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/admin/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+   <!-- 日期js cs -->
+  <link href="__PUBLIC__/admin/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+  <link href="__PUBLIC__/admin/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+    $(function () {
+		$('.date').datetimepicker({
+	        format: 'yyyy-mm-dd',
+	        language:"zh-CN",
+	        minView:2,
+	        autoclose:true,
+	        todayBtn:1, //是否显示今日按钮
+	    });
+
+	    // 表单提交
+	    $('#btn').click(function(){
+	    	$('#f1').submit();
+	    });
+    })
+</script>

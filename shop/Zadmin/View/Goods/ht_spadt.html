@@ -1,0 +1,87 @@
+     
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理</title>
+	 <link rel="stylesheet" href="__PUBLIC__/plugin/themes/default/default.css" />
+    <script charset="utf-8" src="__PUBLIC__/plugin/kindeditor-min.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/plugin/lang/zh_CN.js"></script>
+    <include file="common:css" />
+  </head>	 
+	 
+	 
+	 <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+	
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>商品类型管理</h3>
+				<div class="tjwz_bottom_t">
+					<p style="margin-left:380px;"><a href="{:U('Goods/ht_spadt')}">添加类型</a></p>
+					<p><a href="{:U('Goods/ht_spngl')}">类型列表</a></p>
+				</div>
+			</div>
+	
+		   <form action="{:U('Goods/ht_spadt')}" method="post" enctype="multipart/form-data"> 
+			<div class="xxgl_bottom">
+				<h3>
+				{$shopname}
+				</h3>
+				<div class="nr1">
+					<p>上级</p>
+					<input type="hidden" name="pathid"  value="{$up_info['id']|default=0}" class="textt"/>
+					<input type="text"   value="{$up_info['type']|default='无'}" class="textt"/>
+		            <br/>
+		            <br/>
+					
+		            <p>类型名称</p>
+		            <input type="text" name="type" value="{$dada.type}"  class="textt"/>
+		            <p>排序 <span class="note" >注：数值越大越靠前</span></p>
+		            <input type="text" name="px"  value="{$dada.px|default=1}" class="textt"/>
+		             <p>图标 </p>
+		             <notempty name="dada['xcimg']" >
+		             	<img style="max-width:100px" src="__PUBLIC__/Uploads/{$dada['xcimg']}" alt="">
+		             </notempty>
+		            <input type="file" name="img"  />
+		            <br/>
+		            <br/>
+		            <em>
+		            	 <input type="hidden" name="id" value="{$dada.id}" >
+		                 <input type="submit" style="width: 50px;height: 26px;border:2px solid #dcdcdc;color: #000;font-size: 14px;" value="保存">
+					</em>
+					<div style="clear:both;height:20px" ></div>
+				</div>
+			</div>
+			</form>
+			
+			
+		</div>
+
+
+	<style type="text/css">
+			.note{
+				font-size: 10px;
+			    float: right;
+			    margin-right: 50px;
+			}
+			#shop{
+				min-width: 100px;
+				height:25px;
+			}
+			.tp{
+				    width:100px;
+				     height:75px;
+				
+				}
+	</style>
+
+<include file="common:js" />	
+</body>
+</html>

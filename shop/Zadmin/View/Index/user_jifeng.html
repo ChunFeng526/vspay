@@ -1,0 +1,53 @@
+
+    <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+		<div class="hyxq">
+			<div class="hyxq_bottom">
+				<h3>会员详情</h3><form action="{:U('Index/savejifeng')}" method="post">
+				<table class="content_table3" >
+						<tr>
+							<td>会员ID</td>
+							<td>{$users.userid}</td>
+						</tr>
+						<tr>
+							<td>真实姓名</td>
+							<td>{$users.username}</td>
+						</tr>
+						
+						
+						<tr>
+							<td>手机号</td>
+							<td>{$users.mobile}</td>
+						</tr>
+						
+						<tr>
+							<td>会员购物果</td>
+							<td>
+								<input type="text" name="jifeng_user" value="{$users.jifeng_user}"  required >
+								<input type="hidden" name="userid" value="{$users.userid}">
+							</td>
+						</tr>
+						<tr>
+							<td>是否团长</td>
+							<td>
+								<input <eq name="users['team_leader']" value="0">checked="checked"</eq> type="radio" name="team_leader" value="0" >否
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input <eq name="users['team_leader']" value="1">checked="checked"</eq> type="radio" name="team_leader" value="1" >是
+							</td>
+						</tr>>
+					</table>
+					
+					<div class="anniu">
+						<input style="width:50px;height:25px;" type="submit" value="保存">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<input style="width:50px;height:25px;" type="button" value="返回" onclick="window.location.href='{:U('Index/member')}'">
+					</div>
+				</form>
+
+			</div>

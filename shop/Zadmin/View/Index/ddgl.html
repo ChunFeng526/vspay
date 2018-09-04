@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>全部订单</title>
+    <script src="__PUBLIC__/weixin/js/jquery-1.7.2.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/weixin/css/mall.css" type="text/css" />
+</head>
+<body class="body_color">
+<div class="mall_main">
+<div id="child_header">
+    <div class="goback"><a href="javascript:history.back(-1)"><i></i></a></div>
+    <div class="current_location"><span>全部订单</span></div>
+</div>
+
+<div class="all_orders">
+    <ul class="order_nav">
+        <li class="current"><a>待付款</a></li>
+        <li><a>待发货</a></li>
+        <li><a>已发货</a></li>
+        <li><a>已完成</a></li>
+    </ul>
+    <!--待付款订单-->
+    <div class="wait_pay">
+	 <foreach name="gmsp_wfk" item="v">
+        <div class="order_list">
+            <p>订单号：{$v.gms_id}</p>
+            <div class="goods_info">
+            <div class="left_goods">
+                <a href="__MODULE__/Means/ddxq/gms_id/{$v.gms_id}" style="color: #2932E1">{$v.gms_spname}</a>        
+            </div>
+            <div class="right_operate"><a href="__MODULE__/Gmsp/xzzf/gms_id/{$v.gms_id}">支付</a><a href="__MODULE__/Means/dddelete/gms_id/{$v.gms_id}" onclick ="return confirm('确认删除？');">删除</a></div>
+            </div>
+            <div class="price_count"><time>{$v.gms_time|date='Y-m-d H:i:s',###}</time> <span>合计：{$v.gms_sj}</span><span>共{$v.gms_jian}件商品</span></div>
+        </div>
+		
+		</foreach>
+    </div>
+    <!--待发货订单-->
+    <div class="wait_pay" style="display: none">
+	
+	
+	 <foreach name="gmsp_wfh" item="v">
+        <div class="order_list">
+            <p>订单号：{$v.gms_id}</p>
+            <div class="goods_info">
+                <div class="left_goods">
+                    <a href="__MODULE__/Means/ddxq/gms_id/{$v.gms_id}" style="color: #2932E1">{$v.gms_spname}</a>
+                </div>
+                <div class="right_operate"><a href="__MODULE__/Means/ddtd/gms_id/{$v.gms_id}" onclick ="return confirm('确认退单？');">退单</a></div>
+            </div>
+            <div class="price_count"><time>{$v.gms_time|date='Y-m-d H:i:s',###}</time><span>合计：{$v.gms_sj}</span><span>共{$v.gms_jian}件商品</span></div>
+        </div>
+
+       </foreach>
+		
+		
+		
+		
+    </div>
+
+    <!--已发货订单-->
+    <div class="wait_pay" style="display: none">
+	
+	 <foreach name="gmsp_yfh" item="v">
+        <div class="order_list">
+            <p>订单号：{$v.gms_id}</p>
+            <div class="goods_info">
+                <div class="left_goods">
+                    <a href="__MODULE__/Means/ddxq/gms_id/{$v.gms_id}" style="color: #2932E1">{$v.gms_spname}</a>
+                </div>
+                <div class="right_operate"><a href="__MODULE__/Means/ddqrsh/gms_id/{$v.gms_id}" onclick ="return confirm('确认收货？');">确认收货</a></div>
+            </div>
+            <div class="price_count"><time>{$v.gms_time|date='Y-m-d H:i:s',###}</time> <span>合计：{$v.gms_sj}</span><span>共{$v.gms_jian}件商品</span></div>
+        </div>
+ </foreach>
+       
+    </div>
+    <!--已完成订单-->
+    <div class="wait_pay" style="display: none">
+	
+	 <foreach name="gmsp_yqs" item="v">
+	
+        <div class="order_list">
+            <p>订单号：{$v.gms_id}</p>
+            <div class="goods_info">
+                <div class="left_goods">
+                    <a href="__MODULE__/Means/ddxq/gms_id/{$v.gms_id}" style="color: #2932E1">{$v.gms_spname}</a>
+                </div>
+                <div class="right_operate">
+                   
+                   <a href="__MODULE__/Yxj/yxj">继续购买</a>
+                   
+					<a href="__MODULE__/Means/dddelete/gms_id/{$v.gms_id}" onclick ="return confirm('确认删除？');">删除</a>
+                </div>
+            </div>
+            <div class="price_count"><time>{$v.gms_time|date='Y-m-d H:i:s',###}</time> <span>合计：{$v.gms_sj}</span><span>共{$v.gms_jian}件商品</span></div>
+        </div>
+
+      
+	  </foreach>
+	  
+	  
+    </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+    jQuery(function($){
+        $('.all_orders ul li').click(function(){
+            var index = $('.all_orders ul li').index(this);
+            $(this).addClass('current').siblings('li').removeClass('current');
+            $('.all_orders .wait_pay:eq('+index+')').show().siblings('.wait_pay').hide();
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://bx.0755web.cn/Shangjia/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <title>会员升级商家</title>
+    <link rel="stylesheet" href="__RZCSS__/header.css">
+    <script type="text/javascript" src="__RZCSS__/upload.js"></script>
+
+    <link rel="stylesheet" href="__RZCSS__/upgrade_style.css">
+    <script type="text/javascript" src="__RZCSS__/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__RZCSS__/layer.js"></script>
+    <link rel="stylesheet" href="__RZCSS__/layer.css" id="layui_layer_skinlayercss" style="">
+</head>
+
+<body class="body_bg3" data-level="">
+<div class="fxm_header" style="background:#1b1b1b">
+    <div class="fxm_left"><a href="{:U('Member/mine')}"><img src="__RZCSS__/left.png"></a></div>
+    <div class="fxm_center">会员升级商家</div>
+</div>
+
+<div class="upgrade_top">
+	<div class="up_left"><img src="__IMGHEAD__/{$userInfo['img_head']}"></div>
+    <div class="up_right">
+    	<span>用户名：{$userInfo['uname']}</span>
+        <span>手机号：{$userInfo['phone']}</span>
+        <if condition="$userInfo['member_grade'] eq 0">
+            <span>当前等级：普通会员</span>
+        <elseif condition="$userInfo['member_grade'] eq 1" />
+            <span>当前等级：体验会员</span>
+        <elseif condition="$userInfo['member_grade'] eq 2" />
+            <span>当前等级：钻石会员</span>
+        <elseif condition="$userInfo['member_grade'] eq 3" />
+            <span>当前等级：联盟会员</span>
+        <else/>
+            <span>当前等级：普通会员</span>
+        </if>
+
+    </div>
+</div>
+<!--选择升级等级-->
+<div class="up_chosed">
+	<span class="up_tit">选择升级等级</span>
+    <div class="up_dengji">
+    <ul>
+    	<li>
+        	<span class="sel_vip" data-type="1"><img src="__RZCSS__/huiyuan1.png" class="dengji_img"></span>
+            <p>体验会员</p>
+            <!-- <i>99元</i> -->
+            <div class="chosed_icon" ><img src="__RZCSS__/icon_upchosed.png"></div>
+        </li>
+        <li>
+        	<span class="sel_vip" data-type="2"><img src="__RZCSS__/huiyuan2.png" class="dengji_img"></span>
+            <p>钻石会员</p>
+            <!-- <i>1200元</i> -->
+            <div class="chosed_icon"><img src="__RZCSS__/icon_upchosed.png"></div>
+        </li>
+        <li>
+        	<span class="sel_vip" data-type="3"><img src="__RZCSS__/huiyuan3.png" class="dengji_img"></span>
+            <p>联盟会员</p>
+            <!-- <i>6000元</i> -->
+            <div class="chosed_icon"><img src="__RZCSS__/icon_upchosed.png"></div>
+        </li>
+    </ul>
+    </div>
+</div>
+
+<!--支付方式-->
+<!-- <div class="zhifu_chosed">
+	<span class="up_tit">选择支付方式扫码付款</span>
+    <ul>
+    	<li>
+        	<img src="__RZCSS__/zhifu1.png" class="icon_lstyle">
+            <div class="zhifu_left"><h2>余额</h2></div>
+            <div class="zhifu_right"><img src="__RZCSS__/s.jpg" class="zhifu_code"></div>
+        </li>
+        <li>
+        	<img src="__RZCSS__/zhifu2.png" class="icon_lstyle">
+            <div class="zhifu_left"><h2>支付宝</h2></div>
+            <div class="zhifu_right"><img src="__RZCSS__/zhifubaos.jpg" class="zhifu_code"></div>
+        </li>
+        <li>
+        	<img src="__RZCSS__/zhifu3.png" class="icon_lstyle">
+            <div class="zhifu_left"><h2>微信</h2></div>
+            <div class="zhifu_right"><img src="__RZCSS__/weixins.jpg" class="zhifu_code"></div>
+        </li>
+        <li class="no_border">
+        	<img src="__RZCSS__/zhifu4.png" class="icon_lstyle">
+            <div class="zhifu_left"><h2>银行卡</h2></div>
+            <div class="zhifu_right"><input name="" type="text" value="请输入银行卡号" class="kanum_input" onblur="if(this.value==''){this.value='请输入银行卡号'}" onfocus="if(this.value=='请输入银行卡号'){this.value=''}"><img src="__RZCSS__/icon_editnext.png" class="zf_arrow"></div>
+      </li>
+      <li>
+      <p>银行账号：
+      中国光大银行</p><p>深圳市罗湖区水贝支行：朱学敏 6226 6204 1072 6772</p>
+      </li>
+    </ul>
+</div>
+<form action="{:U('Member/level_up')}" method="post" id="levelForm" accept-charset="utf-8" enctype= multipart/form-data>
+
+<!--上传支付凭证-->
+<!-- <div class="up_pinzheng">
+	<span class="up_tit">上传付款凭证</span>
+    <ul>
+  		<li class="pingzheng">
+        <div class="col-sm-3">
+      	<input id="input-name2" class="form-control" accept="image/png,image/gif,image/jpg" type="file" placeholder="分类标题" name="proof"  onchange="loadImg(this)"></div>
+      	<div class="pingzheng_img"><img src="__RZCSS__/pingzheng_example.jpg" id="show_wx_code"></div>
+       	<div class="form-group required"></div>
+        </li>
+    </ul>
+    <input type="hidden" name="level" id="lvelType" />
+    <a class="go_btn">上传</a>
+</div>
+</form> -->
+<script type="text/javascript">
+    $(".sel_vip").click(function(){
+        $("#lvelType").val($(this).attr("data-type"));
+
+    });
+
+    $(".go_btn").click(function(){
+
+        $("#levelForm").submit();
+
+    });
+
+    $(".zhifu_code").click(function(){
+        var img = $(this).attr("src");
+
+        shop_qrcode(img);
+
+    });
+    function shop_qrcode(img){
+        layer.open({
+          type: 1,
+          title: false,
+          shadeClose: true,
+          closeBtn: false,
+          shade: 0.5,
+          area: ['320', '320'],
+          content: '<img   src="'+img+'" style="width:320px;height:320px;display:block;margin:0 auto;">' //iframe的url
+        });
+
+    }
+
+
+    function loadImg(){
+        //获取文件
+        var fileInput = $("#input-name2");
+        var file = fileInput[0].files[0];
+        //创建读取文件的对象
+        var reader = new FileReader();
+
+        //创建文件读取相关的变量
+        var imgFile;
+
+        //为文件读取成功设置事件
+        reader.onload=function(e) {
+            imgFile = e.target.result;
+            console.log(imgFile);
+            $("#show_wx_code").attr('src', imgFile);
+        };
+
+        //正式读取文件
+        reader.readAsDataURL(file);
+}
+
+
+
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+//选择会员等级
+$(function(){
+
+	$(".up_chosed .up_dengji").each(function(){
+
+		var i=$(this);
+
+		var p=i.find("ul>li");
+
+		p.click(function(){
+
+			if(!!$(this).hasClass("selected")){
+
+				$(this).removeClass("selected");
+
+			}else{
+
+				$(this).addClass("selected").siblings("li").removeClass("selected");
+			}
+
+		})
+
+	})
+})
+</script>
+
+
+</body></html>

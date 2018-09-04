@@ -1,0 +1,111 @@
+       <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+	
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>提现记录</h3>
+				<div class="xxgl_bottom_t">
+					<span style="float: left;">搜索</span>
+	           		<form action="{:U('Index/ht_txjl')}" method="get"> 
+		             	<select class="form-select" input class="btn3" name="t_status" value="" type="text" style="width: 131px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4;font-size: 12px;margin-top: 14px"/>
+			               <option value="" >选择状态</option>
+						   <option value="0">待审核</option>
+							<option value="1">已完成</option>
+							<option value="2">不通过</option>
+			            </select>
+		             <!-- 	<input class="btn3" name="id" value="订单偏号" type="text" style="width: 169px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4"/> -->
+		                <div class="an3"><input type="submit" value="提交搜索" class="sll"></div>
+	            	</form>
+				</div>
+				<div class="jhm_bottom_c">
+					<dl>
+						<dt style="width: 340px;">订单信息</dt>
+					</dl>
+					<dl>
+						<dt style="width: 250px;">会员信息 </dt>
+					</dl>
+					<dl>
+						<dt style="width: 330px;">相关操作</dt>
+					</dl>
+					
+				</div>
+				<?php 
+						$user=M('user','syd_');
+				 ?>
+				
+				<foreach name="info" item="v">
+				<div class="jhm_bottom_c">
+					<table class="content_table2">
+						<tr>
+							<td style="width: 340px;">
+								<p>银行卡信息：
+									<div>{$v['t_type']},{$v['t_no']},{$v['t_name']}</div>
+								</p>
+								<p>提现金额： <em style="color: #f00;">￥{$v['t_money']}</em></p>
+								<p>状    态：<?php if($v['t_status']==0){?>
+	                                <em style="color: #00a0e9;">待审核</em>
+	                                 <?php }
+	                                 if($v['t_status']==1){?>
+	                                 <em style="color:#6BBB28;">已完成</em>   
+	                                  <?php }
+	                                 if($v['t_status']==2){?>
+	                                 <em style="color:#FF0000;">不通过</em>   
+	                                 <?php } ?>
+								</p>
+								<p>备注：{$v.t_content}</p>
+								<p>时间：{$v['t_time']|date='Y-m-d H:i',###}</p>
+							</td>
+							<td style="width: 250px;">
+								<?php 
+									$u_info=$user->where('userid='.$v['t_uid'])->field('username,account')->find();
+								 ?>
+								<p>编号：{$v['t_uid']}</p>
+								<p>姓名：{$u_info['username']}</p>
+								<p>账号：{$u_info['account']}</p>
+							</td>
+							<td style="width: 330px;">
+								<eq name="v['t_status']" value="1"><span style="color:#6BBB28;" >已完成</span></eq>
+								<eq name="v['t_status']" value="2"><span style="color:red" >已驳回</span> {$v.t_message}</eq>
+								<eq name="v['t_status']" value="0">
+								<form  action="{:U('Index/ht_txjlxg')}" method="post" >
+								<input style="width:150" type="text" name="message" value="" placeholder='填写驳回说明' >
+								<select  class="form-select"  class="btn3" name="status" type="text" value=""  id="khtq" style="width: 94px;height: 22px;border:1px solid #dcdcdc;color: #000;font-size: 12px;"/>
+									<option value="">请选择</option>
+									<option value="1">通过</option>
+									<option value="2">驳回</option>
+				            	</select>
+								<input type="hidden" name="id" value="{$v.id}"/>
+				            	<input type="submit" value="提交"/>
+				            	</form>
+				            	</eq>
+							</td>
+		                 
+					</table>
+				</div>
+				 </foreach>
+				 
+			
+				<div class="page">
+					{$page}				
+					
+				</div>
+				 <style>
+				  	.page{text-align: center;margin-bottom: 30px;}
+				  	.page a{color: #a4a4a4;}
+				  	.prev{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  	.num{  padding: 0 10px;  border: 1px solid #ddd;}
+				  	.page .current{ padding: 0 10px;  border: 1px solid #fff;  margin: 0px 10px;}
+				  	.next{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  </style>
+			</div>
+		</div>
+	</div>         	
+	 <include file="common:js" />	
+</body>
+</html>
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> 优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__CSS__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script> 
+
+    <!-- <script src="js1/jquery.js"></script> --> 
+    <script src="__JS__/ui-choose.js"></script>  
+    <!-- Demo styles -->
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $(".main_visual").hover(function(){
+        $("#btn_prev,#btn_next").fadeIn()
+    },function(){
+        $("#btn_prev,#btn_next").fadeOut()
+    });
+    
+    $dragBln = false;
+    
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e){
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+    
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    });
+    
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    });
+    
+    $(".main_image a").click(function(){
+        if($dragBln) {
+            return false;
+        }
+    });
+    
+    timer = setInterval(function(){
+        $("#btn_next").click();
+    }, 5000);
+    
+    $(".main_visual").hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        },5000);
+    });
+    
+    $(".main_image").bind("touchstart",function(){
+        clearInterval(timer);
+    }).bind("touchend", function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        }, 5000);
+    });
+    
+});
+</script>
+</head>
+<body>
+
+<div class="head_bb">
+    <p><a href="javascript:window.history.go(-1);"><img src="__IMG__/b1.png" alt=""></a></p>
+    <p style="float: right;margin-right: 3%;"><a href=""><img src="__IMG__/b2.png" alt=""></a></p>
+</div>
+
+<!-- banner  s-->
+<div class="main_visual" style="height: 74vmin;">
+    <div class="flicking_con" style="left: 48%;top:90%;">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </div>
+    <div class="main_image" style="height: 74vmin;">
+        <ul>
+            <li><span class="img_3"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+            <li><span class="img_4"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+            <li><span class="img_1"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+            <li><span class="img_4"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+            <li><span class="img_1"><img src="__IMG__/cx1.jpg" alt=""></span></li>
+        </ul>
+    </div>
+</div>
+<!-- banner  e-->
+
+<div class="visual_bt">
+    <div class="visual_btl"><img src="__IMG__/z1.jpg" alt=""></div>
+    <div class="visual_btr">
+        <p class="btrjg">¥ 135.00 <span><i class="iconfont">&#xe638;</i></span></p>
+        <p>库存42927件</p>
+        <p>请选择 颜色分类 尺码</p>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="demo-box">
+  <h3>颜色分类</h3>
+  <table class="demo-table">
+    <tr>
+      <td>
+        <ul class="ui-choose" id="uc_01">
+            <li class="selected ">深蓝色</li>
+            <li>浅蓝色</li>
+
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="demo-box">
+  <h3>尺码</h3>
+  <table class="demo-table">
+    <tr>
+      <td>
+        <ul class="ui-choose" id="uc_01">
+            <li class="selected ">s</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="demo-box">
+  <h3>购买数量</h3>
+    <div id="content">
+        <div class="aab">
+            <span class="jian">-</span>
+            <input readonly="readonly" class="num" name="num[]" type="text" value="1">
+            <span class="jia">+</span>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+<div style="height: 15vmin;"></div>
+<div class="size_foot">
+    <a href="" style="background: linear-gradient(to left, #ff9902, #ffc500);">加入购物车</a>
+    <a href="" style="float: right;">立即购买</a>
+</div>
+
+<script>
+// 将所有.ui-choose实例化
+$('.ui-choose').ui_choose();
+
+// uc_01 ul 单选
+var uc_01 = $('#uc_01').data('ui-choose'); 
+uc_01.click = function(index, item) {
+    console.log('click', index, item.text())
+}
+uc_01.change = function(index, item) {
+    console.log('change', index, item.text())
+}
+
+// 控制数量加减
+
+ $(".jian").click(function(){
+      var num=parseInt($(this).next('.num').val());
+        num-=1;
+        if(num<=1)
+          num=1;
+       $(this).next('.num').val(num);
+ })
+
+$(".jia").click(function(){
+      var num=parseInt($(this).prev('.num').val());
+        num+=1;
+       $(this).prev('.num').val(num);
+})
+
+</script>
+</body>
+</html>

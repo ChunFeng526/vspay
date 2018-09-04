@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://bx.0755web.cn/Shangjia/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <title>订单支付</title>
+    <link rel="stylesheet" href="__RZCSS__/header.css">
+    <link rel="stylesheet" href="__RZCSS__/huiyuan.css">
+
+    <script type="text/javascript" src="__RZCSS__/upload.js"></script>
+    <script type="text/javascript" src="__RZCSS__/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__RZCSS__/index.js"></script>
+    <script type="text/javascript" src="__RZCSS__/layer.js"></script>
+    <link rel="stylesheet" href="__RZCSS__/layer.css" id="layui_layer_skinlayercss" style="">
+
+    <script type="text/javascript" src="__RZCSS__/address.js"></script>
+
+
+    <!-- <link rel="stylesheet" href="header.css"> -->
+<style>
+
+.body_bg3{ background-color:#f5f5f5; padding:0; margin:0;}
+.list_box{position:relative; margin-top:17vmin; padding-bottom:3vmin; background-color:#fff;}
+.buy_list{ position:relative;   padding-top:4vmin; width:100%; overflow:hidden;}
+	.bl_top{width:100%; height:15vmin;}
+	.bl_left{width:40%; float:left; margin-left:5vmin;}
+	.bl_right{width:40%; float:right; padding-right:5vmin; text-align:right; padding-top:1.5vmin;}
+	.bl_right i{font-size:4.2vmin; color:#ff2c2c;}
+
+	.bl_left img{width:8.5vmin; height:8.5vmin; background-color:#ccc; border-radius:9vmin; vertical-align:top;}
+	.bl_left h2{display:inline-block; line-height:9vmin; font-size:4.1vmin; color:#333; padding-left:2vmin;}
+
+	.product_list{display:block; width:100%; height:100%; overflow:hidden; padding-bottom:2vmin;}
+	.product_list li{display:inline-block; margin-left:16vmin; width:89%; clear:both; padding-bottom:1vmin;}
+	.product_list li img{width:15vmin; height:12vmin; background-color:#ccc; float:left; border:1px solid #e4e4e4;}
+	.product_list li h2{display:block; width:38vmin; height:12vmin; overflow:hidden; float:left; font-size:3.4vmin; padding-left:2vmin; color:#444;}
+	.product_list li h2 i{display:block; clear:both; font-size:2.8vmin; color:#ccc;}
+	.product_list .p_price{width:20vmin; height:12vmin;  float:right;  padding-right:12vmin; text-align:right;}
+	.product_list .p_price span{display:inline-block; float:right; width:100%; font-size:3.2vmin;}
+	.product_list .p_price i{display:inline-block; float:right; width:100%; font-size:2.8vmin; color:#ccc;}
+
+	.bl_bot{width:100%; border-bottom:1px solid #e4e4e4; height:8vmin; text-align:right; line-height:8vmin; font-size:3vmin; color:#ccc; padding-bottom:4vmin; margin-bottom:6vmin;}
+	.bl_bot span img{width:7.5vmin; height:7.5vmin; float:right; }
+	.upload_tishi{display:block; width:40vmin;  line-height:4vmin; font-size:2.8vmin; color:#ccc; margin:5vmin auto; text-align:center;}
+	.go_btn{display:block; width:60vmin; height:10vmin; line-height:10vmin; font-size:3.2vmin; background-color:#498aff; margin:0 auto; margin-bottom:5vmin; color:#fff; border-radius:10vmin; text-align:center;}
+
+	.bl_bot span{display:block; width:7.5vmin; float:right; text-align:center; margin-right:12vmin;}
+
+
+
+	.form-control{display:block; position:absolute; right:12vmin; width:18vmin;  height:7.5vmin; line-height:7.5vmin; border-radius:4vmin; background-color:#498aff;  float:right; overflow:hidden; margin-right:4vmin; COLOR:#fff; z-index:9999; opacity:0;}
+
+	.btn_up{display:block; width:18vmin;  height:7.3vmin; line-height:7.3vmin; border-radius:1vmin; background-color:#fff; float:right; overflow:hidden; margin-right:4vmin; COLOR:#498aff; text-align:center; border:1px solid #498aff;}
+
+</style></head>
+
+
+
+
+<body class="body_bg3">
+<div class="fxm_header" style="background:#1b1b1b">
+    <div class="fxm_left"><a href="javascript:window.history.go(-1);"><img src="__RZCSS__/left.png"></a></div>
+    <if condition="$type eq 1">
+        <div class="fxm_center">支付</div>
+    <elseif condition="$type eq 2" />
+        <div class="fxm_center">微信支付</div>
+    <elseif condition="$type eq 3" />
+        <div class="fxm_center">支付宝支付</div>
+    <elseif condition="$type eq 4" />
+        <div class="fxm_center">支付</div>
+    <else/>
+        <div class="fxm_center">支付</div>
+    </if>
+</div>
+<form action="{:U('Pay/proofpay')}" method="post" accept-charset="utf-8" id="proofForm" enctype="multipart/form-data">
+<div class="list_box">
+    <!--购买清单－商家1-->
+    <foreach name="orderList" item="order">
+        <div class="buy_list">
+            <div class="bl_top">
+                <div class="bl_left">
+                <if condition="$order['shop_info']['id'] gt 0">
+                <img src="{$order['shop_info']['shop_logo']}">
+                </else>
+                </if>
+                <h2>{$order['seller_name']}</h2></div>
+                <div class="bl_right">总额：<i>￥{$order['buy_price']+0}</i></div>
+            </div>
+            <ul class="product_list">
+                <foreach name="order['detail']" item="detail">
+                    <li><img src="{$detail['com_img']}"><h2>{$detail['com_name']}<i>产品参数</i></h2><div class="p_price"><span>￥{$detail['com_price']+0}</span><i>x{$detail['com_num']+0}</i></div></li>
+                </foreach>
+
+                </ul>
+            <if condition="$type eq 4">
+                <div  style="color:#999;line-height: 8vmin;text-align: center;">
+                    开户行:{$order['shop_info']['kaihuhang']} 开户人:{$order['shop_info']['name']} 开户卡号:{$order['shop_info']['bank']}
+                </div>
+            </if>
+
+            <div class="bl_bot">
+                <if condition="$type neq 4">
+                    <span>
+                     <if condition="$order['shop_info']['id'] gt 0">
+                    <img src="{$order['qrcode']}">
+                     </else>
+                </if>
+                    </span>
+                </if>
+                <!--<div class="btn_up" style="margin-right:6vmin;">上传凭证</div>-->
+                <!--<input  class="form-control proof" accept="image/png,image/gif,image/jpg" type="file"-->
+                 <!--name="order_proof_{$order['order_id']}"  title="上传凭证">-->
+                <!--<span style="float:left;width: 25vmin;color: #7b7575;">-->
+                手机:<?php
+                $id['member_id']=session('user_auth.uid');
+                $member=M('member')->where($id)->find();
+                echo substr($member['phone'],0,3).'****'.substr($member['phone'],7);
+                ?></span>
+            </div>
+        </div>
+    </foreach>
+    <input type="hidden" name="orid" value="{$order['order_id']}">
+    <a class="go_btn" >我已支付</a>
+</div>
+</form>
+
+
+<script type="text/javascript">
+// function cc () {
+// 	var r= new FileReader();
+// 	f=document.getElementById('input-name2').files[0];
+// 	r.readAsDataURL(f);
+// 	r.onload=function  (e) {
+// 	document.getElementById('show_wx_code').src=this.result;
+// 	};
+// 	}
+
+    $(".go_btn").click(function(){
+
+        var i = 0;
+         $(".proof").each(function(ele,index){
+            var fileValue = $(this).val();
+            if(null == fileValue || fileValue == ''){
+                 alert("还未选择文件");
+                 return false;
+             }
+
+            i++;
+            if(i>=$(".proof").length){
+                $("#proofForm").submit();
+            }
+
+         });
+
+    });
+
+
+    $(".proof").change(function(){
+        var btnup = $(this).prev(".btn_up");
+        $(btnup).html("已选择图片");
+    });
+
+
+
+
+
+    $(".bl_bot span img").click(function(){
+        var img = $(this).attr("src");
+
+        shop_qrcode(img);
+
+    });
+    function shop_qrcode(img){
+        layer.open({
+          type: 1,
+          title: false,
+          shadeClose: true,
+          closeBtn: false,
+          shade: 0.5,
+          area: ['250', '250'],
+          content: '<img   src="'+img+'" style="width:250px;height:250px;display:block;margin:0 auto;">' //iframe的url
+        });
+
+    }
+
+
+</script>
+
+
+</body></html>

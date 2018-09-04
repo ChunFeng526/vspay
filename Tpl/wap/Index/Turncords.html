@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>转入记录</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96">
+	
+	<div class="header">
+	    <div class="header_l">
+	    <a href="{:U('Index/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>转出记录</h2></div>
+	    <div class="header_r"></div>
+	</div>
+
+       <div class="big_width100">
+
+		   <foreach name="Chan_info" item="v">
+			   <div class="annal_ul">
+				   <div class="annal_ul_l">
+					   <img src="__IMGHEAD__/{$v['imghead']}" alt="">
+					   <div class="annal_p">
+						   <p>{$v['guname']}</p>
+						   <p>UID:{$v['get_id']}</p>
+					   </div>
+				   </div>
+				   <div class="annal_ul_r">
+					   <div class="annal_p">
+						   <p class="zhuanrua">-{$v['get_nums']}</p>
+						   <p>{$v['get_time']|date="Y-m-d H:i:s",###}</p>
+					   </div>
+				   </div>
+			   </div>
+		   </foreach>
+
+
+	   </div>
+</body>
+
+</html>

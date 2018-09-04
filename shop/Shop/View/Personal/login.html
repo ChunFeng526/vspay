@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vpay商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/Public/home/common/layer/layer.js" ></script>
+
+
+    <!-- Demo styles -->
+    <!--  <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <script type="text/javascript" src="__LAYERJS__/layer.js"></script>
+
+     <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+ <script type="text/javascript" src="__JS__/upload.js"></script> -->
+
+</head>
+<style>
+    .dzlist {
+        margin-right: 3%;
+        margin-left: 3%;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px #ccc;
+        padding: 3%;
+    }
+
+    .dzlist h3 {
+        font-size: 4.5vmin;
+        color: #333;
+        line-height: 6vmin;
+    }
+
+    .dzlist p {
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color: #767975;
+    }
+
+    .dzlist_bot {
+        border-top: 1px solid #ddd;
+
+    }
+
+    .dzlist_bot span {
+        float: right;
+        margin-left: 5%;
+    }
+
+    .dzlist_bot a {
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color: #767975;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+        <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>登录</span></a>
+
+    </div>
+    <div class="header_c" style="width: 70%;"><h1 style="color:#000"></h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+
+<div class="mui-content">
+    <div id="login_form" class="mui-input-group">
+        <table>
+            <tr>
+                <th style="width: 18%">账号</th>
+                <td><input type="text" name="phone" placeholder="请输入账号"></td>
+                <input type="text" value="1" hidden name="loginType">
+            </tr>
+            <tr>
+                <th style="width: 18%">密码</th>
+                <td><input type="password" name="pwd" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <th style="width: 18%">验证码</th>
+                <td><input type="text" name="verify" placeholder="请输入验证码" style="width:50%;">
+                    <span><img src="{:U('/shop/Public/verify')}" id="code" onClick="change_code()" alt="" name="verify" class="verify" style="width: 37%;text-indent: 0.5em;border: 1px solid #ddd;margin-left: 2%;vertical-align: middle;border-radius: 48px;"></span>
+                </td>
+            </tr>
+        </table>
+
+        <div class="mui-content-padded">
+            <button id='login' type="text" class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+            <div class="link-area"><a id='reg' href="{:U('Personal/reg')}">注册账号</a>
+                <span class="spliter">|</span> <a href="{:U('/Shop/public/password')}" id='forgetPassword'>忘记密码</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    function change_code() {
+        var verifyURL = "{:U('shop/Public/verify')}";
+        $("#code").attr("src", verifyURL + '?' + Math.random());
+    }
+
+</script>
+<script>
+    $('#login').click(function () {
+        var phone = $("input[name=phone]").val();
+        var pwd = $("input[name=pwd]").val();
+        var verify = $("input[name=verify]").val();
+        var url = "/Shop/Public/login";
+
+        if (phone == '') {
+            layer.msg('账号不能为空', {icon: 2, time: 1200});
+            return false;
+        }
+
+        if (pwd == '') {
+            layer.msg('密码不能为空', {icon: 2, time: 1200});
+            return false;
+        }
+        if (verify == '') {
+            layer.msg('验证码不能为空', {icon: 2, time: 1200});
+            return false;
+        }
+        $.ajax({
+            url: url,
+            type: "post",
+            data: {
+                'phone': phone,
+                'pwd': pwd,
+                'verify': verify,
+            },
+            datatype: "json",
+            success: function (mes) {
+                if (mes.status == 1) {
+                    layer.msg(mes.info, {
+                        icon: 1,
+                        time: 1200
+                    }, function () {
+                        window.location.href="/shop/home/index";
+                    });
+                } else if (mes.status == 3) {
+                    layer.msg(mes.info, {
+                        icon: 2,
+                        time: 1200
+                    }, function () {
+                        change_code();
+                        return;
+                    });
+                } else {
+                    layer.msg(mes.info, {
+                        icon: 2,
+                        time: 1200
+                    }, function () {
+                        change_code();
+                        return;
+                    });
+                }
+            }
+        })
+    });
+</script>

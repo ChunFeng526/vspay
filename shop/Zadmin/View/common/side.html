@@ -1,0 +1,124 @@
+
+
+
+
+<script type="text/javascript">
+    $(function () {
+
+        $("#datetimepicker1").on("click",function(e){
+            e.stopPropagation();
+            $(this).lqdatetimepicker({
+                css : 'datetime-hour'
+            });
+
+        });
+
+
+        $("#datetimepicker2").on("click",function(e){
+            e.stopPropagation();
+            $(this).lqdatetimepicker({
+                css : 'datetime-hour'
+            });
+
+        });
+
+        $("#datetimepicker3").on("click",function(e){
+            e.stopPropagation();
+            $(this).lqdatetimepicker({
+                css : 'datetime-day',
+                dateType : 'D',
+                selectback : function(){
+
+                }
+            });
+
+        });
+
+
+
+    })
+</script>
+
+<div class="main">
+        <div class="left">
+            <div id="firstpane" class="menu_list">
+                <div style="display:none;border:none;" class="menu_body" >
+                </div>
+                <p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/l_1.png" alt="">
+                <span><a href="#" style="color: #fff;">网站配置</a></span>
+                </p>
+                <div style="display:none" class="menu_body" >
+                    <a href="{:U('Base/index')}">基本配置</a>
+                     <a href="{:U('Index/ht_hygg')}">会员公告</a>
+                </div>
+                <p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/l_2.png" alt="">
+                <span><a href="#" style="color: #fff;">会员管理</a></span>
+                </p>
+                <div style="display:none" class="menu_body" >
+                    <a href="{:U('Index/member')}">会员列表</a>
+                </div>
+				<p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/1_42.png" alt="">
+                <span><a href="#" style="color: #fff;">订单管理</a></span>
+                </p>
+                <div style="display:none" class="menu_body" >
+                   <a href="{:U('Index/ht_ddgl')}">订单管理</a>
+                </div>
+             
+				<p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/1_42.png" alt="">
+                <span><a href="#" style="color: #fff;">商品类型管理</a></span>
+                </p>
+                <div style="display:none" class="menu_body" >
+                   <a href="{:U('Goods/ht_spngl')}">类型列表</a>
+                   <a href="{:U('Goods/ht_spadt')}">类型添加</a>
+                </div>
+				
+				<p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/1_43.png" alt="">
+                <span><a href="#" style="color: #fff;">商品管理</a></span>
+                </p>
+                <div style="display:none" class="menu_body" >
+                   <foreach name="goodtype" item="v" >
+                     <a href="{:U('Goods/ht_spgl',array('type'=>$v['id']))}">{$v.type}</a>
+                   </foreach>
+                   <a href="{:U('Goods/ht_spadd')}">商品添加</a>
+                </div>
+				<p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/1_43.png" alt="">
+                <span><a href="#" style="color: #fff;">广告图</a></span>
+                </p>
+                <div style="display:none" class="menu_body" >
+                  <a href="{:U('Goods/ht_banerlb')}">广告图</a>
+                  <a href="{:U('Goods/ht_baneradd')}">添加</a>
+                </div>
+				 <p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/l_4.png" alt="">
+                <span><a href="#" style="color: #fff;">后台管理员管理</a></span>
+                </p>
+				
+                <div style="display:none" class="menu_body" >
+				 <a href="{:U('Index/ht_glygl')}">管理员管理</a>
+                  <a href="{:U('Index/ht_Zadmin')}">添加管理员</a>
+                </div>
+                
+                <p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/1_44.png" alt="">
+                <span><a href="#" style="color: #fff;">提现记录</a></span>
+                </p>
+				<div style="display: none;" class="menu_body">
+                  <a href="/Zadmin/Index/ht_txjl.html">提现记录</a>
+                </div>
+				
+                <!-- <p class="menu_head">
+                <img src="__PUBLIC__/Headoffice/images/l_5.png" alt="">
+                <span><a href="#" style="color: #fff;">工具</a></span>
+                </p>
+                <div style="display:none" class="menu_body" >
+                  <a href="{:U('Base/ht_qkhc')}">清空缓存</a>
+                </div> -->
+
+        </div>
+    </div>

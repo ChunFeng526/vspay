@@ -1,0 +1,178 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+            <li class="text-muted">修改财富</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+                <div class="builder formbuilder-box">
+                  <div class="panel-body">
+                    <ul class="nav-tabs nav">
+                        <li class="active" ><a href="#tab1" data-toggle="tab" aria-expanded="true">增加</a></li>
+                        <li >
+                            <a href="#tab2" data-toggle="tab" aria-expanded="false">减少</a>
+                        </li>                
+                    </ul>
+                       
+                        <div class="tab-content" >
+                            <!-- 卡片1 -->
+                            <div id="tab1" class="tab-pane active" >
+                                <div class="col-xs-12">
+                                        <div style="height:20px;" ></div>
+                                        <form action="__SELF__" method="post" class="form-horizontal form form-builder form1">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="userid" value="{$info.userid}">
+                                                </div>
+                                            </div>
+
+                                           <div class="form-group item_title ">
+                                                <label class="left control-label">账号：</label>
+                                                <div class="right">
+                                                    {$info.account}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">姓名：</label>
+                                                <div class="right">
+                                                   {$info.username}
+                                                </div>
+                                            </div>
+
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">余额：</label>
+                                                <div class="right">
+                                                   {$info['cangku_num']+0}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">积分：</label>
+                                                <div class="right">
+                                                    {$info['fengmi_num']+0}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_pid ">
+                                                <label class="left control-label">操作类型：</label>
+                                                <div class="right">
+                                                    <select name="opetype" class="form-control cui-select select">
+                                                        <option value="">请选择：</option>
+                                                        <option value="1" selected="">余额</option>
+                                                        <option value="2">积分</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">数量：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="cangku_num" value="" placeholder="增加数量" >
+                                                </div>
+                                            </div>
+                                             <input type="hidden" name="add_cangku" value="1" >
+                                            <div class="form-group bottom_button_list">
+                                                <a class="btn btn-primary submit ajax-post" type="submit" target-form="form1">增加</a>
+                                                <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                            </div>
+                                        </div>
+                                        </form>
+
+                                </div> 
+                            </div>
+                            <!-- 卡片2 -->
+                             <div id="tab2" class="tab-pane" >
+                                    <div class="col-xs-12">
+                                    
+                                        <div style="height:20px;" ></div>
+                                        <form action="__SELF__" method="post" class="form-horizontal form form-builder form2">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="userid" value="{$info.userid}">
+                                                </div>
+                                            </div>
+
+                                           <div class="form-group item_title ">
+                                                <label class="left control-label">账号：</label>
+                                                <div class="right">
+                                                    {$info.account}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">姓名：</label>
+                                                <div class="right">
+                                                   {$info.username}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">余额：</label>
+                                                <div class="right">
+                                                    {$info['cangku_num']+0}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">积分：</label>
+                                                <div class="right">
+                                                    {$info['fengmi_num']+0}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_pid ">
+                                                <label class="left control-label">操作类型：</label>
+                                                <div class="right">
+                                                    <select name="opetype" class="form-control cui-select select">
+                                                        <option value="">请选择：</option>
+                                                        <option value="1" selected="">余额</option>
+                                                        <option value="2">积分</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">数量：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="cangku_num" value="" placeholder="减少数量" >
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="des_cangku" value="2" >
+                                            <div class="form-group bottom_button_list">
+                                                <a class="btn btn-primary submit ajax-post" type="submit" target-form="form2">减少</a>
+                                                <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                            </div>
+                                        </div>
+                                        </form>
+                                    </div> 
+                                </div>
+
+                            <div class="form-group"></div>
+                            
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

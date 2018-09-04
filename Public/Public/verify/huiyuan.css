@@ -1,0 +1,195 @@
+@charset "UTF-8";
+html,head,body{margin: 0px;padding: 0px;max-width: 640px;margin: 0 auto;}
+body{font-size: 12px;font-family: "Microsoft YaHei，Helvitica,Verdana,Tohoma,Arial;"color:#000;height: 100%;width: 100%;}
+img{border:0;}
+ol,ul {list-style:none outside none;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+a {color:#000；;text-decoration:none;cursor:pointer;}
+em,i{font-style: normal;}
+*{padding: 0;margin: 0;}
+input,select,textarea{border:0;outline:none;/*去除蓝色边框*/}
+a{color: #333333;}
+select{font-size: 4vmin;}
+
+
+.zscfh {
+    width: 100%;
+    background: #fff;
+    padding: 5% 0;
+    margin-top: 3%;
+    float: left;
+}
+.zscfh p i{color: #f00}
+.zscfh strong {
+    margin-left: 6vmin;
+    font-size: 4vmin;
+    color: #ff6c00;
+}
+.zscfh img {
+    width: 10%;
+    padding-left: 6%;
+}
+.zscfh p {
+    width: 90%;
+    margin: auto;
+    font-size: 3.5vmin;
+    font-weight: normal;
+    color: #555;
+    margin-top: 2%;
+}
+.wallet-buttons {
+    width: 100%;
+    float: left;
+}
+.wallet-buttons a {
+        font-size: 5vmin;
+    margin-top: 8vmin;
+    margin-left: 15vmin;
+    text-align: center;
+    line-height: 12vmin;
+    display: block;
+    width: 70%;
+    height: 12vmin;
+    border: 0.2vmin solid #cd3d48;
+    border-radius: 5vmin;
+    color: #cd3d48;
+}
+
+/*升级升级*/
+
+/*上传身份证*/
+.upload {
+    margin: 2% 0;
+    padding-bottom: 7%;
+}
+.qyrz3 .upload {
+    margin: 0;
+}
+#preview2, #preview3, #preview4, #preview5 {
+    width: 50%;
+    height: 45vmin;
+    border: 1px solid #b5b5b5;
+    overflow: hidden;
+    margin-top: 8%;
+    position: absolute;
+    text-align: center;
+    margin-left: 24%;
+}
+#preview2,#preview3,#preview4,#preview5 {
+    width: 45%;
+    height: 28vmin;
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius: 2vmin;
+}
+.smrz .upload{height: initial;}
+
+
+.smrz .abc{    width: 90%;
+    line-height: 12vmin;
+    border: 1px solid #ddd;
+    margin-left: 5%;
+    border-radius: 2vmin;
+    text-indent: 1em;
+    margin-top: 3%;}
+#preview2 img, #preview3 img, #preview4 img, #preview5 img, #ckt img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0 !important;
+    border-radius: 2vmin;
+}
+.qyrz3 p {
+    font-size: 3.5vmin;
+    padding-left: 5%}
+#ckt {
+    width: 40%;
+    float: right;
+    height: 28vmin;
+    border: 1px solid #ddd;
+    border-radius: 2vmin;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.tijiao2,.tijiao3,.tijiao4,.tijiao5 {
+    position: relative;
+    background: #f00;
+    opacity: 0;
+        width: 40%;
+    height: 28vmin;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+
+
+
+.buttones a {
+    margin-top: 10vmin;
+    margin-left: 5%;
+    display: block;
+    width: 90%;
+    height: 13vmin;
+    text-align: center;
+    line-height: 13vmin;
+    background: #498aff;
+    font-size: 4vmin;
+    border-radius: 25vmin;
+    float: left;
+    color: #fff;
+    margin-bottom: 10vmin
+}
+
+
+/*支付方式*/
+.zhifuqian{line-height: 40vmin;font-size: 5vmin;text-align: center;background: #fff}
+.zhifuqian i{color: #ed3b47}
+.methods {
+    width: 94%;
+    height: 60vmin;
+    float: left;
+    padding: 3%;
+}
+.methods h1 {
+    width: 100%;
+    height: 10vmin;
+    font-weight: normal;
+    font-size: 5vmin;
+}
+.methods p {
+    margin-top: 2vmin;
+    width: 100%;
+    font-size: 4.5vmin;
+    line-height: 10vmin;
+    color: #555555;
+    border-bottom: 0.3vmin solid #ddd;
+}
+.methods p img {
+    width: 7vmin;
+    vertical-align: middle;
+}
+.methods p input {
+    display: inline-block;
+    float: right;
+    margin-right: 5vmin;
+    margin-top: 4vmin;
+}
+.lijizhifu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 13vmin;
+    line-height: 13vmin;
+    text-align: center;
+    background: #fc4b3d;
+    font-size: 5vmin;
+    max-width: 640px;
+}
+.lijizhifu a {
+    color: #fff;
+    display: block;
+}
+
+
+
+

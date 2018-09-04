@@ -1,0 +1,90 @@
+<extend name="Public:base" />
+<block name="content">
+<div class="page-header">
+		<h1>
+			{$breadcrumb2}
+			<small>
+				<i class="icon-double-angle-right"></i>
+				编辑单页
+			</small>
+		</h1>
+	</div>
+<div class="row">
+	<div class="col-xs-12">	
+	
+		<form class="form-horizontal"  id="form" method="post" action="{$url}">	
+		
+		<input name="id" class="col-xs-10 col-sm-5"  value="{$Page.id|default=''}" type="hidden">
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">单页名称 </label>
+			<div class="col-sm-10">
+				<div class="clearfix">
+					<input name="name" class="col-xs-10 col-sm-5"  value="{$Page.name|default=''}" type="text">
+				</div>
+			</div>
+			</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-left">模版文件 </label>
+			<div class="col-sm-10">
+				<div class="clearfix">
+					<input name="demo" class="col-xs-10 col-sm-5"  value="{$Page.demo|default=''}" type="text">
+				</div>
+			</div>
+			</div>
+		
+		
+			
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="input-description">接口详情：</label>
+				<div class="col-sm-10">
+				  <textarea name="content" id="description">{$Page.content|default=''}</textarea>	
+				</div>
+			</div>
+			
+			
+		
+			
+			
+			
+		</form>
+		<div class="form-group">
+			<label class="col-sm-1 control-label no-padding-left"> </label>	
+			<div class="col-sm-11">
+				<button form="form" type="submit" class="btn btn-sm btn-primary">提交</button>		
+			</div>
+		</div>
+	</div>
+</div>
+</block>
+<block name="javascript">
+<script src="__JS__/jquery.validate.min.js"></script>	
+
+<block name="javascript">
+<style>
+.table thead > tr > td, .table tbody > tr > td {
+    vertical-align: middle;
+}	
+.table thead td span[data-toggle="tooltip"]:after, label.control-label span:after {
+	font-family: FontAwesome;
+	color: #1E91CF;
+	content: "\f059";
+	margin-left: 4px;
+}
+</style>	
+
+<script src="__PUBLIC__/ckeditor/ckeditor.js"></script> 
+<script src="__PUBLIC__/fileupload/jquery.ui.widget.js"></script>
+<script src="__PUBLIC__/fileupload/jquery.fileupload.js"></script>
+<script>
+	CKEDITOR.replace('description', {
+		filebrowserImageUploadUrl: '{:U("Image/ckupload")}',	
+		toolbar: [
+					[ 'Source', 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ],
+					[ 'FontSize', 'TextColor', 'BGColor' ],
+					[ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock','Image','Format']
+				]	
+	});
+
+
+</script>						
+</block>

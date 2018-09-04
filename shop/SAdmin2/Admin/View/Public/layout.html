@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>{$meta_title}｜{:C('WEB_SITE_TITLE')}后台管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="generator" content="CoreThink">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="{:C('WEB_SITE_TITLE')}">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="apple-touch-icon" type="image/x-icon" href="__ROOT__/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="__ROOT__/logo.png">
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/admin.css">
+    <block name="style"></block>
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="__PUBLIC__/libs/jquery/1.x/jquery.min.js"></script>
+     <link rel="stylesheet" href="__PUBLIC__/plugin/themes/default/default.css" />
+    <script charset="utf-8" src="__PUBLIC__/plugin/kindeditor-min.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/plugin/lang/zh_CN.js"></script>
+
+    <!-- 日期 -->
+    <script type="text/javascript" src="__PUBLIC__/libs/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/libs/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <!-- 日期js cs -->
+    <link href="__PUBLIC__/libs/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/libs/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+
+</head>
+<!-- <body class="admin_index_index"> -->
+<body class="admin_config_group" >
+    <div class="clearfix full-header">
+        <block name="full-header">
+                <!-- 顶部导航 -->
+                <div class="navbar navbar-default navbar-fixed-top main-nav" role="navigation">
+                    <div class="container-fluid">
+                        <div>
+                            <div class="navbar-header navbar-header-inverse">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-top">
+                                    <span class="sr-only">切换导航</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" target="_blank" href="__ROOT__/">
+                                    <span><b><span style="color: #2699ed;">后台管理</span></b></span>
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse navbar-collapse-top">
+                                <ul class="nav navbar-nav">
+                                    <!-- 主导航 -->
+                                    <li <?php if (CONTROLLER_NAME=='Index') {
+                                       echo "class='active'";
+                                    } ?> ><a href="{:U('Admin/Index/index')}"><i class="fa fa-home"></i> 首页</a></li>
+                                    <foreach name="_menu_list_g" item="g_val" >
+                                    <li <?php if ($_menu_tab['gid']==$g_val['id'] && CONTROLLER_NAME!='Index') {
+                                       echo "class='active'";
+                                    } ?> >
+                                    <a href="<?php if($g_val['col'] && $g_val['act']) echo U('Admin/'.$g_val['col'].'/'.$g_val['act']); ?>" target="">
+                                        <i class="fa {$g_val['icon']}"></i>
+                                        <span>{$g_val.name}</span>
+                                    </a>
+                                    </li> 
+                                   </foreach>                                                  
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="{:U('Admin/Index/removeRuntime')}" style="border: 0;text-align: left" class="btn ajax-get no-refresh"><i class="fa fa-trash"></i> 清空缓存</a></li>
+                                    <li><a target="_blank" href="__ROOT__/"><i class="fa fa-external-link"></i> 打开前台</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-user"></i> {$_user_auth.username} <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a target="_blank" href="__ROOT__/"><i class="fa fa-external-link"></i> 打开前台</a></li>
+                                            <li><a href="{:U('Admin/Index/removeRuntime')}" style="border: 0;text-align: left;" class="btn text-left ajax-get no-refresh"><i class="fa fa-trash"></i> 清空缓存</a></li>
+                                            <li><a href="{:U('Admin/Pubss/logout')}" class="ajax-get"><i class="fa fa-sign-out"></i> 退出</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </block>
+    </div>
+
+    <div class="clearfix full-container" id="full-container">
+        <block name="full-container">
+            <input type="hidden" name="check_version_url" value="{:U('Admin/Update/checkVersion')}">
+            <div class="container-fluid with-top-navbar" style="height: 100%;overflow: hidden;">
+                <div class="row" style="height: 100%;">
+                    <!-- 后台左侧导航 S-->
+                    <div id="sidebar" class="col-xs-12 col-sm-3 sidebar tab-content">
+                        <!-- 模块菜单 -->
+                        <nav class="navside navside-default" role="navigation">
+                            <?php if($_menu_list_p): ?>
+                                <ul class="nav navside-nav navside-first">
+                                    <volist name="_menu_list_p" id="_ns_first" key="fkey">
+                                        <li>
+                                            <a data-toggle="collapse" href="#navside-collapse-{$_ns_first.id}-{$fkey}">
+                                                <i class="{$_ns_first.icon}"></i>
+                                                <span class="nav-label">{$_ns_first.name}</span>
+                                                <span class="angle fa fa-angle-down"></span>
+                                                <span class="angle-collapse fa fa-angle-left"></span>
+                                            </a>
+                                            <notempty name="_menu_list_c">
+                                                <ul class="nav navside-nav navside-second collapse in" id="navside-collapse-{$_ns_first.id}-{$fkey}">
+                                                    <volist name="_menu_list_c" id="_ns_second" key="skey">
+                                                    <eq name="_ns_first['id']" value="$_ns_second['pid']"  >
+                                                        <li <?php 
+                                                        if(!empty($_select_url) && strtolower($_ns_second['col'].'-'.$_ns_second['act'])== $_select_url)
+                                                            echo 'class="active"'; 
+                                                        elseif(empty($_select_url) && $_ns_second['col'] == CONTROLLER_NAME) 
+                                                            echo 'class="active"'; 
+                                                        ?>>
+                                                            <a href="<?php echo U($_ns_second['col'].'/'.$_ns_second['act']); ?>" >
+                                                                <i class="{$_ns_second.icon}"></i>
+                                                                <span class="nav-label">{$_ns_second.name}</span>
+                                                            </a>
+                                                        </li>
+                                                    </eq>
+                                                    </volist>
+                                                </ul>
+                                            </notempty>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            <?php endif; ?>
+                        </nav>
+                    </div>
+                    <!-- 后台左侧导航 E-->
+
+                    <!-- 右侧内容 S-->
+                    <block name="main"></block>
+                    <!-- 右侧内容 E-->
+                    
+                </div>
+
+
+            </div>
+        </block>
+
+    </div>
+
+    <div class="clearfix full-footer">
+        <block name="full-footer"></block>
+    </div>
+
+    <div class="clearfix full-script">
+        <div class="container-fluid">
+            <input type="hidden" id="corethink_home_img" value="__HOME_IMG__">
+            <script type="text/javascript" src="__LYUI__/js/lyui.min.js"></script>
+            <script type="text/javascript" src="__ADMIN_JS__/admin.js"></script>
+            <block name="script"></block>
+        </div>
+    </div>
+</body>
+</html>

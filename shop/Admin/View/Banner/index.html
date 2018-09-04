@@ -1,0 +1,131 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                        
+                        <div class="form-group"></div>
+
+                        <!-- 顶部工具栏按钮 -->
+                        <div class="builder-toolbar">
+                            <div class="row">
+                                <!-- 工具栏按钮 -->
+                                    <div class="col-xs-12 col-sm-8 button-list clearfix">
+                                        <div class="form-group">
+                                            <a title="新增" class="btn btn-primary-outline btn-pill" href="{:U('Banner/add')}">新增</a>&nbsp;
+                                        </div>
+                                    </div>
+
+                                <!-- 搜索框 -->
+                            </div>
+                        </div>
+                        
+                        <!-- 数据列表 -->
+                        <div class="builder-container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="builder-table">
+                                        <div class="panel panel-default table-responsive">
+                                            <table class="table table-bordered table-striped table-hover">
+                                              <thead>
+                                                <tr>
+                                                    <th>
+                                                        <input class="check-all" type="checkbox">
+                                                    </th>
+                                                    <th>ID</th>
+                                                    <th>图片</th>
+                                                    <th>日期</th>
+                                                    <th>名称</th>
+                                                    <th>状态</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                               
+                                            <tbody>
+                                                    
+                                                    <volist name="list" id="data">
+                                                        <tr>
+                                                            <!--全选 ids[]-->
+                                                            <td>
+                                                                <input class="ids" type="checkbox" value="{$data['id']}" name="ids[]">
+                                                            </td>
+                                                            
+                                                            <td>{$data['id']}</td>
+                                                             
+                                                            
+                                                            <td><img height="40px" width="80px" src="{$data.picture|get_cover_url}" /></td>
+                                                                                                                           
+
+                                                                 
+                                                            <td>{$data['create_time']|date='Y-m-d',###}</td>
+                    
+                                                            <td>{$data['title']}</td>
+                                                            
+                                                            <td>
+
+                                                               <eq name="data['status']" value="1" >
+                                                                    <i class="fa fa-check text-success"></i>
+                                                               <else />
+                                                                    <i class="fa fa-ban text-danger"></i>
+                                                               </eq>
+
+                                                            </td>
+
+                                                            <td>
+                                                                <a name="edit" title="编辑" class="label label-primary-outline label-pill" href="{:U('Banner/edit',array('id'=>$data['id']))}">编辑</a>
+
+                                                                <eq name="data['status']" value="1" >
+                                                              
+                                                                    <a name="forbid" title="禁用" class="label label-warning-outline label-pill ajax-get confirm" href="{:U('Banner/setStatus',array('status'=>forbid,'ids'=>$data['id'],'model'=>'Banner'))}">禁用</a>
+                                                              
+                                                                <else />
+                                                                <a name="forbid" title="启用" class="label label-success-outline label-pill ajax-get confirm" href="{:U('Banner/setStatus',array('status'=>resume,'ids'=>$data['id'],'model'=>'Banner'))}">启用</a>
+                                                                </eq>
+
+                                                                <a name="delete" title="删除" class="label label-danger-outline label-pill ajax-get confirm" model="Banner" href="{:U('Banner/setStatus',array('status'=>delete,'ids'=>$data['id'],'model'=>'Banner'))}">删除</a>
+                                                        </tr>
+                                                    </volist>
+
+                                                    <empty name="list">
+                                                        <tr class="builder-data-empty">
+                                                            <td class="text-center empty-info" colspan="20">
+                                                                <i class="fa fa-database"></i> 暂时没有数据<br>
+                                                            </td>
+                                                        </tr>
+                                                    </empty>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <notempty name="table_data_page">
+                                            <ul class="pagination">{$table_data_page}</ul>
+                                        </notempty>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

@@ -1,0 +1,76 @@
+     
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理</title>
+	 <link rel="stylesheet" href="__PUBLIC__/plugin/themes/default/default.css" />
+    <script charset="utf-8" src="__PUBLIC__/plugin/kindeditor-min.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/plugin/lang/zh_CN.js"></script>
+    <include file="common:css" />
+  </head>	 
+	 
+	 
+	 <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+	
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>会员公告管理</h3>
+				<div class="tjwz_bottom_t">
+					<!-- <p style="margin-left:380px;"><a href="{:U('Reward/ht_tjwz')}">
+					
+					添加公告
+					
+					</a></p> -->
+					<p><a href="{:U('Reward/index')}">列表</a></p>
+				</div>
+			</div>
+			
+     
+          <form action="{:U('Reward/sava')}" method="post" >
+		  
+			<div class="xxgl_bottom">
+				<h3>
+					奖励说明
+				</h3>
+				<div class="nr1">
+					
+					<p style="width:50px;float:left;">标题</p>
+		            <input style="width:500px;" type="text" name="re_title" value="{$info.re_title}" class="textt"/><br/><br/>
+					
+                    
+					<p style="width:50px;float:left;" >内容</p>
+		            <input style="width:500px;" type="text" name="re_content" value="{$info.re_content}" class="textt"/><br/>
+
+
+					<p style="width:50px;float:left;" >奖励</p>
+		            <input style="width:500px;" type="text" name="re_reward" value="{$info.re_reward}" class="textt"/><br/>
+					<notempty name="info">
+						<input type="hidden" name="id" value="{$info.id}">
+					</notempty>
+					<div style="margin:10px auto;width:200px;">
+
+						<input type="submit" style="width: 50px;height: 27px;border:2px solid #dcdcdc;color: #000;font-size: 14px;" value="保存">
+
+					</div>
+				    
+	       			
+				</div>
+			</div>
+			</form>
+			
+			
+		</div>
+
+
+	  	<include file="common:js" />	
+</body>
+</html>
+

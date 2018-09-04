@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <!-- Demo styles -->
+    <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+    <script type="text/javascript" src="__JS__/upload.js"></script>
+
+</head>
+
+<body style="background: #f4f4f4;">
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+      <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>物流详情</span></a>
+
+    </div>
+    <div class="header_c" style="width: 70%;"> <h1 style="color:#000"></h1></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+    <foreach name="detls" item="v">
+        <div class="stics_nr">
+            <div class="stics_nr_l"><img src="<?php echo M('product_detail')->where(array('id'=>$v['com_id']))->getfield('pic'); ?>" alt=""></div>
+            <div class="stics_nr_r">
+                <neq name="v['shangjia']">
+                    <p>承运来源：{$v['express_name']|default='暂未填写'}</p>
+                    <p>运单编号：{$v['express_order']|default='暂未填写'}</p>
+                <else />
+                    <p>承运来源:<?php echo M('order')->where(array('order_id'=>$v['order_id']))->getfield('kd_name'); ?></p>
+                    <p>运单编号:<?php echo M('order')->where(array('order_id'=>$v['order_id']))->getfield('kd_no'); ?></p>
+                </neq>
+            </div>
+        </div>
+    </foreach>
+
+<div style="clear: both;"></div>
+</body>
+</html>

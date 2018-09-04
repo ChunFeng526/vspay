@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>找回密码</title>
+<link rel="stylesheet" href="__WCSS__/normalize.css">
+<link rel="stylesheet" href="__WCSS__/login.css">
+<script src="__WJS__/rem.js"></script>
+<body class="bgf5">
+<div class="login-container register-container">
+	<div class="header_back">
+		<a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+    </div>
+    <div class="register-title getpwd-title">找回密码</div>
+    <div class="formbox">
+        <form name="getpwdfrom" id="forgetForm" class="formrgister formgetpsw" action="{:U('setpsw')}" method="post" >
+            <div class="input_box">
+                <p>请输入手机号</p>
+                <input type="text" name="mobile" class="phone_number" placeholder="输入手机号码" maxlength="11" autocomplete="off" id="number"/>
+            </div>
+            <div class="input_box">
+                <p>获取验证码</p>
+                <div class="phone-code">
+                    <input type="code" name="code" class="code" placeholder="验证码" oncontextmenu="return false" onpaste="return false" />
+                    <a href="javascript:void(0)" id="mycode">获取验证码</a>
+                </div>
+            </div>
+            <div class="input_box">
+                <p>设置新登录密码</p>
+                <input type="password" name="password" class="password" placeholder="请设置新登录密码" oncontextmenu="return false" onpaste="return false" />
+            </div>
+            <div class="input_box">
+                <p>确认新登录密码</p>
+                <input type="password" name="passwordmin" class="passwordmin" placeholder="确认新的登录密码" oncontextmenu="return false" onpaste="return false" />
+            </div>
+            <div  class="inde-btn">
+               <button id="submit" type="button" onclick="SetPwd()">确 定</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+<script src="https://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="__WJS__/common.js"></script>
+<script src="__WJS__/jquery.validate.min.js?var1.14.0"></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+<script type="text/javascript"  src="__COM__/layer/layer.js" ></script>
+
+<script type="text/javascript">
+    $('#mycode').click(function(){
+        var mobile=$("input[name='mobile']").val();
+        if(mobile=='' || mobile==null){
+            layer.msg('请输入手机号码');
+        }
+        $.post("{:U('Login/sendCode')}",{'mobile':mobile},function(data){
+            if(data.status==1){
+                layer.msg(data.message);
+                RemainTime();
+            }else{
+                layer.msg(data.message);
+            }
+        });
+    });
+
+    var intime="{$Think.session.set_time}";
+    var timenow ="<?php echo time(); ?>";
+
+    var bet=(parseInt(intime)+60)-parseInt(timenow);
+    $(document).ready(function(){
+        if(bet>0){
+            RemainTime();
+        }
+    });
+    var iTime = 59;
+    var Account;
+    if(bet>0){
+        iTime=bet;
+    }
+    function RemainTime(){
+        var iSecond,sSecond="",sTime="";
+        if (iTime >= 0){
+            iSecond = parseInt(iTime%60);
+            iMinute = parseInt(iTime/60)
+            if (iSecond >= 0){
+                if(iMinute>0){
+                    sSecond = iMinute + "分" + iSecond + "秒";
+                }else{
+                    sSecond = iSecond + "秒";
+                }
+            }
+            sTime=sSecond;
+            if(iTime==0){
+                clearTimeout(Account);
+                sTime='获取验证码';
+                iTime = 59;
+            }else{
+                Account = setTimeout("RemainTime()",1000);
+                iTime=iTime-1;
+            }
+        }else{
+            sTime='没有倒计时';
+        }
+        $('#mycode').html(sTime);
+        //document.getElementById('').html(123);
+    }
+</script>
+</html>

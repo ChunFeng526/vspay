@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>登陆</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/login.css">
+<body>
+
+<div class="login-container">
+
+  <div class="logo">
+  	<img src="__WIMG__/logo.png">
+  </div>
+	<h1>登陆</h1>
+	
+	<div class="connect">
+		<p>链接，分享。</p>
+	</div>
+	
+	<form name="formlogin" id="loginForm" class="formlogin" method="post" action="{:U('Login/checkLogin')}">
+		<div>
+			<input type="text" name="account" class="username" placeholder="手机/UID" autocomplete="off"/>
+		</div>
+		<div>
+			<input type="password" name="password" class="password" placeholder="登录密码" oncontextmenu="return false" onpaste="return false" />
+		</div>
+		<div  class="inde-reg">
+		 <button id="submit" type="button" onclick="login()">登 陆</button>
+	    </div>
+	</form>
+
+	<a href="{:U('Login/register')}" class="inde-reg ">
+		<button type="button" class="register-tis">还有没有账号？</button>
+	</a>
+
+	<a href="{:U('login/getpsw')}" class="inde-reg">
+		<button type="button" class="register-tis">忘记密码</button>
+	</a>
+  <div class="pad10"></div>
+</div>
+
+</body>
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+
+<!--<script src="__WJS__/common.js"></script>-->
+<!--背景图片自动更换-->
+<script src="__WJS__/supersized.3.2.7.min.js"></script>
+<script src="__WJS__/supersized-init.js"></script>
+<!--表单验证-->
+<script src="__WJS__/jquery.validate.min.js?var1.14.0"></script>
+
+<!--commonjs-->
+<script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+<script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
+
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+</html>

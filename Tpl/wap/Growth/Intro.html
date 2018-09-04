@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$Think.lang.tochangeinto}</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+
+<body class="bg96 bg_blue">
+	
+	<div class="header">
+	    <div class="header_l" style="width:33.3%;">
+	    <a href="{:U('Index/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c" style="width:33.3%;"><h2>{$Think.lang.tochangeinto}</h2></div>
+	    <div class="header_r" style="width:33.3%;"><a href="/Growth/test?filename=.{$urel}">{$Think.lang.saveimg}</a></div>
+	</div>
+
+       <div class="big_width">
+	       
+	     <div class="qrCodeGro">
+	     	<p>{$Think.lang.scanpaysme}</p>
+	     	<img src="{$urel}" class="qr_img">
+
+	     </div>
+	     <div class="intoButt">
+	     	<a href="{:U('Growth/Introrecords')}">{$Think.lang.record}</a>
+	     </div>
+	   </div>
+</body>
+
+</html>

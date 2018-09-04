@@ -1,0 +1,104 @@
+<script type="text/javascript" src="__PUBLIC__/Headoffice/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Headoffice/js/index.js"></script>
+	<script src="__PUBLIC__/Headoffice/js/jquery.js"></script>
+	<script src="__PUBLIC__/Headoffice/js/main.js"></script>
+
+     <include file="common:css" />
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>会员列表</h3>
+				<div class="xxgl_bottom_t">
+					<span style="float: left;">搜索</span>
+	           	<form action="{:U('Index/member')}" method="get"> 
+	             	
+	             	<input class="btn3" name="username" placeholder="会员名称" type="text" style="width: 169px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4;margin-top: 14px;"/>
+	                <div class="an3"><input type="submit" value="提交搜索" class="sll" ></div>
+	            </form>
+				</div>
+				<style>
+					.content_table tr th{
+								height: 35px;
+								text-align: center;
+								background:#FF9D46;
+								color: #fff;
+								border-left: 1px solid #fff;
+							}
+				</style>
+				<div class="jhm_bottom_c">
+					<table id="table1" class="content_table">
+						<tr>
+							<th>会员ID</th>
+							<th style="padding: 0px 20px;">姓名</th>
+							<th style="padding: 0px 16px;">手机号码</th>
+							<th  style="padding: 0px 10px;">购物果</th>
+							<!-- <th  style="padding: 0px 10px;">余额</th> -->
+							
+						</tr>
+					
+					<foreach name="arrData_news" item="arrData_news" key="k">
+						<tr style="background:#DBEAF9;">
+							<td>{$arrData_news.userid}</td>
+							<td>{$arrData_news.username}</td>
+							<td>{$arrData_news.mobile}</td>
+							<td>{$arrData_news['c_money']*100/100}</td>
+							<!-- <td>{$arrData_news['money']*100/100}</td> -->
+							<!-- <td><a onclick="return confirm('确实要删除吗？');" href="{:U('Index/deleteuser',array('userid'=>$arrData_news['userid']))}">删除</a></td> -->
+						
+						</tr>
+				     </foreach>
+
+		    </table>	
+		  </div>
+	<script type=text/javascript>
+	
+	
+	
+	
+	
+$(document).ready(function(){
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane p.menu_head").mouseover(function(){
+		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	
+});
+</script>
+<div class="xxgl_bottom_b">
+					 <div class="page">
+                      {$page}
+                    </div>
+                     <style>
+				  	.page{text-align: center;}
+				  	.page a{color: #a4a4a4;}
+				  	.prev{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  	.num{  padding: 0 10px;  border: 1px solid #ddd;}
+				  	.page .current{ padding: 0 10px;  border: 1px solid #ddd;  margin: 0px 10px;}
+				  	.next{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  </style>
+				  
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	   
+</body>
+</html>
+
+<!-- js 控制表格隔行变色 -->
+	<script type="text/javascript">
+
+		$("#table1 tr:odd").css('background','#DBEAF9');
+		$("#table1 tr:even").css('background','#FEF8BA');
+	</script>	

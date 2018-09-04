@@ -1,0 +1,82 @@
+     <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+	
+        <style>
+	.foolt{width:260px; height:45px; margin-left:280px;}
+	.jmfo{ margin-top:20px; margin-left:100px;}
+	.jmfo i{margin-left:60px;		}
+		
+	.formpet{margin-left:45px; margin-top:45px; }
+	.input1{width: 200px;  margin-top:8px; margin-left:20px;}
+		
+	.aaa {
+	 width: 200px;
+    height: 38px;
+
+    margin-top: -65px;
+    font-size: 16px;
+    margin-right: 232px;
+    color: #fff;
+    float: right;
+    background: #51a424;
+    border-radius: 6px;
+   }
+
+		</style>
+
+	  
+		<div class="hyxq">
+			<div class="zjsj_bottom">
+				<h3>提货费用配置</h3>
+				
+			
+				
+				
+				
+				
+		 <form  action="{:U('Zadmin/Index/ht_thje')}" id="myform" method="post">
+		 
+						 <table class="content_table" width="100%">
+				        
+						 <tr><td>
+						 请选择提货人：<select class="input1" name="moll">
+						 <?php if(!empty($user)){ ?>
+			                <option value="{$user.userid}">{$user.username}</option>
+							<?php }else{ ?>	
+							用户名:<option value="">请选择</option>
+							<?php } ?>
+							 <foreach name="arrData_profits" item="arrData_profits">
+							 <option value="{$arrData_profits.userid}">{$arrData_profits.username}</option>
+							</foreach>
+				           </select>
+						</tr></td>
+	                            <tr><td> 
+	                        请输入金额:<input type="text"  class="text2" value="{$ch_data1.picmoney}" name="picmoney">元
+	                       </tr></td>
+						
+						</table>
+                     
+                   <input type="hidden" name="lang" value="1">
+                   <input type="submit" class="anniu  btn-block btn-primary btn-flat"  name="baocun"  onclick="return confirm('确认提交？')" value=" 确认"></input>
+                 
+                  </form>
+                   <button class="aaa"  onclick="javascript:history.back(-1)">返回</button>
+				  <script type="text/javascript" src="__PUBLIC__/weixin/js/jquery-1.9.1.min.js"></script>
+				  
+			
+			</div>
+		</div>
+		
+	</div> 
+
+	 <include file="common:js" />	
+	
+	 
+</body>
+</html>
+

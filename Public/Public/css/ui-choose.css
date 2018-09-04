@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*ui-choose样式，可根据实际项目需求进行调整*/
+select.ui-choose{display: none;}
+ul.ui-choose {font-size:4vmin;}
+ul.ui-choose:after { content: ""; display: table; clear: both; }
+ul.ui-choose>li {     border: 1px solid #ccc;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-right: 4%;
+        width: 28%;
+    height: 8vmin;
+    line-height: 8vmin;
+    margin-top: 2%;border-radius: 1vmin;}
+ul.ui-choose>li:hover {     z-index: 4;
+    color: #fff;
+    background: #e64239;
+	border:1px solid #e64239;
+}
+
+ul.ui-choose>li.selected { z-index: 3; border-color: #0080ff; background-color: #0080ff; color: #fff; }
+ul.ui-choose>li.disabled { z-index: 2; background-color: #f2f2f2; color: #aaa; cursor: not-allowed; }
+ul.ui-choose>li.disabled:hover { border-color: #aaa; }
+ul.ui-choose>li.selected.disabled { z-index: 2; background-color: #8FC7FF; color: #fff; cursor: not-allowed; border-color: #8FC7FF; }
+ul.choose-type-right>li.selected { color: #0080ff; background: transparent url("./icon-selected.png") no-repeat right bottom; }
+ul.ui-choose.choose-flex { display: flex; }
+ul.ui-choose.choose-flex>li { flex: 1; padding: 0 8px; }
+.demo-box p{padding:1.5% 2%;font-size: 4.5vmin;}

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>幸运大转盘</title>
+<link rel="stylesheet" href="__WCSS__/login.css">
+<style type="text/css">
+body{background-size: 100%;}
+.demo{width:78vmin; height:78vmin; position:relative; margin:0px auto;margin-top:0%;}
+#disk{background:url(__PUBLIC__/home/zp/disk.png) no-repeat;background-size: 100%;width: 100%;height: 100%;}
+
+#start{
+    width: 20vmin;
+    height: 45vmin;
+    position: absolute;
+    top: 19.5vmin;
+    left: 29vmin;
+}
+#start img{cursor: pointer;transform: rotate(359deg);width: 100%;}
+.myscroll {
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 28vmin;
+    line-height: 4vmin;
+    font-size: 4vmin;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e8e6e6;
+    box-shadow: 0px 2px 1px #baac85;
+    border-radius: 5px;
+    padding: 3%;}
+.myscroll li { height: 30px;color:#ff963a;}
+.myscroll li span{float: right;}
+</style>
+<script src="__PUBLIC__/home/zp/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/zp/jQueryRotate.2.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/zp/jquery.easing.min.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+</head>
+
+<script type="text/javascript">
+$(function(){ 
+     $("#startbtn").click(function(){ 
+        lottery(); 
+    }); 
+}); 
+function lottery(){ 
+    $.ajax({ 
+        type: 'POST', 
+        url: "{:U('Turntable/turn')}", 
+        dataType: 'json', 
+        cache: false, 
+        error: function(){ 
+            alert('出错了！'); 
+            return false; 
+        }, 
+        success:function(json){ 
+
+            if(json.status == 0){
+                alert(json.message);
+            }
+
+            if(json.status==1){
+                $("#startbtn").unbind('click').css("cursor","default"); 
+                var a = json.angle; //角度 
+                var prize_name = json.prize_name; //奖项 
+                $("#startbtn").rotate({ 
+                    duration:3000, //转动时间 
+                    angle: 0, 
+                    animateTo:1800+a, //转动角度 
+                    easing: $.easing.easeOutSine, 
+                    callback: function(){ 
+                        alert(prize_name); 
+                        editdata();
+                        $("#startbtn").bind('click',function(){ 
+                            if(confirm('还要再来一次吗')){
+                                lottery(); 
+                                }else{
+                                return false;
+                                } 
+                        }).css("cursor","pointer"); 
+                    } 
+                }); 
+            }
+
+
+
+
+        } 
+    }); 
+} 
+</script>
+
+
+<body>
+
+<script src="__PUBLIC__/home/zp/scroll.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.myscroll').myScroll({
+        speed: 40, //数值越大，速度越慢
+        rowHeight: 26 //li的高度
+    });
+});
+</script>
+<div id="header">
+</div>
+
+<div class="myscroll">
+    <ul>
+        <foreach name="info" item='v' >
+        <li>{$v.bill_time|date='m-d H:i',###} <span>{:mb_substr($v['bill_username'],0,1,'utf-8')}**{$v.bill_name}</span></li>
+        </foreach>
+    </ul>
+</div>
+
+
+<div id="main">
+   <h2 class="top_title"></h2>
+   <div class="msg"></div>
+   <div class="demo">
+        <div id="disk"></div>
+        <div id="start"><img src="__PUBLIC__/home/zp/start0.png" id="startbtn"></div>
+   </div>
+   <div class="ad_demo"></div>
+</div>
+<div style="clear: both;margin-left: 13%;width: 75%;font-size: 3.5vmin;color:#333;margin-top:20vmin;">
+    <p>提示：新会员注册，第一次免费，以后都将扣除您10个果子抽一次奖。</p>
+</div>
+<div id="footer">
+</div>
+
+</body>
+</html>

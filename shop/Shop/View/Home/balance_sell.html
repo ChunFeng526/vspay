@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>出售余额</title>
+  <link rel="stylesheet" href="__CSS__/balance_style.css">
+  <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+   <style>
+.goback{display:block; float:left;}
+.goback img{width:10vmin; margin-top:3vmin; margin-left:2vmin; color:#333;}
+.rechargeForm input {
+    width: 92%;
+    margin: 1.5vmin auto;
+    border: 1px solid #dedede;
+    border-radius: 1vmin;
+    line-height: 11vmin;
+    font-size: 3.8vmin;
+    color: #888;
+    text-indent: 2vmin;
+}
+.rechargeForm span{
+	display: block;
+    width: 100%;
+    font-size: 3.8vmin;
+    clear: both;
+    line-height: 7vmin;
+    text-align: left;
+    text-indent: 5vmin;
+	}
+</style>
+</head>
+<body class="whitebg">
+<!--弹出层-->
+<!--<div class="apply_pop" >
+	<div class="box">
+    	<img src="__IMG__/check_img.png">
+        <span>申请成功，正在审核，请耐心等待... </span>
+        <a href="Shop/Home/balance.html">返回余额中心</a>
+    </div>
+</div>-->
+<div class="goback"><a href="javascript:history.go(-1)" class="goback"><img src="__IMG__/back3.png" alt=""></a></div>
+<!--出售余额-->
+<div class="rechargeForm">
+     <form action="{:U('shop/Home/balance_sellss')}" method="post"  id="what" enctype="multipart/form-data">
+     	<span>联系人</span>
+        <input name="name" type="text" value="">
+        <span>联系手机</span>
+        <input name="phone" type="text" value="" >
+        <span>出售数量</span>
+        <input name="some" type="number" value="" onkeyup="value=this.value.replace(/\D+/g,'')">
+        <span>出售价位</span>
+        <input name="jiawei" type="number" onkeyup="value=this.value.replace(/\D+/g,'')">
+        
+
+</div>
+
+
+<ul>
+  <li class="pingzheng">
+     <!--    <span>上传微信二维码</span> -->
+       <label class="col-sm-2 control-label" for="input-name2">上传本人微信二维码：</label>  <div class="col-sm-3">
+      <input id="input-name2" class="form-control" accept="image/png,image/gif,image/jpg" type="file" placeholder="分类标题"
+             value="" name="img"  onchange="cc()">
+  </div>
+      <div class="pingzheng_img"><img src="__IMG__/2code.png" id="show_wx_code"></div>
+       <div class="form-group required">
+
+
+</div>
+      
+       <!-- <input name="img" type="button" value="上&nbsp;&nbsp;传" class="btn_upload"> -->
+        </li>
+    </ul>
+        </form>
+<a href="javascript:document:what.submit();" class="btn_ok">确认出售:通知客服</a>
+<div class="zhuming">注：由后台可编辑...</div>
+</body>
+<script>
+function cc () {
+	var r= new FileReader();
+	f=document.getElementById('input-name2').files[0];
+	r.readAsDataURL(f);
+	r.onload=function  (e) {
+	document.getElementById('show_wx_code').src=this.result;
+	};
+	}
+</script>
+</html>
+
+<!-- 短信验证 -->
+ <script>
+    $('#mycode').click(function(){
+        var mobile=$("#moblie").val();
+        var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(14[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+        if(mobile==""){
+            $("#moblie").focus();
+            return false;
+        }
+        if(!myreg.test(mobile)) 
+        { 
+            alert('请输入有效的手机号码！');
+             $("#moblie").focus();
+            return false;
+        }
+       $.post("{:U('Login/sendcode')}",{'mobile':mobile},function(data){
+            if(data.state==1){
+                alert(data.res);
+                RemainTime();
+            }else{
+                alert(data.res);
+            }
+            
+       });
+    });
+</script>

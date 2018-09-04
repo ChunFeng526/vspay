@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!--title>{$Think.lang.ucenter}</title-->
+<title></title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+
+<!--线上JQ包-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!--本地JQ包-->
+<!--<script src="__WJS__/jquery1.11.1.min.js"></script>-->
+
+
+<script type="text/javascript" src="__WJS__/jquery.glide.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+<style>
+/*.big_width100{background: #03bbf4}*/
+.big_width100{background: #5576CE}
+.cen_icon{background: #fff}
+</style>
+<body class="bg96">
+<div class="header">
+    <div class="userInfo" style="width: 75%">
+		<a href="{:U('User/Personal')}"><div class="toux_icon"><img src="__IMGHEAD__/{$uinfo['img_head']}"></div></a>
+    	<div class="uid_xy">
+    		<p>UID:{$uinfo['userid']}</p>
+    		<p>{$Think.lang.credit}
+			<for start="0" end="$uinfo['user_credit']">
+				<span><img src="__WIMG__/aix-icon.png"></span>
+			</for>
+			</p>
+    	</div>	
+    </div>
+    <div class="header_r"> <a href="{:U('User/Personal')}"><img src="__WIMG__/shez-icon.png" alt=""></a></div>
+</div>
+
+<div class="big_width100" >
+    <div>
+    <div class="shaomZ">
+   	<a onClick="BSL.Qcode('0','qrcodeCallback')" class="shaom">
+   		 <img src="__WIMG__/shaom-icon.png">
+   		 <p>{$Think.lang.ScanCode}</p>
+   	</a>
+
+ </div>
+ <div class="centBalance">
+ 	<div class="Balance"><p><a class="balance" href="{:U('Index/Bancerecord')}">{$Think.lang.yue}<br/><strong>￥<span  class="yue">{$moneyinfo['cangku_num']|Showtwo}</span></strong></a></p></div>
+	 <div class="Balance"><p><a class="balance" href="{:U('Index/Exchangerecords')}">{$Think.lang.jifen}<br/><strong>￥<span class="jifen">{$moneyinfo['fengmi_num']|Showtwo}</span></strong></a></p></div>
+ 	<div class="dLine"></div>
+ </div>
+</div>
+	<div class="slider">
+		<ul class="slides">
+			<li class="slide">
+				<div class="box" ><img src="__WIMG__/banner4.png" alt=""></div>
+			</li>
+			<li class="slide">
+				<div class="box" ><img src="__WIMG__/banner5.png" alt=""></div>
+			</li>
+			<li class="slide">
+				<div class="box" ><img src="__WIMG__/banner6.png" alt=""></div>
+			</li>
+
+		</ul>
+	</div>
+
+ <div class="cen_icon" >
+ <php>$quanxian=explode("-",$uinfo['quanxian']);</php>
+
+ 	 <ul>
+ 	 	<li>
+        <if condition="in_array(2,$quanxian)">
+        <a href="###"   class="quanxian">
+        <else/>
+        <a href="{:U('Index/turnout')}">
+        </if> 	 		
+ 	 			<img src="__WIMG__/cen01-iocn.png">
+ 	 			<p>{$Think.lang.turnout}</p>
+ 	 		</a>
+ 	 	</li>
+ 	 	<li>
+        <if condition="in_array(1,$quanxian)">
+        <a href="###"   class="quanxian">
+        <else/>
+            <a href="{:U('Growth/Intro')}">
+        </if> 
+ 	 			<img src="__WIMG__/cen02-iocn.png">
+ 	 			<p>{$Think.lang.tochangeinto}</p>
+ 	 		</a>
+ 	 	</li>
+ 	 	<li>
+        <if condition="in_array(3,$quanxian)">
+        <a href="###"   class="quanxian">
+        <else/>
+        <a href="{:U('Growth/Purchase')}">
+        </if> 
+ 	 		
+ 	 			<img src="__WIMG__/cen03-iocn.png">
+ 	 			<p>{$Think.lang.purchase}</p>
+ 	 		</a>
+ 	 	</li>
+ 	 	<li>
+         <if condition="in_array(4,$quanxian)">
+        <a href="###"   class="quanxian">
+        <else/>
+            <a href="{:U('Trading/SellCentr')}">
+        </if> 
+
+ 	 			<img src="__WIMG__/cen04-iocn.png">
+ 	 			<p>{$Think.lang.sellout}</p>
+ 	 		</a>
+ 	 	</li>
+ 	 	<li>
+        <a href="###"   class="xianzjiaoy"> 
+ 	 		<!-- <a href="{:U('Turntable/index')}">-->
+ 	 			<img src="__WIMG__/cen05-iocn.png">
+ 	 			<p>{$Think.lang.digitalassets}</p>
+ 	 		</a>
+ 	 	</li>
+<?php
+$userid=session('userid');
+?>
+ 	 	<li>
+
+<eq name="userid" value="2080">
+ 	 		<a href="{:U('Shop/home/index')}">
+ 	 			<img src="__WIMG__/cen07-iocn.png">
+ 	 			<p>{$Think.lang.shoppingmall}</p>
+ 	 		</a>
+<else/>
+            <a href="{:U('Shop/pay/ttyy')}">
+                <img src="__WIMG__/cen07-iocn.png">
+                <p>{$Think.lang.shoppingmall}</p>
+            </a>
+</eq>
+ 	 	</li>
+ 	 </ul>
+ </div>
+</div>
+
+<gt name="can_get" value="0">
+	<div class="big_width100" id="hide_none">
+		<div class="qindHB">
+			<div class="qindHB_nb">
+				<img src="__WIMG__/hongbaoyem.png" class="qinb_imga">
+				<a href="javascript:void(0);" id="hide">
+					<img src="__WIMG__/cunryue.png">
+				</a>
+				<div class="qiandHB_wz">
+					<h3><span  class="getnums">{$can_get|showtwo}</span>元</h3>
+					<p>天天签到红包不断</p>
+				</div>
+			</div>
+		</div>
+		<div class="qindHB_bg"></div>
+	</div>
+</gt>
+
+  <script type="text/javascript">
+
+
+           $(document).ready(function(){
+  
+     $(".xianzjiaoy").click(function(){
+         msg_alert("还未开启");
+        });
+      $(".quanxian").click(function(){
+         msg_alert("您无权限访问");
+        });
+
+    });
+</script>
+
+<script type="text/javascript">
+    $("#hide").click(function(){
+        var yue = Number($('.yue').text());
+        var jifen = Number($('.jifen').text());
+		var getnums = Number($('.getnums').text());//可获得金额
+		var releasey = (yue + getnums).toFixed(2);
+		var releasej = (jifen - getnums).toFixed(2);;
+		$.ajax({
+			url:'Index/index',
+			type:'post',
+			data:{'getnums':getnums},
+			datatype:'json',
+			success:function (mes) {
+				if(mes.status == 1){
+                    //alert(mes.message);
+				    msg_alert(mes.message,mes.url);
+                    $("#hide_none").hide(1000);
+                    //加余额-减少积分
+                    $('.yue').text(releasey);
+                    $('.jifen').text(releasej);
+				}else{
+
+                    msg_alert(mes.message);
+                }
+            }
+		})
+    });
+</script>
+
+<script type="text/javascript">
+    var glide = $('.slider').glide({
+        //autoplay:true,//是否自动播放 默认值 true如果不需要就设置此值
+        animationTime:500, //动画过度效果，只有当浏览器支持CSS3的时候生效
+        arrows:false, //是否显示左右导航器
+        arrowsWrapperClass: "arrowsWrapper",//滑块箭头导航器外部DIV类名
+        arrowMainClass: "slider-arrow",//滑块箭头公共类名
+        arrowRightClass:"slider-arrow--right",//滑块右箭头类名
+        arrowLeftClass:"slider-arrow--left",//滑块左箭头类名
+        arrowRightText:">",//定义左右导航器文字或者符号也可以是类
+        arrowLeftText:"<",
+
+        nav:true, //主导航器也就是本例中显示的小方块
+        navCenter:true, //主导航器位置是否居中
+        navClass:"slider-nav",//主导航器外部div类名
+        navItemClass:"slider-nav__item", //本例中小方块的样式
+        navCurrentItemClass:"slider-nav__item--current" //被选中后的样式
+    });
+</script>
+
+<!--扫一扫调用-->
+<script>
+	function Dosaoyisao() {
+        qrcodeCallback();
+    }
+    function qrcodeCallback(result){
+		window.location.href=result;
+    }
+</script>
+</body>
+
+</html>

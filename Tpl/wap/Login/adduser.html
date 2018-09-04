@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>悠享生态园林</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">        <!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="悠享生态园林">      <!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no">  <!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">             <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="HandheldFriendly" content="true">       <!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">         <!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">  <!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="portrait"> <!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">     <!-- QQ强制竖屏 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-TileColor" content="#000">        <!-- Windows 8 磁贴颜色 -->   
+    <meta name="msapplication-TileImage" content="icon.png">    <!-- Windows 8 磁贴图标 -->
+    
+    <link rel="stylesheet" href="__WCSS__/login.css">
+    <script type="text/javascript" src="__COM__/js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+    <script type="text/javascript" src="__COM__/js/index.js" ></script>
+
+</head>
+<body>        
+    <div class="header">
+        <div class="register"> 
+            <form name="AddUser" action="{:U('Login/saveuser')}" method="get" class="logo_frame" style="padding-top:32vmin;">
+                <dl>
+                    <dd><input type="text"  name="username"  class="textsso"></dd>
+                    <dd><input class="text3 textsso"  name="mobile" type="text"  maxlength="11"></dd>
+                     <dd><input type="text" name="pid"  class="textsso" maxlength="11" readonly="readonly" value="{$mobile}" ></dd>
+                    <dd><input class="text3 textsso" type="password"  name="login_pwd"  ></dd>
+                     <dd><input type="password" name="relogin_pwd" class="textsso"  ></dd>
+                     <dd><input type="password" name="safety_pwd" class="textsso"  ></dd>
+                     <dd><input type="password" name="resafety_pwd" class="textsso"  ></dd>
+                </dl>
+                <input type="button" value="" id="dl" style="margin-top: 12%;margin-left: 20%;"  onclick="adduser()"  >
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>转出记录</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96">
+
+	<div class="header">
+	    <div class="header_l">
+	    <a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>兑换记录</h2></div>
+	    <div class="header_r"></div>
+	</div>
+
+       <div class="big_width100">
+
+	       <table cellspacing="0" class="turn_exe_annal">
+		    <tr>
+		        <th>余额</th>
+		        <th>兑换积分</th>
+		        <th>兑换时间</th>
+		    </tr>
+			   <foreach name="Chan_info" item="v">
+				   <tr>
+					   <td>-{$v['get_nums']}</td>
+					   <td><?php echo $v['get_nums'] * 6 ?></td>
+					   <td class="line_h20">{$v['get_time']|date="Y-m-d H:i:s",###}</td>
+				   </tr>
+			   </foreach>
+		</table>
+		   <notempty name="page">
+			   <ul class="pagination">{$page}</ul>
+		   </notempty>
+	   </div>
+</body>
+</html>

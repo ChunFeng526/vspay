@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>{$config['SITE_TITLE']}</title>
+  <link rel="stylesheet" href="__CSS__/balance_style.css">
+  <script type="text/javascript" src="__JS__/jquery-1.6.min.js"></script>
+</head>
+<style>
+.goback{display:block; float:left; position:absolute;}
+.goback img{width:10vmin; margin-top:3vmin; margin-left:2vmin;}
+</style>
+
+<body style="background-color:#f2f2f2">
+<!--头部固定层-->
+<div class="balance_top">
+	<div class="goback"><a href="javascript:history.go(-1)" class="goback"><img src="__IMG__/back2.png" alt=""></a></div>
+	<div class="top1">
+		<h1>余额买卖</h1>
+    	
+    </div>
+    <ul>
+        	<li><a href="recharge.html"><img src="__IMG__/icon_balance1.png"><h2>充值余额</h2></a></li>
+            <li><a href="balance_sell.html"><img src="__IMG__/icon_balance2.png"><h2>出售余额</h2></a></li>
+            <li><a href="{:U('/Shop/Home/balance_help',array('ids'=>6))}"><img src="__IMG__/icon_balance3.png"><h2>联系客服</h2></a></li>
+    </ul>
+    <div class="top2"></div>  
+</div>
+<!--记录列表层-->
+<div class="balance_record">
+	<!--<div class="record_title"><img src="/Themes/Shop/Public/images/icon_point.png"><h3>最新交易记录</h3></div>
+	<ul>
+    	<li>
+        	<span><h4>出售余额</h4>2017-09-09 13:05:10</span><i>-100.00</i>
+        </li>
+        <li>
+        	<span><h4>出售余额</h4>2017-09-09 13:05:10</span><i>-100.00</i>
+        </li>
+        <li>
+        	<span><h4>充值余额</h4>2017-09-09 13:05:10</span><i style="color:#ff483c">+500.00</i>
+        </li>
+    </ul>-->
+	<div class="shengming">
+		<p>本商城为玩家提供余额买卖信息服务，不收服务费和现金充值。</P>
+		<P>您根据自己的需要为您的钱包选择余额”充值“或”出售“，只需填写相关信息即可！商城的客服专员会最快的速度为您联系找到匹配的相关信息。</P>
+		<p style="text-align:right">——特此声明</p>
+	</div>
+</div>
+
+</body>
+</html>
+ 

@@ -1,0 +1,110 @@
+      <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>{$u_info.username} 的分红明细
+				<a style="color:#ff9d46;float: right;width: 50px;" href="{:U('Thedetail/index')}">返回</a>
+				</h3>
+				<div class="xxgl_bottom_t">
+					<br>
+					<p>
+						奖金余额：<span style="color:red">￥{$u_info.money|default=0}</span>
+						<span style="margin-left:20px;" >
+							累计总收益：<span style="color:red" >￥{$all_price|default=0}</span>
+						</span>
+						
+					</p>
+				</div>
+				<div class="jhm_bottom_c">
+					<table id="table1" class="content_table">
+						<dl>
+							<dt style="width: 33%;">级别</dt>
+							<dt style="width: 33%;">收益分红</dt>
+							<dt style="width: 33%;" >操作</dt>
+						</dl>
+					<?php 
+					/*
+						名称配置
+					 */
+						$arr_config= array(
+							1=>'一级', 
+							2=>'二级', 
+							3=>'三级', 
+							300=>'伯乐奖', 
+					);
+					 ?>
+					<foreach name="total_price" item="v" key="k">
+						<tr>
+							<td style="width: 33%;" >{$arr_config[$k]}</td>
+							<td style="width: 33%;">
+							<span style="color:red" >￥{$v|default=0}</span>
+							</td>
+							<td style="width: 33%;">
+								<a style="color:#144ff7;" href="{:U('Thedetail/detail',array('type'=>$k,'userid'=>$userid))}">详细</a>
+							</td>
+						</tr>
+					</foreach>
+					
+					</table>
+				</div>
+				<div class="xxgl_bottom_b">
+				
+				    <div class="page">
+                    </div>
+
+                   <style>
+				  	.page{text-align: center;}
+				  	.page a{color: #a4a4a4;}
+				  	.prev{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  	.num{  padding: 0 10px;  border: 1px solid #ddd;}
+				  	.page .current{ padding: 0 10px;  border: 1px solid #ddd;  margin: 0px 10px;}
+				  	.next{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  </style>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	 <include file="common:js" />	
+	   
+</body>
+</html>
+
+<!-- js 控制表格隔行变色 -->
+	<script type="text/javascript">
+
+		$("#table1 tr:odd").css('background','#DBEAF9');
+		$("#table1 tr:even").css('background','#FEF8BA');
+	</script>	
+
+
+ <!-- 日期 -->
+  <script type="text/javascript" src="__PUBLIC__/admin/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/admin/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+   <!-- 日期js cs -->
+  <link href="__PUBLIC__/admin/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+  <link href="__PUBLIC__/admin/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+    $(function () {
+		$('.date').datetimepicker({
+	        format: 'yyyy-mm-dd',
+	        language:"zh-CN",
+	        minView:2,
+	        autoclose:true,
+	        todayBtn:1, //是否显示今日按钮
+	    });
+
+	    // 表单提交
+	    $('#btn').click(function(){
+	    	$('#f1').submit();
+	    });
+    })
+</script>

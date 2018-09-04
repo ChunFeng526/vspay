@@ -1,0 +1,202 @@
+html,body {font-family:'ArialMT', 'Arial',微软雅黑,Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif;font-size:14px;
+color:#333333;overflow-x:hidden;margin:0;padding:0;background-color: #fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ol,ul,li{list-style:none outside none;margin:0;padding:0;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+a {color:#362e2b;text-decoration:none;cursor:pointer;}
+em,i,b{font-style: normal;font-weight: normal;}
+
+
+/*提现记录*/
+.txrecord_table{
+    border-radius: 5px;
+    width: 100%;
+    background: #ffffff; 
+}
+
+.txrecord_table tr th{
+    width: 20%;
+    text-align: center;
+    line-height: 12vmin;
+    background: #434343;
+    color:#fff;
+
+}
+
+.txrecord_table tr td{
+    width: 20%;
+    text-align: center;
+    line-height: 12vmin;
+    color: #626262;   
+}
+
+#colortd{
+    color:#ffa300;
+}
+
+
+.agent{
+    margin-right: 3%;
+    margin-left: 3%;
+    padding-top:5%;
+}
+
+.agent_nr{
+    width: 100%;
+    height: 45vmin;
+    background: #fff;
+    border:1px solid #cccaca;
+}
+
+.agent_nr h3{
+    height: 10vmin;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 10vmin;
+    padding-left: 3%;
+    color:#666666;
+}
+.agent_nr h3 span{
+    float: right;
+    margin-right: 5%;
+}
+
+.agent_nr h3 span i{
+    font-size: 4vmin;
+    color:#f34e21;
+}
+
+.agent_nt_b{
+    width: 100%;
+    height: 22vmin;
+}
+
+.agent_nr_b_l {
+    width: 60%;
+    height: 22vmin;
+    float: left;
+    padding-top:3%;
+}
+
+.agent_nr_b_l li{
+    line-height: 10vmin;
+    padding-left: 5%;
+    color:#313131;
+}
+
+.agent_nr_b_r{
+   width: 40%;
+    height: 22vmin; 
+    float: right;
+    padding-top:3%;
+}
+
+.agent_nr_b_r li{
+    line-height: 10vmin;
+    padding-left: 5%;
+    color:#313131;
+}
+
+.agent_nr_b_r li i{
+   color:#f34e21;
+}
+
+.agent_nr p{
+    font-size: 3vmin;
+    margin-left: 2%;
+}
+
+/*申请提现*/
+.sqwithdrawals{
+    width: 100%;
+    background: #f0f0f0;
+    padding-bottom: 79%;
+}
+.rawals{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 5%;
+}
+
+.rawals h3{
+    height: 12vmin;
+    width: 100%;
+    line-height: 12vmin;
+    font-size: 5vmin;
+    background: url(../images/20.png) no-repeat left center;
+    padding-left: 10%;
+    background-size: 7%;
+    color:#616161;
+}
+
+.rawals_bott{
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+.rawals_bott p{
+    font-size: 5vmin;
+    color:#616161;
+    line-height: 15vmin;
+}
+
+.rawals_bott p span{
+    color:#ff0000;
+}
+
+.rawals_bott li{
+    line-height: 12vmin;
+    color:#888686;
+    font-size: 4vmin;
+}
+
+.text1{
+    width: 77%;
+    height: 9vmin;
+    background: #fff;
+    border-radius: 5px;
+    border:none;
+}
+
+.level h3{padding: 0.5rem;
+font-size: 1.2rem;}
+
+
+.xgan{
+    width:20%;
+    height: 9vmin;
+    background: #22ac38;
+    border:none;
+    margin-left: 8%;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 4.5vmin;
+    font-family: "微软雅黑";
+}
+
+.txaaan{
+    margin-top:10%;
+    width:100%;
+    height: 10vmin;
+    background: #ffa40c;
+    color:#fff;
+    font-size: 5vmin;
+    border:none;
+    border-radius: 5px;
+    font-family: "微软雅黑";
+}
+
+#message_bg{background: #f0f0f0;position: absolute;height: 100%;width: 100%;}
+.message ul{margin-left: 3%;margin-right: 3%;font-size: 4vmin;padding-top: 5%}
+.message ul li{width: 96%;background: #fff url(../images/right_bg.png) no-repeat center right;;border-bottom: 1px solid #ddd;height: 8vmin;line-height: 8vmin;padding: 2vmin;cursor: pointer;}
+.message ul li a{display: block;}
+
+.message_etails{padding: 3%;}
+.message_etails span{margin-left: 2vmin;}
+.message_etails span,.message_etails i{font-size: 3.5vmin;color: #a4a4a4;}
+.message_etails h3{font-size: 5vmin;font-weight: bold;text-align: center;padding: 2vmin 0;border-bottom: 1px solid #ddd;}
+.message_etails p{font-size: 4vmin;text-indent: 2em;line-height: 8vmin;margin-top: 2vmin}

@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+
+    <link rel="stylesheet" type="text/css" href="css\aui.css">
+
+    <title>Vpay-演示</title>
+
+    <style type="text/css">
+        body {
+            background-color: #100f1d;
+        }
+
+        section {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding-bottom: 80px;
+            background-image: url('css/img/8721835930_1062876253.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        footer {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1,
+        h5 {
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 10px #fff;
+            margin-top: 3%;
+        }
+
+        .btnn {
+            width: 80%;
+            height: 50px;
+            margin: 5% auto;
+            border-radius: 5px;
+            line-height: 50px;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .btntop {
+            margin-top: 5%;
+            margin-bottom: 6%;
+        }
+
+        span {
+            color: #f00;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="aui-content">
+        <h1>Vpay</h1>
+        <h5>全网最牛Vpay系统，秒杀市面上99%产品用户体验！</h5><br/>
+		<img src="css/img/wx.png" style="margin: 0 auto"/>
+		<h5>扫描上方二维码联系客服</h5>
+        <div class="btntop">
+            <div class="btnn" onclick="H5()">H5手机网页版演示</div>
+            <div class="btnn" onclick="Bk();">演示后台</div>
+            <div class="btnn" onclick="backstage()">商城演示后台</div>
+        </div>
+    </section>
+
+    <footer class="aui-bar aui-bar-tab" id="footer">
+        <div id="tabbar1" class="aui-bar-tab-item aui-active">
+            <i class="aui-iconfont aui-icon-paper"></i>
+            <div class="aui-bar-tab-label">演示</div>
+        </div>
+
+        <div id="tabbar2" class="aui-bar-tab-item " onclick="window.open('plan.htm','_self')">
+            <i class="aui-iconfont aui-icon-star"></i>
+            <div class="aui-bar-tab-label">方案</div>
+        </div>
+
+        <div id="tabbar3" class="aui-bar-tab-item" onclick="window.open('order.htm','_self')">
+            <i class="aui-iconfont aui-icon-like"></i>
+            <div class="aui-bar-tab-label">流程</div>
+        </div>
+    </footer>
+
+    <div d="div" style="display: none">
+        <script src="https://s13.cnzz.com/z_stat.php?id=1273495385&web_id=1273495385" language="JavaScript"></script>
+    </div>
+</body>
+<script type="text/javascript">
+    var shebei=0;
+    jiance();
+
+    function Bk() {
+        if (shebei === 1) {
+          alert('后台账号：admin，密码：123456，点击确定跳转后台');
+          window.open("http://www.ddvpay.com/admin");
+        } else if (shebei === 2) {
+          alert('后台账号：admin，密码：123456，点击确定跳转后台');
+          window.open("http://www.ddvpay.com/admin");
+        }
+    }
+
+    function backstage() {
+        if (shebei === 1) {
+          alert('后台账号：admin，密码：123456，点击确定跳转后台');
+          window.open("http://www.ddvpay.com/nc.php");
+        } else if (shebei === 2) {
+          alert('后台账号：admin，密码：123456，点击确定跳转后台');
+          window.open("http://www.ddvpay.com/nc.php");
+        }
+    }
+
+	function H5() {
+        /*if (shebei === 1) {
+          window.open("http://www.ddvpay.com");
+        } else if (shebei === 2) {
+          alert('请使用手机打开！');
+        }*/
+		window.open("http://www.ddvpay.com");
+    }
+	function wordcup() {
+        if (shebei === 1) {
+          window.open("http://www.pcdd2048.com/worldcup/web_adapter/adapter.html");
+        } else if (shebei === 2) {
+          alert('请使用手机打开！');
+        }
+    }
+
+    function jiance(){
+          if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) { //判断iPhone|iPad|iPod|iOS
+           //alert(navigator.userAgent);
+          //  window.location.href ="iPhone.html";
+          shebei=1;
+          } else if (/(Android)/i.test(navigator.userAgent)) { //判断Android
+           //alert(navigator.userAgent);
+          //  window.location.href ="Android.html";
+          shebei=1;
+          } else { //pc
+          //  window.location.href ="pc.html";
+          shebei=2;
+          };
+    }
+</script>
+
+</html>

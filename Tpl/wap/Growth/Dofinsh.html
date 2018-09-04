@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$Think.lang.ywcdd}</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__WJS__/responsive.tabs.js"></script>
+<script src="__WJS__/iscroll.js"></script>
+<script type="text/javascript" src="__WJS__/jquery.reveal.js"></script>
+<body class="bg96">
+
+<div class="header">
+    <div class="header_l">
+        <a href="{:U('Growth/Purchase')}"><img src="__WIMG__/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>{$Think.lang.ywcdd}</h2></div>
+    <div class="header_r"></div>
+</div>
+
+<div class="demo">
+    <div class="accordion">
+
+        <foreach name="orders" item="v">
+            <div class="accordion-handle">
+                <h4>
+                    <p class="accmrp">{$Think.lang.Buyamount}：{$v['pay_nums']}RMB<span class="acco_con_span">{$Think.lang.ywc}</span></p>
+                    <p>{$v['pay_time']|date="Y-m-d H:i:s",###}<span>{$Think.lang.skr}：{$v['uname']}</span></p>
+                </h4>
+                <i></i>
+            </div>
+            <div class="accordion-content por">
+                <div class="acco_con_up">
+                    <p>{$Think.lang.skrxm1}：<span> {$v['uname']}</span></p>
+                    <p>{$Think.lang.sjhm}：<span>{$v['umobile']}</span></p>
+                    <p>{$Think.lang.bankname}：<span>{$v['bname']}</span></p>
+                    <p>{$Think.lang.cardnum}：<span>{$v['cardnum']}</span></p>
+                    <p>{$Think.lang.openbranch}：<span>{$v['openrds']}</span></p>
+                    <p>{$Think.lang.jyje}：<span>{$v['pay_nums']}RMB</span></p>
+                    <p>{$Think.lang.zt}：<span class="acco_con_span">{$Think.lang.ywc}</span></p>
+                </div>
+                <div class="acco_con_upa">
+                    <h3>{$Think.lang.dkjt}</h3>
+                    <div class="shangcjt">
+                        <div class="containera">
+                            <a href="{:U('Growth/Paidimg',array('id'=>$v['id']))}"><img src="{$v['trans_img']}"  ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </foreach>
+
+        <!--<div class="accordion-handle">
+            <h4>
+                <p class="accmrp">卖出金额：3000RMB<span class="acco_con_span">已完成</span></p>
+                <p>2018-03-15 20:33:24<span>打款人：张三</span></p>
+            </h4>
+            <i></i>
+        </div>
+        <div class="accordion-content por">
+            <div class="acco_con_up">
+                <p>打款人姓名：<span> 张三</span></p>
+                <p>手机号码：<span>13512341234</span></p>
+
+                <p>交易金额：<span>3000.00RMB</span></p>
+                <p>状态：<span class="acco_con_span">已完成</span></p>
+            </div>
+            <div class="acco_con_upa">
+
+                <h3>打款截图</h3>
+                <div class="shangcjt">
+                    <div class="containera">
+                        <a href="me_Sell_xial_Completeda.html"><img src="__WIMG__/timg.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        <notempty name="page">
+            <ul class="pagination">{$page}</ul>
+        </notempty>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.accordion').respTabs({
+            model: 'accordions'
+        });
+    });
+</script>
+</body>
+</html>

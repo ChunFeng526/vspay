@@ -1,0 +1,3472 @@
+li{list-style: none;}
+
+input {
+    vertical-align: middle;
+}
+a{text-decoration: none;}
+.header{
+    width:100%;
+    height:13vmin;
+    background: #000;
+}
+.header h1{
+    color:#fff;
+    text-align: center;
+    line-height: 13vmin;
+    font-size:4.5vmin;
+    font-family: "微软雅黑";
+}
+
+.header_l{
+    width: 28%;
+    height: 13vmin;
+    float: left;
+   /* position: relative;*/
+}
+
+.header_l a{
+    display: block;
+    float: left;
+    width: 40%;
+    height: 13vmin;
+
+}
+
+.header_c{
+    width: 45%;
+    height: 13vmin;
+    float: left;
+}
+
+.header_r{
+    width: 25%;
+    height: 13vmin;
+    float: right;
+}
+.header_r a{
+    line-height: 13vmin;
+    color:#fff;
+    /*text-align: center;*/
+    font-size:4vmin;
+    float: right;
+    margin-right: 15%;
+}
+
+.header a span{
+    font-size: 4vmin;
+    color: #fff;
+    line-height: 13vmin;
+    position: absolute;
+    padding-left: 8%;
+
+}
+.header_l a img {
+    position: absolute;
+    width: 3%;
+    top: 4vmin;
+    left: 3%;
+}
+
+.header_r a img {
+    position: absolute;
+    width: 6%;
+    top: 4.5vmin;
+    right: 5%;
+}
+
+
+/*-----------------首页-----------------*/
+.head_top{
+    background: #e9e9e9;
+}
+.search{
+    width: 87%;
+    height: 8vmin;
+    margin: 3% 3%;
+    border: none;
+    padding-left: 7%;
+    color: #7f7f7f;
+    font-family: "微软雅黑";
+    font-size: 4vmin;
+
+}
+.lg{
+   float: left;
+    position: absolute;
+    top: 5vmin;
+    left: 5vmin;
+    width: 16px;
+    height: 22px;
+}
+
+.sybanner{
+    width: 100%;
+}
+
+.bannerb{
+    margin:0 auto;
+    width: 100%;
+}
+
+.bannerb img{width: 100%}
+
+.content{
+    width: 100%;
+}
+.content_nr{
+    margin-top:5%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.content_nr_top{
+    height: 52px;
+    width: 100%;
+}
+.tx img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 3%;
+}
+.content_nr_topl{
+    float: left;
+    width: 70%;
+}
+.content_nr_topl h3{
+    line-height: 25px;
+    font-size: 4vmin;
+    color:#ff6c00;
+}
+.content_nr_topl p{
+    line-height: 18px;
+    color:#555555;
+}
+.content_nr_topr{
+    float: right;
+    width: 30%;
+    margin-top:2%;
+}
+
+.content_nr_topr a{
+    padding: 4% 6%;
+    border:1px solid #dcdcdc;
+    float: right;
+}
+
+.content_nr_cent p{
+    line-height: 40px;
+    color:#555555;
+    font-size: 3.8vmin;
+}
+.content_nr_cent li{
+    float: left;
+    width: 31%;
+    margin-left: 3.5%;
+}
+
+.content_nr_cent li a img{
+    width:100%;
+}
+#margin0{
+    margin:0px;
+}
+.clear{
+    clear: both;
+}
+.gray{
+    height: 5vmin;
+    background: #f5f2f2;
+    border-bottom:1px solid #e4e3e3;
+    
+}
+#liborder{border:none;}
+
+.content_nr_bott{
+    width: 100%;
+    border-top:1px solid #e4e3e3;
+    border-bottom:1px solid #e4e3e3;
+    height: 12vmin;
+    margin-top:2%;
+}
+.content_nr_bott li{
+    width: 50%;
+    float: left;
+    height: 12vmin;
+    text-align: center;
+    line-height: 12vmin;
+}
+
+.content_nr_bott li a{
+    padding: 6% 37%;
+   border-right: 1px solid #dcdcdc;
+   font-size: 4.5vmin;
+}
+#linnoo{border:none;}
+.content_nr_bott li a img{
+    margin-right: 1%;
+}
+
+
+
+/*----------------首春登录-------------*/
+.login img.logo {
+    display: block;
+
+    margin: 2.65rem auto 2rem;
+}
+
+.login {
+
+    /*height: 85vmin;*/
+    margin: 0 auto;
+}
+.login dl dd {
+   border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    font-size: 4vmin;
+    padding-left: 10px;
+}
+.login dl dd input {
+    font-size: 4vmin;
+    height: 12.5vmin;
+    line-height: 12.5vmin;
+    color: #fff;
+    background: none;
+    border:none;
+    font-family: "微软雅黑";
+    /* background: rgba(256,256,256,0.3); */
+}
+.dlba {
+    background: #fff;
+    width: 100%;
+    height: 25vmin;
+    box-shadow: 0px 0px 6px #ccc;
+    margin-top: 9vmin;
+}
+
+.login .submit {
+    height: 12vmin;
+    display: block;
+    font-size: 4.5vmin;
+    text-align: center;
+    margin-top: 4.35rem;
+    line-height: 12vmin;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #fd2e9e;
+    border: 0;
+    font-family: "微软雅黑";
+}
+
+.share{
+    margin-top:3vmin;
+    width: 100%;
+}
+.share p {
+    text-align: center;
+    font-size: 4.5vmin;
+    float: left;
+    width: 33%;
+    line-height: 65px;
+}
+.share p img{
+    height: 0.3vmin;
+    width: 100%;
+}
+
+.share_bb{
+    width: 100%;
+
+}
+
+.share_bb li {
+    float: left;
+    width: 28%;
+    margin-right: 8%;
+    text-align: center;
+}
+
+.share_bb li img{
+    width:70%;
+}
+
+#liright0{
+    margin-right: 0px;
+}
+.extra{
+    height: 12vmin;
+    border-top:1px solid #aaaaaa;
+}
+
+.extra a{
+    width: 49%;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 10vmin;
+    font-size: 4.5vmin;
+    border-right: 1px solid #aaaaaa;
+    margin-top:2%;
+}
+
+
+/*-----------------注册------------*/
+.dlbabb {
+    background: #fff;
+    width: 100%;
+    height: 52vmin;
+    box-shadow: 0px 0px 6px #ccc;
+    margin-top: 9vmin;
+}
+.btnss {
+    background-color: #dcdcdc;
+    color: #555555;
+    border: 0;
+    display: block;
+    text-align: center;
+    height: 2.32rem;
+    line-height: 2.32rem;
+    padding: 0 0.25rem;
+    border-radius: 0.20rem;
+    margin-left: 0.2rem;
+    font-size: 3.5vmin;
+    width: 18%;
+    float: right;
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.submittt{
+    height: 12vmin;
+    display: block;
+    font-size: 4.5vmin;
+    text-align: center;
+    margin-top: 4.35rem;
+    line-height: 12vmin;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #c8c8c8;
+    border: 0;
+    font-family: "微软雅黑";
+}
+
+.loginbb p{
+    line-height: 14vmin;
+}
+.loginbb p a{
+    color:#fb2993;
+}
+
+.loginbb p span a{
+    float: right;
+    color:#fb2993;
+}
+
+
+/*-----------------找回密码---------------*/
+.password{
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top:6%;
+}
+
+.password p{
+    font-size: 4vmin;
+    line-height: 12vmin;
+}
+.btnssbb {
+    color: #fa0000;
+    border: 0;
+    display: block;
+    text-align: center;
+    height: 2.70rem;
+    line-height: 2.70rem;
+    padding: 0 0.25rem;
+    border-radius: 0.20rem;
+    margin-left: 0.2rem;
+    font-size: 3.5vmin;
+    width: 30%;
+    float: right;
+    margin-top: 0.6rem;
+    margin-right: 0.8rem;
+    border: 1px solid #fa0000;
+}
+
+.texttt{
+    height:2.70rem;
+    line-height:2.70rem;
+    width:58%;
+    border-radius: 0.20rem;
+    border:1px solid #d2d2d2;
+    padding-left: 3%;
+    font-size: 4vmin;
+    font-family: "微软雅黑";
+}
+.password p i{
+    color:#fa0000;
+}
+
+.submitcc{
+     height: 12vmin;
+    display: block;
+    font-size: 4.5vmin;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 12vmin;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #bfbfbf;
+    border: 0;
+    font-family: "微软雅黑";
+}
+
+.textcc{
+    height:3.20rem;
+    line-height:3.20rem;
+    width:96%;
+    border-radius: 0.20rem;
+    border:1px solid #d2d2d2;
+    padding-left: 3%;
+    font-size: 4vmin;
+    border-radius: 5px;
+    font-family: "微软雅黑";
+}
+
+
+/*----------------微信登录-----------------*/
+
+.wechat img.logowx {
+    display: block;
+    width: 100%;
+    margin: 2.65rem auto 1rem;
+}
+
+.wechat {
+    width: 90%;
+    /*height: 85vmin;*/
+    margin: 0 auto;
+}
+
+.wechat p{
+    font-size: 4vmin;
+    color:#000;
+    line-height: 8vmin;
+}
+
+.wechat p i{
+    color:#555555;
+    font-size:3vmin;
+}
+
+.wechat .submitdd {
+    height: 12vmin;
+    display: block;
+    font-size: 4.5vmin;
+    text-align: center;
+    margin-top: 4.35rem;
+    line-height: 12vmin;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #03aa1b;
+    border: 0;
+    font-family: "微软雅黑";
+}
+
+
+/*-----------------QQ登录---------------*/
+.qqlogin{
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top:10%;
+}
+
+.qqloginnr{
+    width: 100%;
+    height:97vmin;
+    border-radius: 5px;
+    border:1px solid #bfbfbf;
+    background: #fff;
+}
+
+.qqimg img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.qqloginnr p img{
+    width:20%;
+    height: 20%;
+    margin-left: 5%;
+    margin-top:6%;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5%;
+
+}
+
+.qqloginnr h5{
+    margin-top: 3%;
+    line-height: 10vmin;
+    font-size:3.8vmin;
+    color:#000;
+}
+
+.qqloginnr h5 span{
+    color:#555;
+}
+
+.qqloginnr p{
+    font-size: 3.8vmin;
+}
+
+.qqloginbb{
+    height: 12vmin;
+    display: block;
+    font-size: 4.5vmin;
+    text-align: center;
+    margin-top:3.35rem;
+    line-height: 12vmin;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #03b5e1;
+    border: 0;
+    font-family: "微软雅黑";
+}
+
+
+
+/*------------微博号登录-------------*/
+.microbtop{
+   width: 100%; 
+   margin-top: 10%;
+}
+
+.microb {
+    width: 85%;
+    /*height: 85vmin;*/
+    margin: 0 auto;
+}
+.microb dl dd {
+    border: 1px solid #dcdcdc;
+    position: relative;
+    font-size: 4vmin;
+    padding-left: 10px;
+    text-align: center;
+    width: 80%;
+    height: 12vmin;
+    margin: 0 auto;
+    margin-top:3%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #cacaca;
+}
+.microb dl dd input {
+    font-size: 4vmin;
+    height: 12.5vmin;
+    line-height: 12.5vmin;
+    color: #fff;
+    background: none;
+    border:none;
+    font-family: "微软雅黑";
+    /* background: rgba(256,256,256,0.3); */
+}
+
+.microbtopimg {
+    width: 75%;
+    height: 10vmin;
+    float: left;
+}
+
+.microbtopimg img{
+    width: 50%;
+}
+
+.dlbabbwb {
+    background: #fff;
+    width: 100%;
+    height: 65vmin;
+    box-shadow: 0px 0px 6px #abaaaa;
+    margin-top: 4vmin;
+    border-radius: 6px;
+}
+
+.microbtopa{
+    width: 25%;
+    height: 10vmin;
+    float: right;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.microbtopa a {
+    line-height: 10vmin;
+    font-size: 4vmin;
+    padding: 5% 30%;
+    background: #f43931;
+    color:#fff;
+}
+
+.dlbabbwb p{
+    text-align: center;
+    line-height: 12vmin;
+    color:#000;
+    font-size: 4.5vmin;
+}
+
+.submitwb {
+    height: 12vmin;
+    display: block;
+    font-size: 4.5vmin;
+    text-align: center;
+    line-height: 12vmin;
+    width: 85%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e83c34;
+    border: 0;
+    font-family: "微软雅黑";
+    margin: 1.35rem auto;
+}
+
+.microbegis{
+    margin-top:5%;
+}
+
+.microbegis li{
+    font-size: 4vmin;
+    line-height: 10vmin;
+
+}
+
+.microbegis li p{
+ padding-left: 5%;
+   
+}
+
+.microbegis li input{
+    width: 100%;
+    height: 12vmin;
+    border:none;
+    border-top:1px solid #cfcfcf;
+    border-bottom:1px solid #cfcfcf;
+    padding-left: 5%;
+    font-family: "微信登录";
+    font-size: 4vmin;
+}
+
+.submitmi {
+    height: 12vmin;
+    display: block;
+    font-size: 4.5vmin;
+    text-align: center;
+    margin-top: 4.35rem;
+    line-height: 12vmin;
+    width: 94%;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 3%;
+    margin-left: 3%;
+    background-color: #e83c34;
+    border: 0;
+    font-family: "微软雅黑";
+}
+.microbbott{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.microbbott p{
+    font-size: 4vmin;
+    line-height: 8vmin;
+
+}
+
+.microbbott p a{
+    color:#06567f;
+}
+#checkall1{
+    margin-right: 2%;
+}
+
+/*-------------出租-------------*/
+.rent{
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.rentnr{
+    width: 100%;
+    height: 118vmin;
+    background: #fff;
+    border:1px solid #eeeeee;
+    border-radius: 3px;
+    margin-bottom: 5%;
+}
+
+.renterimg img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.renterh3{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.renterh3 h3{
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    color:#000;
+}
+
+.renterh3 h3 span{
+    float: right;
+    color:#fc058b;
+}
+
+.renterbott{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.renterbottl{
+    width: 70%;
+    height: 18vmin;
+    float: left;
+}
+
+.renterbottr{
+    width: 30%;
+    height: 18vmin;
+    float: right;
+}
+
+.renterbottl li{
+    font-size: 3.5vmin;
+    float: left;
+    width: 50%;
+    line-height: 8vmin;
+}
+
+.renterbottl li img{
+    width: 18%;
+    margin-right: 7%;
+    vertical-align: middle;
+}
+
+.renterbottr a {
+    float: right;
+    padding: 8% 16%;
+    background: #fc058b;
+    border-radius: 5px;
+    margin-top: 12%;
+    font-size: 4.5vmin;
+    color: #fff;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-right: 3%;
+    margin-left: 3%;
+    border-radius: 5px;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fc058b;
+}
+
+/*.rentalde{
+    height: 110vmin;
+}*/
+.rentaldebb{
+    height: 44vmin;
+}
+.kddiv{
+    height: 5vmin;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    background: #f9f5f7;
+    clear: both;
+}
+
+.rentaldebott{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.rentaldebott h5{
+    line-height: 18vmin;
+    font-size: 4.5vmin;
+    color:#000;
+    float: left;
+    margin-right: 5%;
+}
+
+.rentaldebott li{
+    float: left;
+    /*margin-right: 2%;*/
+    line-height: 18vmin;
+}
+
+.rentaldebott li img{
+    width: 80%;
+}
+
+.rentaldebott p{
+    color:#ff0080;
+    float: right;
+    font-size: 4.5vmin;
+    line-height: 18vmin;
+}
+
+.rental{
+   /* height: 34vmin;*/
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.rental h3{
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    color:#000;
+}
+.rental li{
+    float: left;
+    width: 30%;
+    line-height: 10vmin;
+}
+.rental li img {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.rentalbb{
+    height: 13vmin;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.rentalbb h3{
+    color:#000;
+    line-height: 13vmin;
+    font-size: 4.5vmin;
+}
+
+.rentalbb h3 span{
+    color:#555;
+    padding-left: 8%
+}
+
+
+.rentalaa{
+    /*height: 48vmin;*/
+    margin-right: 3%;
+    margin-left: 3%;
+    padding-bottom: 34%;
+}
+
+.rentalaa h3{
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    color:#000;
+}
+.rentalaa li{
+    float: left;
+    width: 30%;
+    line-height: 10vmin;
+}
+.rentalaa li{
+    text-align: center;
+    padding:5px 10px;
+    background: #fc459d;
+    margin-left:5%;
+    margin-top:3%;
+    border-radius: 5px;
+    font-size: 4.5vmin;
+    color:#fff;
+}
+
+#linono{
+    margin-left:0px;
+}
+
+.rentalss{
+    height: 48vmin;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.rentalss h3{
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    color:#000;
+}
+
+.rentalss tr th{
+    width:20%;
+    font-size: 4vmin;
+    color:#000;
+    border:none;
+    line-height: 11vmin;
+}
+
+.rentalss tr td{
+    border-bottom: 1px solid #dcdcdc;
+    width: 60%;
+    margin-right: 3%;
+}
+.table{
+    width: 100%;
+}
+
+.table tr td .inputtt{
+    font-size: 4vmin;
+    border:none;
+}
+
+.message{
+    height: 17vmin;
+    margin-right:3%;
+    margin-left: 3%;
+}
+
+.message h3{
+    line-height: 13vmin;
+    font-size: 4.5vmin;
+    color:#000;
+}
+
+.message h3 span{
+    color:#555;
+    padding-left: 8%;
+    font-size: 4vmin;
+}
+
+.payment{
+    height: 50vmin;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+}
+
+.payment h3{
+    line-height: 13vmin;
+    font-size: 4.5vmin;
+    color:#000; 
+}
+
+.payment li{
+    line-height: 12vmin;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 4vmin;
+    color:#555555;
+}
+.payment li img{
+    width: 10%;
+    margin-right: 5%;
+    vertical-align: middle;
+}
+.payment li input{
+    float: right;
+    margin-top:5%;
+}
+
+.footnn{
+    width: 100%;
+    height: 12vmin;
+    position: fixed;
+    bottom:0;
+}
+
+.footnn li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+}
+.footnn li a {
+    padding: 9% 32%;
+    color:#fff;
+}
+
+.footnn li .liafoot1{
+    padding: 9% 32%;
+    background: #fc048c;
+    text-align: none;
+}
+
+.footnn li .liafoot2{
+    padding: 9% 32%;
+    background: #239ad4;
+    text-decoration: none;
+}
+
+/*---------------立即支付--------------*/
+.ljpayment{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top:3%;
+}
+.ljpayment li{
+    line-height: 12vmin;
+    font-size: 4vmin;
+    color:#000;
+    border-bottom: 1px solid #bebebe;
+}
+
+.ljpayment li i{
+    color:#fc459d;
+}
+
+.ljpayment li span img {
+    width: 10%;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+
+.footzf{
+    width: 100%;
+    height: 13vmin;
+    background: #239ad4;
+    position: fixed;
+    bottom:0;
+}
+
+.footzf input{
+    width: 100%;
+    height: 13vmin;
+    color:#fff;
+    background: #239ad4;
+    border:none;
+    font-size: 4.5vmin;
+    font-family: "微软雅黑";
+}
+
+
+.mentnr{
+    width: 75%;
+    height: 50vmin;
+    margin:0 auto;
+    margin-top:15%;
+}
+.mentnr img{
+    width:43%;
+}
+
+.mentnr p{
+    text-align: center;
+    font-size: 3.5vmin;
+}
+
+.mentnr h3{
+    text-align: center;
+    color:#2e8fbd;
+    font-size: 5vmin;
+    line-height: 12vmin;
+}
+
+.zfbutton{
+    width: 100%;
+    height: 12vmin;
+    background: #fc459d;
+    margin-top:10%;
+    border:none;
+    border-radius: 5px;
+    font-size: 5vmin;
+    color:#fff;
+    font-family: "微软雅黑";
+}
+
+.leasing{
+    margin-right: 3%;
+    margin-left: 3%;
+    height: 55vmin;
+}
+
+.leasing h3{
+    line-height: 13vmin;
+    font-size: 4.5vmin;
+    color:#000; 
+}
+
+.tablebb{
+    width: 100%;
+
+}
+
+.tablebb tr th{
+    width: 25%;
+    font-size: 4vmin;
+    color:#000;
+    line-height: 10vmin;
+}
+
+.tablebb tr td{
+    width: 75%;
+    font-size: 4vmin;
+    color:#000;
+    line-height: 10vmin;
+}
+
+.tablebb tr td i{
+    color:#fc459d;
+}
+
+
+/*------------筛选----------*/
+
+.filter{
+    border-top:1px solid #eee;
+}
+
+.filter h3{
+    font-size: 4.5vmin;
+    color:#000;
+    line-height: 12vmin;
+    border-bottom: 1px solid #eeeeee;
+    padding-left: 3%;
+
+}
+
+.icon-box::before {
+    content: "\e674";
+}
+
+.icon::before {
+    z-index: 10;
+    display: inline-block;
+    margin: 0 0.4em 0 0;
+    vertical-align: middle;
+    text-transform: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 1.3em;
+    font-family: 'stroke7pixeden';
+    line-height: 1;
+    speak: none;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.filterbb{
+    width:100%;
+    margin-top:5%;
+    float: left;
+}
+
+.filterbb h4{
+    font-size: 4.5vmin;
+    color:#000;
+    line-height:8vmin;
+
+}
+
+/*.filterbb li{
+    float: left;
+    line-height: 12vmin;
+    width: 28%;
+    background: #fc459d;
+    border-radius: 5px;
+    text-align: center;
+    margin:2% 2.5%;
+}
+
+.filterbb li a{
+    color:#fff;
+    font-size: 4vmin;
+}
+
+.filterbb li a:hover{
+    background: #1dbdf1;
+    padding: 5% 10%;
+}*/
+
+
+.footzfbb input {
+    width: 94%;
+    height: 12vmin;
+    color: #fff;
+    background: #fc459d;
+    border: none;
+    font-size: 4.5vmin;
+    font-family: "微软雅黑";
+    border-radius: 5px;
+    margin-left: 3%;
+    margin-top:10%;
+
+}
+
+
+/*--------我的收藏----------*/
+.collection{
+    width: 100%;
+}
+.collection li a {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: block;
+    height: 18vmin;
+    background: url(../images/libg.png) no-repeat 96% 55%;
+}
+
+.collection li a img {
+    width: 15%;
+    border-radius: 10px;
+    margin-left: 3%;
+    float: left;
+    margin-top: 1.5%;
+    margin-right: 3%;
+}
+
+.collection li a h3{
+    line-height: 10vmin;
+    font-size: 4.5vmin;
+}
+
+.collection li a p{
+    color:#b3b3b3;
+}
+
+
+/*----------租人------------*/
+.tenant{
+    width: 100%;
+    height: 15vmin;
+    border-top:1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+.tenant li {
+    float: left;
+    line-height: 15vmin;
+    width: 24.5%;
+    text-align: center;
+    font-size: 4vmin;
+}
+
+.tenant li a{
+    padding:18% 10%;
+}
+.tenantli{
+    color:#fc058b;
+    border-bottom: 2px solid #fc058b;
+}
+.tenantcenter{
+    width: 100%;
+    border-top:1px solid #eee;
+}
+
+.tenantcenter h3{
+    line-height: 12vmin;
+    color:#000;
+    font-size: 4.2vmin;
+}
+
+.tenantcenter h3 span{ 
+   color:#a4a4a4;
+}
+
+.replace{
+    height: 25vmin;
+    border-bottom: 1px solid #eee;
+}
+
+.basic {
+     line-height: 12vmin; 
+    color: #555;
+    font-size: 4.2vmin;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+}
+.basic tr{
+    width: 100%;
+   
+}
+
+.basic tr th{
+    width: 15%;
+}
+
+.h3bb{
+    margin-left: 3%;
+}
+
+.basic tr td{
+    width: 48%;
+    line-height: 10vmin;
+    border-bottom: 1px solid #eee;
+}
+
+.basic tr td input {
+    line-height: 6vmin;
+    font-family: "微软雅黑";
+    font-size: 4vmin;
+    border: none;
+    width: 100%;
+}
+
+.rentalrange h4{
+    line-height: 12vmin;
+    color:#000;
+    font-size: 4.2vmin;
+    margin-left: 3%;
+}
+
+.rentalrange li{
+    float: left;
+    width: 26.5%;
+    height: 12vmin;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 4vmin;
+    line-height: 12vmin;
+    /*border:1px solid #fc058b;*/
+    margin:2% 3%;
+}
+
+.rentalrange li a{
+    color:#fc058b;
+    padding: 12% 19%;
+}
+
+.rentalrange li a:hover{
+    background: #fc058b;
+    width: 26.5%;
+    height: 12vmin;
+
+}
+
+.rentlian{
+    background: #fc058b;
+}
+
+.rentalrange p {
+    line-height: 10vmin;
+    float: right;
+    margin-right: 4%;
+    font-size: 4vmin;
+}
+.rentalrange p a{
+    color:#a4a4a4;
+}
+
+.message h4{
+    line-height: 12vmin;
+    color:#000;
+    font-size: 4.5vmin;
+}
+
+#introduce{
+    width: 96%;
+    height: 22vmin;
+    border:1px solid #ccc;
+    padding-left: 3%;
+    font-family: "微软雅黑";
+
+}
+
+.buttonbb{
+    width: 80%;
+    height: 12vmin;
+    background: #fc058b;
+    border-radius: 5px;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+.buttonbb input{
+    width: 100%;
+    height: 12vmin;
+    background: #fc058b;
+    border:none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "微软雅黑";
+    color:#fff;
+    font-size: 4.5vmin;
+}
+
+.message p{
+    text-align: center;
+    line-height: 10vmin;
+}
+
+.message p a{
+    color:#fc058b;
+}
+
+/*------我要招租------*/
+.rentalrangebb h4{
+    line-height: 12vmin;
+    color:#000;
+    font-size: 4.2vmin;
+    margin-left: 3%;
+}
+
+.rentalrangebb li{
+    float: left;
+    width: 26.5%;
+    height: 12vmin;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 4vmin;
+    line-height: 12vmin;
+    border:1px solid #ff9c00;
+    margin:2% 3%;
+}
+
+.rentalrangebb li a{
+    color:#ff9c00;
+    padding: 12% 19%;
+}
+
+.rentalrangebb li a:hover{
+    background: #ff9c00;
+    width: 26.5%;
+    height: 12vmin;
+
+}
+
+.rentlianbb{
+    background: #ff9c00;
+}
+
+.buttoncc{
+    width: 80%;
+    height: 12vmin;
+    background: #ff9c00;
+    border-radius: 5px;
+    margin:0 auto;
+    margin-top:8%;
+}
+
+.buttoncc input{
+    width: 100%;
+    height: 12vmin;
+    background: #ff9c00;
+    border:none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "微软雅黑";
+    color:#fff;
+    font-size: 4.5vmin;
+}
+
+.messagebb{
+    height: 32vmin;
+    background: #f6f2f4;
+    border-top:1px solid #eee;
+}
+
+.messagebb p{
+    text-align: center;
+    line-height: 10vmin;
+}
+.messagebb p a{
+     color:#ff9c00;
+}
+
+/*----------谁租了我----------*/
+.rentedme{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    border-top:1px solid #eee;
+}
+.rentedme h3{
+    line-height: 12vmin;
+    border-bottom: 1px solid #eee;
+    font-size: 3.5vmin;
+    padding-left: 3%;
+}
+
+.rentedmetop{
+    height: 23vmin;
+}
+
+.rentedmetop img{
+    width: 20%;
+    border-radius: 50px;
+    float: left;
+    margin-top:1.5%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.rentedmetop h4{
+    font-size: 4.5vmin;
+    color:#000;
+    line-height: 12vmin;
+}
+.rentedmetop span{
+    float: right;
+    margin-right: 3%;
+    font-size: 4vmin;
+    color:#fc058b;
+
+}
+
+.rentedmetop p{
+    font-size: 4vmin;
+    color:#555555;
+}
+
+.rentedmetop p i{
+    color:#0898f4;
+}
+
+.rentedmelxfs{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top:1%;
+}
+
+.rentedmelxfs li{
+    line-height: 8vmin;
+    font-size: 3.5vmin;
+    color:#555;
+}
+
+.contact {
+    width: 33%;
+    height: 7vmin;
+    border:none;
+    border:1px solid #9c9c9c;
+    background: none;
+    border-radius: 6px;
+    font-size: 4vmin;
+    font-family: "微软雅黑";
+    color:#555;
+}
+
+.contactan{
+    height: 18vmin;
+    margin-bottom: 3%;
+}
+
+.contactan input{
+    width: 40%;
+    float: left;
+    margin:6% 5%;
+    height: 10vmin;
+    border:none;
+    border-radius: 8px;
+    font-size: 4vmin;
+    font-family: "微软雅黑";
+    color:#fff;
+}
+
+.button1{
+    background: #fc058b;
+}
+
+.buttonan1{
+    background: #fff;
+}
+.button2{
+    background: #8e8e8e;
+}
+
+/*--------个人中心--------*/
+.personalnr{
+    width: 100%;
+    height: 64vmin;
+    /*border-bottom: 1px solid #eee;*/
+
+}
+.personal{
+    width: 95%;
+    margin-right: 3%;
+    border-left: 3%;
+    margin:0 auto;
+    margin-top:5%;
+}
+.personal li{
+    float: left;
+    width: 49%;
+    height: 32vmin;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    border-right:1px solid #eee;
+   
+
+}
+
+.personal li img{
+   margin-bottom: 3%;
+   width: 25%;
+   margin-top:8%;
+   text-align: center;
+}
+
+/*.personal li a{
+    padding:21% 70%;
+    background: #ccc;
+}*/
+.logogg{
+    float: left;
+    position: absolute;
+    width: 28%;
+    left: 35vmin;
+    top: 33vmin;
+}
+
+.grzx ul {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.grzx li {
+    line-height: 13vmin;
+    border-bottom: 1px solid #dedede;
+    background: url(../images/li1.png) no-repeat right center;
+}
+
+.grzx li a {
+    display: block;
+    font-size: 4vmin;
+    color: #434343;
+}
+
+.grzx li img {
+    vertical-align: middle;
+    width: 9%;
+    margin-right: 5%;
+}
+
+.personalan{
+    height: 60vmin;
+    background: #f9f5f7;
+    border-top:1px solid #eee;
+}
+
+
+.personalan p{
+    text-align: center;
+    line-height: 40vmin;
+}
+.personalan input{
+    width: 90%;
+    height: 11vmin;
+    border:none;
+    background: #fd2e9e;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 4.5vmin;
+    font-family: "微软雅黑";
+}
+
+
+/*--------绑定手机------*/
+.bdphone{
+    height: 25vmin;
+    background: #fff;
+    border-top:1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.bdphone li{
+    line-height: 12vmin;
+    border-bottom: 1px solid #eee;
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: 4vmin;
+}
+.bdphone li span{
+    float: right;
+    color:#fc058b;
+}
+
+
+/*--------开通会员------*/
+.membership{
+    width: 100%;
+    height: 50vmin;
+    background: #fff;
+    border-top:1px solid #eee;
+
+}
+.membership li{
+    line-height: 16vmin;
+    border-bottom: 1px solid #eee;
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: 5vmin;
+    color:#faab01;
+}
+
+.membership img{
+    vertical-align: middle;
+    width: 20%;
+    margin-right: 3%;
+}
+
+.membership li span{
+    float: right;
+    font-size: 4vmin;
+    width: 15%;
+
+}
+
+.membership li span a{
+    color:#fff;
+    padding:10% 20%;
+    background: #fc058b;
+    border-radius: 5px;
+}
+
+.collection li{
+    background: #fff;
+}
+
+.collection h5{
+    line-height: 12vmin;
+    border-bottom: 1px solid #eee;
+    font-size: 4vmin;
+    padding-left: 3%;
+    background: #fff;
+}
+
+
+/*------------订单确认------------*/
+.ordermation{
+    margin-right: 3%;
+    margin-left: 3%;
+    height: 25vmin;
+    border:1px solid #e5e5e5;
+    background: #fff;
+}
+.ordermation p{
+    font-size: 4vmin;
+    color:#000;
+    line-height: 8vmin;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
+.ordermation p i{
+    color:#ff9000;
+}
+
+.select{
+    line-height: 12vmin;
+    color:#000;
+    font-size: 4vmin;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.zfment{
+    height: 40vmin;
+    background: #fff;
+    border:1px solid #e5e5e5;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.zfment li{
+    line-height: 13vmin;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 4vmin;
+    color:#000;
+    padding-left: 3%;
+}
+
+.zfment li span{
+    float: right;
+    margin-right: 3%;
+}
+
+
+/*------------关于我们-------------*/
+.aboutus{
+    width: 90%;
+   /* height: 50vmin;*/
+    margin:0 auto;
+    margin-top:8%;
+}
+.aboutus img{
+    width:30%;
+}
+
+.aboutus p{
+    text-align: center;
+    font-size: 3.5vmin;
+}
+
+.aboutus ul{
+    margin-top: 8%;
+}
+.aboutus li{
+    line-height: 13vmin;
+    color:#000;
+    font-size: 3.8vmin;
+    border-bottom: 1px solid #bebebe;
+}
+
+.aboutus li span{
+    float: right;
+    color:#555555;
+}
+
+.aboutusbott{
+    width: 90%;
+    margin:0 auto;
+    margin-top:8%;
+}
+.aboutusbott img{
+    width:15%;
+}
+
+.aboutusbott p{
+    text-align: center;
+    font-size: 3.5vmin;
+    color:#a4a4a4;
+}
+
+
+
+/*--------------意见箱-----------------*/
+.opiniontop{
+    height: 10vmin;
+    background: #f5e8a0;
+    width: 100%;
+}
+
+.opiniontop p{
+    line-height: 10vmin;
+    font-size: 3.5vmin;
+    color:#ff8502;
+    padding-left: 3%;
+}
+
+#introducebb{
+    width: 97%;
+    height: 28vmin;
+    padding-left: 3%;
+    font-family: "微软雅黑";
+    border:none;
+    line-height: 10vmin;
+
+}
+
+.opiniopbott{
+    height: 15vmin;
+    background: #fff;
+}
+
+.opiniopbott p{
+    line-height: 15vmin;
+    font-size: 3.5vmin;
+    color:#000;
+    padding-left: 3%;
+}
+
+.opiniopbott p input{
+    margin-left: 6%;
+    line-height: 8vmin;
+    width: 70%;
+    border: none;
+    font-family: "微软雅黑";
+}
+
+.bdphone li span input{
+    line-height: 7vmin;
+    text-align: right;
+    font-size: 3.5vmin;
+    font-family: "微软雅黑";
+    border:none;
+}
+
+
+
+/*-----------身份认证-----------*/
+.identity{
+    margin-top:5%;
+}
+
+.identityl{
+    float: left;
+    width: 34%;
+    margin-left: 3%;
+
+}
+
+.identityl p{
+    text-align: center;
+    line-height: 10vmin;
+    font-size: 4vmin;
+    color:#9a9a9a;
+}
+
+.identityl p img{
+    width: 33vmin;
+    height: 20vmin;
+}
+.identityr p img{
+    width: 33vmin;
+    height: 20vmin;
+}
+
+.identityr{
+    float: right;
+    width: 34%;
+    margin-right: 3%;
+}
+
+.identityr p{
+    text-align: center;
+    line-height: 10vmin;
+    font-size: 4vmin;
+    color:#9a9a9a;
+}
+
+
+.identity p{
+    margin-left: 3%;
+    line-height: 12vmin;
+    color:#9a9a9a;
+    font-size: 4vmin;
+}
+
+
+
+.enterprisel{
+    width: 34%;
+    margin-left: 3%;
+}
+
+.enterprisel p{
+    text-align: center;
+    line-height: 10vmin;
+    font-size: 4vmin;
+    color:#9a9a9a;
+}
+
+.enterprisel p img{
+    width: 32vmin;
+    height: 35vmin;
+}
+
+.collection li span{
+    width: 20%;
+    height:20%;
+    position: relative;
+}
+.collection li span em {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fc058b;
+    position: absolute;
+    left: 15vmin;
+    top: 1vmin;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+}
+
+
+/*--------我的钱包---------*/
+.wallet{
+    height: 40vmin;
+    background: #fff;
+    width: 100%;
+    
+}
+
+.walletl{
+    width: 50%;
+    height: 20vmin;
+    float: left;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.walletl p {
+    text-align: center;
+    line-height: 6vmin;
+    border-right: 1px solid #dcdcdc;
+    margin-top: 9%;
+    font-size: 4vmin;
+    color:#000;
+}
+
+.walletl p i{
+    color:#fc058b;
+}
+
+.walletl p span{
+    color:#a4a4a4;
+}
+
+.walletll{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.walletll h3{
+    line-height: 12vmin;
+    font-size: 4vmin;
+    color:#fc058b;
+}
+
+.walletll li{
+    line-height: 13vmin;
+    font-size: 4vmin;
+    color:#000;
+}
+
+.walletll li input{
+    width: 70%;
+    height: 8vmin;
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+    padding-left: 3%;
+}
+
+.walletll p{
+    text-align: center;
+    font-size: 3.5vmin;
+    color:#fc058b;
+    margin-bottom: 20%;
+}
+
+
+
+/*----------提现-----------*/
+.withdraw{
+    height: 12vmin;
+    background: #fff;
+}
+
+.withdraw p {
+    line-height:12vmin;
+    font-size: 4vmin;
+    color:#000;
+}
+
+.withdraw p span{
+    color:#fc058b;
+}
+
+.withdrawbb p{
+    line-height: 12vmin;
+    font-size: 4vmin;
+    color:#000;
+    margin-left: 3%;
+}
+
+.withdrawcent {
+    height: 17vmin;
+    background: #FFF;
+}
+
+.withdrawcent img{
+    width: 12%;
+    margin-left: 4%;
+    vertical-align: middle;
+    margin-top:3%;
+    float: left;
+    margin-right: 3%;
+}
+
+.withdrawcent h3{
+    font-size: 4vmin;
+    color:#000;
+    line-height: 11vmin;
+}
+
+.withdrawcent p{
+    font-size: 3.5vmin;
+    color:#555;
+    line-height: 1vmin;
+}
+
+.withdraw p input{
+    margin-left: 5%;
+    font-family: "微软雅黑";
+    font-size: 3.8vmin;
+    border:none;
+}
+
+
+/*--------提现记录-------*/
+.txrecording h3{
+    line-height: 10vmin;
+    margin-left: 3%;
+    font-size: 3.5vmin;
+    margin-right: 3%;
+}
+
+.txrecording h3 span{
+    float: right;
+}
+.txrecording li{
+    line-height: 10vmin;
+    font-size: 3.5vmin;
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.txrecording li span{
+    float: right;
+}
+
+
+.collection h4{
+    text-align: center;
+    line-height: 14vmin;
+    font-size: 4vmin;
+    color:#a4a4a4;
+}
+
+
+/*----------发布技能-----------*/
+
+#introducecc {
+    width: 96%;
+    height: 18vmin;
+    border: 1px solid #ccc;
+    padding-left: 3%;
+    font-family: "微软雅黑";
+    margin-top: 5%;
+}
+
+#introduceaa{
+    width: 96%;
+    height: 12vmin;
+    border:1px solid #ccc;
+    padding-left: 3%;
+    font-family: "微软雅黑";
+
+}
+
+.selectq{
+    width: 100%;
+    height: 9vmin;
+    font-size: 3.5vmin;
+    font-family: "微软雅黑";
+    border: 1px solid #dcdcdc;
+}
+
+
+
+/*------------发布需求----------*/
+.demand{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.demand li{
+    line-height: 10vmin;
+}
+
+
+#introducend {
+    width: 96%;
+    height: 18vmin;
+    border: 1px solid #ccc;
+    padding-left: 2%;
+    font-family: "微软雅黑";
+}
+
+.demand li input{
+    width: 100%;
+    height: 8vmin;
+    border:1px solid #dcdcdc;
+    font-family: "微软雅黑";
+    padding-left: 2%;
+}
+
+/*----------技能售出-----------*/
+
+.skillssold {
+    width: 100%;
+    height: 32vmin;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.skillssold img {
+    width: 22vmin;
+    height: 22vmin;
+    margin-top: 4%;
+    margin-left: 3%;
+    float: left;
+    margin-right: 3%;
+}
+
+.skillssold h3 {
+    line-height: 6vmin;
+    font-size: 3.4vmin;
+    color: #000;
+    padding-top: 3%;
+}
+.skillssold i {
+    font-size: 4vmin;
+    color: #fc058b;
+    line-height: 9vmin;
+}
+
+.skillssold p span{
+    float: right;
+    margin-right: 5%;
+}
+
+.skillssold p span .plan1{
+    padding: 4px 10px;
+    border: 1px solid #fc058b;
+    border-radius: 5px;
+    color:#fc058b;
+}
+.skillssold p span .plan2{
+    padding: 4px 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color:#555;
+}
+
+.btaaan{
+    height: 10vmin;
+    background: #f6f2f4;
+    border-bottom: 1px solid #dcdcdc;
+    
+}
+
+.btaaan p{
+    line-height: 10vmin;
+    font-size: 4vmin;
+    color:#555;
+    padding-left: 3%;
+}
+
+
+/*-------------服务收藏----------*/
+.servicecollection{
+    width: 100%;
+}
+.servicecollection li a {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: block;
+    height: 24vmin;
+}
+
+.servicecollection li a img {
+    width: 18%;
+    border-radius: 10px;
+    margin-left: 3%;
+    float: left;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+
+.servicecollection li a h3{
+    line-height: 10vmin;
+    font-size: 3vmin;
+}
+
+.servicecollection li a p{
+    color:#555;
+    line-height: 6vmin;
+    font-size: 3.5vmin;
+}
+
+
+/*-------------我的评论------------*/
+.commenttop{
+    height: 12vmin;
+    background: #f9f5f7;
+}
+
+.commenttop p{
+    line-height: 12vmin;
+    color:#000;
+    font-size: 4vmin;
+    padding-left: 3%;
+    float: left;
+position: absolute;
+}
+
+.commentce{
+    height: 12vmin;
+    background: #fff;
+    border-top:1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.commentce li{
+    float: left;
+    font-size: 4vmin;
+    line-height: 12vmin;
+    width: 25%;
+    color:#000;
+    padding-left: 3%;
+}
+
+.commentce li input{
+    margin-right:5%;
+}
+
+.comment{
+    /*height: 52vmin;*/
+    background: #fff;
+    border-top:1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.comment ul{
+    margin-top:2%;
+}
+.comment li{
+    float: left;
+    width: 29%;
+    text-align: center;
+    line-height: 12vmin;
+    font-size: 4vmin;
+    margin:2% 2%;
+}
+
+/*#liann{
+    background: #1dbdf1;
+}*/
+.comment li a{
+    display: block;
+    width: 100%;
+    height: 12vmin;
+    background: #fc459d;
+    border-radius: 5px;
+    color:#fff;
+}
+
+.BOX{
+    background: #fff;
+    border-top:1px solid #dcdcdc;
+    width: 100%;float: left;
+}
+
+#star {
+     position: relative;
+    width: 100%;
+    margin-top: 4vmin;
+    height: 24px;
+}
+    #star span {
+        float: left;
+        display: inline;
+        height: 19px;
+        line-height:19px;
+        margin-left: 3%;
+        font-size: 4vmin;
+    }
+    
+    #star .star_UL{
+       float: left;
+        display: inline;
+        height: 19px;
+        line-height:19px;
+        margin-left: 3%;
+        font-size: 4vmin;
+        width: 59%;
+    }
+    
+    
+    #star ul {
+        margin: 0 10px;
+    }
+    
+    #star li {
+    float: left;
+    width: 30px;
+    cursor: pointer;
+    text-indent: -9999px;
+    background: url(../images/star.png) no-repeat;
+    }
+    
+    #star strong {
+        color: #f60;
+        padding-left: 10px;
+    }
+    
+    #star li.on {
+        background-position: 0 -28px;
+    }
+
+
+.textarea{
+    background: #fff;
+    margin-bottom: 8%;
+    padding-bottom: 6%;
+    border-bottom: 1px solid #dcdcdc;
+    padding-top: 6vmin;
+    width: 100%;float: left;
+}
+
+#textarea{
+    margin-right: 3%;
+    margin-left: 3%;
+    width: 91%;
+    height: 20vmin;
+    font-size: 3vmin;
+    border: 1px solid #ccc;
+    padding-left: 2%;
+    font-family: "微软雅黑";
+}
+
+.commentbott{
+    height: 40vmin;
+    margin-right: 3%;
+    margin-left: 3%;
+    float: left;width: 94%;
+}
+
+.commentbott input{
+    width: 100%;
+    height: 12vmin;
+    background: #ff7e00;
+    font-size: 4.5vmin;
+    color:#fff;
+    border:none;
+    font-family: "微软雅黑";
+    cursor: pointer;
+
+}
+
+
+.swiper-containerbb {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.design{
+    height: 34vmin;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.designbb{
+    width: 100%;
+    height: 17vmin;
+}
+.designbbl{
+    width: 78%;
+    font-size: 4vmin;
+    color:#000;
+    float: left;
+    margin-top: 4%;
+
+
+}
+
+.designbbr{
+    width: 15%;
+    float: right;
+    border-left:1px solid #dcdcdc;
+    margin-top: 4%;
+}
+
+.designbbr a img{
+    width: 55%;
+    float: right;
+}
+
+.design p{
+    font-size: 4.3vmin;
+    color:#fc058b;
+}
+
+.design li{
+    float: left;
+    width: 33.3%;
+    line-height: 10vmin;
+    color:#b8b8b8;
+}
+
+.designcennh3{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.designcennh3 h3{
+    line-height: 12vmin;
+    font-size: 4vmin;
+    color:#ff0000;
+}
+
+.designcennh3 p{
+    line-height: 6vmin;
+    color:#333;
+    margin-top:2%;
+}
+
+.designcennul{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.designcennul h3{
+    line-height: 12vmin;
+    font-size: 4vmin;
+
+}
+.designcennul li {
+    text-align: center;
+    padding: 2vmin 2.5vmin;
+    float: left;
+    background: #f2dab3;
+    margin: 2% 1.5%;
+    border-radius: 5px;
+    border:1px solid #facd89;
+}
+
+.demo {
+    width: 100%;
+    overflow: hidden;
+}
+.bt{width:100%;height:15vmin;border-bottom:1px #ccc solid;}
+.bt ul{margin-left:10px;}
+.bt li{
+    float:left;
+    line-height:7.3vmin;
+    cursor:pointer;
+    width:33%;
+    text-align:center;
+    font-size: 4vmin;
+}
+.bt li.on{color:#fc058b;border-bottom:1.5px solid #fc058b;}
+.con{
+    width: 100%;
+}
+.con ul{margin-left:10px;}
+
+.con li{
+    height: 33dynamicvmin;
+}
+.con ul li a:hover{color:#FF0000;}
+
+.lil{
+    margin-top:3%;
+    float: left;
+    width: 65%;
+}
+.lil span{
+    font-size:4vmin;
+    color:#000;
+}
+.lil img{
+    border-radius: 50%;
+    width: 15vmin;
+    height: 15vmin;
+    margin-right: 2%;
+
+}
+
+.lir{
+    width:35%;
+    float: right;
+}
+.lir span{
+    line-height: 20vmin;
+    color:#fc058b;
+}
+.lir span img{
+    width: 68%;
+    margin-left: 2%;
+}
+
+.con li p{
+    font-size: 3.5vmin;
+    color:#000;
+    line-height: 6vmin;
+}
+
+.kddivb{
+    height: 5vmin;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #f9f5f7;
+}
+
+
+
+/*-----------我的动态-------*/
+
+.dynamic{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.dynamictop img{
+    width: 16vmin;
+    height: 16vmin;
+    border-radius: 50%;
+    margin-top: 3%;
+    float: left;
+    margin-right: 3%;
+
+}
+
+.dynamictop h3{
+    line-height: 14vmin;
+    font-size: 4vmin;
+    color:#000;
+}
+
+.dynamictop p{
+    line-height: 0vmin;
+}
+
+
+.dynamiccenn{
+    margin-top:2%;
+}
+.dynamiccenn p{
+    line-height:12vmin;
+    font-size: 4vmin;
+    color:#000;
+}
+
+.dynamiccenn li{
+    float: left;
+    margin-left: 5%;
+    margin-top:3%;
+
+}
+#limagin{
+    margin-left:0px;
+}
+
+.dynamiccenn li img{
+     width: 44vmin;
+    height: 44vmin;
+}
+
+.evaluation{
+    height: 13vmin;
+    width: 100%;
+}
+.evaluationl {
+    width: 60%;
+    float: left;
+}
+
+.evaluationl li{
+    width: 30%;
+    float: left;
+    height: 13vmin;
+    text-align: center;
+    line-height: 13vmin;
+}
+
+.evaluationl li a {
+    font-size: 4vmin;
+}
+
+.evaluationr p img{
+    width: 6%;
+    margin-top:3%;
+    float: right;
+}
+
+.like{
+    background: #ebebeb;
+    height: 12vmin;
+    width: 100%;
+}
+
+.likel{
+    width: 20%;
+    float: left;
+}
+
+.likel img{
+   float: right;
+}
+.likel{
+   width: 12%;
+    margin-top: 5%;
+}
+
+.liker{
+    width:70%;
+    float: left;
+    margin-left: 5%;
+}
+.liker li{
+    float: left;
+    margin-right: 3%;
+    margin-top:3%;
+}
+
+.liker li img{
+    width: 9vmin;
+    height: 9vmin;
+    border-radius: 50%;
+    
+    
+}
+
+
+/*-----------------我的动态 详情-----------*/
+.commentbb{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top:5%;
+}
+
+.commentbbtop{
+    margin-bottom: 5%;
+}
+
+
+.commentbbtop img{
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 50%;
+    margin-top: 3%;
+    float: left;
+    margin-right: 3%;
+
+}
+
+.commentbbtop h3{
+    line-height: 12vmin;
+    font-size: 4vmin;
+    color:#000;
+}
+
+.commentbbtop h3 span{
+    float: right;
+}
+
+.commentbbtop p{
+    line-height: 0vmin;
+}
+.commentbbtop h3 span a{
+    color:#084584;
+}
+
+.commentbbcc p{
+    margin-left: 16%;
+    color:#000;
+    font-size: 3.5vmin;
+    line-height: 6vmin;
+}
+.commentbbcc a{
+    color:#084584;
+}
+
+.dynamiccennym{
+    width: 80%;
+    float: right;
+}
+.dynamiccennym p{
+    line-height:5vmin;
+    font-size: 4vmin;
+    color:#000;
+}
+
+.dynamiccennym li{
+    float: left;
+    margin-left: 5%;
+    margin-top:3%;
+
+}
+#limaginym{
+    margin-left:0px;
+}
+
+.dynamiccennym li img{
+     width: 35vmin;
+    height: 35vmin;
+}
+
+.dynamictopcc img{
+    width: 16vmin;
+    height: 16vmin;
+    border-radius: 50%;
+    margin-top: 3%;
+    float: left;
+    margin-right: 3%;
+
+}
+
+.dynamictopcc h3{
+    line-height: 18vmin;
+    font-size: 4vmin;
+    color:#000;
+}
+
+.dynamictopcc p{
+    line-height: 0vmin;
+}
+
+.dynamictopcc h3 span{
+    float: right;
+}
+
+.evaluationbb{
+    height: 13vmin;
+    width: 80%;
+    float: right;
+}
+.evaluationbbl {
+    width: 60%;
+    float: left;
+}
+
+.evaluationbbl li{
+    width: 37%;
+    float: left;
+    height: 13vmin;
+    text-align: center;
+    line-height: 13vmin;
+}
+
+.evaluationbbl li a {
+    font-size: 4vmin;
+}
+
+.likebb{
+    background: #ebebeb;
+    height: 12vmin;
+    width: 80%;
+    float: right;
+}
+
+.kddivcc{
+    width: 100%;
+    height: 4vmin;
+    background: #f0ebee;
+    margin-top:4%;
+}
+
+
+.dynamiccennym p img{
+    width: 74vmin;
+    height: 85vmin;
+}
+
+.diabun{
+    width: 100%;
+    height: 25vmin;
+    background: #f0ebee;
+    margin-top:4%;
+}
+
+.diabun p{
+    text-align: center;
+    line-height: 15vmin;
+    font-size: 4vmin;
+    color:#a4a4a4;
+}
+
+/*-----------发布动态-----------*/
+.postdynamic{
+    height: 25vmin;
+    background: #fff;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+#introducendcc {
+    width: 98%;
+    height: 25vmin;
+    border:none;
+    padding-left: 2%;
+    line-height: 6vmin;
+    font-family: "微软雅黑";
+}
+
+.postdynamictt{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+.postdynamictt p img{   
+    width: 20vmin;
+    height: 20vmin;
+}
+
+
+
+
+
+.foottt{
+    height: 15vmin;
+    background: #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footttl{
+    width: 50%;
+    height: 15vmin;
+    border-top:1px solid #d2d2d2;
+    background: #f5f5f5;
+    float: left;
+}
+
+.footttr{
+    width: 50%;
+    float: right;
+    height: 15vmin;
+    background: #fc058b;
+}
+.footttr input{
+    width: 100%;
+    height: 15vmin;
+    border:none;
+    background: #fc058b;
+    font-size: 4.5vmin;
+    color:#fff;
+    font-family: "微软雅黑";
+}
+
+.footttl li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid #d2d2d2;
+
+}
+
+.footttl li img{
+    width: 28%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+
+}
+
+.footttl li a p{
+   font-size: 4vmin;
+}
+
+.footttl li a:hover{
+   color:#555555;
+   text-decoration: none;
+}
+
+
+.immediately{
+    height: 30vmin;
+    background: #fff;
+}
+
+.search_header {
+    background: #fd2e9e;
+    position: relative;
+    padding: 1rem 5rem;
+}
+
+.category_icon {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 2;
+    position: absolute;
+    left: 1rem;
+    top:56%;
+    margin-top: -1.5rem;
+    background: url(../images/left01.png) no-repeat left top;
+    background-size: contain;
+}
+
+
+.search_iconss {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    margin-top: -1.5rem;
+    background: url(../images/right01.png) no-repeat left top;
+    background-size: contain;
+}
+
+.top-sch-box {
+    height: 3rem;
+    line-height: 0.9rem;
+    margin: 0 .3rem;
+    padding: 0 .3rem;
+    font-size: .36rem;
+    color: #999999;
+    background-color: #fff;
+    -webkit-border-radius: 1000px;
+    border-radius: 8px;
+}
+.fdj{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    margin-top: -1.5rem;
+    background: url(../images/soso1.png) no-repeat left top;
+    background-size: contain;
+}
+.sch-txt input{
+    background: #fff;
+    width: 82%;
+    border: none;
+    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+    line-height: 22px;
+    font-size: 1.3rem;
+    color:#a4a4a4;
+    -webkit-border-radius: 8px;
+    padding-left: 14%;
+}
+
+.sch-txtbb input{
+    background: #fff;
+    width:105%;
+    border: none;
+    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+    line-height: 22px;
+    font-size: 1.3rem;
+    color:#a4a4a4;
+    -webkit-border-radius: 8px;
+    padding-left: 14%;
+}
+
+
+
+.demo1{
+    width: 100%;
+}
+.btan{
+    width: 28%;
+    background: #fff;
+    float: left;
+}
+.btan li{
+    line-height: 10vmin;
+    text-align: center;
+    font-size: 3.5vmin;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.btan li{
+    float:left;
+    line-height:10vmin;
+    cursor:pointer;
+    width:100%;
+    text-align:center;
+}
+.btan li.on{background:#eee;color:#f83688;}
+
+.conan{
+    width: 72%;
+    float: right;
+    background: #eeeeee;
+}
+/*.conan li{
+    margin:3% 3%;
+}
+*/
+.conan li{
+    display: block;
+    width: 19vmin;
+    height: 19vmin;
+    float: left;
+    text-align: center;
+    line-height: 20vmin;
+    border-radius: 50%;
+    margin:6% 3%;
+    font-size: 4vmin;
+    color:#fff;
+}
+
+.conan li a{
+    color: #fff;
+    padding: 33% 7%;
+    border-radius: 50%;
+}
+
+.lili1{
+    background: #ff8c47;
+}
+
+.lili2{
+    background: #0ac6dc;
+}
+
+.lili3{
+    background: #f83688;
+}
+
+.lili4{
+    background: #1be6aa;
+}
+
+
+
+.footnnbb{
+    width: 100%;
+    height: 12vmin;
+    position: fixed;
+    bottom:0;
+}
+
+.footnnbb li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+}
+.footnnbb li a {
+    padding: 9% 41%;
+}
+
+.footnnbb li .liafoot1{
+    padding: 9% 41%;
+    background: #fff;
+    color:#555;
+    border-top:1px solid #dcdcdc;
+}
+
+.footnnbb li .liafoot2{
+    padding: 9% 41%;
+    background: #fd2e9e;
+    color:#fff;
+}
+
+.fltering{
+    height:25vmin;
+    background: #fff;
+    margin-top:4%;
+}
+
+.fltering h3{
+    margin-left: 3%;
+    line-height: 10vmin;
+    font-size: 4vmin;
+}
+.flteringbb h3{
+    color:#000;
+}
+
+.flteringbb h3 span{
+    margin-left: 6%;
+}
+.flteringbb  h3 span a{
+    padding:2% 6%;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.flteringbb  h3 span a:hover{
+   color:#555;
+   text-decoration: none;
+}
+
+.cation{
+    height:25vmin;
+    background: #fff;
+    margin-top:4%;
+}
+
+.cation h3{
+    margin-left: 3%;
+    line-height: 10vmin;
+    font-size: 4vmin;
+}
+
+
+#cationli{
+    padding: 2% 5%;
+    background: #fadded;
+    display: block;
+    float: left;
+    margin: 2% 3%;
+    border-radius: 5px;
+    font-size: 3.5vmin;
+    color:#fd2e9e;
+    border:1px solid #fd2e9e;
+}
+.cation li a{
+    padding: 2% 5%;
+    display: block;
+    float: left;
+    margin: 2% 3%;
+    border-radius: 3px;
+    font-size: 3.5vmin;
+    background: #ccc;
+}
+
+.cation li a:hover{
+    text-decoration: none;
+    color:#555;
+}
+
+.cation h3 span{
+    float: right;
+    font-size: 3vmin;
+    margin-right: 3%;
+}
+
+
+/*------------个人资料------------*/
+
+.datatop h3{
+    line-height: 10vmin;
+    font-size: 4vmin;
+    padding-left: 3%;
+    height: 10vmin;
+    background: #f9f5f7;
+}
+.data{
+    height: 15vmin;
+    
+}
+.data li{
+    float: left;
+    margin-left: 3%;
+    line-height: 15vmin;
+}
+.data li img{
+    width: 10vmin;
+    height: 10vmin;
+    vertical-align: middle;
+}
+
+.Introduction h3{
+    line-height: 10vmin;
+    font-size: 4vmin;
+    padding-left: 3%;
+    height: 10vmin;
+    background: #f9f5f7;
+}
+
+
+
+/*--------我的交友----------*/
+.friendswd{
+    width: 100%;
+}
+.friendswd li a {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: block;
+    height: 18vmin;
+    background: url(../images/libg.png) no-repeat 96% 55%;
+}
+
+.friendswd li a img {
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 10px;
+    margin-left: 3%;
+    float: left;
+    margin-top: 3.5%;
+    margin-right: 3%;
+    position:  relative;
+}
+
+.friendswd li a{
+    line-height: 18vmin;
+    font-size: 4.5vmin;
+}
+
+.friendswd li span em {
+    width: 2vmin;
+    height: 2vmin;
+    background: #fd2e9e;
+    display: block;
+    position: absolute;
+    left: 13%;
+    /* top: 1%; */
+    border-radius: 50%;
+    margin-top: 11px;
+    z-index: 100;
+}
+
+.frendswdtt{
+    height: 15vmin;
+
+}
+.frendswdtt p{
+    font-size: 4.5vmin;
+    color:#fd2e9e;
+    line-height: 15vmin;
+    padding-left: 10%;
+    background: url(../images/aix.png)no-repeat 3% center;
+    background-size: 6%;
+}
+
+.frendswdtt span{
+    float: right;
+    line-height: 15vmin;
+    margin-right: 3%;
+
+}
+.frendswdtt span a img{
+    vertical-align: middle;
+    width: 80%;
+}
+
+
+/*个人资料*/
+.datagr{
+    width: 100%;
+    background: url(../images/ss4.jpg);
+    height: 62vmin;
+    background-size: 100%;
+}
+
+.datagrmain{
+    width: 60%;
+    height: 42vmin;
+    margin:0 auto;
+    margin-top:3%;
+}
+
+.headerbb {
+    width: 100%;
+    height: 13vmin;
+}
+
+.datagrmain p{
+    text-align: center;
+    line-height: 8vmin;
+    font-size: 5vmin;
+    color:#fff;
+}
+
+.datagrmain img{
+    width: 28vmin;
+    height: 28vmin;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+
+.datacent{
+    width: 100%;
+    border-bottom: 1px solid #c9c9c9;
+    height: 26vmin;
+}
+
+.datacentcc{
+    width: 100%;
+    border-bottom: 1px solid #c9c9c9;
+    height: 26vmin;
+    background: url(../images/c.png) no-repeat 97% center;
+    background-size: 5%;
+}
+
+.datacentl{
+    float: left;
+    width: 22%;
+    line-height: 15vmin;
+
+}
+
+.datacentl p{
+    font-size: 4vmin;
+    color:#fe0089;
+    text-align: center;
+}
+
+.datacentr{
+    width: 75%;
+    float: left;
+}
+
+.datacentr p{
+    line-height: 6vmin;
+    margin-top: 6%;
+    margin-right: 3%;
+    font-size: 3vmin;
+}
+
+.datacentr li img {
+    vertical-align: middle;
+    width: 45%;
+    margin-right: 7%;
+}
+
+.datacent a{
+    display: block;
+    background: #ccc;
+}
+
+.datacentr li{
+    float: left;
+    padding: 1.5vmin 2vmin;
+    background: #e2e2e2;
+    margin-left: 3%;
+    margin-top: 4%;
+    border-radius: 5px
+}
+
+.upgrade{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top:10%;
+}
+
+.upgrade p{
+    line-height: 10vmin;
+    font-size: 3vmin;
+}
+.upgrade p a{
+    color:#ff0000;
+}
+
+.footerbb{
+    height: 16vmin;
+    background: #c9c9c9;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+}
+
+.footerbb p{
+    float: left;
+    width: 49.5%;
+/*    line-height: 14vmin;*/
+    text-align: center;
+    font-size: 4vmin;
+    border-right: 1px solid #959595;
+}
+
+.footerbb p img{
+    width: 16%;
+    margin-top: 4%;
+}
+
+.footerbb p a{
+    display: block;
+
+}
+
+#bordernone{
+    border:none;
+}
+
+.order_main{background: #fff;padding-right: 3%;padding-left: 3%;padding-top: 1%;margin-top: 0px !important;margin-left: 0px !important;margin-bottom: 0px !important;margin-right: 0px !important;}

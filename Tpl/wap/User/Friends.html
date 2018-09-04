@@ -1,0 +1,177 @@
+<include file="Common/Common"/>
+
+<style>
+    html,body{background-color: #f0f0f0;}
+    .submit{
+          font-size: 0.14rem;
+          padding: 0.04rem 0.26rem;
+          background-color: #32b16c;
+          border-radius: 5px;
+          border: none;
+          color: #fff;
+          display: inline-block;
+      }
+</style>
+</head>
+<body> 
+  <div>
+      <img style="float:left" src="__WIMG__/caimin1.png" type="1" alt="" class="tip"  onclick="caimi(this)" >
+      <!-- <img style="float:left" src="__WIMG__/caimin{$tool}.png" type="{$tool}" alt="" class="tip"  onclick="caimi(this)" > -->
+      <!-- <img style="float:left;width:30px;" src="__WIMG__/buy.png" alt="" class="tip" onclick="ToolBox()" > -->
+  </div>
+  <div style="clear:both;" ></div>
+  <div style="font-size: 4.5vmin; width: 75%;margin: auto;margin-bottom:3vmin;" >
+    共可采密：<span id="fengmin_num" style="color:red" >{$fengmin_num+0}</span>
+  </div>
+ <?php $userid=session('userid');  ?>
+ <div class="list" >
+    <empty name="u_info" >
+         <div class="section">
+              <dl>
+                  <dd style="text-align: center;" >暂无好友</dd>
+              </dl>
+          </div>
+    </empty>
+    <foreach name="u_info" key="k" item="value">
+    <div class="section">
+              <dl>
+                  <dd>好友账号：<span>{$value.account}</span></dd>
+                  <dd>姓       名：<span>{$value.username}</span></dd>
+                  <dd>级    别：<span class="cyan">
+                      <if condition="$userid eq $value['pid']" >
+                        <span style="color: #12aa00">一级</span>
+                      </if>
+                      <if condition="$userid eq $value['gid']" >
+                        <span style="color: #aaaa22">二级</span>
+                      </if>
+
+                  </span>
+                  </dd>
+                  <dd>手机号：<span>{$value.mobile}</span></dd>
+              </dl>
+          </div>
+    </foreach>
+  </div>
+    <if condition="$k egt 9">
+        <div id="more" style="text-align:center;font-size:5vmin;" data-status="1">  
+                加载更多  
+        </div>  
+        <input type="hidden" id="page" value="1"> 
+        <input type="hidden" id="uid" value="{$userid}"> 
+    </if>
+    <div style="height:0.4rem"></div>
+
+
+  <!-- ===一键采蜜购买窗口 S=== -->
+  
+  <div id="showbox" class="caimi_box">
+      
+      <div id="content">
+        <!-- 关闭 -->
+        <div style="width:100%;height:35px;" >
+        <div id="close" class="boxclose" onclick="closebox()" >X</div>
+        </div>
+        <!-- 内容 -->
+        <div style="margin-top:10px;text-align:center;" >
+            <div style="margin:20px 0;font-size: 5vmin" >
+                <select id="tooltype" style="height:25px;" name="tooltype" onchange="SelectTool(this)" >
+                  <option value="2">银手(80%到账)</option>
+                  <option value="3">金手(100%到账)</option>
+                </select>
+            </div>
+            <div style="text-align:left;margin-left:100px; font-size: 4vmin" >
+                月数：
+               <input style="width:30px"  name="less" type="button" value="-">
+               <span id="num" >1</span>
+               <input style="width:30px" name="more" type="button" value="+">
+            </div>
+
+           <div style="text-align:left;margin-left:100px;margin-top:20px;font-size: 4vmin"  >
+             果子数：<span id="show_num" >30</span>
+             <input id="buy_num" type="hidden" value="30">
+           </div>
+
+           <div style="width:60%;margin:4vmin auto" >
+
+             <input class="caimibtn" type="button" onclick="BuyTool()" value="确定">
+             <input class="caimiquit" type="button" onclick="closebox()" value="取消">
+           </div>
+            <div style="clear:both;height:8vmin" ></div>
+        </div>
+     </div>
+
+  </div>
+   
+
+<!-- ===一键采蜜购买窗口 E=== -->
+
+
+
+
+    <script type="text/javascript">
+             //加载
+            $(function () {  
+               $("#more").click(function () {  
+                   var page = parseInt($("#page").val());  
+                   var oldthis=$(this);
+                   status=$(this).attr("data-status");  
+                   if(status==1) {  
+                       $(this).html("加载中...");  
+                       status = $(this).attr("data-status", "0");  
+                       $.ajax({  
+                           type: "get",  
+                           url: "{:U('User/FriendsData')}",  
+                           data: "p=" + page,  
+                           dataType: "json",  
+                           success: function (data) {  
+                              
+                            /*判断有没有数据*/
+                            if (data){
+                                $("#page").val(page + 1);  
+                                insertDiv(data);  
+                             } else {  
+                                 $(oldthis).html("已经没有了");
+                             }  
+                           }  
+                       });  
+                   }  
+          
+               });  
+           });  
+               function insertDiv(data){  
+                   var uid=$('#uid').val(); 
+                   var list = $(".list");
+                   var str='';
+                    $.each(data, function(index, v){
+                        str+='<div class="section">';
+                        str+='<dl>';
+                        str+='<dd>好友账号：<span>'+v.u_name+'</span></dd>';
+                        str+='<dd>姓       名：<span>'+v.u_zh+'</span></dd>';
+                        str+='<dd>级    别：<span class="cyan">';
+                        if(uid==v.u_fuji){
+                          var level='一级';
+                        }
+                        if(uid==v.u_yeji){
+                          var level='二级';
+                        }
+                        str+='<span style="color: #12aa00">'+level+'</span>';                     
+                        str+='</span>';
+                        str+='</dd>';
+                        str+='<dd>手机号：<span>'+v.u_mobile+'</span></dd>';
+                        str+='</dl>';
+                        str+='</div>';
+                    })   
+                   list.append(str);  
+                   $("#more").html("加载更多");  
+                   $("#more").attr("data-status","1");  
+               } 
+    </script>
+
+</body> 
+</html>
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+<script type="text/javascript" src="__PUBLIC__/Headoffice/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Headoffice/js/index.js"></script>
+	<script src="__PUBLIC__/Headoffice/js/jquery.js"></script>
+	<script src="__PUBLIC__/Headoffice/js/main.js"></script>
+
+     <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+	  
+	  
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3></h3>
+				<div class="xxgl_bottom_t">
+					<span style="float: left;">搜索</span>
+	           	<form action="{:U('Index/member')}" method="post"> 
+	             	<select class="form-select" class="btn3" name="vip" id="page" value="类型" type="text"; style="width: 131px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4;font-size: 12px;margin-top: 15px;"/>
+		                <option value="">会员类型</option>
+						<option value="4">金牌会员</option>
+						<option value="3">银牌会员</option>
+						<option value="2">铜牌会员</option>
+						<option value="1">vip会员</option>
+						<option value="0">普通会员</option>
+		            </select>
+	             	<input class="btn3" name="username"  type="text" placeholder="会员名称" style="width: 169px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4"/>
+	                <div class="an3"><input type="submit" value="提交搜索" class="sll" ></div>		
+	            </form>
+				</div>
+				<style>
+					.content_table tr th{height: 35px;
+text-align: center;
+background:#FF9D46;
+color: #fff;
+border-left: 1px solid #fff;}
+				</style>
+				<div class="jhm_bottom_c">
+					<table class="content_table">
+						<tr>
+							<th>会员ID</th>
+							<th style="padding: 0px 20px;">真实姓名</th>
+							<th style="padding: 0px 16px;">上级ID</th>
+							<th style="padding: 0px 26px;">上级姓名</th>
+							<th style="padding: 0px 20px;">会员类型</th>
+							<th style="padding: 0px 50px;">地区</th>
+							<th style="padding: 0px 20px;">加盟金额</th>
+							<th  style="padding: 0px 10px;">注册时间</th>
+							<th  style="padding: 0px 12px;">审核状态</th>
+							
+							<th style="padding: 0px 20px;">相关操作</th>
+
+						</tr>
+					
+					<foreach name="arrData_news" item="arrData_news">
+						<tr>
+							<td>{$arrData_news.userid}</td>
+							<td>{$arrData_news.username}</td>
+							<td style="padding: 0px 20px;"><?php if($arrData_news['pid']=='0'){echo '无上级';}else{ ?>{$arrData_news.pid}<?php } ?></td>
+							<td><?php echo M('users')->where("userid=$arrData_news[pid]")->getField('username');?></td>
+							<td style="padding: 0px 20px;"> 
+							
+							
+						<?php if($arrData_news['vip']== '0'){ ?><i  style="color:red;">
+		          <?php switch ($arrData_news['vip']){
+                        case 1: echo "vip会员"; break;
+                        case 2: echo "铜牌会员"; break;
+						case 3: echo "银牌会员"; break;
+						case 4: echo "金牌会员"; break;
+						default:echo "普通会员";
+                   }?></i><?php }else{?>
+				   
+				   <?php switch ($arrData_news['vip']){
+                      
+                        case 1: echo "vip会员"; break;
+                        case 2: echo "铜牌会员"; break;
+						case 3: echo "银牌会员"; break;
+						case 4: echo "金牌会员"; break;
+						default:echo "普通会员";
+                   } }?>
+				   
+						</td>
+							<td style="padding: 0px 20px;"><?php echo M('c_users')->where("companyid=$arrData_news[userid]")->getField('c_username');?> </td>
+							<td style="padding: 0px 20px;"> <?php echo $mone_y =  M('c_users')->where("companyid=$arrData_news[userid]")->getField('money');?> </td>
+							<td> {$arrData_news['regdate']|date='Y-m-d',###}</td> 
+							<td>
+							<?php 
+							$a=M('c_users')->where("companyid=$arrData_news[userid]")->getField('pding');if($a){   ?>
+								<span style="color:green">审核完成</span>
+								<?php }else{	?>
+									<a style="color:red;" href="__URL__/ht_hysh/userid/{$arrData_news.userid}/money/{$mone_y}"  class="queren">未审核</a>
+								<?php  }  ?>
+							 </td>
+							<td><a href="__MODULE__/Index/ht_hyxq/userid/{$arrData_news.userid}" style="color: #144ff7">详情</a> | <a href="__MODULE__/Index/ht_hydelete/userid/{$arrData_news.userid}" onclick ="return confirm('确认删除？');">删除</a></td>
+						</tr>
+						
+				     </foreach>
+
+		    </table>	
+		  </div>
+	<script type=text/javascript>
+	
+	
+	
+	
+	
+$(document).ready(function(){
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane p.menu_head").mouseover(function(){
+		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	
+	$('.queren').click(function(){
+		if(!confirm('确定审核完成？')){
+			return false;
+		}
+	})
+	
+});
+</script>
+<div class="xxgl_bottom_b">
+					 <div class="page">
+                      {$page}
+                    </div>
+                     <style>
+				  	.page{text-align: center;}
+				  	.page a{color: #a4a4a4;}
+				  	.prev{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  	.num{  padding: 0 10px;  border: 1px solid #ddd;}
+				  	.page .current{ padding: 0 10px;  border: 1px solid #ddd;  margin: 0px 10px;}
+				  	.next{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  </style>
+				  
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	   
+</body>
+</html>
+

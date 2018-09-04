@@ -1,0 +1,335 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+             <li class="text-muted">积分释放率</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="builder-tabs builder-form-tabs">
+                        <ul class="nav nav-tabs">
+
+                            <li class="">
+                                <a href="{:U('Config/group2',array('group'=>1))}">基本设置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/group3')}">众筹设置</a>
+                            </li>
+                            <li class="active">
+                                <a href="{:U('Config/group4')}">奖励设置</a>
+                            </li>
+
+                            <li class="">
+                                <a href="{:U('Config/group1',array('group1'=>5))}">实时价格设置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/group',array('group'=>3))}">网站开关</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                        <div class="row" >
+                            <div class="col-xs-12" >
+                                <form action="{:U('Config/groupSave')}" method="post" class="form-horizontal form form-builder" style="margin-bottom:20px">
+                                <div class="form-type-list">
+
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">积分基础加速：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="sell_fee" class="form-control" value="{$info.sell_fee}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">保存</a>
+                                    <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+
+
+管理奖励设置<hr style="margin-top: 0px;width: 100%">
+
+
+                                <form action="{:U('Config/manage_Save')}" method="post" class="form-horizontal form form-builder form-builderg" style="margin-bottom:20px">
+                                <div class="form-type-list">
+
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:160px" >(拿二代)         所需直推人数：</label>
+                                            <input type="text" name="manage_0" style="width:100px"  class="left" value="{$manage[0].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="managej_0" class="left" value="{$manage.guanli1}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>                                            
+                                        </div>
+                                       
+                                        
+                                    </div> 
+
+
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:160px" >(拿三代)         所需直推人数：</label>
+                                            <input type="text" name="manage_1" style="width:100px"  class="left" value="{$manage[1].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="managej_1" class="left" value="{$manage.guanli2}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>                                            
+                                        </div>
+                                       
+                                        
+                                    </div> 
+
+
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:160px" >(拿四代)         所需直推人数：</label>
+                                            <input type="text" name="manage_2" style="width:100px"  class="left" value="{$manage[2].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="managej_2" class="left" value="{$manage.guanli3}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>                                            
+                                        </div>
+                                       
+                                        
+                                    </div> 
+
+                                                              
+
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builderg">保存</a>
+                                    <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>
+
+区块奖励设置<hr style="margin-top: 0px;width: 100%">
+
+
+                                <form action="{:U('Config/qukuai_Save')}" method="post" class="form-horizontal form form-builder form form-builderq" style="margin-bottom:20px">
+                                <div class="form-type-list">
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:170px" >(拿三代)         所需直推人数：</label>
+                                            <input type="text" name="qukuai_0" style="width:100px"  class="left" value="{$qukuai[0].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="qukuaij_0" class="left" value="{$qukuai.qukuai1}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                        </div>
+                                    </div> 
+
+                                        <div class="form-group item_config[WEB_SITE_TITLE] ">                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:170px" >(拿六代)         所需直推人数：</label>
+                                            <input type="text" name="qukuai_1" style="width:100px"  class="left" value="{$qukuai[1].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="qukuaij_1" class="left" value="{$qukuai.qukuai2}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                        </div>
+                                    </div> 
+
+                                        <div class="form-group item_config[WEB_SITE_TITLE] ">                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:170px" >(拿九代)         所需直推人数：</label>
+                                            <input type="text" name="qukuai_2" style="width:100px"  class="left" value="{$qukuai[2].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="qukuaij_2" class="left" value="{$qukuai.qukuai3}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                        </div>
+                                    </div> 
+
+                                        <div class="form-group item_config[WEB_SITE_TITLE] ">                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:170px" >(拿十二代)         所需直推人数：</label>
+                                            <input type="text" name="qukuai_3" style="width:100px"  class="left" value="{$qukuai[3].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="qukuaij_3" class="left" value="{$qukuai.qukuai4}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                        </div>
+                                    </div> 
+
+                                       <div class="form-group item_config[WEB_SITE_TITLE] ">                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:170px" >(拿十五代)         所需直推人数：</label>
+                                            <input type="text" name="qukuai_4" style="width:100px"  class="left" value="{$qukuai[4].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="qukuaij_4" class="left" value="{$qukuai.qukuai5}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                        </div>
+                                    </div> 
+
+
+                                                              
+
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builderq">保存</a>
+                                    <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>                                
+
+VIP奖励设置<hr style="margin-top: 0px;width: 100%">
+
+
+                                <form action="{:U('Config/vip_Save')}" method="post" class="form-horizontal form form-builder form-builderv" style="margin-bottom:20px">
+                                <div class="form-type-list">
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:170px" >(VIP1)         所需积分：</label>
+                                            <input type="text" name="vip_0" style="width:100px"  class="left" value="{$vip[0].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="vipj_0" class="left" value="{$vip.vip1}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                        </div>
+                                    </div> 
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">                                        
+                                        <div style="width:600px" class="input-group">
+                                            <label class="left"  style="width:170px" >(VIP2) 所需直推VIP1数：</label>
+                                            <input type="text" name="vip_1" style="width:100px"  class="left" value="{$vip[1].tip}" >
+                                             <label class="left" style="margin-left:30px;width:80px">奖励加速：</label>
+    
+                                            <input type="text" name="vipj_1" class="left" value="{$vip.vip2}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                        </div>
+                                    </div> 
+            
+
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builderv">保存</a>
+                                    <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>   
+分享及余额转动奖设置<hr style="margin-top: 0px;width: 100%">
+
+
+                                <form action="{:U('Config/fenx_Save')}" method="post" class="form-horizontal form form-builder form-builderf" style="margin-bottom:20px">
+                                <div class="form-type-list">
+
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        
+                                        <div style="width:800px" class="input-group">
+                                            <label class="left"  style="width:90px" >积分达到：</label>
+                                            <input type="text" name="fenx_0" style="width:100px"  class="left" value="{$fenx[0].tip}" >
+                                             <label class="left" style="margin-left:30px;width:90px">分享奖加速：</label>    
+                                            <input type="text" name="fenxj_0" class="left" value="{$fenx.zhitui1}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+
+
+                                             <label class="left" style="margin-left:30px;width:120px">余额转动奖加速：</label>
+                                            <input type="text" name="zhuandj_0" class="left" value="{$zhuand.zhuand1}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                            
+                                        </div>
+                                       
+                                        
+                                    </div> 
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        
+                                        <div style="width:800px" class="input-group">
+                                            <label class="left"  style="width:90px" >积分达到：</label>
+                                            <input type="text" name="fenx_1" style="width:100px"  class="left" value="{$fenx[1].tip}" >
+                                             <label class="left" style="margin-left:30px;width:90px">分享奖(直推)加速：</label>
+    
+                                            <input type="text" name="fenxj_1" class="left" value="{$fenx.zhitui2}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+
+
+                                             <label class="left" style="margin-left:30px;width:120px">余额转动奖加速：</label>
+                                            <input type="text" name="zhuandj_1" class="left" value="{$zhuand.zhuand2}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                            
+                                        </div>
+                                       
+                                        
+                                    </div>    
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        
+                                        <div style="width:800px" class="input-group">
+                                            <label class="left"  style="width:90px" >积分达到：</label>
+                                            <input type="text" name="fenx_2" style="width:100px"  class="left" value="{$fenx[2].tip}" >
+                                             <label class="left" style="margin-left:30px;width:90px">分享奖(直推)加速：</label>
+    
+                                            <input type="text" name="fenxj_2" class="left" value="{$fenx.zhitui3}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+
+                                             <label class="left" style="margin-left:30px;width:120px">余额转动奖加速：</label>
+                                            <input type="text" name="zhuandj_2" class="left" value="{$zhuand.zhuand3}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                            
+                                        </div>
+                                       
+                                        
+                                    </div>  
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        
+                                        <div style="width:800px" class="input-group">
+                                            <label class="left"  style="width:90px" >积分达到：</label>
+                                            <input type="text" name="fenx_3" style="width:100px"  class="left" value="{$fenx[3].tip}" >
+                                             <label class="left" style="margin-left:30px;width:90px">分享奖(直推)加速：</label>
+    
+                                            <input type="text" name="fenxj_3" class="left" value="{$fenx.zhitui4}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+
+                                             <label class="left" style="margin-left:30px;width:120px">余额转动奖加速：</label>
+                                            <input type="text" name="zhuandj_3" class="left" value="{$zhuand.zhuand4}" >
+                                            <span class="input-group-addon left" style="margin-left:0px;width:30px">%</span>
+                                            
+                                        </div>
+                                       
+                                        
+                                    </div>                               
+
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builderf">保存</a>
+                                    <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>                                   
+                               
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

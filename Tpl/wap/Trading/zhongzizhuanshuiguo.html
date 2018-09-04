@@ -1,0 +1,29 @@
+<include file="Common/Common"/>
+
+<div class="fruit">
+    <div class="tip">
+        <p class="cred">交易说明: </p>
+        <p>种子低于100无法兑换,只能是100的整数倍（佣金{$fee}%)。</p>
+    </div>
+    <div class="nums">
+        <p>种子数量：<span>{$seed_num}</span></p>
+        <img src="__WIMG__/10.png" alt="" class="pos">
+    </div>
+    <form action="{:U('zhongzizhuanshuiguo')}" method="post" name="seedfrom" >
+        <dl>
+            <dd><span><em class="cred">*</em>兑换数量：</span>
+                <input type="text" placeholder="100的倍数" name="num">
+            </dd>
+            <dd><span><em class="cred">*</em>交易密码：</span>
+                <input type="password" placeholder="交易密码" name="two_pw">
+            </dd>
+            <dd><input type="button" class="submit sub" onclick="SeedToFruit()" value="确认兑换"></dd>
+        </dl>
+    </form>
+</div>
+
+<div style="height:0.8rem"></div>
+</body> 
+</html>
+
+

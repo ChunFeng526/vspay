@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>    
+    <!-- Demo styles -->
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $(".main_visual").hover(function(){
+        $("#btn_prev,#btn_next").fadeIn()
+    },function(){
+        $("#btn_prev,#btn_next").fadeOut()
+    });
+    
+    $dragBln = false;
+    
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e){
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+    
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    });
+    
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    });
+    
+    $(".main_image a").click(function(){
+        if($dragBln) {
+            return false;
+        }
+    });
+    
+    timer = setInterval(function(){
+        $("#btn_next").click();
+    }, 5000);
+    
+    $(".main_visual").hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        },5000);
+    });
+    
+    $(".main_image").bind("touchstart",function(){
+        clearInterval(timer);
+    }).bind("touchend", function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        }, 5000);
+    });
+    
+});
+</script>
+</head>
+<body style="background: #f9f9f9;">
+<div class="header">
+    <div class="header_l">
+      <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>优选</span></a>
+   
+    </div>
+    <div class="header_c"><h1></h1></div>
+    <div class="header_r"><a href="{:U('Home/caor')}"><i class="iconfont" style="font-size: 6vmin;text-align: center;line-height: 13vmin;">&#xe641;</i></a></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<!-- banner  s-->
+<div class="main_visual" style="margin-top:3%;border:none;">
+    <div class="flicking_con">
+        <?php $n = 0;?>
+        <if condition="$youxuan['pic1'] neq null">
+            <a href="#">{$n++}</a>
+        </if>
+        <if condition="$youxuan['pic2'] neq null">
+            <a href="#">{$n++}</a>
+        </if>
+        <if condition="$youxuan['pic3'] neq null">
+            <a href="#">{$n++}</a>
+        </if>
+        <if condition="$youxuan['pic4'] neq null">
+            <a href="#">{$n++}</a>
+        </if>
+        <if condition="$youxuan['pic5'] neq null">
+            <a href="#">{$n++}</a>
+        </if>
+        
+    </div>
+    <div class="main_image">
+        <ul>
+            <if condition="$youxuan['pic1'] neq null">
+                <li><span class="img_3"><img src="{$youxuan['pic1']}" alt=""></span></li>
+            </if>
+            <if condition="$youxuan['pic2'] neq null">
+                <li><span class="img_4"><img src="{$youxuan['pic2']}" alt=""></span></li>
+            </if>
+            <if condition="$youxuan['pic3'] neq null">
+                <li><span class="img_1"><img src="{$youxuan['pic3']}" alt=""></span></li>
+            </if>
+            <if condition="$youxuan['pic4'] neq null">
+                <li><span class="img_1"><img src="{$youxuan['pic4']}" alt=""></span></li>
+            </if>
+            <if condition="$youxuan['pic5'] neq null">
+                <li><span class="img_3"><img src="{$youxuan['pic5']}" alt=""></span></li>
+            </if>
+        </ul>
+    </div>
+</div>
+<!-- banner  e-->
+
+<div class="btxa">一件简单白T时髦搭配一整个夏天</div>
+
+<div  class="mend">
+    <ul>
+        <foreach name="productList" item="product" key="key">
+             <li <if condition="$key%2 neq 0">id="marign0"</if>>
+                <a href="{:U('Home/details',array('proid'=>$product['id']))}">
+                    <img src="{$product['pic']}" alt="">
+                    <p style="line-height: 8vmin;font-size: 4vmin;">{$product['name']}</p>
+                    <p class="xbsj"><span>新品上架</span></p>
+                </a>
+            </li>
+        </foreach>
+
+    </ul>
+</div>
+
+</body>     
+</html>

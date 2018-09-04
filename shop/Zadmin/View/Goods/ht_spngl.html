@@ -1,0 +1,119 @@
+<script type="text/javascript" src="__PUBLIC__/Headoffice/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Headoffice/js/index.js"></script>
+	<script src="__PUBLIC__/Headoffice/js/jquery.js"></script>
+	<script src="__PUBLIC__/Headoffice/js/main.js"></script>
+
+     <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+	  		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>商品类型管理
+				</h3>
+				
+
+				<style>
+					.content_table tr th{
+						height: 35px;
+						text-align: center;
+						background:#FF9D46;
+						color: #fff;
+						border-left: 1px solid #fff;}
+				</style>
+				<div class="jhm_bottom_c">
+				<div style="width:350px;" >
+
+				<!-- 二级菜单列表 -->
+				 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Headoffice/css/tree.css">
+
+				 <div style="padding-left:0px;padding-right:0px;" class="tree well">
+					 <ul>
+						<foreach name="one" item="v1" >
+	                        <li>
+	                            <span>
+	                                <i class="icon-folder-open icon-minus-sign">
+	                                </i>
+	                                {$v1.type}
+	                            </span>
+	                            <a class="add_next" href="{:U('Goods/ht_spadt',array('pathid'=>$v1['id']))}" title="添加子分类" >
+	                            </a>
+	                             <div style="float: right;width: 100px;" >
+	                                <a style="color:#4FC0E2" href="{:U('Goods/ht_spadt',array('id'=>$v1['id']))}">修改</a>
+	                                &nbsp;&nbsp;
+	                                <a onclick="return confirm('确实要删除吗?')" style="color:red" href="{:U('Goods/ht_spngldelet',array('id'=>$v1['id']))}">删除</a>
+	                            </div>
+	                            <ul>
+	                            	<!-- 二级 -->
+	                            	<foreach name="two" item="v2" >
+	                            	<eq name="v2['pathid']" value="$v1['id']" >
+	                                <li >
+	                                    <span>
+	                                        <i class="icon-leaf">
+	                                        </i>
+	                                        {$v2.type}
+	                                    </span>
+	                                     <div style="float: right;width: 100px;" >
+	                                        <a style="color:#4FC0E2" href="{:U('Goods/ht_spadt',array('id'=>$v2['id']))}">修改</a>
+	                                        &nbsp;&nbsp;
+	                                        <a onclick="return confirm('确实要删除吗?')" style="color:red" href="{:U('Goods/ht_spngldel',array('id'=>$v2['id']))}">删除</a>
+	                                    </div>
+	                                </li>
+	                                </eq>
+	                               </foreach>
+	                            </ul>
+
+	                        </li> 
+						</foreach>
+	                    </ul>
+					</div>
+
+					<div style="clear:both" ></div>
+
+
+
+
+
+
+					<!-- 二级菜单列表 -->
+				<!--  {$aaa} -->
+				</div>
+				
+				<div class="xxgl_bottom_b">
+					 <div class="page">
+                    </div>
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+	 <include file="common:js" />	
+	   
+</body>
+</html>
+
+<script type="text/javascript">
+				　　$(function() {　
+				    　
+				    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', '折叠');
+
+				    $('.tree li.parent_li > span').on('click',
+				    function(e) {　　
+				        var children = $(this).parent('li.parent_li').find(' > ul > li');
+				        if (children.is(":visible")) {　
+				            children.hide('fast');
+
+				            $(this).attr('title', '展开').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+				        } else {
+				            children.show('fast');
+				            $(this).attr('title', '折叠').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+				        }
+				        e.stopPropagation();
+				    });
+
+				    $('.tree>ul>li:last').css('border','none');
+				});
+				</script>

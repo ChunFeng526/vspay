@@ -1,0 +1,94 @@
+     
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理</title>
+	 <link rel="stylesheet" href="__PUBLIC__/plugin/themes/default/default.css" />
+    <script charset="utf-8" src="__PUBLIC__/plugin/kindeditor-min.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/plugin/lang/zh_CN.js"></script>
+    <include file="common:css" />
+  </head>	 
+	 
+	 
+	 <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+	
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>会员公告管理</h3>
+				<div class="tjwz_bottom_t">
+					<p style="margin-left:380px;"><a href="{:U('Index/ht_tjwz')}">
+					
+					添加公告
+					
+					</a></p>
+					<p><a href="{:U('Index/ht_hygg')}">公告列表</a></p>
+				</div>
+			</div>
+			
+         
+ 
+           <form action="{:U('Index/news_add')}" method="post" >
+			<div class="xxgl_bottom">
+				<h3><?php if(empty($data['id'])){ ?>      
+                           添加公告
+						<?php }else{ ?>				
+                           修改公告
+						<?php }?>
+				</h3>
+				<div class="nr1">
+					
+					<p>标题</p>
+		            <input type="text" name="title" value="{$data.title}" class="textt"/><br/><br/>
+					
+		           
+					   <p>新闻来源</p>
+		              <input type="text" name="from" value="{$data.from}" class="textt"/><br/><br/>
+					
+		            <p>公告内容</p>
+		            <p style="margin-bottom: 50px;"><textarea name="content" style="width:900px;height:350px;visibility:hidden;">{$data.content}</textarea>
+		            <em><a>
+					<?php if(!empty($data['id'])){ ?> 
+					
+					   <input type="hidden" name="id" value="{$data.id}">
+					   
+					<?php }?> 
+								
+                  <input type="submit" style="width: 50px;height: 27px;border:2px solid #dcdcdc;color: #000;font-size: 14px;" value="保存">
+
+				
+					
+					
+					</a></em>
+	       			
+		            </p>
+				</div>
+			</div>
+			</form>
+			
+			
+		</div>
+
+
+	<script>
+    var editor;
+    KindEditor.ready(function(K) {
+        gywm_editor = K.create('textarea[name="content"]', {
+            allowFileManager : true
+        });
+
+    });
+</script>
+
+
+	  	<include file="common:js" />	
+</body>
+</html>
+	

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+html,head,body{margin: 0px;padding: 0px;max-width: 640px;margin: 0 auto;}
+body{font-size: 3.8vmin;font-family: "Microsoft YaHei，Helvitica,Verdana,Tohoma,Arial;"color:#000;height: 100%;width: 100%;}
+img{border:0;}
+ol,ul {list-style:none outside none;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+a {color:#000；;text-decoration:none;cursor:pointer;}
+em,i{font-style: normal;}
+*{padding: 0;margin: 0;}
+input,select,textarea{border:0;outline:none;/*去除蓝色边框*/}
+a{color: #333333;}
+select{font-size: 4vmin;}
+
+/*头部*/
+.top_top{float: left;margin-top: 13vmin;width: 100%;}
+#huise{background: #f5f4f9}
+.header, .fxm_header {
+    width: 100%;
+    height: 13vmin;
+    background:#498aff;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+    max-width: 640px;
+}
+.fxm_header .fxm_left{
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+.fxm_header .fxm_left img{
+    width: 40%;
+    margin-top: 3vmin;
+}
+.fxm_header .fxm_center {
+    width: 80%;
+    font-size: 5vmin;
+    color: #fff;
+    line-height: 13vmin;
+        float: left;
+    text-align: center;
+}
+
+
+/*搜索*/
+.search{margin: 5%;}
+.search input{width: 100%;line-height: 10vmin;border-radius: 10vmin;background: #eeeeee;text-align: center;font-size: 3.5vmin}
+
+
+/*完成*/
+.wancheng {
+    text-align: center;
+    padding-top: 10%;
+    float: left;
+    width: 100%;
+}
+.wancheng img {
+    width: 30%;
+}
+.wancheng p {
+    padding: 5%;
+    font-size: 5vmin;
+    color: #63a725;
+}

@@ -1,0 +1,44 @@
+<include file="Common/Common"/>
+<!--==========内容开始=============-->
+    <div class="login">
+        <div class="develop">* 开发新果园说明: <span class="cbrown">仓库中水果不低于330（佣金30个水果)。</span></div>
+        <div class="store">仓库水果:{$cangku_num+0}     消耗水果：330</div>
+        <form name="AddUser" action="{:U('User/SaveUser')}"  method="post">
+            <dl>
+                <dd><span><em class="cred">*</em>我的二级密码：</span>
+                <input name="mypwdtwo" type="password">  
+                </dd>
+                <dd><span><em class="cred">*</em>推荐人：</span>
+                
+                <input type="text" <?php if(!is_all_land()) echo 'readonly="true"';  ?>  name="pid" value="{$account}">
+                </dd>
+                <dd><span><em class="cred">*</em>新果园用户名：</span>
+                <input name="account"  type="text">  
+                </dd>
+                <dd><span><em class="cred">*</em>姓名：</span><input name="username" type="text"></dd>
+
+                <dd><span>性别：</span>
+                    <select name="sex" >
+                        <option value="1">男</option>
+                        <option value="0">女</option>
+                    </select>
+                </dd>
+                <dd><span><em class="cred">*</em>手机号：</span>
+                <input type="number"  name="mobile" type="text">
+                </dd>
+                <dd><span>微信号：</span><input name="wx_no" type="text"></dd>
+                <dd><span>支付宝：</span><input name="alipay" type="text"></dd>
+                <dd><span><em class="cred">*</em>一级密码:</span><input type="password"  name="login_pwd" ></dd>
+                <dd><span><em class="cred">*</em>确认一级密码：</span><input type="password"  name="relogin_pwd" type="text"></dd>
+                <dd><span><em class="cred">*</em>二级密码：</span><input type="password"  name="safety_pwd"  type="text"></dd>
+                <dd><span><em class="cred">*</em>确认二级密码：</span><input type="password"  name="resafety_pwd" type="text"></dd>
+                <dd><span>备注：</span>
+                <textarea name="note" ></textarea>
+                </dd>
+            </dl>
+            <input type="button" class="submit" value="确认开发新果园" onclick="adduser()" >
+        </form>
+    </div>
+<div style="height:0.4rem"></div>
+</body> 
+</html>

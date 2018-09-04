@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>联系客服</title>
+  <link rel="stylesheet" href="__CSS__/balance_style.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    
+ <style>
+.goback{display:block; float:left;}
+.goback img{width:10vmin; margin-top:3vmin; margin-left:2vmin; color:#333;}
+</style>
+</head>
+<body>
+<div class="goback"><a href="javascript:history.go(-1)" class="goback"><img src="__IMG__/back3.png" alt=""></a></div>
+<div class="help_div">
+    <div class="help_pad">
+  {$kefu.content|htmlspecialchars_decode}
+  <p align="center">注：长按识别客服微信二维码</p>
+    </div>
+</div>
+
+</body>
+</html>
+ 

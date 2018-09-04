@@ -1,0 +1,75 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+            <li class="text-muted">{:isset($info)?'详情':''}</li>
+        </ul>
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="{:U('savemessage')}" method="post" class="form-horizontal form form-builder">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="id" value="{$info.id}">
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">投诉人：</label>
+                                                <div class="right">
+                                                    {$info.username}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">投诉人电话：</label>
+                                                <div class="right">
+                                                    {$info.mobile}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">投诉时间：</label>
+                                                <div class="right">
+                                                    {$info['create_time']|date='Y-m-d H:i:s',###}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">投诉内容：</label>
+                                                <div class="right">
+                                                    {$info.content}
+                                                </div>
+                                            </div>
+
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <a class="btn btn-primary" href="{:U('Complaint/index')}" >确定</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

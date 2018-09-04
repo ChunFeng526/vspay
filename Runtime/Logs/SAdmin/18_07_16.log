@@ -1,0 +1,554 @@
+[ 2018-07-16T17:24:24+08:00 ] 1.199.129.17 /nc.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+
+[ 2018-07-16T17:24:25+08:00 ] 1.199.129.17 /nc.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:24:44+08:00 ] 1.199.129.17 /nc.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `nc_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_admin` WHERE `a_uname` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-16T17:25:01+08:00 ] 1.199.129.17 /nc.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `nc_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_admin` WHERE `a_uname` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nc_admin` [ RunTime:0.0000s ]
+SQL: UPDATE `nc_admin` SET `a_last_login_time`='1531733101',`a_login_count`=a_login_count+1,`a_last_login_ip`='1.199.129.17' WHERE `a_id` = 1 [ RunTime:0.0313s ]
+
+[ 2018-07-16T17:25:01+08:00 ] 1.199.129.17 /nc.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ysk_order` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_order` WHERE `time` BETWEEN null AND null AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_member` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_member` WHERE `create_time` BETWEEN null AND null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:08+08:00 ] 1.199.129.17 /nc.php?s=/Goods/dianpu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 22 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 23 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 24 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 25 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 35 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_product_cate` WHERE `pid` = 36 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `type` = 8 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: csize D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 291 行.
+NOTIC: [8] Undefined index: color_cate D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 301 行.
+NOTIC: [8] Undefined index: stock D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 311 行.
+NOTIC: [8] Undefined variable: option_row D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 414 行.
+NOTIC: [8] Undefined variable: button_option_value_add D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 475 行.
+NOTIC: [8] Undefined variable: option_value_row D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 501 行.
+NOTIC: [8] Undefined variable: entry_price D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 525 行.
+NOTIC: [8] Undefined variable: entry_weight D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 531 行.
+NOTIC: [8] Undefined variable: button_remove D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 534 行.
+NOTIC: [8] Undefined variable: image_row D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\887865a99a3226fec45fd8d30a765d78.php 第 570 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:14+08:00 ] 1.199.129.17 /nc.php?s=/Goods/ggshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_gerenshangpu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_gerenshangpu` WHERE `id` <> 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_member` [ RunTime:0.0000s ]
+SQL: SELECT `member_grade` FROM `ysk_member` WHERE `member_id` = 1710 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `member_grade` FROM `ysk_member` WHERE `member_id` = 1724 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `member_grade` FROM `ysk_member` WHERE `member_id` = 1745 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `member_grade` FROM `ysk_member` WHERE `member_id` = 1715 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `member_grade` FROM `ysk_member` WHERE `member_id` = 4125 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `member_grade` FROM `ysk_member` WHERE `member_id` = 8539 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: page D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\3b6e3d7ed8008eacad931af8ea8f8f31.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:16+08:00 ] 1.199.129.17 /nc.php?s=/Goods/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_verify_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_verify_list` ORDER BY status asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\2b9a4cad497bfeb8eaf27a514be1eb98.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:20+08:00 ] 1.199.129.17 /nc.php?s=/Tixian/Transfers
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_jiaoyiorder` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_jiaoyiorder` WHERE `jy_type` <= '4' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_jiaoyiorder` WHERE `jy_type` <= '4' ORDER BY jy_id desc LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: empty D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\b595313be19b635d135b6e79fc0bd967.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:23+08:00 ] 1.199.129.17 /nc.php?s=/Tixian/tixian
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ysk_tixian` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_tixian` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_tixian` ORDER BY time desc LIMIT 0,25   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::assign(), called in D:\wwwroot\vspay.hzptkf.com\shop\SAdmin\Controller\TixianController.class.php on line 63 and defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Controller.class.php 第 121 行.
+NOTIC: [8] Undefined variable: name D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Controller.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: empty D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\9eca55a6a67a5e577af9a8cda0525a89.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:31+08:00 ] 1.199.129.17 /nc.php?s=/settings/general
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: kefu D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\aab138833e5a85660ea88d2e31e37883.php 第 161 行.
+NOTIC: [8] Undefined variable: option_row D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\aab138833e5a85660ea88d2e31e37883.php 第 338 行.
+NOTIC: [8] Undefined variable: button_option_value_add D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\aab138833e5a85660ea88d2e31e37883.php 第 399 行.
+NOTIC: [8] Undefined variable: option_value_row D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\aab138833e5a85660ea88d2e31e37883.php 第 425 行.
+NOTIC: [8] Undefined variable: entry_price D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\aab138833e5a85660ea88d2e31e37883.php 第 449 行.
+NOTIC: [8] Undefined variable: entry_weight D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\aab138833e5a85660ea88d2e31e37883.php 第 455 行.
+NOTIC: [8] Undefined variable: button_remove D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\aab138833e5a85660ea88d2e31e37883.php 第 459 行.
+NOTIC: [8] Undefined variable: image_row D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\aab138833e5a85660ea88d2e31e37883.php 第 495 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:42+08:00 ] 1.199.129.17 /nc.php?s=/Goods/level
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `ysk_level_list` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_level_list` ORDER BY status asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013672s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\ae22ea6c2ea46f0c5be7733ed017bf45.php 第 195 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-16T17:25:45+08:00 ] 1.199.129.17 /nc.php?s=/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: select * from ysk_member where 1  [ RunTime:0.0000s ]
+SQL: select * from ysk_member where 1  order by member_id desc LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:46+08:00 ] 1.199.129.17 /nc.php?s=/AdminUser/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: select * from nc_admin  [ RunTime:0.0000s ]
+SQL: select * from nc_admin  order by a_id desc LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:25:50+08:00 ] 1.199.129.17 /nc.php?s=/Goods/cate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 0 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 5  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 8  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 15  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 16  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 22  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 23  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 24  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 25  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 35  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `pid` = 36  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: page D:\wwwroot\vspay.hzptkf.com\Runtime\Cache\SAdmin\eec4e1a625f6c1b707cd7f23df021551.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-16T17:26:00+08:00 ] 1.199.129.17 /nc.php?s=/Goods/editCate/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Constant LANG_SET already defined D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Behavior\CheckLangBehavior.class.php 第 55 行.
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_product_cate` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_product_cate` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nc_menu` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `nc_menu` ORDER BY sort_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

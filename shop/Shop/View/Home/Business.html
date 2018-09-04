@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>产品上传</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+<script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="__JS__/wangEditor.min.js"></script>
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="/Public/home/common/layer/layer.js"></script>
+</head>
+<body>
+<style>
+    .address {
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+    .address li {
+        line-height: 10vmin;
+        font-size: 4.2vmin;
+    }
+
+    .address li input {
+        width: 66%;
+        height: 5vmin;
+        border: none;
+        padding: 0 1vmin;
+        border-bottom: 1px solid #aaaaaa;
+    }
+    .address li img{
+		width:98vmin;
+        height:62.5vmin;
+    }
+    .address li input[type=file]{
+        border-bottom: none;
+    }
+
+    .selectcc {
+        width: 83%;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        font-family: "微软雅黑";
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        padding-right: 14px;
+    }
+
+    .dzq {
+        width: 84%;
+        height: 5vmin;
+        border: none;
+        border-bottom: 1px solid #aaaaaa;
+    }
+  
+    .col-sm-10{
+		display: inline-block;
+    }
+    .col-sm-10 .radio-inline{
+      display: inline-block;
+      margin-right: 4vmin;
+    }
+    .col-sm-10 .radio-inline input{
+      display: inline-block;
+      margin-right: 1vmin;
+    }
+    .form-group{
+      	height:6.5vmin;
+    }
+  
+  
+  .choice{  
+    position: relative;  
+  }  
+  .choice .radio{  
+    position: relative;  
+    display: inline-block;  
+    padding-left: 7.5vmin;  
+    margin-right:6vmin;
+  }  
+  .choice .radio input{  
+    position: absolute;  
+    left: -9999px;  
+  }  
+  .choice .radio i{  
+    display: block;  
+    position: absolute;  
+    top: 0px;  
+    left: 0;  
+    width: 12px;  
+    height: 12px;  
+    outline: 0;  
+    border: 1px solid #c2c2c2;  
+    background: #fff;  
+    border-radius: 50%;  
+    transition: border-color .3s  
+      -webkit-transition: border-color .3s;  
+  }  
+  .choice .radio input:checked+i{  
+    border-color: #5FB878;  
+  }  
+  .choice .radio input+i:after{  
+    position: absolute;  
+    content: '';  
+    top: 3px;  
+    left: 3px;  
+    width: 6px;  
+    height: 6px;  
+    border-radius: 50%;  
+    background-color: #5FB878;  
+    opacity: 0;  
+    transition: opacity .1s;  
+    -webkit-transition: opacity .1s;  
+  }  
+  .choice .radio input:checked+i:after{  
+    opacity: 1;  
+  }
+  	
+</style>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+        <a href="Javascript:history.go(-1)"><img src="__IMG__/lpg.png" alt=""><span>商品信息</span></a>
+
+    </div>
+    <div class="header_c" style="width: 70%;"><h1 style="color:#000"></h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+<form action="{:U('Shop/Home/Productsup')}" method="post" enctype="multipart/form-data" id="goodsinfo">
+    <div class="address" style="margin-left:1vmin;margin-right:1vmin;">
+        <ul id="inputa">
+            <input type="hidden" value="{$id}" name="id">
+ <!--            <eq name="id" value="">
+     <li>
+         <p>一级：
+             <select id="province" name="province" class="ng-valid ng-dirty ng-valid-parse ng-touched dzq"
+                     onclick="change_city()">
+                 <foreach name="typeinfo" item="types">
+                     <option value="{$types['id']}">{$types['name']}</option>
+                 </foreach>
+             </select>
+         </p>
+ 
+         <p>二级：
+             <select id="city" name="city" class="ng-valid ng-dirty ng-valid-parse ng-touched dzq"
+                     onclick="change_town()">
+                 <option value="" selected="selected">--请选择--</option>
+             </select>
+         </p>
+     </li>
+ </eq> -->
+            <li>商品名称：<input type="text" value="{$produce_dets['name']}" name="name"></li>
+            <!--<li>商品详情：<input type="text" value="{$produce_dets['s_desc']}" name="s_desc"></li>-->
+            <li>商品详情：<div  id="editor"></div><input name="s_desc" type="hidden" id="text1" value="{$produce_dets['s_desc']}"/> </li>
+
+            <li>售价：<input type="text" value="{$produce_dets['price']}" name="price"></li>
+            <li>原价：<input type="text" value="{$produce_dets['old_price']}" name="old_price"></li>
+            <!--<li>结算价：<input type="text" value="{$produce_dets['count_price']}" name="count_price"></li>-->
+            <!--<li>赠送积分：<input type="text" value="{$produce_dets['jifen_nums']}" name="jifen_nums"></li>-->
+        	<!--<li>发货城市：<input type="text"  value="{$produce_dets['address']}" name="sendpro"></li> -->
+                                        <div class="form-group">
+                                <label class="col-sm-2 control-label">是否热门：</label>
+                                <div class="col-sm-10">
+                                    <label class="radio-inline choice">
+                                      <label class="radio">是<input type="radio" name="gr_hot" value="1"><i></i></label>  
+		   							  <label class="radio">否<input type="radio" value="2" name="gr_hot"><i></i></label> 
+                                      <!-- <input type="radio" <eq name="produce_dets['gr_hot']" value="1"> checked="checked"</eq> value="1" name="gr_hot">是</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" <eq name="produce_dets['gr_hot']" value="2"> checked="checked"</eq> value="2" name="gr_hot">否</label> -->
+                                </div>
+                            </div>
+
+                       <div class="form-group">
+                                <label class="col-sm-2 control-label">是否最新：</label>
+                                <div class="col-sm-10">
+                                    <label class="radio-inline choice">
+                                        <label class="radio">是<input type="radio" name="gr_new" value="1"><i></i></label>  
+                                        <label class="radio">否<input type="radio" value="2" name="gr_new"><i></i></label> 
+                                      
+                                       <!--  <input type="radio" <eq name="produce_dets['gr_new']" value="1"> checked="checked"</eq>  value="1" name="gr_new">是</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" <eq name="produce_dets['gr_new']" value="2"> checked="checked"</eq> value="2" name="gr_new">否</label> -->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">是否推荐：</label>
+                                <div class="col-sm-10">
+                                    <label class="radio-inline choice">
+                                       <label class="radio">是<input type="radio" name="gr_tuijian" value="1"><i></i></label>  
+                                        <label class="radio">否<input type="radio" value="2" name="gr_tuijian"><i></i></label> 
+                                      
+                                       <!-- <input type="radio" <eq name="produce_dets['gr_tuijian']" value="1"> checked="checked"</eq> value="1" name="gr_tuijian">是</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" <eq name="produce_dets['gr_tuijian']" value="2"> checked="checked"</eq> value="2" name="gr_tuijian">否</label>-->
+                                </div>
+                            </div>
+
+            <li>库存：<input type="text" value="{$produce_dets['stock']}" placeholder="不填写默认为888" name="kucun"></li>
+         <!--    <li>参数1：<input type="text" value="{$produce_dets['color_cate']}" placeholder="用英文,号隔开" name="color"></li>
+         <li>参数2：<input type="text" value="{$produce_dets['csize']}"placeholder="用英文,号隔开" name="size"></li>
+          -->
+            <li>封面图：<input type="file" value="{$produce_dets['pic']}" name="pic"><img src="{$produce_dets['pic']}"></li>
+            <li>商品图片1：<input type="file" value="{$produce_dets['pic1']}" name="pic1"><img src="{$produce_dets['pic1']}"></li>
+            <li>商品图片2：<input type="file" value="{$produce_dets['pic2']}" name="pic2"><img src="{$produce_dets['pic2']}"></li>
+            <li>商品图片3：<input type="file" value="{$produce_dets['pic3']}" name="pic3"><img src="{$produce_dets['pic3']}"></li>
+            <li>商品图片4：<input type="file" value="{$produce_dets['pic4']}" name="pic4"><img src="{$produce_dets['pic4']}"></li>
+        </ul>
+        <style>
+            #inputa li p {
+                height: 10vmin;
+            }
+
+            #inputa li p input {
+                width: 15%;
+                vertical-align: middle;
+            }
+        </style>
+        <input type="hidden" class="province_id" value="{$info['province_id']}">
+        <input type="hidden" class="city_id" value="{$info['city_id']}">
+        <input type="hidden" class="country_id" value="{$info['country_id']}">
+        <input type="hidden" class="address_id" value="{$info['address_id']}">
+        <input type="hidden" class="type" value="{$type}">
+    </div>
+</form>
+<style>
+    .selectcc {
+        width: 83%;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        font-family: "微软雅黑";
+        /*很关键：将默认的select选择框样式清除*/
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right: 14px;
+    }
+</style>
+
+<div class="submit"><a href="javascript:void(0)" style="background:#ff6a31;"><eq name="id" value="">确认添加<else />确认修改</eq></a></div>
+
+<script>
+    $('.submit').click(function () {
+        $("#goodsinfo").submit();
+    })
+
+    function change_city() {
+        var pid = $("#province").val();
+        $.ajax({
+            url: "{:U('Shop/Home/Change_city')}",
+            data: {'pid': pid},
+            type: "post",
+            datatype: "json",
+            success: function (mes) {
+                if (mes.status == 1) {
+                    var data = mes.info;
+                    var str = '<option value="" selected="selected">--请选择--</option>';
+                    $.each(data, function (i, v) {
+                        str += '<option value="' + v.id + '" selected="selected">' + v.name + '</option>';
+                    })
+                    $('#city').html(str);
+                }
+            }
+        })
+    }
+
+    function change_town() {
+        var pid = $("#city").val();
+
+        $.ajax({
+            url: "{:U('Shop/Home/Change_town')}",
+            data: {'pid': pid},
+            type: "post",
+            datatype: "json",
+            success: function (mes) {
+                if (mes.status == 1) {
+                    var data = mes.info;
+                    var str = '<option value="" selected="selected">--请选择--</option>';
+                    $.each(data, function (i, v) {
+                        str += '<option value="' + v.id + '" selected="selected">' + v.name + '</option>';
+                    })
+
+                    $('#district').html(str);
+                } else {
+                    var str = '<option value="" selected="selected">暂无下级</option>';
+                    $('#district').html(str);
+                }
+            }
+        })
+    }
+</script>
+<script  type="text/javascript" charset="utf-8" async defer>
+    var E = window.wangEditor;
+    var editor2 = new E('#editor');
+     editor2.customConfig.menus = [
+        'head',  // 标题
+        'bold',  // 粗体
+        'italic',  // 斜体
+        'underline',  // 下划线
+        'strikeThrough',  // 删除线
+        'foreColor',  // 文字颜色
+        'justify',  // 对齐方式
+        'image',  // 插入图片
+        'table',  // 表格
+    ];
+    editor2.customConfig.uploadImgServer = "{:U('Shop/Home/editUpload')}";
+    editor2.customConfig.uploadImgMaxLength = 5;
+    // editor2.customConfig.menus = [
+    //     'head',  // 标题
+    //     'bold',  // 粗体
+    //     'italic',  // 斜体
+    //     'underline',  // 下划线
+    //     'strikeThrough',  // 删除线
+    //     'foreColor',  // 文字颜色
+    //     'backColor',  // 背景颜色
+    //     'link',  // 插入链接
+    //     'list',  // 列表
+    //     'justify',  // 对齐方式
+    //     'quote',  // 引用
+    //     'emoticon',  // 表情
+    //     'image',  // 插入图片
+    //     'table',  // 表格
+    //     'video',  // 插入视频
+    //     'code',  // 插入代码
+    //     'undo',  // 撤销
+    //     'redo'  // 重复
+    // ];
+
+      // 自定义配置颜色（字体颜色、背景色）
+    editor2.customConfig.colors = [
+        '#000000',
+        '#eeece0',
+        '#1c487f',
+        '#4d80bf',
+        '#c24f4a',
+        '#8baa4a',
+        '#7b5ba1',
+        '#46acc8',
+        '#f9963b',
+        '#ffffff'
+    ];
+
+
+    var $text1 = $('#text1')
+    editor2.customConfig.onchange = function (html) {
+            // 监控变化，同步更新到 textarea
+            $text1.val(html);
+    }
+    editor2.create();
+    editor2.txt.html($text1.val());
+
+</script>
+
+
+
+</body>
+</html>

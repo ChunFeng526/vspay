@@ -1,0 +1,131 @@
+      <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>管理分红明细</h3>
+				<div class="xxgl_bottom_t">
+	           		<form id="f1" action="{:U('Thedetail/index')}" method="post" >
+	           			<span>查找:</span>
+		             	<!-- <select class="form-select" class="btn3" name="vip" id="page" value="类型" type="text"; style="width: 131px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4;font-size: 12px;margin-top: 15px;"/>
+		                <option value="">会员类型</option>
+						<option value="4">皇冠会员</option>
+						<option value="3">金钻会员</option>
+						<option value="2">蓝钻会员</option>
+						<option value="1">vip会员</option>
+						<option value="0">普通会员</option>
+		            </select> -->
+	             	<input class="btn3" name="username"  type="text" placeholder="姓名" style="width: 169px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4"/>
+	             	<input class="btn3" name="mobile"  type="text" placeholder="手机号" style="width: 169px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4"/>
+
+		            <div class="an3" style="left: 70%"><a id="btn" href="javascript:void">搜索</a></div>
+	            	</form>
+
+	            	
+				</div>
+				<div class="jhm_bottom_c">
+					<table id="table1" class="content_table">
+						<dl>
+							<dt style="width: 16.6%;">会员编号</dt>
+							<dt style="width: 16.6%;">会员姓名</dt>
+							<dt style="width: 130px;">会员手机</dt>
+							<dt style="width: 16.6%;">会员类型</dt>
+							<dt style="width: 16.6%;">奖金余额</dt>
+							<dt style="width: 16%;" >相关操作</dt>
+						</dl>
+					<foreach name="u_info" item="v">
+						<tr>
+							<td>{$v.userid}</td>
+							<td style="width: 16.6%;">
+							{$v.username}
+							</td>
+							<td>
+								{$v.mobile}
+							</td>
+							<td style="width: 16.6%;">
+								<?php
+						         switch($v['vip']){
+								    case 1: echo "vip会员"; break;
+			                        case 2: echo "蓝钻会员"; break;
+									case 3: echo "金钻会员"; break;
+									case 4: echo "皇冠会员"; break;
+									default:echo "普通会员";
+						           }
+						      ?>
+							</td>
+							<td style="width: 16.6%;">
+								{$v.money|default=0}
+							</td>
+							<!-- 详情页 S -->
+							<td>
+								<a href = "{:U('Thedetail/showmoney',array('userid'=>$v['userid']))}">
+									<em style="color: #3982e9">查看</em>
+								</a>	
+							</td>
+							 <!-- 详情页 E -->
+						</tr>
+					</foreach>
+					
+					</table>
+				</div>
+				<div class="xxgl_bottom_b">
+				
+				    <div class="page">
+                      {$page}
+                    </div>
+
+                   <style>
+				  	.page{text-align: center;}
+				  	.page a{color: #a4a4a4;}
+				  	.prev{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  	.num{  padding: 0 10px;  border: 1px solid #ddd;}
+				  	.page .current{ padding: 0 10px;  border: 1px solid #ddd;  margin: 0px 10px;}
+				  	.next{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+				  </style>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	 <include file="common:js" />	
+	   
+</body>
+</html>
+
+<!-- js 控制表格隔行变色 -->
+	<script type="text/javascript">
+
+		$("#table1 tr:odd").css('background','#DBEAF9');
+		$("#table1 tr:even").css('background','#FEF8BA');
+	</script>	
+
+
+ <!-- 日期 -->
+  <script type="text/javascript" src="__PUBLIC__/admin/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/admin/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+   <!-- 日期js cs -->
+  <link href="__PUBLIC__/admin/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+  <link href="__PUBLIC__/admin/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+    $(function () {
+		$('.date').datetimepicker({
+	        format: 'yyyy-mm-dd',
+	        language:"zh-CN",
+	        minView:2,
+	        autoclose:true,
+	        todayBtn:1, //是否显示今日按钮
+	    });
+
+	    // 表单提交
+	    $('#btn').click(function(){
+	    	$('#f1').submit();
+	    });
+    })
+</script>

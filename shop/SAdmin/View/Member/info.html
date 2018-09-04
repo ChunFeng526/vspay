@@ -1,0 +1,182 @@
+<extend name="Public:base" />
+<block name="content">
+	<div class="page-header">
+		<h1>
+			{$breadcrumb2}
+			<small>
+				<i class="icon-double-angle-right"></i>
+				{$crumbs}
+			</small>
+		</h1>
+	</div>
+	<ul class="nav nav-tabs">
+	  <li class="active"><a href="#tab-member" data-toggle="tab">会员资料</a></li>
+	</ul>
+	<form class="form-horizontal" id="validation-form"  method="post" action='{$action}'>
+	<div class="tab-content">
+		<notempty name="Think.get.id">
+			<input name="member_id" type="hidden" value="{$Think.get.id}" />
+		</notempty>
+		<div class="tab-pane active" id="tab-member">
+			<table class="table table-binfoed">
+				<tr>
+				    <td>ID</td>
+				    <td>{$data.info.member_id}</td>
+				</tr>
+
+				<tr>
+					<td>用户名</td>
+					<td>{$data.info.uname}</td>
+				</tr>
+				<tr>
+					<td>一级密码</td>
+					<td><input id="pwd" name="pwd" type="text" style="width:400px;" value="<?php echo think_ucenter_decrypt($data['info']['pwd'],C('PWD_KEY')); ?>" /></td>
+				</tr>
+				<tr>
+					<td>二级密码</td>
+					<td><input id="twopass" name="twopass" type="text" style="width:400px;" value="<?php echo think_ucenter_decrypt($data['info']['twopass'],C('PWD_KEY')); ?>" /></td>
+				</tr>
+					<tr>
+					<td>手机号码</td>
+					<td><input id="phone" name="phone" type="text" style="width:400px;" value="{$data.info.phone}" /></td>
+				</tr>
+
+				<!-- <tr>
+					<td>会员级别(1代表普通会员,2代表中级会员,3代表高级会员 改成对应数字即可)</td>
+					<td><input id="houtaijibie" name="houtaijibie" type="text" style="width:400px;" value="{$data.info.houtaijibie}" /></td>
+				</tr> -->
+				<tr>
+					<td>会员身份:</td>
+					<td>
+						<select name="is_dailishang" id="dailishang">
+							<option value="1" <if condition="$data['info']['is_dailishang'] eq 1">selected</if>>普通用户</option>
+							<option value="2" <if condition="$data['info']['is_dailishang'] eq 2">selected</if>>代理商</option>
+							<option value="3" <if condition="$data['info']['is_dailishang'] eq 3">selected</if>>大区负责人</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr id="daili_sel" style="display:none;">
+					<td>代理城市:</td>
+					<td>
+						<input  name="prov" type="text" style="width:100px;" value="{$data.info.prov}" placeholder="xxx" />省
+						<input  name="city" type="text" style="width:100px;" value="{$data.info.city}" placeholder="xxx" />市
+					</td>
+				</tr>
+
+				<tr>
+					<td>是否为大区负责人</td>
+					<td>
+							<label class="radio-inline">
+							<input type="radio" <if condition="$data['info']['is_manager'] eq '1'">checked="checked"</if> value="1" name="is_manager">是</label>
+							<label class="radio-inline">
+							<input type="radio" <if condition="$data['info']['is_manager'] eq '0'">checked="checked"</if> value="0" name="is_manager">否</label>
+					</td>
+				</tr>
+
+
+
+				<!-- <tr>
+					<td>所属团队(1,2,3代表团队)</td>
+					<td><input id="team_grade" name="team_grade" type="text" style="width:400px;" value="{$data.info.team_grade|default="0"}" /></td>
+				</tr> -->
+
+
+				<tr>
+					<td>收货地址</td>
+					<td>{$data.info.add_ress}</td>
+				</tr>
+
+				<tr>
+					<td>农联币地址</td>
+					<td>{$data.info.farmlink_address}</td>
+				</tr>
+
+				<tr>
+					<td>支付宝账号</td>
+					<td>{$data.info.api_pay}</td>
+				</tr>
+
+				<tr>
+					<td>微信账号</td>
+					<td>{$data.info.wx_name}</td>
+				</tr>
+
+				<tr>
+					<td>聚点收款码</td>
+					<td><img width="120" height="100" src="__USERPIC__/{$data.info.judian_pic}" alt=""></td>
+				</tr>
+
+				<tr>
+					<td>银行/账号</td>
+					<td>{$data.info.bankname} / {$data.info.banknumber}</td>
+				</tr>
+
+				<tr>
+					<td>创建时间</td>
+					<td>{$data.info.create_time|toDate='Y/m/d H:i:s'}</td>
+				</tr>
+				<tr>
+					<td>最近登录时间</td>
+					<td>{$data.info.last_login_time|toDate='Y/m/d H:i:s'}</td>
+				</tr>
+				<tr>
+					<td>状态</td>
+					<td>
+							<label class="radio-inline">
+							<input type="radio" checked="checked" value="1" name="status">启用</label>
+							<label class="radio-inline">
+							<input type="radio" value="0" name="status">停用</label>
+					</td>
+				</tr>
+				</table>
+				<div class="form-group">
+
+				<div style="margin-left:20px;">
+					<input name="send" type="submit" value="提交" class="btn btn-primary" />
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</form>
+</block>
+<block name="javascript">
+
+
+<script>
+$(function(){
+
+	<present name="Think.get.id">
+			Oscshop.setValue("status", {$data.info.status|default=1});
+	</present>
+
+	$('.btn').click(function(){
+
+		if($('#pwd').val()==''){
+			alert('密码必填');
+			return false;
+		}
+		if($('#pwd').val().length<6){
+			alert('密码长度必须大于等于6位！！');
+			return false;
+		}
+	});
+
+	if($("#dailishang").val()==2){
+		$("#daili_sel").show("300");
+	}else{
+		$("#daili_sel").hide("300");
+	}
+	$("#dailishang").change(function(){
+		var sel = $(this).val();
+		if(sel==2){
+			$("#daili_sel").show("300");
+		}else{
+			$("#daili_sel").hide("300");
+		}
+	});
+
+});
+</script>
+</block>

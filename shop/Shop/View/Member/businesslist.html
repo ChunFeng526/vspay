@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width,initial-scale=1,mininum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>入驻商家</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<script type="text/javascript" src="__JS__/jquery.js"></script>
+<!-- <link rel="stylesheet" href="__CSS__/style1.css"> -->
+<link rel="stylesheet" href="__CSS__/task.css">
+<link rel="stylesheet" href="__ICON1__/iconfont.css">
+
+<script type="text/javascript" src="__JS__/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="__JS__/jquery.reveal.js"></script>
+<style>
+.fxm_header2{
+    width: 100%;
+    background: #fff;
+    background-size: auto auto;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+    max-width: 640px;
+	padding-bottom:6vmin;
+}
+.fxm_header2 .banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 15vmin;
+    background: #fff;
+    z-index: 1;
+    max-width: 640px;
+    margin-top: 13vmin;
+	float:left;
+}
+.fxm_header2 .goback img {
+    width: 9vmin;
+    height: auto;
+	float:left;
+	margin-top:3vmin;
+	margin-left:1vmin;
+}
+
+.fxm_header2 .banner input {
+    font-size: 4vmin;
+    margin-top: 3%;
+    width: 82%;
+    height: 9vmin;
+    background: #e9ebee;
+    border-radius: 5vmin;
+    border: none;
+    line-height: 9vmin;
+    text-align: left;
+    position: relative;
+    text-indent: 1em;
+    margin-left: 2%;
+}
+.fxm_header2 .banner .search img {
+    display: block;
+    width: 6vmin;
+    height: 6vmin;
+    float: left;
+}
+.fenlei_bg{height:auto; background-color:#fff; padding-bottom:8vmin;}
+.dp_fenlei{ position:relative; width:100%;  margin:0 auto; margin-top:15vmin;}
+.dp_fenlei ul{
+	display:block;
+	width:92%;
+	margin:0 auto;	
+}
+.dp_fenlei ul li{
+	display:block;
+	float:left; 
+	width:20%;
+	padding:0 auto;
+	text-align:center;
+	padding:auto;
+	font-size:3.4vmin;
+	color:#313131;
+	padding-bottom:4vmin;
+	
+}
+.dp_fenlei ul li img{
+	display:block;
+	width:12vmin;
+	margin:2vmin auto;
+}
+.dp_banner0{
+	display:block;
+	width:94%;
+	height:auto;
+	margin:auto;
+}
+.dp_ftitle{display:block; position:relative; width:100%; height:auto; background-color:#fff;}
+.dp_ftitle h1{display:block; margin-left:5vmin; font-size:4.5vmin; color:#333; padding-bottom:4vmin;}
+.f_size a{font-size:3.4vmin;}
+</style>
+</head>
+<body>
+<!--
+<div class="fxm_header2">
+       <div class="fxm_left"><a href="javascript:history.go(-1)"><img src="__IMG__/left0.png"></a></div>
+       <div class="fxm_center"><input name="" type="text" value="烤翅"></div>
+       <div class="fxm_right"><img src="__IMG__/zf.png"></div>
+    </div> -->
+<div class="fxm_header2">  
+  <div class="banner" style="margin-top:0; ">
+    	<a href="javascript:history.go(-1)" class="goback">
+	 	<img src="__IMG__/back3.png" alt="">
+	  </a>
+    	<input type="text" name="user_search" placeholder="搜索本店商品" onFocus="this.placeholder=&#39;&#39;" onBlur="this.placeholder=&#39;搜索本店商品&#39;">
+        <div class="search" >
+	 	<img src="__IMG__/icon_search1.png" alt="">
+		</div>
+    </div>
+	
+</div>
+
+<!--分类-->
+<div class="fenlei_bg">
+	<div class="dp_fenlei">
+		<ul>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>1))}"><img src="__IMG__/fenlei1.png">服饰</a></li>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>2))}"><img src="__IMG__/fenlei2.png">餐饮</a></li>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>3))}"><img src="__IMG__/fenlei3.png">酒店</a></li>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>4))}"> <img src="__IMG__/fenlei4.png">旅游</a></li>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>5))}"><img src="__IMG__/fenlei5.png">科技</a></li>
+    <li><a href="{:U('dianpu/businesslist',array('shop_type'=>1))}"><img src="__IMG__/fenlei6.png">养生</a></li>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>2))}"><img src="__IMG__/fenlei7.png">美容</a></li>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>3))}"><img src="__IMG__/fenlei8.png">特产</a></li>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>4))}"> <img src="__IMG__/fenlei9.png">生鲜</a></li>
+	<li><a href="{:U('dianpu/businesslist',array('shop_type'=>5))}"><img src="__IMG__/fenlei10.png">其它</a></li>
+	
+		</ul>
+	</div>
+	<img src="__IMG__/dianpu_banner.jpg" class="dp_banner0">
+</div>
+<!--
+<div class="zyd">
+	<div class="zyd_top"><img src="__IMG__/logo.jpg"></div>
+	<div class="zyd_bottom">
+		<div class="zyd_img"><img src="__IMG__/logo.jpg"></div>
+		<p>{$dailishang['dailishang_name']}</p>
+		<span>0人收藏 <i class="iconfont">&#xe61f;收藏</i></span>
+	</div>
+</div>
+<div class="banner" style="background: none">
+	<input type="text" name="user_search" placeholder="搜索商品" onFocus="this.placeholder=''" onBlur="this.placeholder='搜索商品'"/>
+	<div class="search">
+	 	<img src="__IMG__/search.png" alt="">
+	</div>
+</div>-->
+<div class="dp_ftitle"><h1>入驻商家</h1></div>
+<div class="navigation f_size" style="margin-top:0vmin; position:relative; border-bottom:none; background-color:#f5f5f5; height:13vmin;">
+		<a href="#" data-reveal-id="myModal3">综合排序</a>
+		<a href="#">销量最高</a>
+		<a href="#" class="chlid2" style="position:relative;" data-reveal-id="myModal2">
+			<span>最新入驻</span>
+			<!--<img  src="__IMG__/top.png" alt="" class="ssx">
+			<img  src="__IMG__/down.png" alt="" class="xsx">-->
+		</a>
+
+		<a href="#" data-reveal-id="myModal">筛选
+		<i class="iconfont">&#xe63b;</i>
+		</a>
+</div>
+<div id="myModal" class="reveal-modal" >
+	<form action="">
+		<p class="leibie">
+		<label for="">类别</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">分销</a>
+			<a href="#" class="optiones">广告</a>
+		</p>
+		<p class="zhouqi">
+			<label for="">周期</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">0-5天</a>
+			<a href="#" class="optiones">6-10天</a>
+			<a href="#" class="optiones">11-20天</a>
+			<a href="#" class="optiones">21-30天</a>
+			<a href="#" class="optiones">30天以上</a>
+		</p>
+		<p class="jiamf">
+			<label for="">加盟费(元)</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">0-100</a>
+			<a href="#" class="optiones">100-1,000</a>
+			<a href="#" class="optiones">1,000-10,000</a>
+
+		</p>
+	</form>
+
+<div class="close-reveal-modal">
+		<a href="#">确定</a>
+</div>
+</div>
+<div id="myModal2" class="reveal-modal2" >
+<form action="">
+	<label for="">价格范围</label>
+	<input type="text">
+	<em></em>
+	<input type="text">
+
+
+</form>
+<div class="close-reveal-modal">
+		<a href="#">确定</a>
+</div>
+</div>
+<div id="myModal3" class="reveal-modal3" >
+<form action="">
+	<input type="radio" name="ra">综合排序<br>
+	<input type="radio" name="ra">加盟费从高到低<br>
+	<input type="radio" name="ra">加盟费从低到高<br>
+	<input type="radio" name="ra">时间最新<br>
+</form>
+<div class="close-reveal-modal">
+	<a href="#">确定</a>
+</div>
+</div>
+
+<!--入驻商家列表静态-->
+<foreach name="dianpu" item="va">
+<div class="businessdiv">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td rowspan="3" width="26%"><img src="{$va.shop_logo}" class="businesslogo"></td>
+    <td width="54%" ><h1>{$va.shop_name}</h1></td>
+    <td width="20%" rowspan="3"><a class="btn_enter" href="{:U('dianpu/index',array('did'=>$va['userid']))}">进&nbsp;入</a></td>
+  </tr>
+<!--   <tr>
+  <td>收藏人数：323</td>
+  </tr> -->
+  <!-- <tr>
+    <td><span class="pingfen">综合评分：4.8</span></td>
+    </tr> -->
+</tbody></table>
+
+	<div class="commodity" style="border:0;">
+		<ul>
+<?php     
+$data['shangjia']=$va['userid'];
+    
+        $shangpin=M('product_detail')->where($data)->order('ctime desc')->limit(3)->select(); 
+        ?>
+		<foreach name="shangpin" item="v"> 
+			<li style="border-top:1px solid #efefef;">
+            	<a href="{:U('/Shop/Home/details',array('proid'=>$v['id']))}"><img src="{$v.pic}"><h2>{$v.name}</h2><span>￥{$v.price}</span></a>
+            </li>
+            
+            </foreach>
+			<!-- <li>
+			           	  <a><img src="http://zhu12.hbb98.com/Uploads/image/product/5a0bebdf6755e.png" class="picstyle"><h2>舌尖精品C餐</h2><span>￥35.5</span></a>
+			            </li>
+			<li>
+			           	  <a><img src="http://zhu12.hbb98.com/Uploads/image/product/59ee85fcd26bf.jpg" class="picstyle"><h2>舌尖精品C餐</h2><span>￥35.5</span></a>
+			            </li> -->
+		</ul>
+  </div>
+</div>
+</foreach>
+<!-- <div class="businessdiv">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td rowspan="3" width="26%"><img src="http://zhu12.hbb98.com/Themes/Shop/Public/images/dp.png" class="businesslogo"></td>
+    <td width="54%" ><h1>geruila歌瑞拉旗舰店</h1></td>
+    <td width="20%" rowspan="3"><a class="btn_enter">进&nbsp;入</a></td>
+  </tr>
+  <tr>
+    <td>收藏人数：323</td>
+    </tr>
+  <tr>
+    <td><span class="pingfen">综合评分：4.8</span></td>
+    </tr>
+</tbody></table>
+
+	<div class="commodity">
+		<ul>
+			<li>
+            	<a><img src="http://zhu12.hbb98.com/Uploads/image/product/59ee891f5d0f9.jpg" class="picstyle"><h2>舌尖精品C餐</h2><span>￥35.5</span></a>
+            </li>
+			<li>
+           	  <a><img src="http://zhu12.hbb98.com/Uploads/image/product/5a0be2b20e64a.png" class="picstyle"><h2>舌尖精品C餐</h2><span>￥35.5</span></a>
+            </li>
+			<li>
+           	  <a><img src="http://zhu12.hbb98.com/Uploads/image/product/59ee886fc7a62.jpg" class="picstyle"><h2>舌尖精品C餐</h2><span>￥35.5</span></a>
+            </li>
+		</ul>
+  </div>
+</div>
+ -->
+
+
+
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+ 	$('.optiones').click(function(){
+ 		$(this).toggleClass('checkeds').siblings('.optiones').removeClass('checkeds');
+ 	})
+
+ </script>

@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$Think.lang.gbszzx}</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+
+
+
+<body class="bg96">
+	<div class="header">
+	    <div class="header_l">
+      <a href="{:U('Turntable/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+      
+	    </div>
+	    <div class="header_c"><h2>{$Think.lang.gbszzx}</h2></div>
+	    <div class="header_r"></div>
+	</div>
+
+       <div class="big_width100">
+	     <div class="Wbaozx">
+	     	<p>{$Think.lang.zrsy}<img src="__WIMG__/denbgji_0{$grade}.png"></p>
+	     	<h3>{$lastsy|default="0.0000"}</h3>
+	     </div>
+	     <div class="Wbaozx_bott">
+	     	<p>{$Think.lang.gbzzc}<br/><span>{$wbtotal}</span></p>
+	     	<a href="{:U('Turntable/WBDongjie')}" style="color:#fff;"><p class="kyzc">{$Think.lang.kyzc}<br/>{$wbc}</p></a>
+	     </div>
+
+	       <div class="wtreas_order_titel clear_wl">
+			   <a href="{:U('Turntable/Wbaobei',array('step'=>1))}"   <eq name="step" value="1">class="wundone_OT_l fl noe"<else />class="wundone_OT_l fl"</eq>>
+               {$Think.lang.syjl}
+       			</a>
+       			<a href="{:U('Turntable/Wbaobei',array('step'=>2))}" <eq name="step" value="2">class="wundone_OT_l fl noe"<else />class="wundone_OT_l fl"</eq>>
+               {$Think.lang.zcjl}
+       			</a>
+       			<a href="{:U('Turntable/Wbaobei',array('step'=>3))}"  <eq name="step" value="3">class="wundone_OT_l fl noe"<else />class="wundone_OT_l fl "</eq>>
+               {$Think.lang.record}
+       			</a>
+
+       	  </div>
+       
+
+      <div class="zwshj">
+
+
+
+           <div class="yugejil"  style="width: 100%;position: absolute;top:263px;" >
+            <eq name="step" value="2">
+              <p style="width:46%;">{$Think.lang.sl}</p>
+              <p style="width:54%;">{$Think.lang.sj}</p>
+            <else/>                     
+
+              <p style="width:28%;">{$Think.lang.ly}</p>
+              <p style="width:28%;">{$Think.lang.sl}<eq name="step" value="1">({$Think.lang.jjf1})</eq></p>
+              <p style="width:44%;">{$Think.lang.sj}</p>
+            </eq>           
+         </div>
+
+
+
+        <?php 
+              if($list){
+              ?>
+
+             <div id="wrapper1" style="width: 100%;top:303px;" >
+                  <div class="scroller">
+                      <ul>
+                           <foreach name="list" item="v">
+                                  <li>
+                                   <eq name="step" value="2">
+
+                                    <p style="width:46%;">{$v['num']}</p>
+                                      <p style="width:54%;">{$v['create_time']|date='Y-m-d H:i:s',###}</p>  
+                                     
+                                    <else/>
+                                     <p style="width:28%;">
+                                      <eq name="step" value="1">
+                                          <eq name="v.type" value="3">{$Think.lang.jtsy}<else/>{$Think.lang.dtsy}</eq>
+
+                                      <else/>
+                                          <eq name="v.crowds_id" value="0">{$Think.lang.zichan}<else/>{$Think.lang.zhongchou}</eq>
+                                      </eq>
+                                  </p>
+                                    <p style="width:28%;">{$v['num']}</p>
+                                      <p style="width:44%;">{$v['create_time']|date='Y-m-d H:i:s',###}</p>
+
+                                    </eq>  
+
+                                  </li>
+                              </foreach>
+
+                               
+
+                      </ul>
+                   
+                    <!--   <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div> -->
+                  </div>
+              </div>
+
+              
+      <?php 
+
+            }else{
+                echo "<span style='color:#666;line-height:400%;'>".L('mzdxgjl')."</span>";
+           }
+              
+        
+            ?>
+
+
+
+
+         </div>
+
+
+
+           
+
+
+	   </div>
+
+
+
+	    <div class="wtjiaoycaozd">
+		    <div class="wtjiaoycaoz clear_wl">
+	       			<a href="{:U('Turntable/WbaoIn')}" class=" fl cznoe" id="cuanjdd1">{$Think.lang.tochangeinto}</a>
+	       			<a href="{:U('Turntable/WbaoOut')}" class=" fl " id="cuanjdd2">{$Think.lang.turnout}</a>
+	       			
+	       	  </div>
+       	</div>
+
+
+       	<!-- <script type="text/javascript">
+              $('#cuanjdd1').on('click', function(){
+
+                var tjyhk =$.trim($('#tjyhk').val()); //开户行
+            if(tjyhk==0){
+                      layer.msg('你当前是使用用户，请最低升级至普通用户！');
+                  return;
+            }   
+          });
+        </script>
+        <script type="text/javascript">
+              $('#cuanjdd2').on('click', function(){
+
+                var tjyhk =$.trim($('#tjyhk').val()); //开户行
+            if(tjyhk==0){
+                      layer.msg('你当前是使用用户，请最低升级至普通用户！');
+                  return;
+            }   
+          });
+        </script> -->
+
+	    
+
+</body>
+
+</html>

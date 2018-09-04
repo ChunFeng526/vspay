@@ -1,0 +1,102 @@
+
+       <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+		<div class="hyxq">
+			<div class="hyxq_bottom">
+				<h3>会员详情</h3>
+				
+				<foreach name="users" item="users">
+				<table class="content_table3">
+					<tr>
+						<td>会员ID</td>
+						<td>{$users.userid}</td>
+					</tr>
+					<tr>
+						<td>真实姓名</td>
+						<td>{$users.username}</td>
+					</tr>
+					
+					
+					<tr>
+						<td>手机号</td>
+						<td>{$users.mobile}</td>
+					</tr>
+					
+					<tr>
+						<td>上级编号</td>
+						<td><?php if(empty($users['pid'])){echo '无上级';}else{ ?>{$users.pid}<?php } ?></td>
+					</tr>
+					<tr>
+						<td>上级姓名</td>
+				
+						<td><?php if(empty($users['pid'])){echo '无上级';}else{ ?><?php echo M('users')->where("userid=".$users['pid'])->getField('username');?><?php } ?></td>
+					</tr>
+					
+					<tr>
+						<td>上级手机</td>
+				
+						<td><?php if(empty($users['pid'])){echo '无上级';}else{ ?>{$users.c_mobile}<?php } ?></td>
+					</tr>
+					
+				<!-- 	<tr>
+						<td>会员类型</td>
+						<td>
+						 <?php
+					    switch($users['vip']){
+						case 1: echo "vip会员"; break;
+						case 2: echo "蓝钻会员"; break;
+						case 3: echo "金钻会员"; break;
+						case 4: echo "皇冠会员"; break;
+						default:echo "普通会员";
+					    }
+						?>
+					
+						</td>
+					</tr> -->
+				
+					
+					
+					<tr>
+						<td>微信号</td>
+						<td><?php if(empty($users['weixin'])){echo '无';}else{ ?>{$users.weixin}<?php } ?></td>
+					</tr>
+					<tr>
+						<td>注册时间</td>
+						<td>{$users.regdate|date='Y-m-d H:i:s',###}</td>
+					</tr>
+					<tr>
+						<td>开户行</td>
+						<td>无</td>
+					</tr>
+					<tr>
+						<td>卡号</td>
+						<td>无</td>
+					</tr>
+					
+					<tr>
+						<td>收货人</td>
+						<td><?php $shr=M('shdz')->where("sdz_pid=".$users['userid'])->getField('sdz_name'); if(!empty($shr)){ echo $shr;}else{ echo '无' ;}?></td>
+					</tr>
+					<tr>
+						<td>收货人手机</td>
+						<td><?php $shsj=M('shdz')->where("sdz_pid=".$users['userid'])->getField('sdz_mobile'); if(!empty($shsj)){ echo $shsj;}else{ echo '无' ;}?></td>
+					</tr>
+					
+					<tr>
+						<td>收货地址</td>
+						<td><?php  $shdz=M('shdz')->where("sdz_pid=".$users['userid'])->find(); $xxdz=$shdz['sdz_sheng'].$shdz['sdz_xxdz']; if(!empty($shdz)){ echo $xxdz;}else{ echo '无' ;}?></td>
+					</tr>
+				</table>
+				</foreach>
+				
+				
+				<div class="anniu">
+					<p><a href="javascript:history.back(-1)">返回</a></p>	
+				</div>
+			</div>

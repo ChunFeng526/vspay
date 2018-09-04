@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<title>手袋购物网</title>
+	<style type="text/css">
+		.aui-bar-tab {
+			position: static;
+		}
+
+		.search-input {
+			height: 1.6rem;
+			line-height: 1.6rem;
+			background: #f5f5f5;
+			border-radius: 30px;
+			position: relative;
+			font-family: "aui_iconfont" !important;
+			text-align: left;
+			padding-left: 1.5rem;
+			color: #999999;
+		}
+
+		.search-input:after {
+			position: absolute;
+			left: 0;
+			padding-left: 0.5rem;
+			content: "\e615";
+		}
+	</style>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="product/css/aui.css"/>
+	<link rel="stylesheet" type="text/css" href="product/css/aui-slide.css"/>
+	<link rel="stylesheet" type="text/css" href="product/css/pop.css"/>
+</head>
+<body style="background:#fff">
+<header class="aui-bar aui-bar-nav">
+	<a class="aui-pull-left aui-btn" onClick="javascript :history.back(-1);">
+		<span class="aui-iconfont aui-icon-left" style="font-weight:800"></span>
+	</a>
+	<div class="aui-title">商品详情</div>
+	<a class="aui-pull-right aui-btn">
+		<span class="aui-iconfont aui-icon-more" tapmode onclick="showPopup('top-right')" style="display:block; height:40px; line-height:40px;"></span>
+	</a>
+</header>
+<div id="aui-slide2">
+	<div class="aui-slide-wrap">
+		<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+			<img src="product/image/sp1.jpg" alt="">
+		</div>
+		<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+			<img src="product/image/sp1.jpg" alt="">
+		</div>
+		<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+			<img src="product/image/sp1.jpg" alt="">
+		</div>
+		<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+			<img src="product/image/sp1.jpg" alt="">
+		</div>
+	</div>
+	<div class="aui-slide-page-wrap">
+		<!--分页容器-->
+	</div>
+</div>
+<div class="aui-title-text ">
+	<a href="#">
+		<h2>
+			<i>
+				<img src="product/image/l.png" alt="">
+			</i>
+			<span>促销</span>
+			荣耀V9play全网通 标配版 3GB+32GB 幻夜黑 移动联通电信4G手机 双卡双待
+		</h2>
+	</a>
+	<div style="font-size:18px; font-weight:800; color:#f34347">￥1299.00
+	</div>
+</div>
+<div class="div-border t-line"></div>
+<div class="aui-title-shout t-line">
+	<p>【首单支付】首单立减15元</p>
+</div>
+<div class="div-border t-line"></div>
+<section class="aui-content-padded t-line" style="padding:0 20px; margin:0">
+	<div class="aui-card-list" style="padding:0; background:none">
+		<div class="aui-card-list-header aui-collapse-header" style="padding: 0" tapmode>
+			<div class="aui-title-text-hot">购买1件可优惠换购热销商品</div>
+			<i class="aui-iconfont aui-icon-down aui-collapse-arrow" style="font-weight:800"></i>
+		</div>
+		<div class="aui-card-list-content-padded aui-collapse-content">
+			<div class="aui-row aui-row-padded">
+				<p>购买1件可优惠换购热销商品</p>
+				<p>购买1件可优惠换购热销商品</p>
+				<p>买苹果指定产品送双节大礼包</p>
+				<p>最高省￥39.00</p>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="div-border t-line"></div>
+<section id="s-rate" data-spm=""></section>
+<ul class="table-view t-line">
+	<li class=" clickwn" style="padding: 15px 6px 15px 20px;font-size: 12px;color:#666;">
+		<span style="color:#999; font-size:12px; padding-right:4px; float:left;">已选</span>
+		iphone7 plus 金色 128GB <span style="float: right; font-size:22px; margin-right:10px;" class="aui-iconfont aui-icon-more"></span>
+	</li>
+</ul>
+<ul class="table-views t-line">
+	<li class=" media">
+		<a class="table-view-cell">
+			<div class="media-body-logo">
+				<img class="media-object pull-left" src="product/image/apple.jpg"/>
+			</div>
+			<div class="media-body">
+				<h3 style="color:#555; padding-bottom:4px;">Apple产品专营店</h3>
+				<p>苹果公司（Apple Inc. ）是美国的一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩(Ron Wayne)等人于1976年4月...</p>
+			</div>
+		</a>
+	</li>
+	<li class="shop-tab-span">
+                <span>
+                    <div class="unm">268532</div>
+                    <div class="rem">关注人数</div>
+                    <div class="vertical-line"></div>
+                </span>
+		<span>
+                    <div class="unm">28944</div>
+                    <div class="rem">全部商品</div>
+                    <div class="vertical-line"></div>
+                </span>
+		<span>
+                    <div class="unm">567890</div>
+                    <div class="rem">店铺动态</div>
+                </span>
+	</li>
+	<li class="shop-tab-btn aui-clearfix">
+		<a href="#" class="box-line">
+			<i class="aui-iconfont aui-icon-my"></i>
+			联系客服
+		</a>
+		<a href="#" class="box-line" style="margin-right:0;">
+			<i class="aui-iconfont aui-icon-home"></i>
+			进入店铺
+		</a>
+	</li>
+</ul>
+<div class="div-border t-line"></div>
+<ul class="table-view t-line" style="padding:14px 20px">
+	<li class="table-view-cell">
+		<a class="navigate-right table-view-cell" style="width:100%; color:#81838e; font-size:13px;">
+			<div class="table-view-cell-list">评价(21485)</div>
+			<div style="text-align:right; float:right">
+				好评 <em style="color:#f34347;">99% </em>
+				<i class="aui-iconfont aui-icon-right" style="color:#f34347; font-weight:800"></i>
+			</div>
+		</a>
+	</li>
+</ul>
+<div class="div-border "></div>
+<section class="aui-content">
+	<div class="aui-timeline">
+		<div class="aui-timeline-item-header">2017年1月8日</div>
+		<div class="aui-timeline-item">
+			<div class="aui-timeline-item-label aui-bg-info text-light">夏洛***</div>
+			<div class="aui-timeline-item-inner">
+				<div class="aui-card-list">
+					<div class="aui-card-list-header aui-border-b aui-border-b-i-pad" style="padding:0 2px;">
+						<div style="width:100%">iphone7 plus 炭黑色  </div>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+					</div>
+					<div class="aui-card-list-content-padded" style="font-size:12px; color:#666">
+						苹果7plus推荐购买128G，体验会更好，我下载的歌全是无损品质，每首20兆以上，照片APP也都不少，现在还有100G余量。苹果7/7plus暖屏很多，这是代工厂的原因 好评 好评！
+						<img src="product/image/sp1.jpg">
+					</div>
+					<div class="aui-card-list-footer aui-border-t aui-font-size-12">
+						<div>
+							<i class="aui-iconfont aui-icon-note aui-font-size-14"></i>
+							666
+						</div>
+						<div>
+							<i class="aui-iconfont aui-icon-laud aui-font-size-14"></i>
+							888
+						</div>
+						<div>
+							<i class="aui-iconfont aui-icon-star aui-font-size-14"></i>
+							888
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aui-timeline-item" style="margin-bottom:0">
+			<div class="aui-timeline-item-label aui-bg-warning text-light">小爷***</div>
+			<div class="aui-timeline-item-inner">
+				<div class="aui-card-list" style="margin-bottom:0">
+					<div class="aui-card-list-header aui-border-b aui-border-b-i-pad">
+						<div style="width:100%">iphone7 plus 炭黑色  </div>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+						<i class="aui-iconfont aui-icon-star aui-text-danger"></i>
+					</div>
+					<div class="aui-card-list-content-padded">
+						<div class="aui-row aui-row-padded" style="font-size:12px; color:#666">
+							苹果7plus推荐购买128G，体验会更好，我下载的歌全是无损品质，每首20兆以上，照片APP也都不少，现在还有100G余量。苹果7/7plus暖屏很多，这是代工厂的原因 好评 好评！
+
+
+							<div>
+								<div class="aui-col-xs-4">
+									<img src="product/image/sp1.jpg">
+								</div>
+								<div class="aui-col-xs-4">
+									<img src="product/image/sp1.jpg">
+								</div>
+								<div class="aui-col-xs-4">
+									<img src="product/image/sp1.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="wrap" id="wrap">
+	<ul class="tabClick">
+		<li class="active">商品介绍</li>
+		<li>规格参数</li>
+		<li>包装售后</li>
+	</ul>
+	<div class="lineBorder">
+		<div class="lineDiv">
+			<!--移动的div-->
+		</div>
+	</div>
+	<div class="tabCon">
+		<div class="tabBox">
+			<div class="tabList">
+				<div style="margin-top:10px;">
+					<img src="product/image/sspp2.jpg" alt="">
+					<img src="product/image/sspp1.jpg" alt="">
+					<img src="product/image/sspp3.jpg" alt="">
+					<img src="product/image/sspp4.jpg" alt="">
+					<img src="product/image/sspp5.jpg" alt="">
+					<img src="product/image/sspp6.jpg" alt="">
+
+				</div>
+			</div>
+			<div class="tabList">
+				<div class="detail" id="wareStandard" style="display: block;">
+					<table class="table-border" width="100%">
+						<tbody>
+						<tr>
+							<td colspan="2">
+								<strong>基本信息</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								机身宽度<br>(mm）
+							</td>
+							<td>67.1</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>存储</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>ROM</td>
+							<td>32GB</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>前置摄像头</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>前置摄像头</td>
+							<td>700万像素</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>数据接口</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>充电接口类型</td>
+							<td>Lightning(iphone)</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>网络支持</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>双卡机类型</td>
+							<td>单卡</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>手机特性</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>GPS</td>
+							<td>支持</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>主芯片</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>CPU品牌</td>
+							<td>以官网信息为准</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>辅助功能</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>其他特性</td>
+							<td>iPhone 7 和 iPhone 7 Plus 可防溅、抗水、防尘，在受控实验室条件下经测试，其效果在 IEC 60529 标准下达到 IP67 级别。防溅、抗水、防尘功能并非永久有效</td>
+						</tr>
+						<tr>
+							<td>其他1</td>
+							<td>防护性能可能会因日常磨损而下降。请勿为潮湿状态下的 iPhone 充电；请参阅使用手册了解清洁和干燥说明。由于浸入液体而导致的损坏不在保修范围之内。</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>主体</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>上市年份</td>
+							<td>2016年</td>
+						</tr>
+						<tr>
+							<td>型号</td>
+							<td>iPhone 7 </td>
+						</tr>
+						<tr>
+							<td>入网型号</td>
+							<td>A1660</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>操作系统</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>操作系统</td>
+							<td>以官网信息为准</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>电池信息</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>电池是否可拆卸</td>
+							<td>否</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>屏幕</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>屏幕材质类型</td>
+							<td>其他</td>
+						</tr>
+						<tr>
+							<td>
+								主屏幕尺寸<br>(英寸）
+							</td>
+							<td>4.7英寸</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<strong>后置摄像头</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>后置摄像头</td>
+							<td>1200万像素</td>
+						</tr>
+						<tr>
+							<td>摄像头数量</td>
+							<td>1个</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="tabList">
+				<div class="detail sale-service-wrap" id="warePack" style="display: block;">
+					<div class="sale-service-grey bdr-t"></div>
+					<div class="sale-service-floor bdr-t">
+						<div class="sale-service-title">
+                                    <span class="title-text">
+                                        包装清单<span></span>
+                                    </span>
+						</div>
+						<div class="sale-service-content">
+							装有 iOS 10 的 iPhone*1，采用 Lightning 接头的 EarPods*1，Lightning 至 3.5 毫米耳机插孔转换器*1，Lightning 至 USB 连接线*1，USB 电源适配器*1，资料*1.<table cellpadding="0" cellspacing="1" width="100%" border="0" class="Ptable"></table>
+						</div>
+					</div>
+					<div class="sale-service-grey bdr-t"></div>
+					<div class="sale-service-floor bdr-t">
+						<div class="sale-service-title">
+                                    <span class="title-text">
+                                        售后服务<span></span>
+                                    </span>
+						</div>
+						<div class="sale-service-content">
+							本产品全国联保，享受三包服务，质保期为：一年质保（已激活的iPhone无质量问题不支持7天无理由退换货）<br>
+							如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！<br>
+						</div>
+					</div>
+					<div class="sale-service-grey bdr-t"></div>
+					<div class="sale-service-floor bdr-t">
+						<div class="sale-service-title">
+                                    <span class="title-text">
+                                        价格说明<span></span>
+                                    </span>
+						</div>
+						<div class="sale-service-content">
+							1、口袋价：口袋价为商品的销售价，是您最终决定是否购买商品的依据。<br>
+							2、划线价：商品展示的划横线价格为参考价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在口袋平台上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。<br>
+							3、折扣：如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。<br>
+							4、异常问题：商品促销信息以商品详情页“促销”栏中的信息为准；商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="height:52px"></div>
+<!-- 弹出 -->
+<div class="flick-menu-mask" style=""></div>
+<div class="spec-menu">
+	<div class="spec-menu-content spec-menu-show" style="display: block;">
+		<div class="spec-menu-top bdr-b">
+			<div class="spec-first-pic">
+				<img id="spec_image" src="product/image/sp1.jpg"/>
+			</div>
+			<a class="rt-close-btn-wrap spec-menu-close">
+				<p class="flick-menu-close tclck">
+					<i class="aui-iconfont aui-icon-close"></i>
+				</p>
+			</a>
+			<div class="spec-price" id="specJdPri" style="display: block">
+                        <span class="yang-pic spec-yang-pic">￥
+                                        </span>
+				<span id="spec_price">36.80 </span>
+			</div>
+			<div id="specWeightDiv" class="spec-weight">
+				<span>重量:</span>
+				<span id="spec_weight">3.26kg</span>
+			</div>
+		</div>
+		<div class="spec-menu-middle">
+			<div class="prod-spec" id="prodSpecArea">
+				<!-- 已选 -->
+				<div class="prod-spec" id="prodSpecArea">
+					<!-- 已选 -->
+					<div class="spec-desc">
+						<span class="part-note-msg">已选</span>
+						<div id="specDetailInfo_spec" class="base-txt">
+							黑色  128GB &nbsp;&nbsp;<span class="amount">1</span>
+							件
+
+						</div>
+					</div>
+					<div class="nature-container" id="natureCotainer">
+						<!--颜色 5.5版本之前的规格属性-->
+						<div class="pro-color">
+							<span class="part-note-msg">颜色 </span>
+							<p id="color">
+								<a title="金色" class="a-item selected J_ping" report-eventparam="金色">金色</a>
+								<a title="玫瑰金色" class="a-item J_ping" report-eventparam="玫瑰金色">玫瑰金色</a>
+								<a title="银色" class="a-item J_ping" report-eventparam="银色">银色</a>
+								<a title="黑色" class="a-item J_ping" report-eventparam="黑色">黑色</a>
+								<a title="亮黑色" class="a-item J_ping" report-eventparam="亮黑色">亮黑色</a>
+								<a title="特别版红" class="a-item J_ping" report-eventparam="特别版红">特别版红</a>
+							</p>
+						</div>
+						<div class="pro-color">
+							<span class="part-note-msg">容量 </span>
+							<p id="color1">
+								<a title="16G" class="a-item selected J_ping" report-eventparam="16G">16G</a>
+								<a title="32G" class="a-item J_ping" report-eventparam="32G">32G</a>
+								<a title="64G" class="a-item J_ping" report-eventparam="64G">64G</a>
+								<a title="128G" class="a-item J_ping" report-eventparam="128G">128G</a>
+								<a title="256G" class="a-item J_ping" report-eventparam="256G">256G</a>
+							</p>
+						</div>
+						<!--尺寸-->
+						<!--容量-->
+						<!--数量-->
+					</div>
+					<!--尺寸-->
+					<!--容量-->
+					<!--数量-->
+					<div id="addCartNum" class="pro-count">
+						<span class="part-note-msg" style="margin-right: 10px;">数量</span>
+						<div style="width: 100%;margin-left: 10px;" class="num ">
+							<p class="jian" style="float: left;margin-top: 5px; font-size:18px;">-
+							</p>
+							<input id="cool" class="inputBorder" value="1" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')" type="text" maxlength="5" placeholder="数量" style="font-size: 12px;width: 60px;height: 20px;float: left;padding: 0 5px;margin-top:3px;margin-left: 5px; text-align:center"/>
+							<p class="jia" style="float: left;margin-top: 5px;font-size:18px; margin-left:4px;">+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--延保start-->
+			<div class="warranty-wrap bdr-t" style="display: ;">
+				<div id="spec_yanbaoInfo" class="warranty-title">保障服务 </div>
+				<div id="spec_yanbaoItems"></div>
+			</div>
+			<!--延保end-->
+		</div>
+		<div class="flick-menu-btn spec-menu-btn">
+			<a class="yellow-color add_cart" id="add_cart_spec" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">加入购物车</a>
+			<a class="red-color directorder" id="directorder_spec" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">立即购买</a>
+		</div>
+	</div>
+</div>
+<!-- 弹出 -->
+<footer class="aui-bar aui-bar-tab aui-margin-t-15  aui-border-t">
+	<div class="aui-bar-tab-item" tapmode style="width: 3rem;">
+		<i class="aui-iconfont aui-icon-comment aui-text-info"></i>
+		<div class="aui-bar-tab-label aui-text-info">咨询</div>
+	</div>
+	<div class="aui-bar-tab-item" tapmode style="width: 3rem;">
+		<i class="aui-iconfont aui-icon-star aui-text-warning"></i>
+		<div class="aui-bar-tab-label aui-text-warning">收藏</div>
+	</div>
+	<div class="aui-bar-tab-item aui-bg-warning aui-text-white" tapmode style="width: auto;">加入购物车</div>
+	<div class="aui-bar-tab-item aui-bg-danger aui-text-white" tapmode style="width: auto;">立即购买</div>
+</footer>
+<script type="text/javascript" src="product/script/api.js"></script>
+<script type="text/javascript" src="product/script/aui-popup-new.js"></script>
+<script type="text/javascript" src="product/script/aui-slide.js"></script>
+<script type="text/javascript" src="product/script/aui-collapse.js"></script>
+<script src="product/script/jquery.min.js"></script>
+<script src="product/script/ratchet.min.js"></script>
+<script charset="utf-8">
+    window.onload = function() {
+        var windowWidth = document.body.clientWidth;
+        //window 宽度;
+        var wrap = document.getElementById('wrap');
+        var tabClick = wrap.querySelectorAll('.tabClick')[0];
+        var tabLi = tabClick.getElementsByTagName('li');
+
+        var tabBox = wrap.querySelectorAll('.tabBox')[0];
+        var tabList = tabBox.querySelectorAll('.tabList');
+
+        var lineBorder = wrap.querySelectorAll('.lineBorder')[0];
+        var lineDiv = lineBorder.querySelectorAll('.lineDiv')[0];
+
+        var tar = 0;
+        var endX = 0;
+        var dist = 0;
+
+        tabBox.style.overflow = 'hidden';
+        tabBox.style.position = 'relative';
+        tabBox.style.width = windowWidth * tabList.length + "px";
+
+        for (var i = 0; i < tabLi.length; i++) {
+            tabList[i].style.width = windowWidth + "px";
+            tabList[i].style.float = 'left';
+            tabList[i].style.float = 'left';
+            tabList[i].style.padding = '0';
+            tabList[i].style.margin = '0';
+            tabList[i].style.verticalAlign = 'top';
+            tabList[i].style.display = 'table-cell';
+        }
+
+        for (var i = 0; i < tabLi.length; i++) {
+            tabLi[i].start = i;
+            tabLi[i].onclick = function() {
+                var star = this.start;
+                for (var i = 0; i < tabLi.length; i++) {
+                    tabLi[i].className = '';
+                }
+                ;tabLi[star].className = 'active';
+                init.lineAnme(lineDiv, windowWidth / tabLi.length * star)
+                init.translate(tabBox, windowWidth, star);
+                endX = -star * windowWidth;
+            }
+        }
+
+        function OnTab(star) {
+            if (star < 0) {
+                star = 0;
+            } else if (star >= tabLi.length) {
+                star = tabLi.length - 1
+            }
+            for (var i = 0; i < tabLi.length; i++) {
+                tabLi[i].className = '';
+            }
+            ;
+            tabLi[star].className = 'active';
+            init.translate(tabBox, windowWidth, star);
+            endX = -star * windowWidth;
+        }
+        ;
+        tabBox.addEventListener('touchstart', chstart, false);
+        tabBox.addEventListener('touchmove', chmove, false);
+        tabBox.addEventListener('touchend', chend, false);
+        //按下
+        function chstart(ev) {
+            ev.preventDefault;
+            var touch = ev.touches[0];
+            tar = touch.pageX;
+            tabBox.style.webkitTransition = 'all 0s ease-in-out';
+            tabBox.style.transition = 'all 0s ease-in-out';
+        }
+        ;//滑动
+        //        function chmove(ev){
+        //            var stars = wrap.querySelector('.active').start;
+        //            ev.preventDefault;
+        //            var touch = ev.touches[0];
+        //            var distance = touch.pageX-tar;
+        //            dist = distance;
+        //            init.touchs(tabBox,windowWidth,tar,distance,endX);
+        //            init.lineAnme(lineDiv,-dist/tabLi.length-endX/4);
+        //        };
+        //离开
+        function chend(ev) {
+            var str = tabBox.style.transform;
+            var strs = JSON.stringify(str.split(",", 1));
+            endX = Number(strs.substr(14, strs.length - 18));
+
+            if (endX > 0) {
+                init.back(tabBox, windowWidth, tar, 0, 0, 0.3);
+                endX = 0
+            } else if (endX < -windowWidth * tabList.length + windowWidth) {
+                endX = -windowWidth * tabList.length + windowWidth
+                init.back(tabBox, windowWidth, tar, 0, endX, 0.3);
+            } else if (dist < -windowWidth / 3) {
+                OnTab(tabClick.querySelector('.active').start + 1);
+                init.back(tabBox, windowWidth, tar, 0, endX, 0.3);
+            } else if (dist > windowWidth / 3) {
+                OnTab(tabClick.querySelector('.active').start - 1);
+            } else {
+                OnTab(tabClick.querySelector('.active').start);
+            }
+            var stars = wrap.querySelector('.active').start;
+            init.lineAnme(lineDiv, stars * windowWidth / 4);
+
+        }
+        ;
+    }
+    ;
+
+    var init = {
+        translate: function(obj, windowWidth, star) {
+            obj.style.webkitTransform = 'translate3d(' + -star * windowWidth + 'px,0,0)';
+            obj.style.transform = 'translate3d(' + -star * windowWidth + ',0,0)px';
+            obj.style.webkitTransition = 'all 0.3s ease-in-out';
+            obj.style.transition = 'all 0.3s ease-in-out';
+        },
+        touchs: function(obj, windowWidth, tar, distance, endX) {
+            obj.style.webkitTransform = 'translate3d(' + (distance + endX) + 'px,0,0)';
+            obj.style.transform = 'translate3d(' + (distance + endX) + ',0,0)px';
+        },
+        lineAnme: function(obj, stance) {
+            obj.style.webkitTransform = 'translate3d(' + stance + 'px,0,0)';
+            obj.style.transform = 'translate3d(' + stance + 'px,0,0)';
+            obj.style.webkitTransition = 'all 0.1s ease-in-out';
+            obj.style.transition = 'all 0.1s ease-in-out';
+        },
+        back: function(obj, windowWidth, tar, distance, endX, time) {
+            obj.style.webkitTransform = 'translate3d(' + (distance + endX) + 'px,0,0)';
+            obj.style.transform = 'translate3d(' + (distance + endX) + ',0,0)px';
+            obj.style.webkitTransition = 'all ' + time + 's ease-in-out';
+            obj.style.transition = 'all ' + time + 's ease-in-out';
+        },
+    }
+</script>
+<script type="text/javascript">
+
+
+    $(function () {
+        $(".clickwn").click(function () {
+            $(".flick-menu-mask").show();
+            $(".spec-menu").show();
+        })
+
+        $(".tclck").click(function () {
+            $(".flick-menu-mask").hide();
+            $(".spec-menu").hide();
+        })
+
+		/* $("#cool").focus(function(){
+		 var oi = $('#cool').val();
+
+		 $('.amount').html(oi)
+		 });*/
+
+        $('#cool').bind('input propertychange', function () {
+			/* alert(this.value);*/
+            $('.amount').html(this.value)
+
+        }).bind('input input', function () {
+
+        });
+
+
+        $('#color a').click(function () {
+            var cook = $(this).index();
+            $('#color a').eq(cook).addClass('selected').siblings().removeClass('selected');
+        })
+
+        $('#color1 a').click(function () {
+            var cook = $(this).index();
+            $('#color1 a').eq(cook).addClass('selected').siblings().removeClass('selected');
+        })
+
+
+        //加减面板
+        $(function(){
+            //加号
+            $(".jia").click(function(){
+
+                var $parent=$(this).parent(".num");
+                var $num=window.Number($(".inputBorder",$parent).val());
+                $(".inputBorder",$parent).val($num+1);
+
+                $('.amount').html($num+1)
+
+            });
+
+            //减号
+            $(".jian").click(function(){
+                var $parent=$(this).parent(".num");
+                var $num=window.Number($(".inputBorder",$parent).val());
+                if($num>2){
+                    $(".inputBorder",$parent).val($num-1);
+                    $('.amount').html($num-1)
+
+                }else{
+                    $(".inputBorder",$parent).val(1);
+                    $('.amount').html($num)
+
+
+                }
+            });
+
+        })
+
+
+    })
+
+
+</script>
+<script type="text/javascript">
+
+    apiready = function () {
+        api.parseTapmode();
+    }
+    var collapse = new auiCollapse({
+        autoHide:false //是否自动隐藏已经展开的容器
+    });
+
+</script>
+<script type="text/javascript">
+
+    var popup = new auiPopup();
+    function showPopup(location){
+        popup.init({
+            frameBounces:true,//当前页面是否弹动，（主要针对安卓端）
+            location:location,//位置，top(默认：顶部中间),top-left top-right,bottom,bottom-left,bottom-right
+            buttons:[{
+                image:'image/share/wx.png',
+                text:'微信',
+                value:'wx'//可选
+            },{
+                image:'image/share/wx-circle.png',
+                text:'朋友圈',
+                value:'wx-circle'
+            },{
+                image:'image/share/qq.png',
+                text:'QQ好友',
+                value:'qq'
+            },{
+                image:'image/share/qzone.png',
+                text:'QQ空间',
+                value:'qq-qzone'
+            },{
+                image:'image/share/sina-weibo.png',
+                text:'新浪微博'
+            }],
+        },function(ret){
+            if(ret){
+                document.getElementById("button-index").textContent = ret.buttonIndex;
+                document.getElementById("button-value").textContent = ret.buttonValue;
+            }
+        })
+    }
+
+</script>
+<script type="text/javascript">
+
+    var slide = new auiSlide({
+        container:document.getElementById("aui-slide"),
+        // "width":300,
+        "height":260,
+        "speed":300,
+        "pageShow":true,
+        "pageStyle":'dot',
+        "loop":true,
+        'dotPosition':'center',
+        currentPage:currentFun
+    })
+
+    function currentFun(index) {
+        console.log(index);
+    }
+    var slide2 = new auiSlide({
+        container:document.getElementById("aui-slide2"),
+        // "width":300,
+        "height":290,
+        "speed":300,
+        "autoPlay":4000, //自动播放
+        "pageShow":true,
+        "loop":true,
+        "pageStyle":'dot',
+        'dotPosition':'center'
+    })
+    var slide3 = new auiSlide({
+        container:document.getElementById("aui-slide3"),
+        // "width":300,
+        "height":240,
+        "speed":500,
+        "autoPlay": 3000, //自动播放
+        "loop":true,
+        "pageShow":true,
+        "pageStyle":'line',
+        'dotPosition':'center'
+    })
+    console.log(slide3.pageCount());
+
+</script>
+</body>
+</html>

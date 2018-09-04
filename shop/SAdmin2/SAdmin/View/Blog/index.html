@@ -1,0 +1,126 @@
+<extend name="Public:base" />
+
+<block name="content">
+	<div class="page-header">
+	<a href="{:U('Blog/add')}" class="btn btn-primary">新增</a>
+	</div>
+<table class="table table-striped table-bordered table-hover search-form">
+	<thead>
+		<th>    				
+			<select name="category_id">
+				<option value="">-选择分类-</option>
+				<volist name="blog_category" id="v" >
+					<option <?php if(isset($_GET['category_id'])&&($_GET['category_id']==$v['id'])){echo ' selected="selected"';} ?> value="{$v.id}">{$v.title}</option>
+				</volist>	
+			</select>
+		</th>
+		<th>
+		<a class="btn btn-primary" href="javascript:;" id="search" url="{:U('Blog/index')}">查询</a>
+		</th>
+	</thead>
+</table>	
+<div class="row">
+	<div class="col-xs-12">	
+		<div class="table-responsive">
+			<table class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>											
+						<th>ID</th>
+						<th>分类</th> 
+						<th>图片</th> 
+						<th>名称</th> 
+						<th>发布</th>			
+						<th>创建时间</th>	
+						<th>操作</th>				
+					</tr>
+				</thead>
+				<tbody>
+						<volist name="list" id="data" empty="$empty">
+						<tr>						
+							<td>{$data.blog_id}</td>
+							<td>{$data.fen}</td>
+							<td><img src="__ROOT__/{$data.image}" /></td>
+							<td>{$data.title}</td>
+							
+							<td>
+								<switch name="data.status">    
+									<case value="1">
+										<span class="green bold">是</span>
+									</case>    
+									<case value="0">
+										<span class="red bold">否</span>
+									</case>
+								</switch>
+									
+							</td>
+							
+							<td>{$data.create_time}</td>
+							<td>
+								<a  class="btn btn-xs btn-info" href='{:U("Blog/edit",array("id"=>$data["blog_id"]))}'>
+									<i class="icon-edit bigger-120"></i>
+								</a> 
+								<a class="delete btn btn-xs btn-danger" href='{:U("Blog/del",array("id"=>$data["blog_id"]))}' >
+									<i class="icon-trash bigger-120"></i>
+								</a>
+							</td>
+						</tr>
+						</volist>	
+						
+						<tr>
+							<td colspan="20" class="page">{$page}</td>
+						</tr>
+				</tbody>
+				
+			</table>
+		</div>
+	</div>
+</div>
+</block>
+<block name="javascript">
+<script>
+$(function(){
+	
+	$("#search").click(function () {
+        var url = $(this).attr('url');
+        var query = $('.search-form').find('input,select').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+        query = query.replace(/^&/g, '');
+        if (url.indexOf('?') > 0) {
+            url += '&' + query;
+        } else {
+            url += '?' + query;
+        }
+        window.location.href = url;
+    });
+	
+	$('.copy').click(function(){
+		$.ajax({
+		url: "{:U('Goods/copy_goods')}",
+		type: 'post',
+		data: $('input:checked'),
+		dataType: 'json',
+		beforeSend: function() {
+			$('.copy').attr('disabled', true);
+			$('.copy').after('<span class="wait">&nbsp;<img src="__IMG__/loading.gif" alt="" /></span>');
+		},	
+		complete: function() {
+			$('.copy').attr('disabled', false); 
+			$('.wait').remove();
+		},			
+		success: function(json) {
+			$('.warning, .error').remove();
+					
+			if (json['redirect']) {				
+				
+				location = json['redirect']
+								
+			} 
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert('修改失败');
+		}
+	});	
+	});
+});		
+</script>
+</block>

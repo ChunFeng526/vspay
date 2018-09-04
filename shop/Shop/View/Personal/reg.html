@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__LAYERJS__/layer.js"></script>
+    <script type="text/javascript" src="__JS__/address.js"></script>
+
+    <!-- Demo styles -->
+    <!--  <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+
+     <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+ <script type="text/javascript" src="__JS__/upload.js"></script> -->
+
+</head>
+<style>
+    .dzlist {
+        margin-right: 3%;
+        margin-left: 3%;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px #ccc;
+        padding: 3%;
+    }
+
+    .dzlist h3 {
+        font-size: 4.5vmin;
+        color: #333;
+        line-height: 6vmin;
+    }
+
+    .dzlist p {
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color: #767975;
+    }
+
+    .dzlist_bot {
+        border-top: 1px solid #ddd;
+
+    }
+
+    .dzlist_bot span {
+        float: right;
+        margin-left: 5%;
+    }
+
+    .dzlist_bot a {
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color: #767975;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+        <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>注册</span></a>
+
+    </div>
+    <div class="header_c" style="width: 70%;"><h1 style="color:#000"></h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<div class="mui-content">
+    <div id='login-form' class="mui-input-group">
+        <table >
+            <tr>
+                <th>昵称</th>
+                <td><input type="text" name="username" placeholder="请输入昵称"></td>
+            </tr>
+
+            <tr>
+                <th>账号</th>
+                <td><input type="text" name="mobile" placeholder="请输入手机号"></td>
+            </tr>
+<!-- 
+            <tr>
+                <th>推荐人手机号</th>
+                <td><input type="text" name="fidmobile" placeholder="请输入手机号"></td>
+            </tr>
+ -->
+             <tr>
+                <th>省份</th>
+                <td>
+                <select style="width: 90%;border: 1px solid #ddd;
+    height: 9vmin;
+    margin-top: 5%;
+    font-size: 14px;
+    line-height: 9vmin;
+    padding-left: 3%;" id="province" name="province" class="ng-valid ng-dirty ng-valid-parse ng-touched dzq">
+                    <option value="" selected="selected">--请选择省份--</option>
+                </select>
+                </td>
+            </tr>
+
+             <tr>
+                <th>城市</th>
+                <td>
+                <select  style="width: 90%;border: 1px solid #ddd;height: 9vmin;margin-top: 5%;font-size: 14px;line-height: 9vmin;padding-left: 3%;"  id="city" name="city" class="ng-valid ng-dirty ng-valid-parse ng-touched dzq">
+                    <option value="" selected="selected">--请选择市--</option>
+                </select>
+                </td>
+            </tr>
+          <tr>
+                <th>区域：</th>
+                <td>
+                       <select style="width: 90%;border: 1px solid #ddd;height: 9vmin;margin-top: 5%;font-size: 14px;line-height: 9vmin;padding-left: 3%;" id="district" name="district" class="ng-valid ng-dirty ng-valid-parse ng-touched dzq">
+                    <option value="" selected="selected">--请选择区--</option>
+                </select>
+                </td>
+            </tr>
+
+             <tr>
+                <th>密码</th>
+                <td><input type="password" name="password" class="password" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <th>确认密码</th>
+                <td><input type="password" name="" class="conpassword" placeholder="请确认密码"></td>
+            </tr>
+
+            <!-- <tr>
+                <td colspan="2"><input type="checkbox"  name="is_supply" style="width:auto;height:auto;">成为供应商</td>
+            </tr>
+            <tr style="display:none;" class="supply">
+                <th>店铺名</th>
+                <td><input type="text" name="supply_name" maxlength="10" placeholder="请输入店铺名称"></td>
+            </tr> -->
+
+            <input type="hidden" class="province_id" value="">
+            <input type="hidden" class="city_id" value="">
+
+        </table>
+
+        <div class="mui-content-padded">
+            <button id='login' class="mui-btn mui-btn-block mui-btn-primary">注册</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    var province_id = $('.province_id').val();
+    var city_id = $('.city_id').val();
+    var country_id = $('.country_id').val();
+    if(province_id != '' ){
+        addressInit('province', 'city', 'district', province_id, city_id, country_id);//添加
+    }else{
+        addressInit('province', 'city', 'district', '广东', '', '');//添加
+    }
+</script>
+
+<script>
+
+    $("input[name=is_supply]").change(function(){
+        var ischecked = $(this).is(':checked');
+        if(ischecked){
+            $(".supply").show("300");
+        }else{
+            $(".supply").hide("300");
+        }
+    });
+
+
+    $("#login").click(function () {
+        var username = $('input[name=username]').val();
+        var mobile = $('input[name=mobile]').val();
+        var fidmobile = $('input[name=fidmobile]').val();
+        var is_supply = $('input[name=is_supply]').is(':checked');
+
+        var province = $("#province  option:selected").val();
+        var city = $("#city  option:selected").val();
+        if(!province||!city||province==''||city==''){
+            layer.msg('请完善城市信息', {icon: 2, time: 1200}, function () {
+            });
+            return;
+        }
+
+        if(is_supply){
+            is_supply = 1;
+        }else{
+            is_supply = 0;
+        }
+        var supply_name = $('input[name=supply_name]').val();
+        var password = $('.password').val();
+        var conpassword = $('.conpassword').val();
+        var email = $('.email').val();
+        if (!(/^1[34578]\d{9}$/.test(mobile))) {
+            layer.msg('手机号码填写有误', {icon: 2, time: 1200}, function () {
+            });
+            return;
+        }
+
+        var url = "/Shop/Personal/Regs";
+        $.ajax({
+            url: url,
+            type: "post",
+            data: {
+                'username': username,
+                'mobile': mobile,
+                'password': password,
+                'conpassword': conpassword,
+                'email': email,
+                'fidmobile': fidmobile,
+                'is_supply': is_supply,
+                'supply_name': supply_name,
+                'province': province,
+                'city': city,
+            },
+            datatype: "json",
+            success: function (mes) {
+                if (mes.status == 1) {
+                    layer.msg(mes.info, {
+                        shift: -1,
+                        time: 1200
+                    }, function () {
+                        location.href = "{:U('shop/personal/login')}";
+                    });
+                } else {
+                    layer.msg(mes.info, {
+                        shift: -1,
+                        time: 1200
+                    }, function () {
+                        return;
+                    });
+                }
+            }
+        })
+
+    })
+</script>

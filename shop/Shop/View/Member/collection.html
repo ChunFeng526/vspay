@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <!-- Demo styles -->
+
+    <script type="text/javascript" src="__LAYERJS__layer.js"></script>
+
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".unlike").click(function(){
+            var p = $(this).attr("data-id");
+            var un = $(this);
+            var maidb = un.parents(".maidb_edit");
+            var div = maidb.next("div");
+            $.post("/Shop/Home/unlike",{pid:p},function(data){
+                if(data.status=="1"){
+                    layer.msg('移除收藏成功',{icon:1});
+                    div.replaceWith("");
+                    maidb.replaceWith("");
+                }else{
+                    layer.msg('移除收藏失败',{icon:3,time: 1200});
+                }
+            },"json");
+
+        });
+
+    });
+</script>
+
+<body>
+<div class="header">
+    <div class="header_l">
+      <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>收藏</span></a>
+
+    </div>
+    <div class="header_c"><h1></h1></div>
+    <!--<div class="header_r"><a href="{:U('Public/news')}"><em class="xxd"></em><i class="iconfont"></i><p>消息</p></a></div>-->
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<!--<div class="edit"><a href="{:U('Member/collectionbj')}">编辑</a></div>-->
+<foreach name="collectList" item="collect">
+<!-- 1111111 -->
+<div class="maidb_edit">
+    <div class="maidbl_bbl"><img src="{$collect['pic']}" alt=""></div>
+    <div class="maibdr_bbr">
+        <p onClick="window.location.href='{:U('Home/details',array('proid'=>$collect['proid']))}'">{$collect['name']}</p>
+        <p class="pr">￥{$collect['price']} <span><i class="iconfont unlike" data-id="{$collect['proid']}">&#xe601;</i> <!--<i class="iconfont" style="color:#fc6b32" onclick ="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">&#xe64f;</i>--></span></p>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div style="height: 2vmin;background: #f2f2f2;"></div>
+</foreach>
+<!-- 222222222 -->
+
+<!--&lt;!&ndash; 分享弹框 &ndash;&gt;-->
+<!--<div id="light" class="white_content">-->
+    <!--<h3>分享</h3>-->
+    <!--<ul>-->
+        <!--<li><a href=""><i class="iconfont iconb1">&#xe628;</i><p>复制链接</p></a></li>-->
+        <!--<li><a href=""><i class="iconfont iconb2">&#xe673;</i><p>微信</p></a></li>-->
+        <!--<li><a href=""><i class="iconfont iconb3">&#xe541;</i><p>果友</p></a></li>-->
+    <!--</ul>-->
+    <!--<div style="clear: both;"></div>-->
+    <!--<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="qx">取消</a>-->
+<!--</div> -->
+</body>
+</html>

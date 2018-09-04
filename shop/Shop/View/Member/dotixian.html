@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{$config['SITE_TITLE']}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <!-- Demo styles -->
+    <!--  <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="__LAYERJS__layer.js"></script>
+
+
+
+</head>
+<style>
+    .dzlist{
+        margin-right: 3%;
+        margin-left: 3%;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px #ccc;
+        padding:3%;
+    }
+    .dzlist h3{
+        font-size: 4.5vmin;
+        color:#333;
+        line-height: 6vmin;
+    }
+    .dzlist p{
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color:#767975;
+    }
+    .dzlist_bot{
+        border-top:1px solid #ddd;
+
+    }
+    .dzlist_bot span{
+        float: right;
+        margin-left: 5%;
+    }
+    .dzlist_bot a{
+        line-height: 10vmin;
+        font-size:4vmin;
+        color:#767975;
+    }
+</style>
+<script>
+    $(function(){
+        //提现
+        $('[data-event="tixian"]').click(function(){
+            var url=$(this).attr('data-url');
+            var rmb=$("#rmb").val();
+            var type =$("input[name='type']:checked").val();
+            $.post(url,{rmb:rmb,type:type},function(data){
+                message(data.info,data.name,data.url);
+                //alert(1);
+            },'json');
+        })
+
+    })
+</script>
+<body>
+<div class="header">
+    <div class="header_l">
+        <a href="javascript:history.back(-1)"><img src="__IMG__/lpg.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>金币提现</h2></div>
+    <div class="header_r"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<form class="my_form">
+<div class="wsdatabb">
+    <p>金额<input type="text" id="rmb" value="" name="rmb" class="txnums" placeholder="请输入要提现的金额"></p>
+    <p>余额：<span class="userjb">{$jifen_nums}</span></p>
+    <input type="text" hidden value="{$type}" name="txtype" class="txtype">
+   <div  style="line-height: 15vmin;font-size: 4vmin">
+       提现方式：
+       <!-- <input type="radio" checked="checked" name="type" value="1" style="vertical-align: middle;">微信 -->
+       <input type="radio"  name="type" value="2" style="vertical-align: middle;">支付宝
+       <input type="radio"  name="type" value="3" style="vertical-align: middle;">银行卡
+      <!--  <input type="radio"  name="type" value="4" style="vertical-align: middle;">聚点 -->
+   </div>
+
+</div>
+<div class="submit dowith"><a href="javascript:void(0)">确认提现</a></div>
+
+</body>
+</html>
+<script>
+    /*是否上传过聚点二维码*/
+    $('.dowith').click(function () {
+        var txtype = $('.txtype').val();
+        var txnums = $('.txnums').val();
+        var txmode = $("input[name='type']:checked").val();
+        var minenums = $('.userjb').text();
+        var resetnums = parseFloat(minenums) - parseFloat(txnums);
+
+        $.ajax({
+            url: "{:U('Member/Withdraw')}",
+            type: "post",
+            data: {'txtype': txtype,'txnums':txnums,'txmode':txmode},
+            datatype: "json",
+            success: function (mes) {
+                if (mes.status == 1) {
+                    $('.userjb').text(resetnums);
+                    layer.msg(mes.info, {icon: 1});
+                } else {
+                    layer.msg(mes.info, {icon: 2});
+                }
+            }
+        })
+    })
+</script>

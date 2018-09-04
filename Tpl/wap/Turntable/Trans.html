@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$Think.lang.digitalasset}</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script src="__WJS__/iscroll.js"></script>
+<body class="bg96">
+<div class="header">
+	<div class="header_l">
+		<a href="{:U('Turntable/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	</div>
+	<div class="header_c"><h2>{$Think.lang.jrecord}</h2></div>
+	<div class="header_r"></div>
+</div>
+
+<div class="undone_order">
+
+	<div class="undone_order_titel clear_wl">
+		<a href="{:U('Turntable/Trans',array('type'=>1))}" <eq name='type' value='1'>class="undone_OT_l fl noe"<else />class="undone_OT_l fl" </eq> >
+		{$Think.lang.zcjl}
+		</a>
+		<a href="{:U('Turntable/Trans')}" <eq name='type' value='1'>class="undone_OT_r fr"<else />class="undone_OT_r fr noe" </eq>>
+		{$Think.lang.record}
+		</a>
+	</div>
+</div>
+
+<div id="wrapper">
+	<div class="scrollera">
+		<ul>
+			<foreach name="Chan_info" item="v">
+				<li>
+					<p><eq name='type' value='1'>{$Think.lang.turnout}<else />{$Think.lang.tochangeinto}</eq>&nbsp;{$v['get_nums']}&nbsp;<!-- <span>-108.2098</span> --></p>
+					<p class="dig_re_p">{$v['get_timeymd']} {$v['get_timedate']}<span>{$Think.lang.and1}&nbsp;
+<eq name='type' value='1'>{$v['outinfo']}<else />{$v['ininfo']}</eq>
+                    {$Think.lang.wcjy}</span></p>
+				</li>
+			</foreach>
+		</ul>
+
+		<input type="hidden" value="1" class="pagen">
+		<input type="hidden" value="0" class="isover">
+		<div class="more"><i class="pull_icon"></i><span>{$Think.lang.sljz}...</span></div>
+	</div>
+
+	<script>
+        var myscroll = new iScroll("wrapper", {
+            onScrollMove: function () {
+                if (this.y < (this.maxScrollY)) {
+                    $('.pull_icon').addClass('flip');
+                    $('.pull_icon').removeClass('loading');
+                } else {
+                    $('.pull_icon').removeClass('flip loading');
+                    $('.more span').text('上拉加载...')
+                }
+            },
+            onScrollEnd: function () {
+                if ($('.pull_icon').hasClass('flip')) {
+                    $('.pull_icon').addClass('loading');
+                    $('.more span').text('加载中...');
+                    //加载P+1
+                    var pagen = Number($('.pagen').val());
+                    $('.pagen').val(pagen + 1);
+                    $('.more span').text('释放加载...');
+                    pullUpAction();
+                }
+            },
+            onRefresh: function () {
+                $('.more').removeClass('flip');
+                $('.more span').text('上拉加载...');
+            }
+        });
+
+        function pullUpAction(){
+            var p = Number($('.pagen').val());
+            var isover = $('.isover').val();
+            if(isover == 1){
+                return;
+            }
+            setTimeout(function () {
+                //是否已经没有数据了
+                $.ajax({
+                    url: '/Turntable/Trans',
+                    type: 'get',
+                    dataType: 'json',
+                    data: {'p': p},
+                    success: function (data) {
+                        var str = '';
+                        if (data.status == 1) {
+                            $.each(data.message, function (key, val) {
+                                str += '<li>';
+                                if(val.trtype == 1){
+                                    str += '<p>转出&nbsp;' +val.get_nums+ '&nbsp;Wpaey<span>-108.2098</span></p>';
+                                }else{
+                                    str += '<p>购买&nbsp;' +val.get_nums+ '&nbsp;Wpaey<span>-108.2098</span></p>';
+                                }
+                                str += '<p class="dig_re_p">' +val.get_timeymd+val.get_timedate+ '<span>与&nbsp;' +val.outinfo+ '完成交易</span></p>';
+                                str += '</li>';
+                            })
+                            $('.scroller ul').append(str);
+                            myscroll.refresh();
+                        }else{
+                            var isover = $('.isover').val();
+                            if(isover == 0) {
+                                $('.isover').val(1);
+                                str += '<div class="annalWa">';
+                                str += '<p>暂无更多记录</p></div>';
+                            }
+                            $('.scroller ul').append(str);
+                        }
+
+                    },
+                    error: function () {
+                        console.log('error');
+                    },
+                })
+            }, 1000)
+        }
+
+
+        if ($('.scrollera').height()<$('#wrapper').height()) {
+            $('.more').hide();
+            myscroll.destroy();
+        }
+
+	</script>
+
+
+
+</body>
+
+</html>

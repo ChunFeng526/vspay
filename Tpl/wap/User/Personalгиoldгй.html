@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>设置</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<link rel="stylesheet" href="__WCSS__/reset.css">
+<link rel="stylesheet" href="__WCSS__/uploads.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<!--<script type="text/javascript" src="__WJS__/upload.js"></script>-->
+<script type="text/javascript" src="__WJS__/jquery.form.js"></script>
+
+
+
+
+<body class="bg96">
+	<style>
+</style>
+	<div class="header">
+	    <div class="header_l">
+	    <a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>设置</h2></div>
+	    <div class="header_r"></div>
+	</div>
+       <div class="big_width100">
+	       
+	      <div class="shezhi">
+	      	 
+	      	 <div class="sett_toux clear_wl">
+	      	 	  
+			       <div class="upload">
+			        <div id="preview" style="border:none;">
+						<form id='myupload' action="{:U('User/Imgup')}" method='post' enctype='multipart/form-data'>
+							<input type="file" id="uploadphoto" name="uploadfile" value="请点击上传图片"  style="display:none;" />
+						</form>
+						<img id="imghead" width=100% height=auto border=0 src="__IMGHEAD__/{$uinfo['img_head']}">
+
+						<div class="imglist" style="color:red"> </div>
+						<p class="res"></p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped" ><span class="percent">50%</span></div>
+						</div>
+						<!--<a href="javascript:void(0);" onclick="uploadphoto.click()" class="uploadbtn">点击上传文件</a>-->
+			        </div>
+			        <!--<input type="file" onchange="previewImage(this)" class="tijiao" />-->
+			      </div>
+				      	 	
+		      	 	<div class="sett_uid_xy">
+			    		<p><strong>UID:{$uinfo['userid']}</strong></p>
+			    		<p>信誉值
+							<for start="0" end="$uinfo['user_credit']">
+								<span><img src="__WIMG__/aix-icon.png"></span>
+							</for>
+			    		</p>
+			    	</div>
+			    	<p class="po_up_p" onclick="uploadphoto.click()" class="uploadbtn">更换头像</p>
+	      	 </div>
+	      	 <div class="sett_xiug mt10" id="phone_uid">
+	      	 	<a href="{:U('User/Setuname')}" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett9-icon.png">
+	      	 			<p>昵称</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p>{$uinfo['username']}</p>
+	      	 		</div>
+	      	 	</a>
+	      	 </div>
+
+	      	 <div class="sett_xiug ">
+	      	 	<a href="#" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett15-icon.png">
+	      	 			<p>多语言</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p>中文</p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	  <div class="sett_xiug mt10 ">
+	      	 	<a href="{:U('Growth/Cardinfos')}" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett10-icon.png">
+	      	 			<p>银行卡</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p></p>
+	      	 		</div>
+	      	 	</a>
+	      	 </div>
+
+			  <div class="sett_xiug mt10 ">
+				  <a href="{:U('User/Sharecode')}" class="clear_wl">
+					  <div class="sett_x_l clear_wl">
+						  <img src="__WIMG__/settfx-icon.png">
+						  <p>分享</p>
+					  </div>
+					  <div class="sett_x_r clear_wl">
+
+						  <img src="__WIMG__/jiantt.png">
+						  <p></p>
+					  </div>
+				  </a>
+			  </div>
+
+	      	  <div class="sett_xiug mt10 ">
+	      	 	<a href="{:U('User/Setpwd',array('type'=>1))}" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett12-icon.png">
+	      	 			<p>登录密码</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p>点击修改</p>
+	      	 		</div>
+	      	 	</a>
+	      	 </div>
+
+	      	  <div class="sett_xiug ">
+	      	 	<a href="{:U('User/Setpwd',array('type'=>2))}" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett13-icon.png">
+	      	 			<p>支付密码</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p>点击修改</p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	  <div class="sett_xiug mt10 ">
+	      	 	<a href="{:U('User/News')}" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett14-icon.png">
+	      	 			<p>公告</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p><img src="__WIMG__/yuand.png"></p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	  <div class="sett_xiug  ">
+	      	 	<a href="{:U('User/News')}" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett1-icon.png">
+	      	 			<p>个人消息</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p></p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	  <div class="sett_xiug mt10 " >
+	      	 	<a href="javascript:void(0);" class="clear_wl" id="cuanjdd2" >
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett2-icon.png">
+	      	 			<p id="tjyhk">我的店铺</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p></p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	 <div class="sett_xiug" >
+	      	 	<a href="javascript:void(0);" class="clear_wl" id="cuanjdd1" >
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett3-icon.png">
+	      	 			<p id="tjyhk">订单</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p></p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	  <div class="sett_xiug ">
+	      	 	<a href="javascript:void(0);" class="clear_wl"  id="cuanjdd"> 
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett4-icon.png">
+	      	 			<p id="tjyhk">地址管理</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p></p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	 <div class="sett_xiug  mt10">
+	      	 	<a href="#" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett5-icon.png">
+	      	 			<p>投诉建议</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p></p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	 <div class="sett_xiug ">
+	      	 	<a href="me_Share.html" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett6-icon.png">
+	      	 			<p>分享</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p></p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	 <div class="sett_xiug ">
+	      	 	<a href="#" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett16-icon.png">
+	      	 			<p>版本</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p>1.0.0</p>
+	      	 		</div>
+	      	 	</a>
+
+	      	 </div>
+
+	      	 <div class="sett_xiug ">
+	      	 	<a href="#" class="clear_wl">
+	      	 		<div class="sett_x_l clear_wl">
+	      	 			<img src="__WIMG__/sett7-icon.png">
+	      	 			<p>关于</p>
+	      	 		</div>
+	      	 		<div class="sett_x_r clear_wl">
+	      	 			
+	      	 			<img src="__WIMG__/jiantt.png">
+	      	 			<p></p>
+	      	 		</div>
+	      	 	</a>
+	      	 </div>
+
+			  <div class="sett_tuic">
+				  <a href="{:U('User/Loginout')}">退出登录</a>
+			  </div>
+	      </div>
+	     
+          <script type="text/javascript">
+              $('#cuanjdd').on('click', function(){
+
+                var tjyhk =$.trim($('#tjyhk').val()); //开户行
+            if(tjyhk==0){
+                      layer.msg('此功能暂未开放，敬请期待！');
+                  return;
+            }   
+          });
+        </script>
+
+          <script type="text/javascript">
+              $('#cuanjdd1').on('click', function(){
+
+                var tjyhk =$.trim($('#tjyhk').val()); //开户行
+            if(tjyhk==0){
+                      layer.msg('此功能暂未开放，敬请期待！');
+                  return;
+            }   
+          });
+        </script>
+
+           <script type="text/javascript">
+              $('#cuanjdd2').on('click', function(){
+
+                var tjyhk =$.trim($('#tjyhk').val()); //开户行
+            if(tjyhk==0){
+                      layer.msg('此功能暂未开放，敬请期待！');
+                  return;
+            }   
+          });
+        </script>
+
+	   </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $("#uploadphoto").change(function(){
+            $("#myupload").ajaxSubmit({
+                dataType:  'json', //数据格式为json
+                success: function(data) {
+                    if(data.status == 1){
+                        var url = data.message;
+                        $("#imghead").attr('src',url);
+                        msg_alert('头像修改成功');
+                    }else{
+                        msg_alert(data.message);
+                    }
+                    progress.hide();
+                },
+                error:function(xhr){ //上传失败
+                    alert("上传失败");
+                    progress.hide();
+                }
+            });
+        });
+    });
+</script>

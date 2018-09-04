@@ -1,0 +1,2263 @@
+[ 2018-07-12T23:45:53+08:00 ] 59.32.95.100 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+
+[ 2018-07-12T23:45:54+08:00 ] 59.32.95.100 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:46:03+08:00 ] 59.32.95.100 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\wwwroot\vspay.hzptkf.com\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0215s ]
+NOTIC: [8] Undefined index: email D:\wwwroot\vspay.hzptkf.com\shop\Admin\Model\ManageModel.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\wwwroot\vspay.hzptkf.com\shop\Admin\Model\ManageModel.class.php 第 189 行.
+
+[ 2018-07-12T23:46:06+08:00 ] 59.32.95.100 /admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009765s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1531324800 AND 1531411200 ) LIMIT 1   [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_trading` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_trading_free` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading` WHERE ( create_time BETWEEN 1531324800 AND 1531411200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading_free` WHERE ( create_time BETWEEN 1531324800 AND 1531411200 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading_free` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\7278058fa3c501c35aba3e8d579773ef.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:46:09+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' LIMIT 1   [ RunTime:0.0146s ]
+SQL: SELECT a.*,b.title FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 203 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 207 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 203 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:46:14+08:00 ] 59.32.95.100 /admin/Manage/setStatus/status/delete/ids/112/model/Manage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'setStatus' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+SQL: DELETE FROM `ysk_admin` WHERE `id` IN ('112') [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:46:18+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.016602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016602s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0166s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT a.*,b.title FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 203 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2018-07-12T23:46:25+08:00 ] 59.32.95.100 /admin/Manage/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0176s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title` FROM `ysk_group` ORDER BY id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\wwwroot\vspay.hzptkf.com\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: email D:\wwwroot\vspay.hzptkf.com\shop\Admin\Model\ManageModel.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a10aa0e48bf2db4ceff111a50ccee1c4.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a10aa0e48bf2db4ceff111a50ccee1c4.php 第 73 行.
+NOTIC: [8] Undefined variable: extra_html D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a10aa0e48bf2db4ceff111a50ccee1c4.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:46:44+08:00 ] 59.32.95.100 /admin/Manage/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0332s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin888' AND `id` <> '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `mobile` = '13824360753' AND `id` <> '1' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 2 for user_md5() D:\wwwroot\vspay.hzptkf.com\shop\Common\Common\function.php 第 94 行.
+NOTIC: [8] Undefined variable: auth_key D:\wwwroot\vspay.hzptkf.com\shop\Common\Common\function.php 第 96 行.
+SQL: UPDATE `ysk_admin` SET `auth_id`='1',`nickname`='超级管理员',`username`='admin888',`password`='66d6e73fbaabf6859686e1fada2e3bd8',`mobile`='13824360753',`update_time`='1531410404' WHERE `id` = 1 [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:46:45+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.title FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 203 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:46:50+08:00 ] 59.32.95.100 /admin/Manage/setStatus/status/delete/ids/5/model/Manage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'setStatus' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+SQL: DELETE FROM `ysk_admin` WHERE `id` IN ('5') [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:46:51+08:00 ] 59.32.95.100 /admin/Manage/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:46:59+08:00 ] 59.32.95.100 /admin/Manage/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:47:43+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:47:45+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:47:46+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.005860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:47:46+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:47:46+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:47:47+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT `col` FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:47:49+08:00 ] 59.32.95.100 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:48:08+08:00 ] 59.32.95.100 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0068s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:48:25+08:00 ] 59.32.95.91 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0176s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:49:50+08:00 ] 59.32.95.100 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0068s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:49:51+08:00 ] 59.32.95.100 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+
+[ 2018-07-12T23:52:24+08:00 ] 59.32.95.100 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1531324800 AND 1531411200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_trading` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_trading_free` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading` WHERE ( create_time BETWEEN 1531324800 AND 1531411200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading_free` WHERE ( create_time BETWEEN 1531324800 AND 1531411200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading_free` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\7278058fa3c501c35aba3e8d579773ef.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:52:30+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.title FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 203 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:52:33+08:00 ] 59.32.95.100 /admin/Manage/edit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0195s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`title` FROM `ysk_group` ORDER BY id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: avatar D:\wwwroot\vspay.hzptkf.com\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\wwwroot\vspay.hzptkf.com\shop\Admin\Model\ManageModel.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a10aa0e48bf2db4ceff111a50ccee1c4.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a10aa0e48bf2db4ceff111a50ccee1c4.php 第 73 行.
+NOTIC: [8] Undefined variable: extra_html D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a10aa0e48bf2db4ceff111a50ccee1c4.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:52:42+08:00 ] 59.32.95.100 /admin/Manage/edit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0195s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0176s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `id` <> '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `mobile` = '13824360753' AND `id` <> '5' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 2 for user_md5() D:\wwwroot\vspay.hzptkf.com\shop\Common\Common\function.php 第 94 行.
+NOTIC: [8] Undefined variable: auth_key D:\wwwroot\vspay.hzptkf.com\shop\Common\Common\function.php 第 96 行.
+SQL: UPDATE `ysk_admin` SET `auth_id`='1',`nickname`='超级管理',`username`='admin',`password`='66d6e73fbaabf6859686e1fada2e3bd8',`mobile`='13824360753',`update_time`='1531410762' WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:52:43+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.title FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.016602s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 203 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018555s ]
+
+[ 2018-07-12T23:54:28+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.title FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Use of undefined constant Manage - assumed 'Manage' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 145 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:54:48+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019531s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.title FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:54:50+08:00 ] 59.32.95.100 /admin/Database/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Database' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Database' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW TABLE STATUS [ RunTime:0.0869s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-07-12T23:56:16+08:00 ] 59.32.95.100 /admin/Database/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Database' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Database' AND `act` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW TABLE STATUS [ RunTime:0.0166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:56:27+08:00 ] 59.32.95.100 /admin/Database/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Database' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Database' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW TABLE STATUS [ RunTime:0.0127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:56:45+08:00 ] 59.32.95.100 /admin/Database/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Database' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Database' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW TABLE STATUS [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:56:50+08:00 ] 59.32.95.100 /admin/Database/optimize/tables/ysk_opesfarms.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Database' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Database' AND `act` = 'optimize' LIMIT 1   [ RunTime:0.0000s ]
+SQL: OPTIMIZE TABLE `ysk_opesfarms` [ RunTime:0.0156s ]
+
+[ 2018-07-12T23:56:53+08:00 ] 59.32.95.100 /admin/Database/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Database' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Database' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW TABLE STATUS [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:56:56+08:00 ] 59.32.95.100 /admin/Database/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Database' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Database' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW TABLE STATUS [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:56:57+08:00 ] 59.32.95.100 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0166s ]
+NOTIC: [8] Undefined variable: map D:\wwwroot\vspay.hzptkf.com\shop\Admin\Common\function.php 第 107 行.
+NOTIC: [8] Undefined variable: level D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT a.userid,a.username,a.email,a.yinbi,a.account,a.mobile,a.reg_date,a.status,a.pid,b.cangku_num,b.fengmi_num FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  ORDER BY a.userid desc LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 75 行.
+NOTIC: [8] Undefined index: date_start D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 156 行.
+NOTIC: [8] Undefined index: date_end D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 159 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 172 行.
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8553 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8556 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8555 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8553 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8554 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8552 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8553 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8552 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8550 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8551 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8549 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8550 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8548 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8549 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8548 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8546 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8547 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8546 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018554s ]
+
+[ 2018-07-12T23:57:00+08:00 ] 59.32.95.100 /admin/Tree/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Tree' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Tree' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 0 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8545 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8546 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8546 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8547 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8547 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8548 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8548 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8549 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8549 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8550 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8550 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8551 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8551 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8552 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8552 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8553 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8553 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8554 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8554 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8556 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8556 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8555 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8555 AND `sex` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\TreeController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\e1de8c7e8e140cbb1cb7b9e7d9ae4013.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\e1de8c7e8e140cbb1cb7b9e7d9ae4013.php 第 134 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\e1de8c7e8e140cbb1cb7b9e7d9ae4013.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:57:04+08:00 ] 59.32.95.100 /admin/Recyling/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Recyling' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 316 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Recyling' AND `act` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_nzletter` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_nzletter` WHERE `status` <> '2' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_nzletter` WHERE `status` <> '2' ORDER BY letter_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\8e29bbf6dc67540d306136cfad346f5f.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\8e29bbf6dc67540d306136cfad346f5f.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\8e29bbf6dc67540d306136cfad346f5f.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-07-12T23:57:05+08:00 ] 59.32.95.100 /admin/Config/group4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Config' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Config' AND `act` = 'group4' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 4 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 7 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 9 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 10 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 6 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 8 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\4f978dec1b80a37af13d3e4a8bb9ae75.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\4f978dec1b80a37af13d3e4a8bb9ae75.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2018-07-12T23:57:07+08:00 ] 59.32.95.100 /admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 206 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 206 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 206 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:57:11+08:00 ] 59.32.95.100 /admin/Group/setStatus/status/recycle/ids/10/model/Group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'setStatus' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: UPDATE `ysk_group` SET `status`='-1' WHERE `id` IN ('10') [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:57:13+08:00 ] 59.32.95.100 /admin/Group/setStatus/status/recycle/ids/8/model/Group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'setStatus' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: UPDATE `ysk_group` SET `status`='-1' WHERE `id` IN ('8') [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:57:13+08:00 ] 59.32.95.100 /admin/Group/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0166s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 206 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:57:15+08:00 ] 59.32.95.100 /admin/Group/setStatus/status/recycle/ids/7/model/Group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0166s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'setStatus' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_group` SET `status`='-1' WHERE `id` IN ('7') [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:57:17+08:00 ] 59.32.95.100 /admin/Group/setStatus/status/recycle/ids/2/model/Group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0176s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'setStatus' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_group` SET `status`='-1' WHERE `id` IN ('2') [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:57:18+08:00 ] 59.32.95.100 /admin/Group/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\a60c7c4cb4dccb771060458af15e08be.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:23+08:00 ] 59.32.95.100 /admin/Manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Controller\ManageController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\ManageController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Manage' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Manage' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT a.*,b.title FROM ysk_admin a LEFT JOIN ysk_group b ON a.auth_id=b.id  WHERE ( a.id LIKE '%%' OR a.username LIKE '%%' OR a.nickname LIKE '%%' ) AND a.status >= '0' ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\d8dc5ae4c92c5d8e5cda83837a854164.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:25+08:00 ] 59.32.95.100 /admin/Database/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Database' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0039s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Database' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW TABLE STATUS [ RunTime:0.0195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\051901ac38e1cc850017eb7c0891fdd5.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-07-12T23:57:26+08:00 ] 59.32.95.100 /admin/Config/group4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Config' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0176s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Config' AND `act` = 'group4' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 4 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 7 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 9 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 10 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 6 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`value`,`tip`,`type` FROM `ysk_config` WHERE `group` = 8 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\4f978dec1b80a37af13d3e4a8bb9ae75.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\4f978dec1b80a37af13d3e4a8bb9ae75.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:57:28+08:00 ] 59.32.95.100 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0166s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\wwwroot\vspay.hzptkf.com\shop\Admin\Common\function.php 第 107 行.
+NOTIC: [8] Undefined variable: level D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0322s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT a.userid,a.username,a.email,a.yinbi,a.account,a.mobile,a.reg_date,a.status,a.pid,b.cangku_num,b.fengmi_num FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  ORDER BY a.userid desc LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 75 行.
+NOTIC: [8] Undefined index: date_start D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 156 行.
+NOTIC: [8] Undefined index: date_end D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 159 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 172 行.
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8553 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8556 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8555 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8553 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8554 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8552 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8553 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8552 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8550 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8551 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8549 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8550 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8548 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8549 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8548 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8546 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8547 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8546 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016601s ]
+
+[ 2018-07-12T23:57:34+08:00 ] 59.32.95.100 /admin/User/edit/id/8545.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `account` FROM `ysk_user` WHERE `userid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-07-12T23:58:02+08:00 ] 59.32.95.100 /admin/User/edit/id/8545.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ysk_user` WHERE `account` = '13824360753' AND `userid` <> '8545' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_user` WHERE `mobile` = '13824360753' AND `userid` <> '8545' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ysk_user` SET `account`='13824360753',`username`='林总',`mobile`='13824360753',`login_pwd`='c60e8ee0dfffaadd5c922d410be9efa4',`safety_pwd`='c60e8ee0dfffaadd5c922d410be9efa4',`login_salt`='06d',`safety_salt`='06d',`quanxian`='' WHERE `userid` = 8545 [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:58:04+08:00 ] 59.32.95.100 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\wwwroot\vspay.hzptkf.com\shop\Admin\Common\function.php 第 107 行.
+NOTIC: [8] Undefined variable: level D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT a.userid,a.username,a.email,a.yinbi,a.account,a.mobile,a.reg_date,a.status,a.pid,b.cangku_num,b.fengmi_num FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  ORDER BY a.userid desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 75 行.
+NOTIC: [8] Undefined index: date_start D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 156 行.
+NOTIC: [8] Undefined index: date_end D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 159 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 172 行.
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0176s ]
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8553 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8556 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8555 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8553 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8554 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8552 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8553 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8552 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8550 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8551 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8549 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8550 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8548 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8549 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8548 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8546 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8547 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8546 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:59:47+08:00 ] 59.32.95.91 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: map D:\wwwroot\vspay.hzptkf.com\shop\Admin\Common\function.php 第 107 行.
+NOTIC: [8] Undefined variable: level D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0078s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT a.userid,a.username,a.email,a.yinbi,a.account,a.mobile,a.reg_date,a.status,a.pid,b.cangku_num,b.fengmi_num FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  ORDER BY a.userid desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 75 行.
+NOTIC: [8] Undefined index: date_start D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 156 行.
+NOTIC: [8] Undefined index: date_end D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 159 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 172 行.
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =8545 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8546 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\vspay.hzptkf.com\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:59:52+08:00 ] 59.32.95.91 /admin/User/userlogin/userid/8545.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\vspay.hzptkf.com\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'userlogin' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+

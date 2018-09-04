@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{$config['SITE_TITLE']}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" type="text/css" href="__RES__/iconfont/iconfont.css">
+
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="__LAYERJS__layer.js"></script>
+
+    <!-- Demo styles -->
+   <!--  <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>    
+   
+    <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+<script type="text/javascript" src="__JS__/upload.js"></script> -->
+
+</head>
+<style>
+    .dzlist{
+        margin-right: 3%;
+        margin-left: 3%;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px #ccc;
+        padding:3%;
+    }
+    .dzlist h3{
+        font-size: 4.5vmin;
+        color:#333;
+        line-height: 6vmin;
+    }
+    .dzlist p{
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color:#767975;
+    }
+    .dzlist_bot{
+        border-top:1px solid #ddd;
+
+    }
+    .dzlist_bot span{
+        float: right;
+         margin-left: 5%;
+    }
+    .dzlist_bot a{
+        line-height: 10vmin;
+        font-size:4vmin;
+        color:#767975;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+      <a href="{:U('shop/member/mine')}"><img src="__IMG__/lpg.png" alt=""><span>提现记录</span></a>
+   
+    </div>
+    <div class="header_c" style="width: 70%;"> <h1 style="color:#000"></h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+<style>
+    .jilu table{width: 100%;font-size:14px;margin:3% 0;}
+    .jilu table tr th{text-align: center;padding-right:2%;line-height: 40px;background: #ddd}
+    .jilu table tr td{border:1px solid #ddd;text-align: center;line-height: 35px;}
+</style>
+
+<div class="mian_qd tixian jilu">
+   <table>
+       <tr>
+           <th>时间</th>
+           <th>提现金额</th>
+           <th>提现积分</th>
+           <th>实际到账</th>
+           <th>状态</th>
+       </tr>
+
+       <foreach name="list" item="v">
+           <tr>
+               <td>{$v.time}</td>
+               <td>{$v.zong_rmb}</td>
+               <td><if condition="$v['zhifu_type']==1">佣金提现<elseif condition="$v['zhifu_type']==2" />代理佣金提现<elseif condition="$v['zhifu_type']==3" />农联积分提现<elseif condition="$v['zhifu_type']==4" />鸡场积分提现<elseif condition="$v['zhifu_type']==5" />鱼库积分提现<else />果园积分提现</if></td>
+               <td>{$v.tx_rmb}</td>
+
+               <td>
+                   <if condition="$v['state']==1">
+                       <!--<a style="color: #4f0dc8" href='{:U("Member/canceltx",array("id"=>$v["id"]))}'>-->
+                       <a style="color: #4f0dc8" class="cetx" data-id = {$v['id']} href='javacsript:void(0)'>
+                           撤销提现
+                       </a>
+                       <elseif condition="$v['state']==2" />
+                       <a class="btn btn-xs passed passed" style="background: #00c4c5 !important;border-color:#00c4c5" href='javascript:void(0)'>
+                           已通过
+                       </a>
+                       <elseif condition="$v['state']==3" />
+                       <a  class="btn btn-xs passed refused" href='javascript:void(0)'>
+                           已拒绝
+                       </a>
+                       <else />
+                       <a  class="btn btn-xs passed refused" href='javascript:void(0)'>
+                           已撤销
+                       </a>
+                   </if>
+               </td>
+           </tr>
+       </foreach>
+
+
+
+   </table>
+    <div class="xxgl_bottom_b">
+        <div class="pages">
+            {$page}
+        </div>
+        <style>
+            .pages{text-align: center;}
+            .pages a{color: #a4a4a4;}
+            .prevs{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+            .nums{  padding: 0 10px;  border: 1px solid #ddd;}
+            .pages .currents{ padding: 0 10px;  border: 1px solid #ddd;  margin: 0px 10px;}
+            .nexts{text-align: center;  border: 1px solid #ddd;  padding: 0 6px;}
+        </style>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<style>
+    .selectcc{
+        width: 83%;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        font-family: "微软雅黑";
+        /*很关键：将默认的select选择框样式清除*/
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right: 14px;
+
+
+    }
+    .tixian{bordet}
+</style>
+
+</body>
+</html>
+<script>
+    $('.cetx').click(function () {
+        var id = $(this).attr('data-id');
+        $.ajax({
+            url:"{:U('Shop/Member/canceltx')}",
+            type:"post",
+            data:{"id":id},
+            datatype:"json",
+            success:function (mes) {
+                if(mes.status == 1){
+                    layer.msg(mes.info,{icon:1,time:1200}, function () {
+                        location.href = '/Shop/member/mine';
+                    });
+                }else{
+                    layer.msg(mes.info,{icon:2,time:1200}, function () {
+                        return;
+                    });
+                }
+            }
+        })
+    })
+</script>

@@ -1,0 +1,152 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+            <li class="text-muted">{:isset($info)?'修改':新增}</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="__SELF__" method="post" class="form-horizontal form form-builder">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="userid" value="{$info.userid}">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">上级：</label>
+                                                <div class="right">
+                                                    {$info.parent}
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">账号：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="account" value="{$info.account}" placeholder="账号" >
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">姓名：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="username" value="{$info.username}" placeholder="用户名" >
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">手机：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input text" name="mobile" value="{$info.mobile}" placeholder="手机">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">禁止会员：</label>
+                                                <div class="auth3" style="line-height:120%;" >
+                                               
+                                               <label class="checkbox-inline" style="margin-top: 10px;margin-left: 0px;">
+                                                <input type="checkbox" name="quanxian[]"  
+                                                <php>if(in_array(1, $quanxian)) echo "checked"</php> value="1">
+                                                <span class="cui-control-indicator"></span>
+                                                <span>转入</span>
+                                               </label>
+
+                                               <label class="checkbox-inline" style="margin-top: 10px;margin-left: 0px;">
+                                                <input type="checkbox" name="quanxian[]"  
+                                                <php>if(in_array(2, $quanxian)) echo "checked"</php> value="2">
+                                                <span class="cui-control-indicator"></span>
+                                                <span>转出</span>
+                                               </label>
+
+                                               <label class="checkbox-inline" style="margin-top: 10px;margin-left: 0px;">
+                                                <input type="checkbox" name="quanxian[]"  
+                                                <php>if(in_array(3, $quanxian)) echo "checked"</php> value="3">
+                                                <span class="cui-control-indicator"></span>
+                                                <span>买入</span>
+                                               </label>
+
+                                               <label class="checkbox-inline" style="margin-top: 10px;margin-left: 0px;">
+                                                <input type="checkbox" name="quanxian[]"  
+                                                <php>if(in_array(4, $quanxian)) echo "checked"</php> value="4">
+                                                <span class="cui-control-indicator"></span>
+                                                <span>卖出</span>
+                                               </label>
+
+
+
+                                                </div>
+                                            </div>
+
+
+                                          
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">登录密码：</label>
+                                                <div class="right">
+                                                    <input type="password" class="form-control input text" name="login_pwd" placeholder="留空则不做修改" >
+                                                </div>
+                                            </div>
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">确认登录密码：</label>
+                                                <div class="right">
+                                                    <input type="password" class="form-control input text" name="relogin_pwd" value="" placeholder="确认登录密码">
+                                                </div>
+                                            </div>
+
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">交易密码：</label>
+                                                <div class="right">
+                                                    <input type="password" class="form-control input text" name="safety_pwd" placeholder="留空则不做修改" >
+                                                </div>
+                                            </div>
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">确认交易密码：</label>
+                                                <div class="right">
+                                                    <input type="password" class="form-control input text" name="resafety_pwd" value="" placeholder="确认交易密码">
+                                                </div>
+                                            </div>
+                                          <!--   <div class="form-group item_title ">
+                                                <label class="left control-label">sex：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="sex" value="{$info.sex}" placeholder="是否" >
+                                                </div>
+                                            </div> -->
+
+             
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

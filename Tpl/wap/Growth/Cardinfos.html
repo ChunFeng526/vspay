@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>选择银行卡</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<link rel="stylesheet" href="__WCSS__/meCena.css">
+
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+<body class="bg96">
+	
+	<div class="header">
+	    <div class="header_l">
+	    <a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>选择银行卡</h2></div>
+	    <div class="header_r"></div>
+	</div>
+
+       <div class="big_width">
+	     <div class="pad10"></div>
+	   <foreach name="morecars" item="v">
+		   <div class="myBankCard" >
+			   <a href="{:U('Growth/Purchase',array('cid'=>$v['id']))}" class="clear_wl">
+				   <img src="__WIMG__/{$v['banq_img']}">
+				   <div class="yhxx">
+					   <p>{$v['banq_genre']}</p>
+					   <p>{$v['card_number']}</p>
+				   </div>
+			   </a>
+			   <div class="myBankCard_snac">
+				   <eq name="v['is_default']" value="1">
+				   		<a href="javascript:void(0);">默认</a>
+				   </eq>
+				   <a href="javascript:void(0)" onclick="deleteb(this)" data-id="{$v['id']}">删除</a>
+			   </div>
+
+		   </div>
+	   </foreach>
+
+	     <div class="addBankCard">
+	     	<a href="{:U('Growth/Addbank')}" class="clear_wl"><img src="__WIMG__/addyhk.png"> <p>添加银卡</p></a>
+	     </div>
+	   </div>
+</body>
+</html>
+<script>
+	function deleteb(e) {
+		var bangid = $(e).attr('data-id');
+		if(bangid == ''){
+			msg_alert('请选择对应银行卡进行操作');
+		}
+        $.ajax({
+            url:'/Growth/Cardinfos',
+            type:'post',
+            data:{'bangid':bangid},
+            datatype:'json',
+            success:function (mes) {
+                if(mes.status == 1){
+                    msg_alert(mes.message,mes.url);
+                }else{
+                    msg_alert(mes.message);
+                }
+            }
+        })
+    }
+</script>

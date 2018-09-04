@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>公告</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96 ">
+	
+	<div class="header">
+	    <div class="header_l">
+	    <a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>公告</h2></div>
+	    <div class="header_r"></div>
+	</div>
+    
+
+     <div class="big_width100">
+
+        <ul class="genggao">	
+
+
+		<foreach name="newinfo" item="v">
+			<li><a href="{:U('User/Newsdetail',array('nid'=>$v['id']))}" >
+				<div class="gonggao_l ">
+					<!--h2><strong>{$v['title']}</strong> <span>{$v['addtime']|date="Y-m-d",###}</span></h2-->
+					<h2><strong>{$v['title']}</strong> <span></span></h2>
+					<p><?php echo html_entity_decode($v['content']) ?></p>
+				</div>
+
+			</a>
+			</li>
+		</foreach>
+
+
+
+        </ul>
+        
+	      
+
+	    
+           
+	      
+	</div>
+
+	   
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                        
+                        <div class="form-group"></div>
+
+                        <!-- 顶部工具栏按钮 -->
+                        <div class="builder-toolbar">
+                            <div class="row">
+                                <!-- 工具栏按钮 -->
+                                    <div class="col-xs-12 col-sm-8 button-list clearfix">
+                                        <div class="form-group">
+                                            <a title="添加余额" class="btn btn-primary-outline btn-pill" href="{:U('FruitsManage/add')}">添加果子</a>&nbsp;
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                        
+                        <!-- 数据列表 -->
+                        <div class="builder-container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="builder-table">
+                                        <div class="panel panel-default table-responsive">
+                                            <table class="table table-bordered table-striped table-hover">
+                                              <thead>
+                                                <tr style="color:#e62727" >
+                                                    <th colspan="2" >库存总数：{$admin_kucun['total_num']+0}</th>
+                                                    <th>平台库存：{$admin_kucun['less_num']+0}</th>
+                                                    <th>转给用户总数：{$admin_kucun['total_num']-$admin_kucun['less_num']}</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>管理员</th>
+                                                    <th>充值数量</th>
+                                                    <th>时间</th>
+                                                    <th>备注</th>
+                                                </tr>
+                                            </thead>
+                                                <tbody>
+                                                    <volist name="list" id="data">
+                                                        <tr>
+                                                            <td>{$data['id']}</td>
+                                                            <td>{$data['manage_name']}</td>
+                                                            <td>{$data['bofa_num']}</td>
+                                                            <td>{$data['create_time']|date='Y-m-d',###}</td>
+                                                            <td>{$data['note']}</td>
+                                                           </tr>
+                                                    </volist>
+
+                                                    <empty name="list">
+                                                        <tr class="builder-data-empty">
+                                                            <td class="text-center empty-info" colspan="20">
+                                                                <i class="fa fa-database"></i> 暂时没有数据<br>
+                                                            </td>
+                                                        </tr>
+                                                    </empty>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <notempty name="table_data_page">
+                                            <ul class="pagination">{$table_data_page}</ul>
+                                        </notempty>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

@@ -1,0 +1,197 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="{:U('Nav/edit')}" method="post" class="form-horizontal form form-builder">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="id" value="{$info.id}">
+                                                </div>
+                                            </div>
+                                            <div class="form-group hidden item_group ">
+                                                <label class="left control-label">导航分组：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="group" value="main">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_pid ">
+                                                <label class="left control-label">上级导航：</label>
+                                                <div class="right">
+                                                    <select name="pid" class="form-control cui-select select">
+                                                        <option value="">请选择：</option>
+                                                        <option value="0" selected="">顶级导航</option>
+                                                        <option value="14">首页</option>
+                                                        <option value="15">产品中心</option>
+                                                        <option value="16">客户服务</option>
+                                                        <option value="17">案例展示</option>
+                                                        <option value="18">新闻动态</option>
+                                                        <option value="19">weex中文网</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">导航标题：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input text" name="title" value="首页" placeholder="导航前台显示标题">
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_type ">
+                                                <label class="left control-label">导航类型：</label>
+                                                <div class="right">
+                                                    <div class="radio-inline cui-control cui-radio">
+                                                        <label for="typelink">
+                                                            <input type="radio" id="typelink" class="radio" name="type" value="link" checked=""> 
+                                                            <span class="cui-control-indicator"></span>
+                                                            <span>链接</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio-inline cui-control cui-radio">
+                                                        <label for="typemodule">
+                                                            <input type="radio" id="typemodule" class="radio" name="type" value="module"> 
+                                                            <span class="cui-control-indicator"></span>
+                                                            <span>模块</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio-inline cui-control cui-radio">
+                                                        <label for="typepage">
+                                                            <input type="radio" id="typepage" class="radio" name="type" value="page"> 
+                                                            <span class="cui-control-indicator"></span>
+                                                            <span>单页</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio-inline cui-control cui-radio">
+                                                        <label for="typepost">
+                                                            <input type="radio" id="typepost" class="radio" name="type" value="post"> 
+                                                            <span class="cui-control-indicator"></span>
+                                                            <span>文章列表</span>
+                                                        </label>
+                                                    </div>        
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_url ">
+                                                <label class="left control-label">外链URL地址：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input text" name="url" value="" placeholder="支持http://格式或者TP的U函数解析格式">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_content hidden">
+                                                <label class="left control-label">单页内容：</label>
+                                                <div class="right">
+                                                    <textarea name="content" id="_kindeditor_7" class="form-control" style="display: none;">                            </textarea>
+                                                    <script type="text/javascript" src="__PUBLIC__/libs/kindeditor/kindeditor-min.js" charset="utf-8"></script>
+                                                    <script type="text/javascript">
+                                                        $(function(){
+                                                            KindEditor.ready(function(K) {
+                                                                kindeditor_7 = K.create('#_kindeditor_7', {
+                                                                    allowFileManager : true,
+                                                                    filePostName : 'file',
+                                                                    cssPath : [
+                                                                        '__LYUI__/css/cui.min.css',
+                                                                        '__PUBLIC__/libs/kindeditor/plugins/code/prettify.css'
+                                                                    ],
+                                                                    width : '100%',
+                                                                    height : '500px',
+                                                                    resizeType: 1,
+                                                                    pasteType : 2,
+                                                                    filterMode: <?php if(MODULE_MARK === 'Admin') {echo 'false';} else {echo 'true';} ?>,
+                                                                    urlType : "absolute",
+                                                                    fileManagerJson : '{:U(MODULE_MARK."/Upload/fileManager", '', true, true)}',
+                                                                    uploadJson : '{:U(MODULE_MARK."/Upload/upload", array("callback" => "callback"), true, true)}',
+                                                                    extraFileUploadParams: {
+                                                                        session_id : '{:session_id()}'
+                                                                    },
+                                                                    afterBlur: function(){this.sync();}
+                                                                });
+                                                            });
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+
+                                        <div class="form-group item_target ">
+                                            <label class="left control-label">打开方式：</label>
+                                            <div class="right">
+                                                <div class="radio-inline cui-control cui-radio">
+                                                    <label for="target">
+                                                       <input type="radio" id="target" class="radio" name="target" value="" checked=""> 
+                                                        <span class="cui-control-indicator"></span>
+                                                        <span>当前窗口</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-inline cui-control cui-radio">
+                                                    <label for="target_blank">
+                                                        <input type="radio" id="target_blank" class="radio" name="target" value="_blank"> 
+                                                        <span class="cui-control-indicator"></span>
+                                                        <span>新窗口打开</span>
+                                                    </label>
+                                               </div>        
+                                            </div>
+                                        </div>
+                                        <div class="form-group item_icon ">
+                                            <label class="left control-label">图标：</label>
+                                            <div class="right">
+                                                <div class="input-group input" id="_icon_9">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="fa fa-fw fa-info-circle"></i> 点击选择图标</button>
+                                                    </span>
+                                                    <input type="text" class="form-control" name="icon" value="">
+                                                </div>
+                                                <script type="text/javascript" src="__ADMIN_JS__/icon.js" ></script>
+                                                <script type="text/javascript">
+                                                    $(function(){
+                                                        geticon($('#_icon_9'));
+                                                    })
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="form-group item_sort ">
+                                            <label class="left control-label">排序：</label>
+                                            <div class="right">
+                                                <input type="text" class="form-control input num" name="sort" value="0" placeholder="用于显示的顺序">
+                                            </div>
+                                        </div>
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                </form>
+             </div>    
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    {$extra_html}
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+    <include file="./Application/Common/Builder/javascript.html" />
+</block>

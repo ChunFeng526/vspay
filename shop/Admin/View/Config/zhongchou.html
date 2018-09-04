@@ -1,0 +1,168 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+             <li class="text-muted">发布众筹</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="builder-tabs builder-form-tabs">
+                        <ul class="nav nav-tabs">
+
+                             <li class="">
+                                <a href="{:U('Config/group2',array('group'=>1))}">基本设置</a>
+                            </li>
+                            <li class="active">
+                                <a href="{:U('Config/group3')}">众筹设置</a>
+                            </li>
+
+                            <li class="">
+                                <a href="{:U('Config/group4')}">奖励设置</a>
+                            </li>
+
+                            <li class="">
+                                <a href="{:U('Config/group1',array('group1'=>5))}">实时价格设置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/group',array('group'=>3))}">网站开关</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                       修改进行中众筹进度<hr style="margin-top: 0px;width: 100%">
+                        <div class="row" style="margin-bottom:30px;">
+                            
+                       
+                            <div class="col-xs-12" >
+                                <?php
+                            if($is_has){
+                            ?>
+                                <form action="{:U('Config/groupSave4')}" method="post" class="form-horizontal form form-builder form-builder1">
+                                <div class="form-type-list">
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">开始日期：</label>
+                                        <div style="width:200px;" class="input-group">
+                                            <div style="float:left;width:160px;margin-right:20px" class="">
+                                                    <input type="text"  name="open_time" readonly="readonly" class="search-input form-control" value="{$open_time}" >
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">众筹总量：</label>
+                                        <div style="width:200px;" class="input-group">
+                                            <input type="number" style="width:160px;" readonly="readonly" name="num" class="form-control" value="{$num}" ><span style="float:left;margin-left:2px;line-height:260%;">万<span>                                          
+                                        </div>
+                                    </div>
+
+                                     <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">当前进度：</label>
+                                        <div style="width:200px;" class="input-group">
+                                            <input type="text" style="width:160px;" name="jindu" class="form-control" value="{$jindu}" >
+                                             <input type="hidden" name="tid"  value="{$id}" >
+                                             <span class="input-group-addon">%</span>                                              
+                                        </div>
+                                    </div>
+                                   
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder1">修改</a>
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                </div>
+                                </form>
+                                <?php
+                             }else{echo "<span style='color:#888;'>暂无进行中的众筹……</span>";}?>
+
+
+                            </div>
+
+                        </div>
+
+发布准备开始的众筹<hr style="margin-top: 0px;width: 100%">
+
+                        <div class="row" >
+                            <div class="col-xs-12" >
+                                <form action="{:U('Config/groupSave3')}" method="post" class="form-horizontal form form-builder form-builder2">
+                                <div class="form-type-list">
+
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">众筹总量：</label>
+                                        <div style="width:200px;" class="input-group">
+                                            <input type="number" style="width:160px;" name="num" class="form-control" value="500" ><span style="float:left;margin-left:2px;line-height:260%;">万<span>                                          
+                                        </div>
+                                    </div>
+                                
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">价格：</label>
+                                        <div style="width:200px;" class="input-group">
+                                            <input type="number" style="width:160px;" name="dprice" class="form-control" value="6.0000" >                                          
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">开始日期：</label>
+                                        <div style="width:200px;" class="input-group">
+                                            <div style="float:left;width:160px;margin-right:20px" class="">
+                                                    <input type="text" name="open_time" class="search-input form-control date" value="" placeholder="开始日期">
+                                                </div>
+                                        </div>
+                                    </div>
+                                   
+
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">初始进度：</label>
+                                        <div style="width:200px;" class="input-group">
+                                            <input type="text" style="width:160px;" name="jindu" class="form-control" value="0" ><span class="input-group-addon">%</span>                                          
+                                        </div>
+                                    </div>    
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder2">发布</a>
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+            </div>
+            </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>
+
+<block name="script">
+     <script type="text/javascript">
+        $('.date').datetimepicker({
+            format: 'yyyy-mm-dd',
+            language:"zh-CN",
+            minView:2,
+            autoclose:true,
+            todayBtn:1, //是否显示今日按钮
+        });
+    </script>
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

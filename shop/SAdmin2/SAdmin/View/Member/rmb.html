@@ -1,0 +1,62 @@
+<extend name="Public:base" />
+<block name="content">
+	<div class="page-header">
+		<h1>
+			{$breadcrumb2}
+			<small>
+				<i class="icon-double-angle-right"></i>
+				{$crumbs}
+			</small>
+		</h1>
+	</div>	
+	<ul class="nav nav-tabs">
+		
+	  <li class="active"><a href="#tab-member" data-toggle="tab">充值中心</a></li>
+	 
+	  
+	</ul>
+	<form class="form-horizontal" id="validation-form"  method="post" action='{$action}'>
+	<div class="tab-content">
+		
+		<div class="tab-pane active" id="tab-member">
+			<table class="table table-binfoed">
+			
+				<tr>
+				    <td>帐号</td>
+				    <td><input name="phone" type="text" style="width:400px;"  /></td>
+				    
+				</tr>
+				<tr>
+					<td>类型</td>
+					<td>	
+							<label class="radio-inline"><input type="radio" checked value="1" name="type">农联积分</label>
+					</td>
+				</tr>
+				  <tr>
+				    <td>数量</td>
+				    <td><input name="rmb" type="text" style="width:400px;" /></td>
+				  
+				</tr> 
+			
+				
+				</table>
+				<div class="form-group">
+				
+				<div style="margin-left:20px;">
+					<input name="send" type="submit" value="提交" class="btn btn-primary" />
+				</div>
+			</div>
+		</div>
+	</div>
+	</form>	
+</block>
+<block name="javascript">
+
+<script>
+$(function(){	
+	<present name="Think.get.id">
+			Oscshop.setValue("status", {$data.info.status|default=1});		
+	</present>
+});
+</script>							
+</block>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>转入记录</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96">
+
+<div class="header">
+	<div class="header_l">
+		<a href="{:U('Growth/Intro')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	</div>
+	<div class="header_c"><h2>转入记录</h2></div>
+	<div class="header_r"></div>
+</div>
+
+<div class="big_width100">
+	<foreach name="Chan_info" item="v">
+		<div class="annal_ul">
+			<div class="annal_ul_l">
+				<img src="__WIMG__/toux-icon.png" alt="">
+				<div class="annal_p">
+					<!-- <eq name="v['get_id']" value="$uid"> -->
+						<p><?php echo M('user')->where(array('userid'=>$v['pay_id']))->getfield('username'); ?></p>
+					<!-- 	<else />
+						<p><?php echo M('user')->where(array('userid'=>$v['get_id']))->getfield('username'); ?></p>
+					</eq> -->
+					<p>UID:{$v['pay_id']}</p>
+				</div>
+			</div>
+
+			<div class="annal_ul_r">
+				<div class="annal_p">
+					<p class="zhuanrua"><eq name="v['get_id']" value="$uid">+<else />-</eq>{$v['get_nums']}</p>
+					<p>{$v['get_time']|date="Y-m-d H:i:s",###}</p>
+				</div>
+			</div>
+		</div>
+	</foreach>
+	<!--<div class="annal_ul">-->
+
+		<!--<div class="annal_ul_l">-->
+			<!--<img src="__WIMG__/toux-icon.png" alt="">-->
+			<!--<div class="annal_p">-->
+				<!--<p>蔡先生</p>-->
+				<!--<p>UID:19144</p>-->
+			<!--</div>-->
+		<!--</div>-->
+
+		<!--<div class="annal_ul_r">-->
+			<!--<div class="annal_p">-->
+				<!--<p class="zhuanrua">+192.00</p>-->
+				<!--<p>2018-01-25 18:55:46</p>-->
+			<!--</div>-->
+		<!--</div>-->
+
+
+	<!--</div>-->
+	<!--<div class="annal_ul">-->
+
+		<!--<div class="annal_ul_l">-->
+			<!--<img src="__WIMG__/toux-icon.png" alt="">-->
+			<!--<div class="annal_p">-->
+				<!--<p>蔡先生</p>-->
+				<!--<p>UID:19144</p>-->
+			<!--</div>-->
+		<!--</div>-->
+
+		<!--<div class="annal_ul_r">-->
+
+			<!--<div class="annal_p">-->
+				<!--<p class="zhuanrua">+192.00</p>-->
+				<!--<p>2018-01-25 18:55:46</p>-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+
+	<!--</div>-->
+
+</div>
+</body>
+</html>

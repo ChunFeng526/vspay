@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>未完成订单</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__WJS__/responsive.tabs.js"></script>
+<script src="__WJS__/iscroll.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js" ></script>
+<body class="bg96">
+
+<div class="header">
+	<div class="header_l">
+		<a href="{:U('Trading/SellCentr')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	</div>
+	<div class="header_c"><h2>未完成订单</h2></div>
+	<div class="header_r"></div>
+</div>
+
+<div class="big_width100">
+
+	<div class="undone_order">
+
+		<div class="undone_order_titel clear_wl">
+			<a href="{:U('Trading/Nofinsh')}"  <eq name="state" value="1">class="undone_OT_l fl"<else />class="undone_OT_l fl noe"</eq> >
+				未选择打款人
+			</a>
+			<a href="{:U('Trading/Nofinsh',array('state'=>1))}" <eq name="state" value="1">class="undone_OT_r fr noe"<else />class="undone_OT_r fr"</eq>>
+				已选择打款人
+			</a>
+
+		</div>
+	</div>
+
+</div>
+
+<!--  -->
+<style>
+
+.pgoumai {
+    font-size: 14px;
+    color: #ff2929;   
+    display: block;
+    border-radius:5px;
+    border: 1px solid #ff2929;
+    padding:0 0.5vmin;
+    text-align:center;
+    width:25%;
+}
+
+.pgoumai1 {
+    font-size: 14px;
+    color: #aaa;   
+    display: block;
+    border-radius:5px;
+    padding:0 0.5vmin;
+    text-align:center;
+    width:25%;
+}
+
+</style>
+<div class="demo">
+	<div class="accordion">
+		<notempty name="orders">
+			<foreach name="orders" item="v">
+					<egt name="v['pay_state']" value = "1">
+							<div class="accordion-handle">
+								<h4>
+							<p class="accmrp">挂出金额：{$v['pay_nums']}RMB<span class="acco_con_spana" ><eq name="v.pay_state" value="2">已打款<else/>已选择收款人</eq></span></p>
+									<p>{$v['pay_time']|date="Y-m-d H:i:s",###}<span>打款人：{$v['uname']}</span></p>
+								</h4>
+								<i></i>
+							</div>
+
+							<neq name="v.pay_state" value="2">
+							<div style="width: 100%;margin-top:-2.5vmin;margin-bottom:1vmin;padding-left:2vmin;height:15vmin;background-color: white;">
+								<h4>
+									<p  style="width: 100%;line-height: 160%; color:#000;">
+									<a id="quxiao"  class="pgoumai" onclick="quxiao({$v['id']})" href="###">取消订单</a>
+									</p>
+								</h4>
+							</div>
+							</neq>
+
+
+							<div class="accordion-content por" style="margin-top:1vmin;">
+								<div class="acco_con_up">
+									<p>打款人姓名：<span> {$v['uname']}</span></p>
+									<p>手机号码：<span>{$v['umobile']}</span></p>
+									<p>交易金额：<span>{$v['pay_nums']}RMB</span></p>
+									<p>状态：<span class="acco_con_spana">已选择打款人</span></p>
+								</div>
+							</div>
+					<else />
+						<div class="accordion-handle">
+							<h4>
+								<p class="accmrp">挂出金额：{$v['pay_nums']}RMB<span >未选择打款人</span></p>
+								<p>{$v['pay_time']|date="Y-m-d H:i:s",###}<span></span></p>
+							</h4>
+							<i></i>
+						</div>
+							<div style="width: 100%;margin-top:-8vmin;margin-bottom:1vmin;padding-left:2vmin;height:15vmin;background-color: white;">
+								<h4>
+									<p  style="width: 100%;line-height: 160%;">　<a id="quxiao"  class="pgoumai" onclick="quxiao({$v['id']})" href="###">取消订单</a></p>
+								</h4>
+							</div>
+						<div class="accordion-content por" style="margin-top:1vmin;">
+							<div class="acco_con_up">
+								<p>打款人姓名：<span></span></p>
+								<p>手机号码：<span></span></p>
+
+								<p>交易金额：<span></span></p>
+								<p>状态：<span>未选择打款人</span></p>
+							</div>
+						</div>
+					</egt>
+			</foreach>
+		<else />
+			<div class="big_width100">
+				<div class="annalWa"><p >没找到相关记录</p></div>
+			</div>
+		</notempty>
+
+
+
+		<notempty name="page">
+			<ul class="pagination" style="color:#666;padding-left:2vmin;margin-top:3vmin">{$page}</ul>
+		</notempty>
+	</div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.accordion').respTabs({
+            model : 'accordions'
+        });
+    });
+
+
+    function quxiao(orderid){                
+
+                        $.ajax({
+                            url:'/Trading/quxiao_order',
+                            asyn:false,
+                            type:'post',
+                            data:{'id':orderid},
+                            datatype:'json',
+                            success:function (mes) {
+                              msg_alert(mes.message,mes.url);
+                              if(!mes.url)location.reload();
+
+                            }
+                        })
+
+                 }   
+
+</script>
+
+</body>
+
+</html>

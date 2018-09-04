@@ -1,0 +1,186 @@
+﻿
+<script src="https://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+
+<script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+
+<script src="https://cdn.hcharts.cn/highstock/highstock.js"></script>
+
+<script src="https://cdn.hcharts.cn/highmaps/highmaps.js"></script>
+<!-- 导航选中 -->
+<script type="text/javascript">
+    $('.container dl dd').eq(5).addClass('select');
+</script>
+
+<style>
+	.highcharts-credits{
+		display: none;
+	}
+</style>
+<div style="height:54px;"></div>
+
+<div class="statistics">
+
+	<div id="day" style="width: 800px; height: 400px; margin: 0 auto"></div>
+	<div id="month" style="width: 800px; height: 400px; margin: 0 auto"></div>
+	<div id="year" style="width: 800px; height: 400px; margin: 0 auto"></div>
+	<script language="JavaScript">
+	
+	$(document).ready(function() {
+		//d.getMonth()+1代表下个月，月份索引从0开始，即当前月为6月时，getMonth()返回值为5，创建日期时同理
+		//此处构造的日期为下个月的第0天，天数索引从1开始，第0天即代表上个月的最后一天
+	    var d = new Date();
+		var curMonthDays = new Date(d.getFullYear(), (d.getMonth()+1), 0).getDate();
+		var arr = new  Array();
+		var arr_d = new  Array();
+		for(i=0;i<curMonthDays;i++){
+			n=i+1;
+			if(n<10)
+				n='0'+n;
+			arr[i]=n;
+			arr_d[i]=parseInt(Math.random()*100)*n;
+		}
+
+		var title = {
+	      text: '本月业绩'   
+	   };
+	   var xAxis = {
+	   	  name: '{$shopinfo.s_name}',
+	      categories: arr
+	   };
+	   var yAxis = {
+	      title: {
+	         text: '单位 (元)'
+	      },
+	      plotLines: [{
+	         value: 0,
+	         width: 1,
+	         color: '#808080'
+	      }]
+	   };   
+
+	   var tooltip = {
+	      valueSuffix: '元'
+	   }
+
+	   var legend = {
+	      layout: 'vertical',
+	      align: 'right',
+	      verticalAlign: 'middle',
+	      borderWidth: 0
+	   };
+
+	   var series =  [
+	      {
+	         name: '{$shopinfo.s_name}',
+	         data: [{$ri}]
+	      }, 
+	   ];
+
+	   var json = {};
+
+	   json.title = title;
+	   json.xAxis = xAxis;
+	   json.yAxis = yAxis;
+	   json.tooltip = tooltip;
+	   json.legend = legend;
+	   json.series = series;
+	   $('#day').highcharts(json);
+
+	   // =============月度业绩=======================
+	   var title = {
+	      text: '月度业绩'   
+	   };
+	   var xAxis = {
+	      categories: ['01月', '02月', '03月', '04月', '05月', '06月',
+	         '07月', '08月', '09月', '10月', '11月', '12月']
+	   };
+	   var yAxis = {
+	      title: {
+	         text: '单位 (元)'
+	      },
+	      plotLines: [{
+	         value: 0,
+	         width: 1,
+	         color: '#808080'
+	      }]
+	   };   
+
+	   var tooltip = {
+	      valueSuffix: '元'
+	   }
+
+	   var legend = {
+	      layout: 'vertical',
+	      align: 'right',
+	      verticalAlign: 'middle',
+	      borderWidth: 0
+	   };
+
+	   var series =  [
+	      {
+	         name: '{$shopinfo.s_name}',
+	         data:  [{$yue}]
+	      }, 
+	   ];
+
+	   var json = {};
+
+	   json.title = title;
+	   json.xAxis = xAxis;
+	   json.yAxis = yAxis;
+	   json.tooltip = tooltip;
+	   json.legend = legend;
+	   json.series = series;
+	   $('#month').highcharts(json);
+
+
+	   // =============年度业绩=======================
+	   var title = {
+	      text: '年度业绩'   
+	   };
+	   var xAxis = {
+	      categories: ['2017年', '2018年', '2019年', '2020年', '2021年']
+	   };
+	   var yAxis = {
+	      title: {
+	         text: '单位 (元)'
+	      },
+	      plotLines: [{
+	         value: 0,
+	         width: 1,
+	         color: '#808080'
+	      }]
+	   };   
+
+	   var tooltip = {
+	      valueSuffix: '元'
+	   }
+
+	   var legend = {
+	      layout: 'vertical',
+	      align: 'right',
+	      verticalAlign: 'middle',
+	      borderWidth: 0
+	   };
+
+	   var series =  [
+	      {
+	         name: '{$shopinfo.s_name}',
+	         data: [{$nian}]
+	      }, 
+	   ];
+
+	   var json = {};
+
+	   json.title = title;
+	   json.xAxis = xAxis;
+	   json.yAxis = yAxis;
+	   json.tooltip = tooltip;
+	   json.legend = legend;
+	   json.series = series;
+
+	   $('#year').highcharts(json);
+	});
+	</script>
+
+</div>

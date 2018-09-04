@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/address.js"></script>
+    <!-- Demo styles -->
+    <!-- <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+    <script type="text/javascript" src="__JS__/upload.js"></script>
+    <script type="text/javascript" src="__JS__/area.js"></script> -->
+
+</head>
+<body data-id="tjid">
+<style>
+    .address {
+    margin-right: 4%;
+    margin-left: 4%;
+}
+.address li {
+    line-height: 17vmin;
+    font-size: 4.2vmin;
+}
+.address li input {
+    width: 75%;
+    height: 5vmin;
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+}
+.selectcc {
+    width: 83%;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-family: "微软雅黑";
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 14px;
+}
+.dzq{
+    width: 84%;
+    height: 5vmin;
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+}
+</style>
+<div class="header">
+    <div class="header_l" style="width: 15%;"></div>
+    <div class="header_c" style="width: 70%;"><h1 style="color:#000">邀请注册</h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+<form action="/Shop/Member/reg_action" method="post" id="form">
+<div class="address">
+    <ul>
+        <li>推荐人：<input type="text" name="tjid" readonly="readonly"  value="{$tjph}"></li>
+        <li>姓名：<input type="text" name="username" minlength="2" maxlength="12" placeholder="请输入姓名"  value="" required="required"></li>
+        <li>手机号码：<input type="text" name="mobile" minlength="11" maxlength="11" placeholder="请输入手机号码" required="required"></li>
+        <li>密码：<input type="password" minlength="6" name="password" maxlength="20"  placeholder="请输入密码" required="required"></li>
+        <li>确认密码：<input type="password" minlength="6" name="conpassword" maxlength="20" placeholder="请确认密码" required="required"></li>
+    </ul>
+
+</div>
+<div class="submit"><a onclick="$('form').submit();" style="background:#ff6a31;">注册</a></div>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+             <li class="text-muted">拆分倍数</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="builder-tabs builder-form-tabs">
+                        <ul class="nav nav-tabs">
+                            <li >
+                                <a href="{:U('Config/group',array('group'=>1))}">出售限制</a>
+                            </li>
+                            <li class="active" >
+                                <a href="{:U('Config/group',array('group'=>2))}">拆分倍数</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/group',array('group'=>4))}">手续费</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/turntable')}">转盘配置</a>
+                            </li>
+                            <li>
+                                <a href="{:U('Config/tool')}">道具配置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:U('Config/group',array('group'=>3))}">网站开关</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                        <div class="row" >
+                            <div class="col-xs-12" >
+                                <form action="{:U('Config/groupSave')}" method="post" class="form-horizontal form form-builder">
+                                <div class="form-type-list">
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">体验地最小值：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="tiyan_min" class="form-control" value="{$info.tiyan_min}" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">体验地最大值：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="tiyan_max" class="form-control" value="{$info.tiyan_max}" >
+                                        </div>
+                                    </div>
+                                   <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">黑土地最小值：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="huang_min" class="form-control" value="{$info.huang_min}" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">黑土地最大值：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="huang_max" class="form-control" value="{$info.huang_max}" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">红土地最小值：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="hong_min" class="form-control" value="{$info.hong_min}" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">红土地最大值：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="hong_max" class="form-control" value="{$info.hong_max}" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">金土地最小值：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="hei_min" class="form-control" value="{$info.hei_min}" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">金土地最大值：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="hei_max" class="form-control" value="{$info.hei_max}" >
+                                        </div>
+                                    </div>
+                                   
+                                     <hr />
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">一级好友采密拆分：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="friends_one" class="form-control" value="{$info.friends_one}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">二级好友采密拆分：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="friends_two" class="form-control" value="{$info.friends_two}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">三级好友采密拆分：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="friends_tree" class="form-control" value="{$info.friends_tree}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">基础拆分倍数：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="base_lv" class="form-control" value="{$info.base_lv}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">农夫拆分倍数：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="nongfu_lv" class="form-control" value="{$info.nongfu_lv}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">猫拆分倍数：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="mao_lv" class="form-control" value="{$info.mao_lv}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div> 
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">鸟拆分倍数：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="niao_lv" class="form-control" value="{$info.niao_lv}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">鸡拆分倍数：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="ji_lv" class="form-control" value="{$info.ji_lv}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div>
+
+                                   <!--  <div class="form-group item_config[WEB_SITE_TITLE] ">
+                                        <label class="left control-label">扣除比例：</label>
+                                        <div style="width:200px" class="input-group">
+                                            <input type="text" name="des_lv" class="form-control" value="{$info.des_lv}" >
+                                            <span class="input-group-addon">%</span>
+                                        </div>
+                                    </div> -->
+
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                    <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

@@ -1,0 +1,133 @@
+<extend name="Public:base" />
+
+<block name="content">	
+
+<div class="row">
+	<div class="col-xs-12">	
+		<div class="table-responsive">
+
+			<table class="table table-striped table-bordered table-hover search-form">
+				<thead>
+				<th><input name="id" type="text" value="{$id}" placeholder="输入会员id" value="{:I('id')}" /></th>
+				<th><input name="mobile" type="text" value="{$mobile}" placeholder="输入手机号码" value="{:I('mobile')}" /></th>
+
+				<th>
+					<select name="status">
+						<option value="">-选择状态-</option>
+						<option <eq name="status" value="0"> selected </eq>  value="0">-提现中-</option>
+						<option <eq name="status" value="1"> selected </eq> value="1">-提现成功-</option>
+						<option <eq name="status" value="2"> selected </eq> value="2">-提现拒绝-</option>
+					</select>
+				</th>
+				<th>
+					<a class="btn btn-primary" href="javascript:;" id="search" url="{:U('Tixian/tixian')}">查询</a>
+				</th>
+				</thead>
+			</table>
+
+			<table class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>											
+						<th>ID</th>
+						<th>用户</th>
+						<th>提现金额</th> 
+						<th>提现方式</th>
+						<!--<th>支付宝/微信</th>-->
+						<th>实际到账</th>
+						<th>支付方式</th>
+						<th>收款详情</th>
+						<th>时间</th>
+						<th>状态</th> 
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+						<volist name="list" id="v" empty="$empty">
+						<?php if($v['state']==0){
+							$state ="待审核";
+						}else{
+							$state ="已完成";
+						} 
+						?>
+						<tr>						
+							<td>{$v.id}</td>
+							<td><?php echo M('member')->where(array('member_id'=>$v['member_id']))->getfield('uname') ?>&nbsp;&nbsp;{$v.member_id}</td>
+							<td>{$v.zong_rmb}</td>
+							<td><if condition="$v['pay_type']==1">微信<elseif condition="$v['pay_type']==2" />支付宝<elseif condition="$v['pay_type']==3" />银行卡<else />聚点收款码</if></td>
+							<td>{$v.tx_rmb}</td>
+							<td><if condition="$v['zhifu_type']==1">佣金提现<elseif condition="$v['zhifu_type']==2" />代理佣金提现<elseif condition="$v['zhifu_type']==3" />农联积分提现<elseif condition="$v['zhifu_type']==4" />鸡场积分提现<elseif condition="$v['zhifu_type']==5" />鱼库积分提现<else />果园积分提现</if></td>
+
+							<eq name="v['pay_type']" value="4">
+								<?php $skimg = M('member')->where(array('member_id'=>$v['member_id']))->getfield('judian_pic'); ?>
+								
+							<td>
+								<img width="120" height="100" src="__USERPIC__/{$skimg}" alt="">
+								
+								</td>
+
+							<else />
+							<?php $api_pay = M('member')->where(array('member_id'=>$v['member_id']))->getfield('api_pay'); ?>
+							<?php $wx_name = M('member')->where(array('member_id'=>$v['member_id']))->getfield('wx_name'); ?>
+							<td><if condition="$v['pay_type']==1">微信{$wx_name}<elseif condition="$v['pay_type']==2" /> 支付宝&nbsp{$api_pay}<else />银行卡</if></td>
+							</eq>
+
+							<td>{$v.time}</td>
+							<td>
+								<if condition="$v['state']==1">
+									<a  class="delete btn btn-xs btn-danger" href='{:U("Tixian/okti",array("id"=>$v["id"],"type"=>1))}'>
+										通过
+									</a>
+
+									<a  class="delete btn btn-xs btn-danger" href='{:U("Tixian/okti",array("id"=>$v["id"]))}'>
+										拒绝
+									</a>
+								<elseif condition="$v['state']==2" />
+									<a class="btn btn-xs passed passed" style="background: #00c4c5 !important;border-color:#00c4c5" href='javascript:void(0)'>
+										已通过
+									</a>
+								<elseif condition="$v['state']==3" />
+									<a  class="btn btn-xs passed refused" href='javascript:void(0)'>
+										已拒绝
+									</a>
+								<else />
+									<a  class="btn btn-xs passed refused" href='javascript:void(0)'>
+										已撤销
+									</a>
+								</if>
+							</td>
+							<td>
+								<a  class=" btn btn-xs btn-danger" href='{:U("Member/info/",array("id"=>$v["member_id"]))}'>
+									详情
+								</a>
+							</td>
+						</tr>
+						</volist>	
+						
+						<tr>
+							<td colspan="20" class="page">{$page}</td>
+						</tr>
+				</tbody>
+				
+			</table>
+		</div>
+	</div>
+</div>
+</block>
+<block name="javascript">
+<script>	
+$(function(){
+   $("#search").click(function () {
+        var url = $(this).attr('url');
+        var query = $('.search-form').find('input,select').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+        query = query.replace(/^&/g, '');
+        if (url.indexOf('?') > 0) {
+            url += '&' + query;
+        } else {
+            url += '?' + query;
+        }
+        window.location.href = url;
+    });	
+});
+</script>
+</block>

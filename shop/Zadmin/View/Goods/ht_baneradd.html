@@ -1,0 +1,88 @@
+     
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理</title>
+	 <link rel="stylesheet" href="__PUBLIC__/plugin/themes/default/default.css" />
+    <script charset="utf-8" src="__PUBLIC__/plugin/kindeditor-min.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/plugin/lang/zh_CN.js"></script>
+    <include file="common:css" />
+  
+  </head>	 
+	 
+	 
+	 <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+	
+		<div class="xxgl">
+			<div class="xxgl_bottom">
+				<h3>轮播图管理</h3>
+				<div class="tjwz_bottom_t">
+					<p style="margin-left:380px;width:81px;"><a href="{:U('Goods/ht_baneradd')}">添加轮播图</a></p>
+					<p style="width:81px;"><a href="{:U('Goods/ht_banerlb')}">轮播图列表</a></p>
+				</div>
+			</div>
+	
+		   <form action="{:U('Goods/ht_baneradd')}" method="post" enctype="multipart/form-data"> 
+			<div class="xxgl_bottom">
+		
+				<div class="nr1">
+					<p>类型</p>
+		            <select style="width:200px" name="baner_type" >
+		            	<option <eq name="dada['baner_type']" value="0" >selected="true"</eq>  value="0" >首页轮播图</option>
+		            	<option <eq name="dada['baner_type']" value="1" >selected="true"</eq> value="1" >首页广告图</option>
+		            </select>
+		            <br/>
+		            <br/>
+		            <p>链接网址</p>
+		            <input type="text" name="baner_name" value="{$dada.baner_name}"  class="textt"/>
+		            <p>排序 <span class="note" >注：数值越大越靠前</span></p>
+		            <input type="text" name="baner_px"  value="{$dada.baner_px|default=0}" class="textt"/>
+		             <p>图标 <span style="font-size:9px;color:#aaa">&nbsp;&nbsp;图片规格为640x340</span></p>
+		             <notempty name="dada['baner_url']" >
+		             	<img style="max-width:100px" src="__PUBLIC__/Uploads/{$dada['baner_url']}" alt="">
+		             </notempty>
+		            <input type="file" name="baner_url"  />
+		            <br/>
+		            <br/>
+		            <em>
+		            	 <input type="hidden" name="baner_id" value="{$dada.baner_id}" >
+		                 <input type="submit" style="width: 50px;height: 26px;border:2px solid #dcdcdc;color: #000;font-size: 14px;" value="保存">
+					</em>
+					<div style="clear:both;height:20px" ></div>
+				</div>
+			</div>
+			</form>
+			
+
+			
+		</div>
+
+
+	<style type="text/css">
+			.note{
+				font-size: 10px;
+			    float: right;
+			    margin-right: 50px;
+			}
+			#shop{
+				min-width: 100px;
+				height:25px;
+			}
+			.tp{
+				    width:100px;
+				     height:75px;
+				
+				}
+	</style>
+
+<include file="common:js" />	
+</body>
+</html>

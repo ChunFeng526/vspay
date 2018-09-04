@@ -1,0 +1,43 @@
+<include file="Common/Common"/>
+
+<!--==========内容开始=============-->
+
+    <div style="height:0.27rem;"></div>
+    <div class="login">
+        <div class="tip">
+            <p class="cred" style="text-align:center" >注: 首次进入商城需要扣除{$fee}个果子激活</p>
+        </div>
+        <div style="height:0.27rem;"></div>
+       <form action="{:U('Shop/saveshopuser')}" method="post" onsubmit="return checkfrom()" >
+            <dl>
+                <dd>
+                    <span>手机：</span>
+                    {$info.mobile}
+                </dd>
+                <dd>
+                    <span>账号：</span>
+                    {$info.account}
+                </dd>
+               <dd>
+                    <span>交易密码：</span>
+                    <input style="width:50%" type="password" name="password_two" >
+                </dd> 
+            </dl>
+            <input type="submit" class="submit submit3" value="激活">
+            <a href="javascript:history.back()" class="cancle"> 返回</a>
+        </form>
+    </div>
+<div style="height:0.4rem"></div>
+</body> 
+</html>
+
+<script type="text/javascript">
+    function checkfrom(){
+        var pwd=$('input[name=password_two]').val();
+        if(pwd=='' || pwd==null){
+            alert('请输入交易密码');
+            $('input[name=password_two]').focus();
+            return false
+        }
+    }
+</script>

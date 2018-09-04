@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> 优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <!-- Demo styles -->
+
+
+</head>
+<body style="background: #f9f9f9;">
+<div class="header">
+    <div class="header_l">
+      <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>特价秒杀</span></a>
+
+    </div>
+    <div class="header_c"><h1></h1></div>
+    <div class="header_r"><a href=""><i class="iconfont" style="font-size: 6vmin;text-align: center;line-height: 13vmin;">&#xe641;</i></a></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<foreach name="productList" item="product">
+<div class="maidb">
+    <div class="maidbl"><a href="{:U('Home/details',array('proid'=>$product['id']))}"><img src="{$product['pic']}" alt=""></a></div>
+    <div class="maibdr_bb">
+        <h3><a href="{:U('Home/details',array('proid'=>$product['id']))}">{$product['name']}</a> </h3>
+        <p>已抢{$product['buy_num']}件 <span>￥{$product['price']}</span></p>
+        <p class="pr">剩余{$product['stock']}件<a href="{:U('Home/details',array('proid'=>$product['id']))}">立即抢购</a></p>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+</foreach>
+
+
+</body>
+</html>

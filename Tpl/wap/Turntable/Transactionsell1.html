@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>交易</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<link rel="stylesheet" href="__WCSS__/zhifu.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<body class="bg96">
+	
+	<div class="header">
+	    <div class="header_l">
+	     <a href="{:U('Turntable/index')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c" id="dig_xiala"><h2 style="line-height:36px;"></h2> <p id="a"></p>
+            <div id="dig_xiala_xs">
+             <div class="downa">
+	             <ul>
+	            	<li><a href="javascript:void(0)"></a></li>
+	            	<li><a href="javascript:void(0)">比特币</a></li>
+	            	<li><a href="javascript:void(0)">菜特币</a></li>
+	            	<li><a href="javascript:void(0)">以太坊</a></li>
+	            	<li class="off"><a href="javascript:void(0)">狗狗币</a></li>
+	            </ul>
+            </div>
+            <div class="reveal-modal-bg"></div>
+            </div>
+	    </div>
+	    <div class="header_r"></div>
+	</div>
+
+    <div class="big_width100">
+	    <div class="big_width100">
+	    <div class="buy_Wpayzu clear_wl">
+	     	 <div class="buy_Wpayzu_l">
+	     	 	<p>Wpeay资产</p>
+	     	 	<p>{$minecoins['c_nums']|default="0.0000"|number_format=###,4}</p>
+	     	 </div>
+	     	 <div class="buy_Wpayzu_l">
+	     	 	<p>余额</p>
+	     	 	<p>￥{$my_yue|default="0.0000"|number_format=###,4}</p>
+	     	 </div>
+
+	     	 <div class="buy_Wpayzu_z"></div>
+
+     </div>
+
+     <div class="buy_inde_dangq">
+     	<ul class="clear_wl">
+     		<li> <p><span>当前价格</span>{$coindets}</p></li>
+     		<li> <p><span>高</span>16.9394 <img src="__WIMG__/buy_bie.png"></p></li>
+     		<li> <p><span>低</span>15.9394 <img src="__WIMG__/buy_jiang.png"></p></li>
+     	</ul>
+     </div>
+
+     <div class="wpzicicon_buy">
+	    		<ul class="clear_wl">
+	    			<li>
+	    				<a href="{:U('Turntable/Salesell',array('cid'=>$cid) )}">
+	    					<img src="__WIMG__/jiaoy01-iocn.png" alt="">
+	    					<p>发布出售订单</p>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="{:U('Turntable/Salebuys',array('cid'=>$cid) )}">
+	    					<img src="__WIMG__/jiaoy02-iocn.png" alt="">
+	    					<p>发布购买订单</p>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="{:U('Turntable/Orderinfos')}">
+	    					<img src="__WIMG__/jiaoy03-iocn.png" alt="">
+	    					<p>订单</p>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="{:U('Turntable/Transreocrds')}">
+	    					<img src="__WIMG__/jiao04-iocn.png" alt="">
+	    					<p>交易记录</p>
+	    				</a>
+	    			</li>
+	    		</ul>
+	   </div>
+
+     <div class="buy_quexiant">
+			   
+			   <ul class="clear_wl">
+			   	  <li class="yon">五分钟 <div class="yxs"></div></li>
+			   	  <li>五小时 <div class="yxs"></li>
+			   	  <li class="lizuih">日线</li>
+			   </ul>
+
+	  </div>
+
+	  <div class="investment_f">
+	  <div class="investment_title">
+	    <div > <a href="{:U('Turntable/Transaction',array('cid'=>$cid))}">购买</a></div>
+	    <div class="on"><a href="{:U('Turntable/Transactionsell',array('cid'=>$cid))}">出售</a></div>
+	 
+	  </div>
+	  <div class="investment_con">
+	    <div class="investment_con_list">
+	       
+	       <ul class="buy_gaomai">
+
+       	
+	       	 <foreach name="deals" item="v" key="k" >
+	       	 <li>
+	       	 	<div class="buy_li_gol">
+	       	 		<img src="{$v['d_img_head']|default='__WIMG__/toux-icon.png'}">
+	       	 		 <div class="li_gop">
+	       	 		 	<p>{$v['u_name']}</p>
+	       	 		 	<p><span>限额：{$v['d_num']}</span></p>
+	       	 		 </div>
+
+
+	       	 	</div>
+	       	 	<div class="buy_li_gor">
+	       	 		<p>￥{$v['d_dprice']}</p>
+	       	 		<a href="javascript:void(0);" class="ljzf_but " onclick="gbzhi({$v['d_num']},{$v['d_dprice']},'{$v['u_name']}',{$v['d_id']})">出售</a>
+	       	 	</div>
+
+	       	 </li>
+
+	       	 </foreach>
+
+	       </ul>
+
+	    </div>
+	    
+	   
+	  </div>
+	</div>
+
+
+
+
+	 </div>	 
+ 
+
+
+</body>
+ 
+ 
+  <!--浮动层-->
+		    <div class="ftc_wzsf" >
+		        <div class="srzfmm_box">
+		            <div class="qsrzfmm_bt clear_wl">
+		                <img src="__WIMG__/xx_03.jpg" class="tx close fl">
+		               <input type="hidden" id="dealid">
+		                <span class="fl goumaiduix">向[情动之初]出售<br/>Wpeay</span></div>
+		            <div class="zfmmxx_shop">
+		                <div class="xiange_titel">
+		                	<p class="xe_pl">限 额：<span class="limit">3.1551</span></p>
+		                	<p class="xe_pr">{$cname}</p>
+		                </div>
+                        <center><form> 
+		                  <div class="xiange_titel xiange_titela">
+		                	<p class="xe_pl" >价格：</p>
+		                	<input type="number" size=40 name="Data"  id="dprice" onkeyup="enfocus()" readonly="readonly" value="0" class="jiaoyjis" >
+		                	
+		                </div>
+		                 <div class="xiange_titel">
+		                	<p class="xe_pl">{$cname}：</p>
+		                	<input type="number" size=40 name="Data2"  id="num" onkeyup="enfocus()" class="jiaoyjis livalue" value="" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入数量">
+		                	<a href="#"class="xe_pl_a">全额</a>
+		                </div>
+
+		                  <div class="xiange_titel">
+		                	<p class="xe_pl">余 额：</p>
+		                	<input type="number" size=40 name="Copy"   onkeyup="enfocus()"  readonly="readonly" id="copy" class="jiaoyjis"> 
+		                	
+		                </div>
+		            </form></center> 
+		            </div>
+		            <ul class="mm_box">
+		                <li></li><li></li><li></li><li></li><li></li><li></li>
+		            </ul>
+		        </div>
+		        <div class="numb_box">
+		            <div class="xiaq_tb">
+		                <img src="__WIMG__/jftc_14.jpg" height="10"></div>
+		            <ul class="nub_ggg">
+		                <li><a href="javascript:void(0);" class="zf_num">1</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">2</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">3</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">4</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">5</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">6</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">7</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">8</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">9</a></li>
+		                <li><a href="javascript:void(0);" class="zf_empty">清空</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">0</a></li>
+		                <li><a href="javascript:void(0);" class="zf_del">删除</a></li>
+		            </ul>
+		        </div>
+		        <div class="hbbj"></div>
+		    </div>
+
+		  
+
+	
+
+
+		 <script>
+           $('.xe_pl_a').click(function(){
+           		var limitvalue = $('.limit').text();
+           		$('.livalue').val(limitvalue);
+           		enfocus();
+           })
+		 </script>
+
+
+	     <script LANGUAGE="JavaScript"><!-- hide from old browsers 
+			function enfocus() 
+			{ 
+			    var t1 = document.forms[0].Data.value; 
+			    var t2 = document.forms[0].Data2.value; 
+			    var t3 = document.forms[0].Copy.value ; 
+
+
+
+			if(t1!="" && t2!=""){ 
+				var floatValue = parseFloat(t1) * parseFloat(t2);
+		
+
+			document.getElementById("copy").value = floatValue.toFixed(4) ;  
+			} 
+			else {document.getElementById("copy").value = "";} 
+			} 
+			<!-- done hiding --> 
+		 </script> 
+
+
+         
+         <script type="text/javascript">
+
+           $(document).ready(function(){
+			  $("#dig_xiala").click(function(){
+			  $("#dig_xiala_xs").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+			  });
+			 
+			});
+
+         </script>
+
+         <script type="text/javascript">
+
+
+	function gbzhi(s1,s2,s3,s4) 
+			{ 
+
+				$(".limit").text(s1);
+				$(".goumaiduix").html("向["+s3+"]出售<br>{$cname}");
+				$("#dprice").val(s2);	
+				$("#dealid").val(s4);	
+
+
+            $(".ftc_wzsf").show();
+  
+			
+			}
+
+
+		 $(function(){
+        //出现浮动层
+        // $(".ljzf_but").click(function(){
+        //     $(".ftc_wzsf").show();
+        // });
+
+
+		
+
+
+		
+
+
+        //关闭浮动
+        $(".close").click(function(){
+            $(".ftc_wzsf").hide();
+            $(".mm_box li").removeClass("mmdd");
+            $(".mm_box li").attr("data","");
+            i = 0;
+        });
+
+
+
+            //数字显示隐藏
+        $(".xiaq_tb").click(function(){
+            $(".numb_box").slideUp(500);
+        });
+        $(".mm_box").click(function(){
+            $(".numb_box").slideDown(500);
+        });
+            //----
+        var i = 0;
+        $(".nub_ggg li .zf_num").click(function(){
+                
+            if(i<6){
+                $(".mm_box li").eq(i).addClass("mmdd");
+                $(".mm_box li").eq(i).attr("data",$(this).text());
+                i++
+                if (i==6) {
+                  setTimeout(function(){
+                    var pwd = "";
+                        $(".mm_box li").each(function(){
+                        pwd += $(this).attr("data");
+                    });
+                   // alert("支付成功"+data);
+
+                    var dprice=($('#dprice').val());//支付单价
+                    var tprice=($('#copy').val());//支付总价
+                    var num = parseFloat($('#num').val());//数量
+                    var dealid = parseInt($('#dealid').val());//订单ID
+                    var cid = {$cid};//币的种类
+                    var ss1=parseFloat($(".limit").text());
+
+                        $.ajax({
+                            url:'/Turntable/yue_chushou',
+                            asyn:false,
+                            type:'post',
+                            data:{'dprice':dprice,'num':num,'tprice':tprice,'cid':cid,'pwd':pwd,'ss1':ss1,'dealid':dealid},
+                            datatype:'json',
+                            success:function (mes) {
+                                if(mes.status == 1){
+
+                                	$(".ftc_wzsf").hide();
+                                    msg_alert(mes.message,mes.url);
+                                    
+                                }else{
+                                    msg_alert(mes.message);
+                                    
+                                }
+                            }
+                        })
+
+
+                  },100);
+                };
+            } 
+        });
+            
+        $(".nub_ggg li .zf_del").click(function(){
+            if(i>0){
+                i--
+                $(".mm_box li").eq(i).removeClass("mmdd");
+                $(".mm_box li").eq(i).attr("data","");
+            }
+        });
+
+        $(".nub_ggg li .zf_empty").click(function(){
+            $(".mm_box li").removeClass("mmdd");
+            $(".mm_box li").attr("data","");
+            i = 0;
+        });
+         
+    });
+	   </script>
+
+
+
+
+
+</html>
+

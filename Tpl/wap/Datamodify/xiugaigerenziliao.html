@@ -1,0 +1,34 @@
+<include file="Common/Common"/>
+
+<!--==========内容开始=============-->
+
+<div style="height:0.27rem;"></div>
+    <div class="login">
+       <form action="{:U('Datamodify/xiugaigerenziliao')}" method="post" name="updateinfo">
+            <dl>
+                <dd><span><em class="cred">*</em>交易密码：</span><input type="password" name="two_pw"></dd>
+                <dd><span><em class="cred">*</em>用户名：</span><b>{$userinfo['account']}</b></dd>
+                <dd><span><em class="cred">*</em>姓名：</span><input type="text" name="username"  value ="{$userinfo['username']}" placeholder="如：张三"></dd>
+                <dd><span><em class="cred">*</em>性别：</span>
+                    <select input name="sex">
+                            <option <eq name="userinfo['sex']" value='1' >selected="true"</eq> value ="1">男</option>
+                            <option <eq name="userinfo['sex']" value='0' >selected="true"</eq> value ="0">女</option>
+                    </select>
+                </dd>
+                <dd><span><em class="cred">*</em>手机号：</span>{$userinfo['mobile']}</dd>
+                <dd><span><em class="cred">*</em>微信号：</span><input type="text" name="wx_no"  value ="{$userinfo['wx_no']}" ></dd>
+                <dd><span><em class="cred">*</em>支付宝：</span><input type="text" name="alipay"  value ="{$userinfo['alipay']}"></dd>
+                <dd><span><em class="cred">*</em>备注：</span>
+                <textarea name="note" >{$userinfo['note']}</textarea>
+                </dd>
+            </dl>
+            <input type="button" class="submit submit2" value="确认修改" onclick="updateuser()" >
+        </form>
+    </div>
+<div style="height:0.4rem"></div>
+</body> 
+</html>
+
+
+
+

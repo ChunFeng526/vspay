@@ -1,0 +1,189 @@
+<extend name="Public:base" />
+
+<block name="content">	
+
+
+<div class="padding border-bottom">  
+  <button type="button" class="btn btn-primary" onclick="window.location.href='#addCate'"><span class="icon-plus-square-o"></span> 添加分类</button>
+  </div>	
+
+	
+<div class="row">
+	<div class="col-xs-12">	
+		<div class="table-responsive">
+			<table class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>											
+						<th>ID</th>
+						<th>一级分类</th>
+						<th>二级分类</th>
+						<th>三级分类</th>				
+						<th>操作</th>				
+					</tr>
+				</thead>
+				<tbody>
+						<volist name="oneCate" id="one">
+							<if condition="$one['pid'] eq 0">
+								
+								<tr>
+									<td>{$one.id}</td>
+									<td>{$one.name}</td>
+									<td></td>
+									<td></td>
+									<td>
+										<a  class="btn btn-xs btn-info" href='{:U("Goods/editCate",array("id"=>$one["id"]))}'>
+											<i class="icon-eye-open bigger-120"></i>
+										</a> 
+										<a class="delete btn btn-xs btn-danger" href='{:U("Goods/delCate",array("id"=>$one["id"]))}' >
+											<i class="icon-trash bigger-120"></i>
+										</a>
+									</td>
+								</tr>
+								<volist name="twoCate" id="two">
+									<if condition="$two['pid'] eq $one['id']">
+											<tr>
+												<td>{$two.id}</td>
+												<td></td>
+												<td>{$two.name}</td>
+												<td></td>
+												<td>
+													<a  class="btn btn-xs btn-info" href='{:U("Goods/editCate",array("id"=>$two["id"]))}'>
+														<i class="icon-eye-open bigger-120"></i>
+													</a> 
+							
+													<a class="delete btn btn-xs btn-danger" href='{:U("Goods/delCate",array("id"=>$two["id"]))}' >
+														<i class="icon-trash bigger-120"></i>
+													</a>
+												</td>
+											</tr>
+											<volist name="threeCate" id="three">
+												<if condition="$three['pid'] eq $two['id']">
+													<tr>
+														<td>{$three.id}</td>
+														<td></td>
+														<td></td>
+														<td>{$three.name}</td>
+														<td>
+															<a  class="btn btn-xs btn-info" href='{:U("Goods/editCate",array("id"=>$three["id"]))}'>
+																<i class="icon-eye-open bigger-120"></i>
+															</a> 
+									
+															<a class="delete btn btn-xs btn-danger" href='{:U("Goods/delCate",array("id"=>$three["id"]))}' >
+																<i class="icon-trash bigger-120"></i>
+															</a>
+														</td>
+													</tr>
+												</if>
+											</volist>
+
+										</if>
+								</volist>
+							
+							</if>
+
+						</volist>
+					
+				<tr>
+					<td colspan="20" class="page">{$page}</td>
+				</tr>
+				</tbody>
+				
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+<form action="{:U('Goods/cateAdd')}" method="POST" id="cateForm" enctype="multipart/form-data">
+<div class="form-group required">
+    <label class="col-sm-2 control-label" for="input-name2">上级分类：</label>
+    <div class="col-sm-10">
+        <select name="pid" id="pid">
+            <option value="">-请选择上级分类-</option>
+            <volist name="oneCate" id="one">
+                <option value="{$one.id}">{$one.name}</option>
+                <volist name="twoCate" id="two">
+					<eq name="two['pid']" value="$one['id']">
+						<option value="{$two.id}">---{$two.name}</option>
+					</eq>
+                </volist>
+            </volist>
+        </select>
+    </div>
+</div>
+
+
+<div class="form-group required">
+	<label class="col-sm-2 control-label" for="input-name2">分类标题：</label>
+	<div class="col-sm-3">
+	    <input id="input-name2" class="form-control" type="text" placeholder="分类标题"
+	           value="" name="name">
+	</div>
+</div>
+
+<div style="clear: both;"></div>
+<div class="form-group required">
+	<label class="col-sm-2 control-label" for="input-name2">图片：</label>
+	<div class="col-sm-3">
+	    <input id="input-name2" class="form-control" accept="image/png,image/gif" type="file" placeholder="分类标题"
+	           value="" name="pic">
+	</div>
+</div>
+
+
+
+<div style="clear: both;"></div>
+
+<div class="padding border-bottom">  
+  <button type="button" class="btn btn-primary" id="addCate" ><span class="icon-plus-square-o"></span>提交</button>
+  </div>
+
+</form>
+
+
+
+
+
+</block>
+<block name="javascript">
+<script>	
+$(function(){
+	$("#addCate").click(function(){
+		var pic  = $("input[name='pic']").val();
+		var name  = $("input[name='name']").val();
+
+		
+
+		if(!name){
+			alert("请输入分类标题");
+			return;
+		}
+		if(!pic){
+			alert("图片不为空");
+			return;
+		}
+
+		
+
+		
+
+		$("#cateForm").submit();
+
+	});
+
+   $("#search").click(function () {
+        var url = $(this).attr('url');
+        var query = $('.search-form').find('input,select').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+        query = query.replace(/^&/g, '');
+        if (url.indexOf('?') > 0) {
+            url += '&' + query;
+        } else {
+            url += '?' + query;
+        }
+        window.location.href = url;
+    });	
+});
+</script>
+</block>

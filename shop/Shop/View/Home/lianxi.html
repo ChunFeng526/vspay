@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{$config['SITE_TITLE']}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="__LAYERJS__layer.js"></script>
+
+    <!-- Demo styles -->
+    <!--  <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+
+     <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+ <script type="text/javascript" src="__JS__/upload.js"></script> -->
+
+</head>
+<style>
+    .dzlist {
+        margin-right: 3%;
+        margin-left: 3%;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px #ccc;
+        padding: 3%;
+    }
+
+    .dzlist h3 {
+        font-size: 4.5vmin;
+        color: #333;
+        line-height: 6vmin;
+    }
+
+    .dzlist p {
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color: #767975;
+    }
+
+    .dzlist_bot {
+        border-top: 1px solid #ddd;
+
+    }
+
+    .dzlist_bot span {
+        float: right;
+        margin-left: 5%;
+    }
+
+    .dzlist_bot a {
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color: #767975;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+        <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>个人资料</span></a>
+    </div>
+    <div class="header_c" style="width: 70%;"><h1 style="color:#000"></h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+
+    <div class="wddata">
+        <table style="width: 100%;">
+            <tbody>
+           
+            <tr>
+                <th>店铺名称</th>
+                <td><input id="bankname" name=""  type="text"  value="{$geren.shop_name}" /></td>
+            </tr>
+
+        <div class="shangquan">
+            <div class="aa">
+                <img src="{$geren['shop_logo']}" alt="">
+            </div>
+
+ 
+        </div>
+
+            <tr>
+                <th>手机号码</th>
+                <td><input id="phone" name="" readonly type="text"  value="{$geren.shop_phone}" /></td>
+            </tr>
+
+     
+            </tbody>
+        </table>
+
+
+        <script>
+            $('.Upload').change(function () {
+                var img = $(this).val();
+                if (img) {
+                    $('#upl_img').submit();
+                }
+            })
+        </script>
+    </div>
+
+<style>
+    .selectcc {
+        width: 83%;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        font-family: "微软雅黑";
+        /*很关键：将默认的select选择框样式清除*/
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right: 14px;
+
+    }
+</style>
+
+</body>
+</html>
+<script>
+    $('.saveinfo').click(function () {
+      var uname =  $("input[ name='realname' ] ").val();
+      var zfb =  $("input[ name='zfb' ] ").val();
+      var bankname =  $("input[ name='bankname' ] ").val();
+      var banknumber =  $("input[ name='banknumber' ] ").val();
+
+        $.ajax({
+            url: "{:U('Member/Savepersonal')}",
+            type: "post",
+            data: {
+                'uname': uname,
+                'zfb': zfb,
+                'bankname': bankname,
+                'banknumber': banknumber,
+            },
+            datatype: "json",
+            success: function (mes) {
+                if (mes.status == 1) {
+                    layer.msg(mes.info, {shift: -1, time: 1200}, function () {
+                        window.location.href = "{:U('member/mine')}";
+                    });
+                } else {
+                    layer.msg(mes.info, {shift: -1, time: 1200}, function () {
+                    });
+                }
+            }
+        })
+    })
+</script>

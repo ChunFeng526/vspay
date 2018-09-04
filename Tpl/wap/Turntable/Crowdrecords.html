@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$Think.lang.zcxmjl}</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<link rel="stylesheet" href="__LAYERUI__/css/layui.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script src="__LAYERUI__/layui.js"></script>
+<body class="bg96">
+	
+	<div class="header">
+	    <div class="header_l">
+	    <a href="{:U('Turntable/Crowds')}"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>{$Think.lang.zcxmjl}</h2></div>
+	    <div class="header_r"></div>
+	</div>
+
+       <div class="big_width100">
+            
+          
+          <div class="investment_f"> 
+	          <div class="investment_title">
+				  	<div <eq name="step" value="">class="on"</eq>  > <a href="{:U('Turntable/Crowdrecords')}">{$Think.lang.gmjl}</a></div>
+					<div <eq name="step" value="1">class="on"</eq>  > <a href="{:U('Turntable/Crowdrecords',array('step'=>1))}">{$Think.lang.sfjl}</a></div>
+		      </div>
+            </div>
+
+         <div class="zwshj">
+
+
+
+         	 <div class="yugejil"  style="width: 100%;position: absolute;top:111px;" >
+         	 	<neq name="step" value="1">
+		       		<p style="width:28%;">{$Think.lang.sl}</p>
+		        	<p style="width:28%;">{$Think.lang.zj}</p>
+		        	<p style="width:44%;">{$Think.lang.sj}</p>
+		        <else/>
+		       		<p style="width:46%;">{$Think.lang.sl}</p>
+		        	<p style="width:54%;">{$Think.lang.sj}</p>
+		        </neq>           
+   			 </div>
+
+
+
+    		<?php 
+            	if($list){
+            	?>
+
+					   <div id="wrapper" style="width: 100%;position: absolute;top:151px;" >
+					        <div class="scroller">
+					            <ul>
+					                 <foreach name="list" item="v">
+					                        <li>
+					                         <neq name="step" value="1">
+					                         	<p style="width:28%;">{$v['num']}</p>
+					                            <p style="width:28%;">{$v['tprice']}</p>
+					                            <p style="width:44%;">{$v['create_time']|date='Y-m-d H:i:s',###}</p>
+					                          <else/>
+					                         	<p style="width:46%;">{$v['num']}</p>
+					                            <p style="width:54%;">{$v['create_time']|date='Y-m-d H:i:s',###}</p>					                            
+					                          </neq>  
+
+					                        </li>
+					                    </foreach>
+
+					                     
+
+					            </ul>
+					         
+					          <!--   <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div> -->
+					        </div>
+					    </div>
+
+            	
+			<?php 
+
+            }else{
+            		echo "<span style='color:#666;line-height:400%;'>".L('mzdxgjl')."</span>";
+       		 }
+            	
+        
+            ?>
+
+
+
+
+         </div>
+
+     
+
+	       
+			     
+		 
+		
+           
+      
+
+	   </div>
+
+	    
+
+</body>
+
+</html>

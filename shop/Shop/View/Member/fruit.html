@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <!-- Demo styles -->
+
+</head>
+<body>
+<div class="header">
+    <div class="header_l">
+      <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>果友</span></a>
+
+    </div>
+    <div class="header_c"><h1></h1></div>
+    <div class="header_r"><a href="{:U('Public/news')}"><em class="xxd"></em><i class="iconfont"></i><p>消息</p></a></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+<div class="share">
+   <table style="width: 100%;">
+      <foreach name="fruitList" item="friend" key="key">
+              <if condition="$key eq 0">
+              <foreach name="friend" item="f">
+                <tr>
+                   <td><img src="__UP__/image/{$f['avatar']}" alt=""></td>
+                   <td>{$f['uname']}</td>
+                   <td><em class="tdmn">上</em></td>
+                 </tr>
+              </foreach>
+              <elseif condition="$key eq 1"/>
+              <foreach name="friend" item="f">
+                 <tr>
+                   <td><img src="__UP__/image/{$f['avatar']}" alt=""></td>
+                   <td>{$f['uname']}</td>
+                   <td><em class="tdmn">1</em></td>
+                 </tr>
+              </foreach>
+              <elseif condition="$key eq 2"/>
+              <foreach name="friend" item="f">
+                 <tr>
+                   <td><img src="__UP__/image/{$f['avatar']}" alt=""></td>
+                   <td>{$f['uname']}</td>
+                   <td><em class="tdmn">2</em></td>
+                 </tr>
+              </foreach>
+              <elseif condition="$key eq 3"/>
+              <foreach name="friend" item="f">
+                 <tr>
+                   <td><img src="__UP__/image/{$f['avatar']}" alt=""></td>
+                   <td>{$f['uname']}</td>
+                   <td><em class="tdmn">3</em></td>
+                 </tr>
+              </foreach>
+              <elseif condition="$key eq 4"/>
+              <foreach name="friend" item="f">
+                 <tr>
+                   <td><img src="__UP__/image/{$f['avatar']}" alt=""></td>
+                   <td>{$f['uname']}</td>
+                   <td><em class="tdmn">友</em></td>
+                 </tr>
+              </foreach>
+              <else/>
+              </if>
+      </foreach>
+   </table>
+</div>
+
+</body>
+</html>

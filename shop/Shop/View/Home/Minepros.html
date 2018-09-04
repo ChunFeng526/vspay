@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{$config['SITE_TITLE']}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" type="text/css" href="__RES__/iconfont/iconfont.css">
+
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../../index.php"></script>
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="/Public/home/common/layer/layer.js"></script>
+    <!-- Demo styles -->
+    <!--  <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+    <script type="text/javascript" src="__JS__/upload.js"></script> -->
+
+</head>
+<style>
+    .dzlist{
+        margin-right: 3%;
+        margin-left: 3%;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px #ccc;
+        padding:3%;
+    }
+    .dzlist h3{
+        font-size: 4.5vmin;
+        color:#333;
+        line-height: 6vmin;
+    }
+    .dzlist p{
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color:#767975;
+    }
+    .dzlist_bot{
+        border-top:1px solid #ddd;
+
+    }
+    .dzlist_bot span{
+        float: right;
+         margin-left: 5%;
+    }
+    .dzlist_bot a{
+        line-height: 10vmin;
+        font-size:4vmin;
+        color:#767975;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+      <a href="{:U('shop/member/mine')}"><img src="__IMG__/lpg.png" alt=""><span>商品管理</span></a>
+
+    </div>
+    <div class="header_c" style="width: 70%;"> <h1 style="color:#000"></h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+<style>
+    .jilu table{width: 100%;font-size:14px;margin:3% 0;}
+    .jilu table tr th{text-align: center;line-height: 40px;background: #ddd}
+    .jilu table tr td{border:1px solid #ddd;text-align: center;line-height: 35px;}
+	.jilu a{display:block; clear:right; line-height:7vmin;}
+</style>
+
+<div class="mian_qd tixian jilu">
+   <table>
+       <tr>
+           <th>商品名称</th>
+           <th>上传时间</th>
+           <th>商品价格</th>
+           <th>赠送积分</th>
+           <th>操作</th>
+       </tr>
+           <foreach name="list" item="v">
+               <tr>
+                   <td style="width:30%; line-height:6vmin; padding-left:1.5vmin; text-align:left;">
+                   <!--{$v['name']|mb_substr=###,0,6,'utf8'} -->
+                    {$v['name']|mb_substr=###,0,20,'utf8'}
+                   </td>
+                   <td>{$v.ctime|date="Y/m/d",###}</td>
+                   <td>{$v['price']} </td>
+                   <td>{$v['jifen_nums']} </td>
+                   <td style="width:16%;"><a href="{:U('Shop/Home/Business',array('id'=>$v['id']))}">修改</a><a class="del" data-id = {$v['id']} href="javascript:void(0)">删除</a> </td>
+               </tr>
+           </foreach>
+<style>
+    .selectcc{
+        width: 83%;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        font-family: "微软雅黑";
+        /*很关键：将默认的select选择框样式清除*/
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right: 14px;
+    }
+    .tixian{border-top:0;}
+</style>
+
+
+<script>
+    $('.del').click(function () {
+        var id = $(this).attr('data-id');
+        $.ajax({
+            url:"{:U('Shop/Home/Delminepros')}",
+            type:"post",
+            data:{"id":id},
+            datatype:"json",
+            success:function (mes) {
+                if(mes.status == 1){
+                    layer.msg(mes.info,{icon:1,time:1200}, function () {
+                        location.href = '/Shop/home/Minepros';
+                    });
+                }else{
+                    layer.msg(mes.info,{icon:2,time:1200}, function () {
+                        return;
+                    });
+                }
+            }
+        })
+    })
+
+</script>
+
+
+
+
+
+</body>
+</html>

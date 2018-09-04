@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width,initial-scale=1,mininum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>用户店铺</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<script type="text/javascript" src="__JS__/jquery.js"></script>
+<!-- <link rel="stylesheet" href="__CSS__/style1.css"> -->
+<link rel="stylesheet" href="__CSS__/task.css">
+<link rel="stylesheet" href="__ICON1__/iconfont.css">
+
+<script type="text/javascript" src="__JS__/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="__JS__/jquery.reveal.js"></script>
+
+</head>
+<body>
+
+<div class="fxm_header">
+       <div class="fxm_left"><a href="javascript:history.go(-1)"><img src="__IMG__/left0.png"></a></div>
+       <div class="fxm_center">我的店铺</div>
+       <!-- <div class="fxm_right"><img src="__IMG__/zf.png"></div> -->
+    </div>
+
+<div class="zyd">
+	<div class="zyd_top"><img src="__IMG__/logo.jpg"></div>
+	<div class="zyd_bottom">
+		<div class="zyd_img"><img src="__IMG__/logo.jpg"></div>
+		<p>{$dailishang['dailishang_name']}</p>
+		<span>0人收藏 <i class="iconfont">&#xe61f;收藏</i></span>
+	</div>
+</div>
+<div class="banner" style="background: none">
+	<input type="text" name="user_search" placeholder="搜索商品" onFocus="this.placeholder=''" onBlur="this.placeholder='搜索商品'"/>
+	<div class="search">
+	 	<img src="__IMG__/search.png" alt="">
+	</div>
+</div>
+<div class="navigation" style="margin-top: 53vmin">
+		<a href="#" data-reveal-id="myModal3">综合</a>
+		<a href="#">销量</a>
+		<a href="#" class="chlid2" style="position:relative;" data-reveal-id="myModal2">
+			<span>价格</span>
+			<img  src="__IMG__/top.png" alt="" class="ssx">
+			<img  src="__IMG__/down.png" alt="" class="xsx">
+		</a>
+
+		<a href="#" data-reveal-id="myModal">筛选
+		<i class="iconfont">&#xe63b;</i>
+		</a>
+</div>
+<div id="myModal" class="reveal-modal" >
+	<form action="">
+		<p class="leibie">
+		<label for="">类别</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">分销</a>
+			<a href="#" class="optiones">广告</a>
+		</p>
+		<p class="zhouqi">
+			<label for="">周期</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">0-5天</a>
+			<a href="#" class="optiones">6-10天</a>
+			<a href="#" class="optiones">11-20天</a>
+			<a href="#" class="optiones">21-30天</a>
+			<a href="#" class="optiones">30天以上</a>
+		</p>
+		<p class="jiamf">
+			<label for="">加盟费(元)</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">0-100</a>
+			<a href="#" class="optiones">100-1,000</a>
+			<a href="#" class="optiones">1,000-10,000</a>
+
+		</p>
+	</form>
+
+<div class="close-reveal-modal">
+		<a href="#">确定</a>
+</div>
+</div>
+<div id="myModal2" class="reveal-modal2" >
+<form action="">
+	<label for="">价格范围</label>
+	<input type="text">
+	<em></em>
+	<input type="text">
+
+
+</form>
+<div class="close-reveal-modal">
+		<a href="#">确定</a>
+</div>
+</div>
+<div id="myModal3" class="reveal-modal3" >
+<form action="">
+	<input type="radio" name="ra">综合排序<br>
+	<input type="radio" name="ra">加盟费从高到低<br>
+	<input type="radio" name="ra">加盟费从低到高<br>
+	<input type="radio" name="ra">时间最新<br>
+</form>
+<div class="close-reveal-modal">
+	<a href="#">确定</a>
+</div>
+</div>
+
+<div class="cpfl_b" style="margin-top: 70vmin;">
+	<i class="iconfont">&#xe6d3;店主分享</i>
+
+	<ul>
+        <foreach name="productList" item="product">
+		<li>
+			<a href="details.html">
+				<span><img src="__IMG__/tu1.jpg"></span>
+				<p>{$product['name']}</p>
+				<p><em>￥{$product['price']+0}</em> <i><if condition="$product['freight'] gt 0">$product['freight']<else/>免运费</if></i></p>
+				<p class="jiangli">已出售{$product['buy_num']+0}件</p>
+			</a>
+		</li>
+        </foreach>
+	</ul>
+</div>
+
+
+<div class="more">
+	<a href="#">查看更多……</a>
+</div>
+
+<div class="dp_footer">
+     <a href="cpfl.html">
+        <i class="iconfont" style="font-size: 5vmin;padding-top: 4%;display: block;"></i>
+        <p>产品分类</p>
+    </a>
+     <a href="pinglun.html">
+        <i class="iconfont">&#xe67b;</i>
+        <p>用户评价</p>
+    </a>
+     <a href="personal.html">
+        <i class="iconfont">&#xe601;</i>
+        <p>联系卖家</p>
+    </a>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+ 	$('.optiones').click(function(){
+ 		$(this).toggleClass('checkeds').siblings('.optiones').removeClass('checkeds');
+ 	})
+
+ </script>

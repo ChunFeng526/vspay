@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!--title>{$Think.lang.ucenter}</title-->
+<title>vpay演示-链媒人</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+
+<!--线上JQ包-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!--本地JQ包-->
+<!--<script src="__WJS__/jquery1.11.1.min.js"></script>-->
+
+
+<script type="text/javascript" src="__WJS__/jquery.glide.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+<style>
+/*.big_width100{background: #03bbf4}*/
+.big_width100{background: #FBF8EF}
+.cen_icon{background: #fff}
+</style>
+<body class="bg96">
+<!-- <div class="header">
+    <div class="userInfo" style="width: 75%">
+		<a href="{:U('User/Personal')}"><div class="toux_icon"><img src="__IMGHEAD__/{$uinfo['img_head']}"></div></a>
+    	<div class="uid_xy">
+    		<p>UID:{$uinfo['userid']}</p>
+    		<p>{$Think.lang.credit}
+			<for start="0" end="$uinfo['user_credit']">
+				<span><img src="__WIMG__/aix-icon.png"></span>
+			</for>
+			</p>
+    	</div>	
+    </div>
+    <div class="header_r"> <a href="{:U('User/Personal')}"><img src="__WIMG__/shez-icon.png" alt=""></a></div>
+</div> -->
+<style>
+	.big_width100{
+		margin-top: 0;
+	}
+	.bg96{
+		margin-top: 0;
+	}
+</style>
+<div class="big_width100" >
+    <div class="index_top_div"style="background: url('__WIMG__/index/index_beij.png') no-repeat;">
+    	<img src="__WIMG__/toux-icon.png" style="width: 50px;float: left; border-radius:50%;position: absolute;margin: 10px 0px 0px 10px;"/>
+		<div class="head_img">
+			
+			<a href="{:U('User/Sharecode')}" style="float:right"><img src="__WIMG__/fenxiang.png"/></a>
+		</div>
+		<div class="shaom">
+			
+			<!-- <p>UID：{$uinfo['userid']}</p> -->
+			<div class="lian_cenc" style="background: url('__WIMG__/index/saoyisao@2x.png') no-repeat;background-size: 100%;" onclick="BSL.Qcode('0','qrcodeCallback')">
+				<img src="__WIMG__/index/logo@2x.png" width="70px" />
+				<div style="padding:10px 0 0 0;">
+					扫一扫
+				</div>
+				<div style="padding:10px 0 0 0; width: 100px">369共享商城</div>
+			</div>
+		</div>
+		<!-- <a href="{:U('User/Personal')}">
+			<div class="fan-header">
+				<img src="__IMGHEAD__/{$uinfo['img_head']}" class="icon">
+				<p>UID：{$uinfo['userid']}</p>
+			</div>
+		</a>
+		<div class="centBalance">
+			<div class="Balance">
+				<a class="balance" href="{:U('Index/Bancerecord')}">
+					
+					<div class="info">
+						<p></p>
+						
+					</div>		
+				</a>	
+			</div>
+			<div class="Balance">
+				<a onclick="scan()" class="shaom">
+					<img src="__WIMG__/index/erweima.png">
+					<div class="info">
+						<p>扫一扫</p>
+						<strong></strong>
+					</div>
+				</a>
+	
+			</div>
+			<div class="Balance">	
+					<a class="balance" href="{:U('Index/Exchangerecords')}">
+						<img src="__WIMG__/index/zuan.png">
+						<div class="info">
+							<p>我的积分</p>
+							<strong><span class="jifen">{$moneyinfo['fengmi_num']|Showtwo}</span></strong>
+						</div>
+					</a>
+			</div>
+		</div> -->
+	</div>
+	<div class="my_mon">
+	<div style="width:100%;margin:0 auto;">
+			<a href="{:U('Index/Bancerecord')}">
+			<div class="lian_cen" style="background: url('__WIMG__/index/xing_1@2x.png') no-repeat;background-position:100% 0; background-size: 20%;">
+				<img src="__WIMG__/index/liansuo.png" width="33px"/>
+				<div>
+					我的余额<font size="1"></font><br><font color="red">{$moneyinfo['cangku_num']|Showtwo}</font>
+				</div>
+			</div>
+			</a>
+			
+			
+			<a href="{:U('Index/Exchangerecords')}">
+			<div class="lian_cen" style="border-right: none; background: url('__WIMG__/index/xing_2@2x.png') no-repeat;background-position:100% 0; background-size: 20%;">
+				<img src="__WIMG__/index/duidian.png" width="33px"/>
+				<div>
+					我的积分<font size="1"></font><br><font color="red">{$moneyinfo['fengmi_num']|Showtwo}</font>
+				</div>
+			</div>
+			</a>
+		</div>	
+	</div>
+	<div class="slider">
+		<ul class="slides">
+			<li class="slide">
+				<div class="box" ><img src="__WIMG__/index/index-center1.png" alt=""></div>
+			</li>
+			<li class="slide">
+				<div class="box" ><img src="__WIMG__/index/index-center2.png" alt=""></div>
+			</li>
+			<li class="slide">
+				<div class="box" ><img src="__WIMG__/index/index-center3.png" alt=""></div>
+			</li>
+
+		</ul>
+	</div>
+
+ <div class="cen_icon" style="margin-top: 0;">
+ <php>$quanxian=explode("-",$uinfo['quanxian']);</php>
+
+ 	 <ul>
+ 	 	<li>
+        <if condition="in_array(2,$quanxian)">
+        <a href="###"   class="quanxian">
+        <else/>
+        <a href="{:U('Index/turnout')}">
+        </if> 	 		
+ 	 			<img src="__WIMG__/index/icon-xia.png">
+ 	 			<p>{$Think.lang.turnout}</p>
+ 	 		</a>
+ 	 	</li>
+ 	 	<li>
+        <if condition="in_array(1,$quanxian)">
+        <a href="###"   class="quanxian">
+        <else/>
+            <a href="{:U('Growth/Intro')}">
+        </if> 
+ 	 			<img src="__WIMG__/index/icon-shang.png">
+ 	 			<p>{$Think.lang.tochangeinto}</p>
+ 	 		</a>
+ 	 	</li>
+ 	 	<li>
+        <if condition="in_array(3,$quanxian)">
+        <a href="###"   class="quanxian">
+        <else/>
+        <a href="{:U('Growth/Purchase')}">
+        </if> 
+ 	 		
+ 	 			<img src="__WIMG__/index/icon-xiangzi.png">
+ 	 			<p>{$Think.lang.purchase}</p>
+ 	 		</a>
+ 	 	</li>
+ 	 	<li>
+        <!--<if condition="in_array(4,$quanxian)">-->
+        <!--<a href="###"   class="quanxian">-->
+        <!--<else/>-->
+            <a href="{:U('Trading/SellCentr')}">
+        <!--</if> -->
+
+ 	 			<img src="__WIMG__/index/icon-ok.png">
+ 	 			<p>{$Think.lang.sellout}</p>
+ 	 		</a>
+ 	 	</li>
+
+ 	 	<li>
+			<a href="###"   class="xianzjiaoy"> 
+				   <a href="{:U('Turntable/index')}">
+					  <img src="__WIMG__/index/icon-zuan.png">
+					  <p>{$Think.lang.digitalassets}</p>
+				  </a>
+			  </li>
+
+
+		<li>
+				<a href="{:U('Shop/home/index')}">
+					<img src="__WIMG__/index/icon-cart.png">
+					<p>{$Think.lang.shoppingmall}</p>
+				</a>
+		  </li>
+		  <li>
+				<a href="###"   class="xianzjiaoy">
+					<a href="{:U('User/Sharecode')}">
+						<img src="__WIMG__/index/icon-liwu.png">
+						<p>{$Think.lang.share}</p>
+					</a>
+			</li>
+		  
+		 <li>
+			 <a href="###"   class="xianzjiaoy">
+				 <a href="{:U('Index/exehange')}">
+					 <img src="__WIMG__/index/duihuan.png">
+					 <p>{$Think.lang.exchange}</p>
+				 </a>
+		 </li>
+
+		 
+
+
+		 <li>
+			 <a href="###"   class="xianzjiaoy">
+				 <a href="{:U('User/Teamdets')}">
+					 <img src="__WIMG__/index/tuandui.png">
+					 <p>{$Think.lang.team}</p>
+				 </a>
+		 </li>
+ 	 </ul>
+ </div>
+</div>
+<div class="footer-fan">
+	<a href="{:U('Index/index')}">
+		<img src="__WIMG__/index/shouye2.png" alt="首页">
+		<p>首页</p>
+	</a>
+	<a href="{:U('Turntable/index')}">
+		<img src="__WIMG__/index/zichan2.png" alt="资产">
+		<p>资产</p>
+	</a>
+	<a href="{:U('Shop/Home/index')}">
+		<img src="__WIMG__/index/shangcheng2.png" alt="商城">
+		<p>商城</p>
+	</a>
+	<a href="{:U('User/Personal')}">
+		<img src="__WIMG__/index/wo2.png" alt="我的">
+		<p>我的</p>
+	</a>
+</div>
+<gt name="can_get" value="0">
+	<div class="big_width100" id="hide_none">
+		<div class="qindHB">
+			<div class="qindHB_nb">
+				<img src="__WIMG__/hongbaoyem.png" class="qinb_imga">
+				<a href="javascript:void(0);" id="hide">
+					<img src="__WIMG__/cunryue.png">
+				</a>
+				<div class="qiandHB_wz">
+					<h3><span  class="getnums">{$can_get|showtwo}</span>元</h3>
+					<p>天天签到红包不断</p>
+				</div>
+			</div>
+		</div>
+		<div class="qindHB_bg"></div>
+	</div>
+</gt>
+
+  <script type="text/javascript">
+function scan(){
+window.location.href="saoyisao://abcd";
+}
+function opan(){
+	layer.msg("该功能暂未开放");
+}
+</script>
+
+<script type="text/javascript">
+  	$("#close").click(function(){
+      msg_alert("暂未开通此功能");
+    })
+    $("#hide").click(function(){
+        var yue = Number($('.yue').text());
+        var jifen = Number($('.jifen').text());
+		var getnums = Number($('.getnums').text());//可获得金额
+		var releasey = (yue + getnums).toFixed(2);
+		var releasej = (jifen - getnums).toFixed(2);;
+		$.ajax({
+			url:'Index/index',
+			type:'post',
+			data:{'getnums':getnums},
+			datatype:'json',
+			success:function (mes) {
+				if(mes.status == 1){
+                    //alert(mes.message);
+				    msg_alert(mes.message,mes.url);
+                    $("#hide_none").hide(1000);
+                    //加余额-减少积分
+                    $('.yue').text(releasey);
+                    $('.jifen').text(releasej);
+				}else{
+
+                    msg_alert(mes.message);
+                }
+            }
+		})
+    });
+</script>
+
+<script type="text/javascript">
+    var glide = $('.slider').glide({
+        //autoplay:true,//是否自动播放 默认值 true如果不需要就设置此值
+        animationTime:500, //动画过度效果，只有当浏览器支持CSS3的时候生效
+        arrows:false, //是否显示左右导航器
+        arrowsWrapperClass: "arrowsWrapper",//滑块箭头导航器外部DIV类名
+        arrowMainClass: "slider-arrow",//滑块箭头公共类名
+        arrowRightClass:"slider-arrow--right",//滑块右箭头类名
+        arrowLeftClass:"slider-arrow--left",//滑块左箭头类名
+        arrowRightText:">",//定义左右导航器文字或者符号也可以是类
+        arrowLeftText:"<",
+
+        nav:true, //主导航器也就是本例中显示的小方块
+        navCenter:true, //主导航器位置是否居中
+        navClass:"slider-nav",//主导航器外部div类名
+        navItemClass:"slider-nav__item", //本例中小方块的样式
+        navCurrentItemClass:"slider-nav__item--current" //被选中后的样式
+    });
+</script>
+
+<!--扫一扫调用-->
+<script>
+	function Dosaoyisao() {
+        qrcodeCallback();
+    }
+    function qrcodeCallback(result){
+		window.location.href=result;
+    }
+</script>
+</body>
+
+</html>

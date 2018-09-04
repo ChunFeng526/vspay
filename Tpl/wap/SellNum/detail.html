@@ -1,0 +1,47 @@
+<include file="Common/Common"/>
+
+ 
+<div style="height:0.1rem;"></div>
+
+<empty name="arr" >
+    <div class="item item2">
+        <div class="bh">
+            <p>没有记录</p>
+        </div>
+    </div>
+</empty>
+
+
+<foreach name="arr" item="value">
+    <div class="item item2">
+        <div class="bh">
+            <p>{$value.addtime|date='Y-m-d H:i',###}</p>
+        </div>
+        <div class="bd clearfix">
+            <dl>
+                <dd>数量：<span>{$value.num} </span></dd>
+                <dd>状态：<span class="cyan">
+                    <?php
+                          if($value['state']==0){
+                               echo "<span style=\"color:#00cc12\">等待审核</span>";
+                            }
+                          if($value['state']==2){
+                              echo "<span style=\"color:#dd1212\">审核不通过</span>";
+                            }
+                          if($value['state']==1){
+                               echo "<span style=\"color:#aaaa12\">审核通过</span>"; 
+                            }
+                   ?>
+                </span></dd>
+            </dl>
+            <dl><dd>备注：<span>{$value.content}</span></dd></dl>
+        </div>
+    </div>
+</foreach>
+
+<div style="height:0.4rem"></div>
+</body> 
+</html>
+
+
+

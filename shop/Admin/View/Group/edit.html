@@ -1,0 +1,206 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+            <li class="text-muted">{:isset($info)?'修改':新增}</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+                <div class="builder formbuilder-box">
+                  <div class="panel-body">
+                    <ul class="nav-tabs nav">
+                        <li class="active" ><a href="#tab1" data-toggle="tab" aria-expanded="true">角色信息</a></li>
+                        <li >
+                            <a href="#tab2" data-toggle="tab" aria-expanded="false">系统权限</a>
+                        </li>                
+                    </ul>
+                        <notempty name="info" >
+                            <form action="{:U('Group/edit')}" method="post" class="form-horizontal form form-builder">
+                            <else />
+                             <form action="{:U('Group/add')}" method="post" class="form-horizontal form form-builder">
+                        </notempty>
+                        <div class="tab-content" >
+                            <!-- 卡片1 -->
+                            <div id="tab1" class="tab-pane active" >
+                                <div class="col-xs-12">
+                                
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="id" value="{$info.id}">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">角色名：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="title" value="{$info.title}" placeholder="角色名" >
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">排序：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input" name="sort" value="{$info.sort}" placeholder="排序" >
+                                                </div>
+                                            </div>
+                                    </div>
+                                    
+
+                                </div> 
+                            </div>
+                         <!-- 卡片2 -->
+                            <div id="tab2" class="tab-pane">
+                                <div class="form-group"></div>
+                                <div class="form-group">
+                                    <div class="auth">
+                                        <volist name="all_module_menu_list" id="vo1">
+                                            <?php $module_name = $key; ?>
+                                            <div class="{$module_name}">
+                                                <div class="cui-control cui-checkbox">
+                                                    <label class="checkbox-label checkbox-inline">
+                                                        <input type="checkbox" name="menu_auth[]" data-module-name="{$module_name}" <php>if(in_array($vo1['id'], $info['menu_auth'])) echo "checked";</php> value="{$vo1.id}">
+                                                        <span class="cui-control-indicator"></span>
+                                                        <span> {$vo1.name}</span>
+                                                    </label>
+                                                    <div class="auth{$vo1.id}" style="padding-left: 25px;margin-top: 10px;">
+                                                        <volist name="vo1._child" id="vo2">
+                                                            <label class="checkbox-label checkbox-inline">
+                                                                <input type="checkbox" name="menu_auth[]" data-module-name="{$module_name}" <php>if(in_array($vo2['id'], $info['menu_auth'])) echo "checked";</php> value="{$vo2.id}">
+                                                                <span class="cui-control-indicator"></span>
+                                                                <span> {$vo2.name}</span>
+                                                            </label>
+                                                            <div class="auth{$vo2.id}" style="padding-left: 25px;margin-top: 10px;">
+                                                                <foreach name="vo2._child" item="vo3">
+                                                                    <label class="checkbox-label checkbox-inline">
+                                                                        <input type="checkbox" name="menu_auth[]" data-module-name="{$module_name}" <php>if(in_array($vo3['id'], $info['menu_auth'])) echo "checked";</php> value="{$vo3.id}">
+                                                                        <span class="cui-control-indicator"></span>
+                                                                        <span> {$vo3.name}</span>
+                                                                    </label>
+                                                                    <notempty name="vo3._child">
+                                                                        <div class="auth{$vo3.id}" style="padding-left: 25px;margin-top: 10px;margin-bottom: 10px;">
+                                                                            <volist name="vo3._child" id="vo4">
+                                                                                <notempty name="vo4._child">
+                                                                                    <label class="checkbox-inline" style="display: block;margin-top: 10px;margin-left: 0px;">
+                                                                                        <input type="checkbox" name="menu_auth[]" data-module-name="{$module_name}" <php>if(in_array($vo4['id'], $info['menu_auth'])) echo "checked";</php> value="{$vo4.id}">
+                                                                                        <span class="cui-control-indicator"></span>
+                                                                                        <span> {$vo4.name}</span>
+                                                                                    </label>
+                                                                                <else />
+                                                                                     <label class="checkbox-inline">
+                                                                                        <input type="checkbox" name="menu_auth[]" data-module-name="{$module_name}" <php>if(in_array($vo4['id'], $info['menu_auth'])) echo "checked";</php> value="{$vo4.id}">
+                                                                                        <span class="cui-control-indicator"></span>
+                                                                                        <span> {$vo4.name}</span>
+                                                                                    </label>
+                                                                                </notempty>
+                                                                                <notempty name="vo4._child">
+                                                                                    <div class="auth{$vo4.id}" style="padding-left: 25px;margin-top: 10px;margin-bottom: 10px;">
+                                                                                        <foreach name="vo4._child" item="vo5">
+                                                                                            <label class="checkbox-inline">
+                                                                                                <input type="checkbox" name="menu_auth[]" data-module-name="{$module_name}" <php>if(in_array($vo5['id'], $info['menu_auth'])) echo "checked";</php> value="{$vo5.id}">
+                                                                                                <span class="cui-control-indicator"></span>
+                                                                                                <span> {$vo5.name}</span>
+                                                                                            </label>
+                                                                                        </foreach>
+                                                                                    </div>
+                                                                                </notempty>
+                                                                            </volist>
+                                                                        </div>
+                                                                    </notempty>
+                                                                </foreach>
+                                                            </div>
+                                                        </volist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </volist>
+
+
+                                         <div class="hylb">
+                                                <div class="cui-control cui-checkbox">
+                                                    <label class="checkbox-label checkbox-inline">
+                                                        <input type="checkbox" name="hylbs" data-module-name="hylb"    value="hylb">
+                                                        <span class="cui-control-indicator"></span>
+                                                        <span>会员列表</span>
+                                                    </label>
+                                                    <div class="authhylb" style="padding-left: 25px;margin-top: 10px;">
+                                                     
+                                                            <label class="checkbox-label checkbox-inline">
+                                                                <input type="checkbox" name="hylb[]" <php>if(in_array(1,$hylb)) echo "checked";</php>  data-module-name="hylb"   value="1">
+                                                                <span class="cui-control-indicator"></span>
+                                                                <span>编辑</span>
+                                                            </label>                                                     
+                                                            <label class="checkbox-label checkbox-inline">
+                                                                <input type="checkbox" name="hylb[]" data-module-name="hylb"   <php>if(in_array(2,$hylb)) echo "checked";</php>  value="2">
+                                                                <span class="cui-control-indicator"></span>
+                                                                <span>财富</span>
+                                                            </label>
+                                                            <label class="checkbox-label checkbox-inline">
+                                                                <input type="checkbox" name="hylb[]" data-module-name="hylb"   <php>if(in_array(3,$hylb)) echo "checked";</php>  value="3">
+                                                                <span class="cui-control-indicator"></span>
+                                                                <span>锁定</span>
+                                                            </label>
+                                                            <label class="checkbox-label checkbox-inline">
+                                                                <input type="checkbox" name="hylb[]" data-module-name="hylb"  <php>if(in_array(4,$hylb)) echo "checked";</php>   value="4">
+                                                                <span class="cui-control-indicator"></span>
+                                                                <span>隐蔽</span>
+                                                            </label>
+                                                            <label class="checkbox-label checkbox-inline">
+                                                                <input type="checkbox" name="hylb[]" data-module-name="hylb"   <php>if(in_array(5,$hylb)) echo "checked";</php>  value="5">
+                                                                <span class="cui-control-indicator"></span>
+                                                                <span>登录</span>
+                                                            </label>
+
+
+                                                           
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class="form-group"></div>
+                            </div>
+
+                            <div class="form-group"></div>
+                            <div class="form-group bottom_button_list">
+                                <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.auth input[type="checkbox"]').on('change',function(){
+                //遍历选中当前权限的子权限
+                $('.'+$(this).attr('data-module-name')+' .auth'+$(this).val()).find('input').prop('checked',this.checked);
+            });
+        });
+    </script>
+</block>

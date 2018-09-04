@@ -1,0 +1,131 @@
+
+       <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+		<div class="hyxq">
+			<div class="hyxq_bottom">
+				<h3>订单详情</h3>
+
+
+		
+            
+
+
+
+				<table class="content_table3">
+					<tr>
+						<td>订单编号</td>
+						<td>{$v.gms_id}</td>
+					</tr>
+					<tr>
+						<td>会员姓名</td>
+						<td><?php echo M('users')->where("userid=$v[gms_pid]")->getField('username');?></td>
+					</tr>
+					<tr>
+						<td>会员手机</td>
+						<td><?php echo M('users')->where("userid=$v[gms_pid]")->getField('mobile');?></td>
+					</tr>
+					
+				
+					
+					<tr>
+						<td>会员级别</td>
+						<td>
+						 <?php
+					    switch($v['gms_vip']){
+						
+						case 4: echo "【金牌会员】"; break;
+						case 3: echo "【银牌会员】"; break;
+						case 2: echo "【铜牌会员】"; break;
+						case 1: echo "【vip会员】"; break;
+						case 0: echo "【普通会员】"; break;	
+					    }
+						?>
+					
+						</td>
+					</tr>
+					
+					<tr>
+						<td>商品名称</td>
+						<td>{$v.gms_spname}</td>
+					</tr>
+					<tr>
+						<td>商品原价</td>
+						<td>{$v.gms_yj}</td>
+					</tr>
+					<tr>
+						<td>商品现价</td>
+						<td>{$v.gms_xj}</td>
+					</tr>
+					<tr>
+						<td>商品重量</td>
+						<td>{$v.gms_zl}</td>
+					</tr>
+					<tr>
+						<td>商品体积</td>
+						<td>{$v.gms_tj}</td>
+					</tr>
+				
+					<tr>
+						<td>商品运费</td>
+						<td>{$v.gms_yf}</td>
+					</tr>
+					<tr>
+						<td>购买数量</td>
+						<td>{$v.gms_jian}</td>
+					</tr>
+					<tr>
+						<td>总运费</td>
+						<td>{$v.gms_zyf}</td>
+					</tr>
+					
+					<tr>
+						<td>购买金额</td>
+						<td>{$v.gms_zj}</td>
+					</tr>
+					<tr>
+						<td>优惠</td>
+						<td>{$v.gms_yh}</td>
+					</tr>
+					<tr>
+						<td>购买实价</td>
+						<td><a  style="color:red;">{$v.gms_sj}</a>  </td>
+					</tr>
+					
+
+
+
+
+					<tr>
+						<td>订单状态</td>
+						<td>
+						<?php if($v['gms_zt']== '0'){ ?><a  style="color:red;">
+									   未付款
+											
+									 </a><?php } ?>
+									 
+								
+				
+						<?php if($v['gms_zt']== '2'){ ?><a  style="color:#511F90;">
+									   未发货
+											
+									 </a><?php } ?>
+						
+                       <?php if($v['gms_zt']== '3'){ ?><a  style="color:#A2007C;">
+									   已发货
+											
+									 </a><?php } ?>	
+                         <?php if($v['gms_zt']== '4'){ ?><a  style="color:#367517;">
+									   已签收
+											
+									 </a><?php } ?>	
+                         <?php if($v['gms_zt']== '5'){ ?><a  style="color:#F00;">
+									   已退货
+											
+									 </a><?php } ?>
+                           <?php if($v['gms_zt']== '

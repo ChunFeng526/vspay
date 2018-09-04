@@ -1,0 +1,126 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a { text-decoration:none; } 
+a:hover { text-decoration:none; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; } 
+table { border-collapse:collapse; border-spacing:0; }
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+	font-family: "微软雅黑";
+}
+header{width: 100%;height: 15vmin;background: black;color:white;}
+header .return{width: 15%;height: 15vmin;font-size: 5vmin;float: left;line-height:15vmin }
+header h1{display: block;width: 40%;height: 14vmin;line-height:14vmin;text-align: center;font-family: '微软雅黑';float: left;margin-left: 14%;}
+header .circles{width: 10%;float:right;height: 14vmin;line-height: 14vmin;text-align: center;}
+header .circles span{display: block;width: 2vmin;height: 2vmin;border-radius: 100%;background:white;float: right;margin:6vmin auto;margin-right: 1vmin;}
+.yydb_banner{width: 100%;height: 48vmin;}
+.yydb_banner img{width: 100%;}
+.yydb_hot{width: 100%;height: 20vmin;}
+.yydb_goods{width: 100%;margin-top: 3vmin;height:70vmin;}
+.yydb_goods a{color:white;}
+.yydb_goods ul{width: 90%;height: 100%;margin:0 auto;}
+.yydb_goods ul li{width: 45%;height: 100%;margin-right: 2%;float: left;margin-left: 3%;}
+.yydb_goods ul li .goods_tu{width: 100%;height: 30vmin;}
+.yydb_goods ul li .goods_tu img{width: 100%;}
+.yydb_goods ul li h1,.yydb_goods ul li h2{    width: 100%;
+    font-size: 3vmin;
+    font-weight: normal;
+    background: white;
+    color: black;
+    height: 17vmin;
+    padding: 2%;
+    line-height: 5vmin;}
+.yydb_goods ul li h2{    text-align: center;
+    line-height: 8vmin;
+    height: 9vmin;}
+.yydb_goods ul li h2 span{color:#f54444;}
+.yydb_goods .duobao{width: 100%;height:10vmin;background:#ffc01a;text-align: center;line-height: 10vmin;}
+
+
+/*轮播*/
+.banner {
+    width: 100%;
+    height:50vmin;
+    overflow: hidden;
+    position: relative;
+    top:0;
+}
+
+.banner ul {
+    display: none;
+    width:100%;
+    height: 50vmin;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.banner ul li {
+    float: left;
+    width:20%;
+    height: 50vmin;
+}
+
+.banner ul li a {
+    display: block;
+    font-size: 20vmin;
+    text-align: center;
+    line-height: 50vmin;
+    font-weight: bold;
+}
+.banner ul li a img{width: 60%;}
+.img-btn-list {
+    width: 100%;
+    position: absolute;
+    bottom: 3vmin;
+    left: 0;
+    text-align: center;
+}
+.img-btn-list span  {
+    display: inline-block;
+    width:2vmin;
+    height:2vmin;
+    border-radius:1vmin;
+    margin: 0 1vmin;
+    background: white;
+    cursor: pointer;
+}
+
+.img-btn-list span.current {
+    border: 1vmin solid red;
+    background: red;
+    width:1vmin;
+    height:1vmin;
+    border-radius: 5vmin;
+}
+
+/*详情*/
+.xqjs{width: 100%;height: 25vmin;border-bottom:0.3vmin solid #f4f4f4;}
+.xqjs h1{font-weight: normal;font-size: 5vmin;height: 13vmin;line-height: 13vmin;text-indent: 5vmin;}
+.xqjs .qdrs{width: 100%;height:12vmin;line-height:12vmin;}
+.xqjs .qdrs p{width: 50%;display: inline-block;float: left;text-indent: 5vmin;}
+.xqjs .qdrs p span{color:red;}
+.guige{width: 100%;height:25vmin;}
+.guige p{width: 100%;font-size: 4.5vmin;height: 10vmin;line-height: 10vmin;text-indent: 5vmin;}
+.xqtp{overflow: hidden}
+.xqtp p{width: 100%;height:13vmin;line-height:13vmin;text-indent: 5vmin;}
+.dingd{width: 100%;height: 13vmin;position: relative;bottom:0;border-top: 0.2vmin solid #fc4b3d}
+.dingd p{display: inline-block;float: left;width: 60%;text-indent: 5vmin;height: 13vmin;line-height: 13vmin}
+.dingd p span{color:#fc4b3d;}
+.dingd a{display: inline-block;float: right;height: 13vmin;background:#fc4b3d;width: 40%;line-height: 13vmin;color:white;text-align: center; }

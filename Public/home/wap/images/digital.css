@@ -1,0 +1,265 @@
+body{ text-align: left; }
+.clear { clear: both }
+.clear_wl:after { content: "."; height: 0; visibility: hidden; display: block; clear: both; }
+.fl { float: left }
+.fr { float: right }
+
+.clear_wl:after { content: "."; height: 0; visibility: hidden; display: block; clear: both; }
+.shuzbzonge{ width: 100%; padding:15px  0 ; background: #48b1a4;}
+.shuzbzonge img{ width: 26%; display: block; margin: 0 auto;}
+.shuzbzonge p{ text-align: center; width: 100%; font-size: 16px; color: #fff;margin-top: 10px; line-height: 2;}
+
+.wpaeyzic{ width: 90%; padding: 10px 5% 0; border-top: 1px solid #ddd; background-color: #fff; margin-top: 10px;}
+.wpaeyzic_title{ width: 100%; line-height: 26px; height: 26px; }
+.wpaeyzic_title p{ width: 100%; color: #999;  font-size: 14px; text-align: left; height: 26px; position: relative; padding-left: 15px;}
+.wpaeyzic_title p span{ color: #000; margin-left: 10px;}
+.wpaeyzic_title p b{ width: 8px; height: 8px; margin-right: 10px;  position: absolute; left: 0; top:10px;}
+.wpaeyzic_fz{ width: 100%; line-height: 26px; height: 26px; position: relative; padding-bottom: 4px; border-bottom: 1px solid #ddd; }
+.wpaeyzic_fz p{ font-size: 12px; color: #333; width: 100%; overflow: hidden;white-space:nowrap;}
+
+
+#copyBT{  background-color: #fff; border-radius: 5px; border: 1px solid #d72929; height: 30px; width: 90px; line-height: 28px; text-align: center;
+     position: absolute;
+     top: -32px;
+     right: 0px;
+     padding: 0;
+     margin: 0;
+     font-size: 14px;
+     color: #d72929;
+}
+.wpzicicon{ width: 100%; padding-top:5px;  border-bottom: 1px solid #ddd; background-color: #fff; padding-bottom: 10px;} 
+.wpzicicon ul{ width: 100%;}
+.wpzicicon li{ width: 13%; float: left; margin: 0px 6%;}
+.wpzicicon li a{ display: block;}
+.wpzicicon li img{ width: 80%; display: block; margin: 0 auto;}
+.wpzicicon li p{ text-align: center; font-size: 14px; color: #666; margin-top: 5px;}
+
+.dis_biz{ width: 100%; border-top: 1px solid #ddd;  background-color: #fff; margin-top: 10px;}
+.dis_biz_wp{ width: 100%;border-bottom: 1px solid #ddd; padding: 3px 0; }
+.dis_biz_wp .Dbiz_titie{width: 90%; padding: 0 5%;  }
+.dis_biz_wp .Dbiz_titie p{width: 100%; color: #000;  font-size: 14px; text-align: left; height: 26px; position: relative; padding-left: 15px; line-height: 26px;}
+.dis_biz_wp .Dbiz_titie p b{ width: 8px; height: 8px; margin-right: 10px;  position: absolute; left: 0px; top:10px;}
+.dis_biz_cop{ width: 90%; padding: 0 5%; }
+.dis_biz_copa{ float: left; width: 30%}
+.dis_biz_copa p{ line-height: 26px; color: #000; font-size: 14px;  }
+.dis_biz_copa span{ color: #999; font-size: 12px;}
+.dis_biz_copb{ float: left; width: 40%}
+.dis_biz_copb p{ line-height: 26px; color: #000; font-size: 14px;  text-align: center;}
+.dis_biz_copb span{ color: #999; font-size: 12px;}
+.dis_biz_copc{ width: 25%; float: right;}
+.dis_biz_copc a{ font-size: 14px; height: 22px; line-height: 22px; text-align: center; display: block; color: #fff;margin-bottom: 4px;}
+.dis_biz_copc .xianzjiaoy{ background-color: #2ccfb5;}
+.dis_biz_copc .yugejiaoy{ background-color: #fcc711;}
+
+.wpae_sta{ background-color: #f3a600;}
+.wpae_stb{ background-color: #bf3936;}
+.wpae_stc{ background-color: #c95c36;}
+.wpae_std{ background-color: #3658bf;}
+.wpae_ste{ background-color: #9d35bf;}
+.wpae_stf{ background-color: #85d040;}
+.wpae_stg{ background-color: #c95c36;}
+
+
+.annalWa{ width: 100%;}
+.annalWa p{ font-size: 16px; color: #999; margin-top: 20px; margin-top: 30px; text-align: center; line-height: 30px}
+.undone_order{ width: 70%; padding: 0px 15%; height: 40px; border-bottom:1px solid #ddd; background: #fff;}
+.undone_OT_l, .undone_OT_r{ width: 40%; line-height: 40px; border-bottom: 1px solid #ddd; color: #000;text-align: center;  display: block; font-size: 15px; font-weight: 700; }
+.undone_order .noe{ color: #ea0808; border-bottom: 1px solid #ea0808;  }
+.scrollera{ width: 100%; background-color: #fff;}
+.scrollera ul{ width: 100%;}
+.scrollera ul li{ width: 90%; padding: 5px 5%;  border-bottom: 1px solid #ddd; background-color: #fff;}
+.scrollera ul li p{ font-size: 14px; color: #000; line-height: 30px; width: 100%; height: 30px;}
+.scrollera ul li p span{ float: right; display: block; font-size: 14px; line-height: 30px;}
+.scrollera ul li .dig_re_p{ font-size: 12px; color: #999;}
+.scrollera ul li .dig_re_p span{ color: #ea0808;}
+
+#wrapper{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 91px;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #ccc;
+    color: #000;
+}
+
+.more{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+.pull_icon{
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/pull.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    transition: all .5s;
+}
+.more span{
+    padding-left: .5rem;
+}
+.more .flip{
+    transform: rotate(180deg);
+}
+.loading{
+    background-image: url('../images/loading.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.more .loading{
+  -webkit-transform: rotate(0deg) translateZ(0);
+  -webkit-transition-duration: 0;
+  -webkit-animation-name: loading;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+  }
+}
+
+.fill_sty{ width: 100%;  background: #fff; border-bottom: 1px solid #ddd;}
+.fill_sty:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+.fill_sty p{ width: 20%; font-size: 14px;  color: #000; float: left;  line-height: 24px; height: 24px;padding: 11px 0; margin-left: 4%; text-align: left;}
+.fill_sty input{ width: 65%;  float: left; font-size: 14px; border:none; color: #000;  line-height:24px; margin: 11px 0; padding: 0;}
+.fill_sty input=[placeholder]{ color: #999;}
+.fill_stya{ position: relative; }
+.fill_stya a{ font-size: 14px; color: #ea3328; position: absolute; display: block; top: 15px; right: 15px; }
+.buttonGeoup{ width: 94%; margin: 0 auto; margin-top: 30px;}
+.buttonGeoup .not_next{ width: 100%; display: block; text-align: center; background: #48b1a4;  height: 40px; line-height: 40px; color: #fff; font-size: 16px; border-radius: 5px; margin-bottom: 10px;}
+.buttonGeoup .exchange{ width: 100%; display: block; text-align: center; background: #2ac988;  height: 40px; line-height: 40px; color: #fff; font-size: 16px; border-radius: 5px; margin-bottom: 10px;}
+.pad10{ width: 100%; height:15px;}
+.pad9{ width: 100%; height:10px;}
+.annalW{ width: 100%}
+.annalW p{ font-size: 14px; text-align: center; color: #000;}
+
+#a{ width :0px;
+          height :0px;
+          background:gray;
+          border-top:8px solid #fff;
+          border-right :8px dotted #48b1a4;
+          border-left:8px solid #48b1a4;
+          margin:0 auto;}
+.buy_Wpayzu{ width: 100%;padding: 15px 0; background: #48b1a4; position: relative;}
+.buy_Wpayzu .buy_Wpayzu_l{ float: left; width: 50%; font-size: 16px; text-align: center; line-height: 30px;}
+.buy_Wpayzu .buy_Wpayzu_z{ height: 50px; width: 1px; background-color: #fff; position: absolute; left: 50%; top:20px;}
+.buy_inde_dangq{ width: 100%; border-bottom: 1px solid #f5f5f5; padding: 14px 0; background-color: #fff;}
+.buy_inde_dangq ul{ width: 100%;}
+.buy_inde_dangq ul li{ float: left; width: 33.3%; text-align: center;}
+.buy_inde_dangq ul li p{ width: 100%; text-align: center; color: #000; line-height: 30px; font-size: 12px;}
+.buy_inde_dangq ul li p span{ color: #999; margin-right: 3px;}
+.buy_inde_dangq ul li p  img{ width: 13px; vertical-align: middle; margin-bottom: 3px;}
+.wpzicicon_buy{ padding: 12px 0; border-bottom: none; background-color: #fff;}
+.wpzicicon_buy ul{ width: 100%;}
+.wpzicicon_buy li{ width: 25%; float: left; margin: 0px 0;}
+.wpzicicon_buy li a{ display: block;}
+.wpzicicon_buy li img{ width: 45px; display: block; margin: 0 auto;}
+.wpzicicon_buy li p{ text-align: center; font-size: 12px; color: #666; margin-top: 5px; } 
+
+.buy_quexiant{ width: 100%; border-top: 1px solid #48b1a4; border-bottom: 1px solid #48b1a4; background-color: #fff; margin-top: 10px;}
+.buy_quexiant li{ width: 33.3%; float: left; text-align: center; color: #48b1a4; line-height: 30px; padding: 2px 0; font-size: 14px; position: relative;}
+.yxs{ position: absolute; top: 0px; right: 0px; height: 34px; width: 1px; background-color: #48b1a4;}
+.buy_quexiant li.lizuih{ width: 33.4%;}
+.buy_quexiant li.yon{ background-color: #48b1a4; color: #fff;}
+
+.investment_f{ width:100%;}
+.investment_f .investment_title{ width: 80%; border-radius: 34px; margin: 15px auto; border: 1px solid #ff2929; overflow:hidden}
+.investment_title div{ width:50%; height:34px; float:left;  display:inline; font-size:14px; font-weight:bold; text-align:center; line-height:36px; color:#ff2929; background-color: #fff; /*cursor:pointer;*/}
+.investment_title a,.investment_title a:link,.investment_title a:visited,.investment_title a:hover{ color:#ff2929;height:44px;display:inline-block; width: 100%;}
+.investment_title div.on a,.investment_title div.on a:link,.investment_title div.on a:visited,.investment_title div.on a:hover{ color:#fff}
+.investment_title div.on{background-color: #ff2929; color: #fff;}
+.investment_con{ clear:both; }
+.investment_con_list{/*display:none;*/}
+.buy_gaomai{ width: 100%; border-top: 1px solid #ddd; background-color: #fff; margin: 0 auto;}
+.buy_gaomai li{ height: 48px; padding: 8px 5%; width: 90%; border-bottom: 1px solid #ddd;}
+.buy_gaomai li .buy_li_gol{ float: left; width: 50%; height: 48px;}
+.buy_gaomai li .buy_li_gol img{ float: left; width: 48px; border-radius: 48px;}
+.buy_gaomai li .buy_li_gol p{float: left; margin-left: 5px; font-size: 14px; color: #000; line-height: 24px; display: block; width: 60%;}
+.buy_gaomai li .buy_li_gol p span{ color: #999;}
+.buy_gaomai li .buy_li_gor{ float: right; width: 46%;}
+.buy_gaomai li .buy_li_gor p{ font-size: 14px; color: #419aff; text-align: right; line-height: 24px;}
+.buy_gaomai li .buy_li_gor a{ font-size: 14px; color: #ff2929; text-align: center; line-height: 24px; display: block; border-radius: 22px; line-height: 22px; padding: 0 5%; border: 1px solid #ff2929; width: 30%; margin-left: 58%; }
+ 
+ /*购买对象*/
+ .goumaiduix{ width: 70%; margin-left: 7%; display: block; text-align: center; line-height: 1.5; }
+ .xiange_titel{ height: 40px;  color: #999; width: 90%; margin: 0 auto; margin-bottom: 5px;  border-bottom: 1px solid #ea0707; position: relative; overflow: hidden;}
+ .xiange_titel .xe_pl{ float: left; line-height: 40px; color: #999; font-size: 14px;}
+ .xiange_titel .xe_pl span{ color: #000; margin-left: 5px; }
+ .xiange_titel .xe_pr{ float: right; font-size: 14px; color: #999; line-height: 40px;}
+ .xiange_titela{ border-bottom: 1px solid #fc8c8c; }
+ .xiange_titel .xe_pl input{ width: 50%; float: left; height: 24px; border: none; color: #000;}
+ .jiaoyjis{width: 50%; float: left; height: 40px; border: none; color: #000; background: none; padding: 0; margin: 0;  margin-left:10px; }
+ .xe_pl_a{ position: absolute; top: 5px; width: 50px; text-align: center;  height: 24px; background-color: #ff1a1a; color: #fff; right: 0px; border-radius: 5px; line-height: 24px;}
+ #dig_xiala{ position: relative;}
+ #dig_xiala_xs{ display: none; }
+ .downa{ width: 90%; position: absolute;top: 4rem; right: 5%; z-index: 999}
+ .downa ul{ width: 100%;padding: 10px 0; border-radius: 10px;overflow: hidden; background-color: #fff;}
+ .downa ul li{line-height: 40px;
+              color: #fff;
+              font-size: 14px;
+              margin: 0;
+              text-align: center;
+              border-bottom: 1px solid #ddd;
+
+  }
+ .downa ul li a{ color: #000;}
+ .downa ul .off{border-bottom:none;}
+ .reveal-modal-bg { 
+        position: fixed; 
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background: rgba(0,0,0,.8);
+        z-index: 100;
+        top: 0;
+        left: 0; 
+        }
+
+.zy_topul{ width:100%; background-color: #fff; padding: 5px 0; margin-bottom: 10px; }
+.zy_topul ul{ width:100%;}
+.zy_topul li{ width:33.3%; float: left; position: relative; }
+.zy_topul li a{ display: block;}
+.zy_topul li img{ width: 50px; display: block; margin: 0 auto;}
+.zy_topul li p{ text-align: center; font-size: 12px; color: #666; margin-top: 5px; line-height: 24px; } 
+.zy_topul li .nop{ color: #48b1a4;}
+.nj{ position: absolute; top: 0px;right: 0px; height: 74px; width: 1px; background-color: #f6f6f6; z-index: 5;}
+
+.zcweikais{ width: 94%; margin-bottom: 10px; background-color: #fff; padding: 8px 3%; position: relative;}
+.zcweikais .zcweikais_top{ width: 100%; padding-bottom: 10px; border-bottom: 1px solid #ddd;}
+.zcweikais .zcweikais_top .zcimg{ width: 68px; float: left;margin-right: 10px; border-radius: 10px;}
+.zcweikais .zcweikais_top .zcweikais_topwz{ width: auto;}
+.zcweikais .zcweikais_top .zcweikais_topwz h3{ font-size: 14px; font-weight: none; color: #000; line-height:28px;}
+.zcweikais .zcweikais_top .zcweikais_topwz p{ line-height: 20px; font-size: 12px; color: #999}
+.zcweikais .zcweikais_top .zcweikais_topwz p span{  color: #333;}
+.zcweikais .zcweikais_top .zcweikais_topwz .zcxwz{ font-size: 12px;}
+.zcwksshij{ font-size: 12px; height: 16px; line-height: 16px; top: 7px; right: 5%; color: #f92c2c; position: absolute;}
+.zcwksshij img{ height: 16px; margin-right: 3px;vertical-align: middle }
+.zcweikais_mid{ width: 100%; margin-bottom: 5px; margin-top: 10px;}
+.zcweikais_mid ul{ width: 100%；}
+.zcweikais_mid ul li{ float: left;}
+.zcweikais_mid ul li p{ width: 100%; color: #999; font-size: 12px; line-height: 20px;}
+.zcweikais_mid ul li p span{ color: #333;}
+.zcweikais_mid ul li p span.hse{ color: #f92c2c;}
+.hsea{ color: #46adfc !important;}
+.zcweikais_mid_lia{ width: 25%; text-align: left;}
+.zcweikais_mid_lib{ width: 50%; text-align: center;}
+.zcweikais_mid_lic{ width: 25%; text-align: right;}
+.zcweikais_bottom{ width: 100%; margin-top: 10px; position: relative;}
+.zcweikais_bottom_jdzb{ width:60%; padding-top: 3px; }
+.zcweikais_bottom_jdzb_a{ width: 20%; background: #ddd; text-align: center; height: 22px; display: block; position: absolute; right: 0; top:0;
+  border-radius: 5px; line-height: 22px; font-size: 12px; color: #999;
+}
+.zwshj{ width: 100%; padding-top: 30px; font-size: 14px; text-align: center; color: #999;}

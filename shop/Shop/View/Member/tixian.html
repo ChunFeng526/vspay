@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>优享商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" type="text/css" href="__RES__/iconfont/iconfont.css">
+
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+ <!-- Demo styles -->
+   <!--  <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+
+    <script type="text/javascript" src="__JS__/webuploader.min.js"></script>
+<script type="text/javascript" src="__JS__/upload.js"></script> -->
+
+</head>
+<style>
+    .dzlist{
+        margin-right: 3%;
+        margin-left: 3%;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px #ccc;
+        padding:3%;
+    }
+    .dzlist h3{
+        font-size: 4.5vmin;
+        color:#333;
+        line-height: 6vmin;
+    }
+    .dzlist p{
+        line-height: 10vmin;
+        font-size: 4vmin;
+        color:#767975;
+    }
+    .dzlist_bot{
+        border-top:1px solid #ddd;
+
+    }
+    .dzlist_bot span{
+        float: right;
+         margin-left: 5%;
+    }
+    .dzlist_bot a{
+        line-height: 10vmin;
+        font-size:4vmin;
+        color:#767975;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+      <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>提现管理</span></a>
+
+    </div>
+    <div class="header_c" style="width: 70%;"> <h1 style="color:#000"></h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+
+
+<div class="mian_qd tixian">
+    <ul>
+        <li>
+            <a href="{:U('Member/Dotixian',array('type'=>1))}">
+                <img src="__IMG__/6.png" alt="">
+                <p>佣金提现<?php echo  floor($jifeninfo['yongjin'] * 100)/ 100 ?></p>
+
+            </a>
+        </li>
+		<!--
+        <li>
+            <a href="{:U('Member/Dotixian',array('type'=>2))}">
+                <img src="__IMG__/7.png" alt="">
+                <p>代理佣金提现<?php echo  floor($jifeninfo['daili_yongjin'] * 100)/ 100 ?></p>
+            </a>
+        </li>
+
+       <li>
+            <a href="{:U('Member/Dotixian',array('type'=>3))}">
+                <img src="__IMG__/3.png" alt="">
+                <p>农联积分提现<?php echo  floor($jifeninfo['farmlink_jifen'] * 100)/ 100 ?></p>
+            </a>
+
+        </li>
+	    <li>
+            <a href="{:U('Member/Dotixian',array('type'=>6))}">
+                <img src="__IMG__/4.png" alt="">
+                <p>果园积分提现<?php echo  floor($jifeninfo['farm_jifen'] * 100)/ 100 ?></p>
+
+            </a>
+        </li> -->
+
+        <li>
+            <a href="{:U('Member/Dotixian',array('type'=>4))}">
+                <img src="__IMG__/1.png" alt="">
+                <p>鸡分提现<?php echo  floor($jifeninfo['chicken_jifen'] * 100)/ 100 ?></p>
+            </a>
+        </li>
+
+        <li>
+            <a href="{:U('Member/Dotixian',array('type'=>5))}">
+                <img src="__IMG__/2.png" alt="">
+                <p>鱼库积分提现<?php echo  floor($jifeninfo['yu_ku'] * 100)/ 100 ?></p>
+            </a>
+        </li>
+
+
+    </ul>
+
+    <div class="clear"></div>
+</div>
+<ul>
+	 注：果园仓库的积分不需要手工提交提现，以免增加工作量，鸡场积分已经提交的请等待处理。
+</ul>
+
+
+
+<foreach name="addressList" item="address">
+    <div class="dzlist">
+        <a href="{:U('Home/order',array('addid'=>$address['address_id']))}">
+            <h3>{$address['name']}   {$address['telephone']} <span style="float: right;"></span></h3>
+            <p>{$address['province_id']}{$address['city_id']}{$address['country_id']}{$address['address']}</p>
+        </a>
+
+        <div class="dzlist_bot">
+            <span><a href="{:U('Member/delete')}">删除</a></span>
+            <span><a href="{:U('Member/Dditadd',array('id'=>$address['address_id']))}">修改</a></span>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</foreach>
+
+<style>
+    .selectcc{
+        width: 83%;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        font-family: "微软雅黑";
+        /*很关键：将默认的select选择框样式清除*/
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right: 14px;
+
+    }
+</style>
+
+
+
+</body>
+</html>

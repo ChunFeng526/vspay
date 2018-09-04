@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>发布出售订单</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<link rel="stylesheet" href="__WCSS__/zhifu.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script src="layer/layer.js"></script>
+<body class="bg96">
+	
+	<div class="header">
+	    <div class="header_l">
+	    <a href="javascript:history.back(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c" id="dig_xiala"><h2 style="line-height:36px;"></h2> <p id="a"></p>
+            <div id="dig_xiala_xs">
+             <div class="downa">
+	             <ul>
+	            	<li><a href="DigitalAssets_buy.html"></a></li>
+	            	<li><a href="DigitalAssets_buy-2.html">比特币</a></li>
+	            	<li><a href="DigitalAssets_buy-3.html">菜特币</a></li>
+	            	<li><a href="DigitalAssets_buy-4.html">以太坊</a></li>
+	            	<li class="off"><a href="DigitalAssets_buy-5.html">狗狗币</a></li>
+	            </ul>
+            </div>
+            <div class="reveal-modal-bg"></div>
+            </div>
+	    </div>
+	    <div class="header_r"></div>
+	</div>
+
+   <div class="big_width100">
+	     <div class="buy_Wpayzu clear_wl">
+	     	 <div class="buy_Wpayzu_l">
+	     	 	<p>Wpeay资产</p>
+	     	 	<p>0.0000</p>
+	     	 </div>
+	     	 <div class="buy_Wpayzu_l">
+	     	 	<p>余额</p>
+	     	 	<p>￥5.00</p>
+	     	 </div>
+
+	     	 <div class="buy_Wpayzu_z"></div>
+
+	     </div>
+<!-- 输入 -->
+	     <div class="fabchsding">     	
+		      <div class="fill_styaa">      	
+		       	<p>当前价格：</p>
+		       	<input type="text" name="other_account" readonly="readonly" value="19.1254" class="lanse" >
+		      </div>
+
+		       <center><form> 	
+			     	<div class="fill_styaa">	       	
+			       	<p>出售价格：</p>
+			       	<input type="text" size=40 name="Data"  onkeyup="enfocus()" readonly="readonly" value="18.1254" class="" >
+			       	</div>
+
+			       	<div class="fill_styaa">	       	
+			       	<p>出售数量：</p>
+			       	<input type="text" size=40 name="Data2"  onkeyup="enfocus()" class="livalue" value="" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入数量">
+			       	</div>
+
+			       	<div class="fill_styaa">	       	
+			       	<p>购买金额：</p>
+			       	<input type="text" size=40 name="Copy"  onkeyup="enfocus()"  readonly="readonly"id="copy" class=""> 
+			       	</div>
+
+		     
+
+
+		      </form></center>
+
+		      <a href="#" class="dig_zhifuanj ljzf_but" href="javascript:void(0);">
+		      	发布
+
+		      </a>
+	       </div>
+
+    
+
+
+
+
+	 </div>	 
+ 
+
+
+</body>
+ 
+
+  <!--浮动层-->
+		    <div class="ftc_wzsf" >
+		        <div class="srzfmm_box" style="top:20%;">
+		            <div class="qsrzfmm_bt clear_wl">
+		                <img src="__WIMG__/xx_03.jpg" class="tx close fl">
+		               
+		                <span class="fl goumaiduix">请输入支付密码</span></div>
+		            <div class="zfmmxx_shop">
+		                
+		            </div>
+		            <ul class="mm_box">
+		                <li></li><li></li><li></li><li></li><li></li><li></li>
+		            </ul>
+		        </div>
+		        <div class="numb_box">
+		            <div class="xiaq_tb">
+		                <img src="__WIMG__/jftc_14.jpg" height="10"></div>
+		            <ul class="nub_ggg">
+		                <li><a href="javascript:void(0);" class="zf_num">1</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">2</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">3</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">4</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">5</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">6</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">7</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">8</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">9</a></li>
+		                <li><a href="javascript:void(0);" class="zf_empty">清空</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">0</a></li>
+		                <li><a href="javascript:void(0);" class="zf_del">删除</a></li>
+		            </ul>
+		        </div>
+		        <div class="hbbj"></div>
+		    </div>
+
+		   
+			
+
+      <script>
+           $('.xe_pl_a').click(function(){
+           		var limitvalue = $('.limit').text();
+           		$('.livalue').val(limitvalue);
+           		enfocus();
+           })
+		 </script>
+
+
+	     <script LANGUAGE="JavaScript"><!-- hide from old browsers 
+			function enfocus() 
+			{ 
+			    var t1 = document.forms[0].Data.value; 
+			    var t2 = document.forms[0].Data2.value; 
+			    var t3 = document.forms[0].Copy.value ; 
+
+			if(t1!="" && t2!=""){ 
+				var floatValue = parseFloat(t1) * parseFloat(t2);
+
+			document.getElementById("copy").value = floatValue.toFixed(4) ;  
+			} 
+			else {document.getElementById("copy").value = "";} 
+			} 
+			<!-- done hiding --> 
+		 </script> 
+	
+
+
+
+
+         
+         <script type="text/javascript">
+
+           $(document).ready(function(){
+			  $("#dig_xiala").click(function(){
+			  $("#dig_xiala_xs").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+			  });
+			 
+			});
+
+         </script>
+
+         <script type="text/javascript">
+
+
+		 $(function(){
+        //出现浮动层
+        $(".ljzf_but").click(function(){
+            $(".ftc_wzsf").show();
+        });
+        //关闭浮动
+        $(".close").click(function(){
+            $(".ftc_wzsf").hide();
+            $(".mm_box li").removeClass("mmdd");
+            $(".mm_box li").attr("data","");
+            i = 0;
+        });
+            //数字显示隐藏
+        $(".xiaq_tb").click(function(){
+            $(".numb_box").slideUp(500);
+        });
+        $(".mm_box").click(function(){
+            $(".numb_box").slideDown(500);
+        });
+            //----
+        var i = 0;
+        $(".nub_ggg li .zf_num").click(function(){
+                
+            if(i<6){
+                $(".mm_box li").eq(i).addClass("mmdd");
+                $(".mm_box li").eq(i).attr("data",$(this).text());
+                i++
+                if (i==6) {
+                  setTimeout(function(){
+                    var data = "";
+                        $(".mm_box li").each(function(){
+                        data += $(this).attr("data");
+                    });
+                    alert("支付成功"+data);
+                  },100);
+                };
+            } 
+        });
+            
+        $(".nub_ggg li .zf_del").click(function(){
+            if(i>0){
+                i--
+                $(".mm_box li").eq(i).removeClass("mmdd");
+                $(".mm_box li").eq(i).attr("data","");
+            }
+        });
+
+        $(".nub_ggg li .zf_empty").click(function(){
+            $(".mm_box li").removeClass("mmdd");
+            $(".mm_box li").attr("data","");
+            i = 0;
+        });
+         
+    });
+	   </script>
+
+
+
+
+
+</html>
+

@@ -1,0 +1,1332 @@
+[ 2018-07-12T23:36:55+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-07-12T23:38:45+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+
+[ 2018-07-12T23:38:46+08:00 ] 59.32.95.91 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 1146:Table 'vspay.ysk_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_config`
+ERR: 1146:Table 'vspay.ysk_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_config`
+
+[ 2018-07-12T23:38:50+08:00 ] 59.32.95.100 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+ERR: 1146:Table 'vspay.ysk_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_config`
+ERR: 1146:Table 'vspay.ysk_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_config`
+
+[ 2018-07-12T23:38:51+08:00 ] 59.32.95.100 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 1146:Table 'vspay.ysk_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_config`
+ERR: 1146:Table 'vspay.ysk_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_config`
+
+[ 2018-07-12T23:39:44+08:00 ] 61.160.195.164 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+
+[ 2018-07-12T23:39:52+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+
+[ 2018-07-12T23:41:44+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+
+[ 2018-07-12T23:42:51+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+
+[ 2018-07-12T23:42:59+08:00 ] 61.160.195.164 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.016602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016602s ]
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+
+[ 2018-07-12T23:44:44+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1146:Table 'vspay.ysk_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+
+[ 2018-07-12T23:45:49+08:00 ] 59.32.95.100 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0029s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+
+[ 2018-07-12T23:45:50+08:00 ] 59.32.95.100 /Login/js/skin/layer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 非法操作:js
+
+[ 2018-07-12T23:45:53+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0313s ]
+SQL: UPDATE `ysk_user` SET `releas_rate`='0',`releas_time`='1531410353',`is_reward`='0',`today_releas`='0' WHERE `userid` = 8555 [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user` SET `releas_rate`='0',`releas_time`='1531410353',`is_reward`='0',`today_releas`='0' WHERE `userid` = 8554 [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user` SET `releas_rate`='0',`releas_time`='1531410353',`is_reward`='0',`today_releas`='0' WHERE `userid` = 8553 [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user` SET `releas_rate`='0',`releas_time`='1531410353',`is_reward`='0',`today_releas`='0' WHERE `userid` = 8552 [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user` SET `releas_rate`='0',`releas_time`='1531410353',`is_reward`='0',`today_releas`='0' WHERE `userid` = 8549 [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user` SET `releas_rate`='0',`releas_time`='1531410353',`is_reward`='0',`today_releas`='0' WHERE `userid` = 8547 [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user` SET `releas_rate`='0',`releas_time`='1531410353',`is_reward`='0',`today_releas`='0' WHERE `userid` = 8546 [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user` SET `releas_rate`='0',`releas_time`='1531410353',`is_reward`='0',`today_releas`='0' WHERE `userid` = 8545 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:45:53+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:45:58+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:46:05+08:00 ] 47.75.202.82 /web.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+ERR: 无法加载控制器:Web.rar
+
+[ 2018-07-12T23:46:06+08:00 ] 47.75.202.82 /123.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:123.rar
+
+[ 2018-07-12T23:46:06+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:46:07+08:00 ] 47.75.202.82 /data.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Data.rar
+
+[ 2018-07-12T23:46:07+08:00 ] 47.75.202.82 /sql.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Sql.rar
+
+[ 2018-07-12T23:46:07+08:00 ] 47.75.202.82 /wwwroot.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Wwwroot.rar
+
+[ 2018-07-12T23:46:07+08:00 ] 47.75.202.82 /www.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Www.rar
+
+[ 2018-07-12T23:46:07+08:00 ] 47.75.202.82 /htdocs.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Htdocs.rar
+
+[ 2018-07-12T23:46:07+08:00 ] 47.75.202.82 /1.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:1.rar
+
+[ 2018-07-12T23:46:07+08:00 ] 47.75.202.82 /public_html.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public_html.rar
+
+[ 2018-07-12T23:46:08+08:00 ] 47.75.202.82 /web.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Web.zip
+
+[ 2018-07-12T23:46:08+08:00 ] 47.75.202.82 /wwwroot.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Wwwroot.zip
+
+[ 2018-07-12T23:46:08+08:00 ] 47.75.202.82 /www.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Www.zip
+
+[ 2018-07-12T23:46:08+08:00 ] 47.75.202.82 /htdocs.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+ERR: 无法加载控制器:Htdocs.zip
+
+[ 2018-07-12T23:46:08+08:00 ] 47.75.202.82 /123.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:123.zip
+
+[ 2018-07-12T23:46:08+08:00 ] 47.75.202.82 /public_html.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+ERR: 无法加载控制器:Public_html.zip
+
+[ 2018-07-12T23:46:08+08:00 ] 47.75.202.82 /public_html.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public_html.tar.gz
+
+[ 2018-07-12T23:46:09+08:00 ] 47.75.202.82 /web.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+ERR: 无法加载控制器:Web.tar.gz
+
+[ 2018-07-12T23:46:09+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:46:10+08:00 ] 47.75.202.82 /vspay.hzptkf.com.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Vspay.hzptkf.com.rar
+
+[ 2018-07-12T23:46:10+08:00 ] 47.75.202.82 /vspayhzptkfcom.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Vspayhzptkfcom.rar
+
+[ 2018-07-12T23:46:10+08:00 ] 47.75.202.82 /hzptkf.com.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Hzptkf.com.rar
+
+[ 2018-07-12T23:46:10+08:00 ] 47.75.202.82 /hzptkf.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Hzptkf.rar
+
+[ 2018-07-12T23:46:11+08:00 ] 47.75.202.82 /hzptkf_com.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Hzptkf_com.rar
+
+[ 2018-07-12T23:46:11+08:00 ] 47.75.202.82 /vspay_hzptkf_com.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+ERR: 无法加载控制器:Vspay_hzptkf_com.rar
+
+[ 2018-07-12T23:46:11+08:00 ] 47.75.202.82 /vspay.hzptkf.com.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Vspay.hzptkf.com.zip
+
+[ 2018-07-12T23:46:11+08:00 ] 47.75.202.82 /vspayhzptkfcom.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Vspayhzptkfcom.zip
+
+[ 2018-07-12T23:46:11+08:00 ] 47.75.202.82 /hzptkf.com.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+ERR: 无法加载控制器:Hzptkf.com.zip
+
+[ 2018-07-12T23:46:11+08:00 ] 47.75.202.82 /hzptkf.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+ERR: 无法加载控制器:Hzptkf.zip
+
+[ 2018-07-12T23:46:11+08:00 ] 47.75.202.82 /hzptkf_com.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Hzptkf_com.zip
+
+[ 2018-07-12T23:46:11+08:00 ] 47.75.202.82 /vspay_hzptkf_com.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Vspay_hzptkf_com.zip
+
+[ 2018-07-12T23:46:12+08:00 ] 47.75.202.82 /vspay.hzptkf.com.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Vspay.hzptkf.com.tar.gz
+
+[ 2018-07-12T23:46:12+08:00 ] 47.75.202.82 /vspayhzptkfcom.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Vspayhzptkfcom.tar.gz
+
+[ 2018-07-12T23:46:12+08:00 ] 47.75.202.82 /hzptkf.com.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Hzptkf.com.tar.gz
+
+[ 2018-07-12T23:46:12+08:00 ] 47.75.202.82 /hzptkf.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Hzptkf.tar.gz
+
+[ 2018-07-12T23:46:13+08:00 ] 47.75.202.82 /hzptkf_com.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008789s ]
+ERR: 无法加载控制器:Hzptkf_com.tar.gz
+
+[ 2018-07-12T23:46:13+08:00 ] 47.75.202.82 /vspay_hzptkf_com.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Vspay_hzptkf_com.tar.gz
+
+[ 2018-07-12T23:46:15+08:00 ] 61.160.195.164 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:46:26+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:46:47+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:46:53+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:47:01+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:47:44+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2018-07-12T23:47:45+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:48:52+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0068s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:48:52+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:49:32+08:00 ] 61.160.195.164 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0186s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:50:45+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0322s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:50:45+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:51:12+08:00 ] 113.118.225.147 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:51:52+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:51:52+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:52:15+08:00 ] 124.239.252.4 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0078s ]
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+
+[ 2018-07-12T23:52:17+08:00 ] 123.9.176.103 /Login/js/skin/layer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+ERR: 非法操作:js
+
+[ 2018-07-12T23:52:20+08:00 ] 123.9.176.103 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:52:25+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:52:26+08:00 ] 124.239.252.6 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0068s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+
+[ 2018-07-12T23:52:27+08:00 ] 124.239.252.6 /Login/js/skin/layer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+ERR: 非法操作:js
+
+[ 2018-07-12T23:52:27+08:00 ] 124.239.252.6 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:52:30+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:52:33+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:52:43+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:52:46+08:00 ] 61.160.195.164 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0098s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:52:46+08:00 ] 124.239.252.7 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:52:47+08:00 ] 123.13.246.66 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:52:48+08:00 ] 124.239.252.7 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:52:48+08:00 ] 124.239.252.7 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:52:48+08:00 ] 124.239.252.7 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:52:49+08:00 ] 124.239.252.7 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:52:49+08:00 ] 124.239.252.7 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:52:49+08:00 ] 124.239.252.6 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:52:50+08:00 ] 123.13.246.66 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:03+08:00 ] 124.239.252.5 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:08+08:00 ] 124.239.252.5 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:08+08:00 ] 124.239.252.4 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0068s ]
+
+[ 2018-07-12T23:53:09+08:00 ] 124.239.252.4 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-07-12T23:53:09+08:00 ] 124.239.252.4 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:09+08:00 ] 124.239.252.4 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.009765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010742s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:09+08:00 ] 124.239.252.4 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:09+08:00 ] 124.239.252.4 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:09+08:00 ] 124.239.252.4 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:09+08:00 ] 124.239.252.5 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:53:10+08:00 ] 124.239.252.4 /Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( `mobile` = '15855199200' OR `account` = '15855199200' OR `userid` = '15855199200' ) LIMIT 1   [ RunTime:0.0039s ]
+
+[ 2018-07-12T23:53:43+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:53:43+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:54:51+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:54:51+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:54:52+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:56:07+08:00 ] 61.160.195.164 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0176s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:56:43+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0557s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:56:43+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:56:58+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:01+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:04+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:05+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:07+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:14+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:24+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:26+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:27+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:30+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:34+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:57:51+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:57:51+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:58:06+08:00 ] 59.32.95.100 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:59:28+08:00 ] 61.160.195.164 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-07-12T23:59:43+08:00 ] 61.160.211.21 /login/relase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`releas_rate`,`releas_time`,`is_reward` FROM `ysk_user` WHERE (  `releas_rate` > 0 OR `is_reward` = 1 ) AND `releas_time` <= 1531324800 ORDER BY userid desc LIMIT 2000   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-12T23:59:44+08:00 ] 61.160.211.21 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-12T23:59:52+08:00 ] 59.32.95.91 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0020s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8545 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_head`,`userid`,`user_credit`,`is_reward`,`today_releas` FROM `ysk_user` WHERE `userid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0010s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0029s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT `huafei_total` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `plant_num` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_coindets` [ RunTime:0.0039s ]
+SQL: SELECT `coin_price` FROM `ysk_coindets` WHERE ( cid=1 ) ORDER BY coin_addtime desc LIMIT 1   [ RunTime:0.0146s ]
+SQL: SELECT `vip_grade` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`path` FROM `ysk_user` WHERE `path` LIKE '%-8545-%'  [ RunTime:0.0010s ]
+SQL: SELECT `huafei_total` FROM `ysk_store` WHERE `uid` = 8546 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `plant_num` FROM `ysk_store` WHERE `uid` = 8546 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0049s ]
+SQL: SELECT SUM(get_nums) AS tp_sum FROM `ysk_tranmoney` WHERE `get_id` = 8545 AND `is_release` = 0 AND `get_type` = 22 AND `get_time` BETWEEN 1531324800 AND 1531411200 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002930s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-12T23:59:54+08:00 ] 59.32.95.100 /Home/Index/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0068s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0000s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`user_credit`,`is_reward`,`today_releas` FROM `ysk_user` WHERE `userid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0156s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0029s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'sell_fee' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `huafei_total` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `plant_num` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_coindets` [ RunTime:0.0195s ]
+SQL: SELECT `coin_price` FROM `ysk_coindets` WHERE ( cid=1 ) ORDER BY coin_addtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `userid`,`path` FROM `ysk_user` WHERE `path` LIKE '%-8545-%'  [ RunTime:0.0000s ]
+SQL: SELECT `huafei_total` FROM `ysk_store` WHERE `uid` = 8546 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `plant_num` FROM `ysk_store` WHERE `uid` = 8546 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0176s ]
+SQL: SELECT SUM(get_nums) AS tp_sum FROM `ysk_tranmoney` WHERE `get_id` = 8545 AND `is_release` = 0 AND `get_type` = 22 AND `get_time` BETWEEN 1531324800 AND 1531411200 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_store` SET `cangku_num`=cangku_num + 11.99254,`fengmi_num`=fengmi_num - 11.99254 WHERE `uid` = 8545 [ RunTime:0.0000s ]
+SQL: INSERT INTO `ysk_tranmoney` (`pay_id`,`get_id`,`get_nums`,`get_time`,`get_type`) VALUES ('8545','8545','11.99254','1531411194','2') [ RunTime:0.0000s ]
+SQL: INSERT INTO `ysk_tranmoney` (`pay_id`,`get_id`,`get_nums`,`get_time`,`get_type`) VALUES ('8545','8545','-11.99254','1531411194','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_wbao_detail` [ RunTime:0.0029s ]
+SQL: INSERT INTO `ysk_wbao_detail` (`crowds_id`,`create_time`,`num`,`uid`,`dprice`,`tprice`,`type`) VALUES ('0','1531411194','0','8545','0','0','3') [ RunTime:0.0000s ]
+SQL: INSERT INTO `ysk_wbao_detail` (`crowds_id`,`create_time`,`num`,`uid`,`dprice`,`tprice`,`type`) VALUES ('0','1531411194','0','8545','0','0','4') [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user` SET `today_releas`='0',`is_reward`='1',`releas_time`='1531411194' WHERE `userid` = 8545 [ RunTime:0.0000s ]
+
+[ 2018-07-12T23:59:56+08:00 ] 59.32.95.100 /Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0010s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8545 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_head`,`userid`,`user_credit`,`is_reward`,`today_releas` FROM `ysk_user` WHERE `userid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0039s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8545 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0205s ]
+SQL: SELECT SUM(get_nums) AS tp_sum FROM `ysk_tranmoney` WHERE `get_id` = 8545 AND `is_release` = 0 AND `get_type` = 22 AND `get_time` BETWEEN 1531324800 AND 1531411200 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get D:\wwwroot\vspay.hzptkf.com\shop\Home\Controller\IndexController.class.php 第 153 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m D:\wwwroot\vspay.hzptkf.com\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+

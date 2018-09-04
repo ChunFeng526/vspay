@@ -1,0 +1,41 @@
+<extend name="Public:base" />
+<block name="content">
+<link rel="stylesheet" href="__CSS__/index.css" />	
+
+<div class="row">
+	<div class="col-xs-12">	
+		    <div class="row">
+
+		      <div class="col-lg-3 col-md-3 col-sm-6">
+					<div class="tile">
+					<div class="tile-heading">
+					交易数 
+					<span class="pull-right"> 总{$ordernums} 单</span>
+					</div>
+					<div class="tile-body">
+					<i class="fa icon-credit-card"></i>
+					</div>
+					<div class="tile-footer">
+					</div>
+					</div> 	
+		      </div>
+		      <div class="col-lg-3 col-md-3 col-sm-6">
+					<div class="tile">
+					<div class="tile-heading">
+					新增客户 
+					<span class="pull-right"> 总{$total_member|default='0'}个</span>
+					</div>
+					<div class="tile-body">
+					<i class="fa icon-user"></i>
+					<h2 class="pull-right">{$usrall|default='0'}</h2>
+					</div>
+					<div class="tile-footer">
+					</div>
+					</div>
+			  </div>
+
+		    </div>
+		   
+	</div>
+</div>
+</block>

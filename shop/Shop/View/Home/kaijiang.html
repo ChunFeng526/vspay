@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>商品详情</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="__LAYERJS__layer.js"></script>
+    <!-- Demo styles -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(".main_visual").hover(function(){
+                $("#btn_prev,#btn_next").fadeIn()
+            },function(){
+                $("#btn_prev,#btn_next").fadeOut()
+            });
+
+            $dragBln = false;
+
+            $(".main_image").touchSlider({
+                flexible : true,
+                speed : 200,
+                btn_prev : $("#btn_prev"),
+                btn_next : $("#btn_next"),
+                paging : $(".flicking_con a"),
+                counter : function (e){
+                    $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+                }
+            });
+
+            $(".main_image").bind("mousedown", function() {
+                $dragBln = false;
+            });
+
+            $(".main_image").bind("dragstart", function() {
+                $dragBln = true;
+            });
+
+            $(".main_image a").click(function(){
+                if($dragBln) {
+                    return false;
+                }
+            });
+
+            timer = setInterval(function(){
+                $("#btn_next").click();
+            }, 5000);
+
+            $(".main_visual").hover(function(){
+                clearInterval(timer);
+            },function(){
+                timer = setInterval(function(){
+                    $("#btn_next").click();
+                },5000);
+            });
+
+            $(".main_image").bind("touchstart",function(){
+                clearInterval(timer);
+            }).bind("touchend", function(){
+                timer = setInterval(function(){
+                    $("#btn_next").click();
+                }, 5000);
+            });
+
+
+            $("#color_ul li").click(function(){
+                $("#color_ul").attr("data-str",$(this).html());
+
+                $("#color_ul li").each(function(i,v){
+                    $(this).removeClass('selColor');
+                });
+
+                $(this).addClass('selColor');
+            });
+
+            $("#size_ul li").click(function(){
+                $("#size_ul").attr("data-str",$(this).html());
+                $("#size_ul li").each(function(i,v){
+                    $(this).removeClass('selSize');
+                });
+
+                $(this).addClass('selSize');
+            });
+
+            $("#type_ul li").click(function(){
+                $("#type_ul").attr("data-str",$(this).html());
+                $("#type_ul li").each(function(i,v){
+                    $(this).removeClass('selSize');
+                });
+
+                $(this).addClass('selSize');
+            });
+
+            $(".jia").click(function(){
+                var n = $("#bnum").val();
+                n++;
+                $("#bnum").val(n);
+            });
+
+            $(".jian").click(function(){
+                var n = $("#bnum").val();
+                if(n<=1) return;
+                n--;
+                $("#bnum").val(n);
+
+            });
+
+            /*加入购物车*/
+            $("#join_car").click(function(){
+                var nv = $("#bnum").val();
+                var sv = $("#size_ul").attr("data-str");
+                var cv = $("#color_ul").attr("data-str");
+                var pv = $("body").attr("data-id");
+
+
+
+                if(nv==""||nv==null){
+                    layer.msg('购买数量不正确', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+
+                var chima = $('.chima').val();
+                var yanse = $('.yanse').val();
+                var jifentype = $('.jifentype').val();
+
+                if(chima != undefined){
+                    if(chima != ''){
+                        if(sv==""||sv==null){
+                            layer.msg('请选择尺寸', {shift: -1, time: 1200}, function () {
+                            });
+                            return;
+                        }
+                    }
+                }
+                if(yanse != undefined){
+                    if(yanse != ''){
+                        if(cv==""||cv==null){
+                            layer.msg('请选择颜色', {shift: -1, time: 1200}, function () {
+                            });
+                            return;
+                        }
+                    }
+                }
+
+                if(pv==""||pv==null){
+                    layer.msg('缺少购买参数', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+                $.post("/Shop/Home/addCar",{p:pv,n:nv,s:sv,c:cv},function(data){
+                    if(data.status == 0){
+                        layer.msg(data.info, {icon: 2, time: 1200}, function () {
+                            $("#params_show").hide();
+                            $("#details_show").show();
+                        });
+                    }else if(data.status == 1){
+                        layer.msg(data.info, {icon: 1, time: 1200}, function () {
+                            $("#params_show").hide();
+                            $("#details_show").show();
+                        });
+                    }else{
+                        layer.msg(data.info, {icon: 2, time: 1200}, function () {
+                            $("#params_show").hide();
+                            $("#details_show").show();
+                            window.location.href='/shop/personal/login';
+                        });
+                    }
+                },"json");
+
+            });
+
+            /*立即购买*/
+            $("#buy_now").click(function(){
+                var nv = $("#bnum").val();
+                var sv = $("#size_ul").attr("data-str");
+                var cv = $("#color_ul").attr("data-str");
+//                /*积分分类*/
+//                var jtype = $("#type_ul").attr("data-str");
+
+                var pv = $("body").attr("data-id");
+
+
+                if(nv==""||nv==null){
+                    layer.msg('购买数量不正确', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+
+                var chima = $('.chima').val();
+                var yanse = $('.yanse').val();
+                var jifentype = $('.jifentype').val();
+
+                if(chima != undefined){
+                    if(chima != ''){
+                        if(sv==""||sv==null){
+                            layer.msg('请选择尺寸', {shift: -1, time: 1200}, function () {
+                            });
+                            return;
+                        }
+                    }
+                }
+                if(yanse != undefined){
+                    if(yanse != ''){
+                        if(cv==""||cv==null){
+                            layer.msg('请选择颜色', {shift: -1, time: 1200}, function () {
+                            });
+                            return;
+                        }
+                    }
+                }
+
+                if(pv==""||pv==null){
+                    layer.msg('缺少购买参数', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+
+                $.post("/Shop/Car/buynow",{p:pv,n:nv,s:sv,c:cv},function(data){
+                    if(data.status == 1){
+                        layer.msg(data.info, {shift: -1, time: 1200}, function () {
+                            $("#params_show").hide();
+                            $("#details_show").show();
+                            location.href = "{:U('Shop/Home/order')}";
+                        });
+                    }else{
+                        layer.msg(data.info, {shift: -1, time: 1200}, function () {
+                        });
+                    }
+                },"json");
+            });
+
+            $('.ffr').click(function () {
+                var nv = $("#bnum").val();
+                var sv = $("#size_ul").attr("data-str");
+                var cv = $("#color_ul").attr("data-str");
+                var pv = $("body").attr("data-id");
+                /*积分分类*/
+                var jtype = $("#type_ul").attr("data-str");
+
+                if(nv==""||nv==null){
+                    layer.msg('购买数量不正确', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+                if(sv==""||sv==null){
+                    layer.msg('请选择尺寸', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+                if(cv==""||cv==null){
+                    layer.msg('请选择颜色', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+                if(pv==""||pv==null){
+                    layer.msg('缺少购买参数', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+                if(jtype==""||jtype==null){
+                    layer.msg('缺少积分类型', {shift: -1, time: 1200}, function () {
+                    });
+                    return;
+                }
+
+                $.post("/Shop/Home/addCar",{p:pv,n:nv,s:sv,c:cv,'jtype':jtype},function(data){
+                    layer.msg(data.info, {shift: -1, time: 1200}, function () {
+                    });
+                },"json");
+
+            });
+
+            /*收藏*/
+            $("#like").click(function(){
+                var i =  $("body").attr("data-id");
+                $.post("/Shop/Home/like",{pid:i},function(data){
+                    if(data.status=="1"){
+                        $("#like i").html("&#xe601;");
+                        layer.msg(data.info, {shift: -1, time: 1200}, function () {
+                        });
+                    }else if(data.status=="2"){
+                        $("#like i").html("&#xe61c;");
+                    }else{
+                        layer.msg(data.info, {shift: -1, time: 1200}, function () {
+                        });
+                    }
+                },"json");
+            });
+
+
+
+
+
+        });
+
+
+        function showParams(){
+            $("#params_show").show();
+            $("#details_show").hide();
+        }
+
+        function hideParams(){
+            $("#params_show").hide();
+            $("#details_show").show();
+        }
+
+        function showContent(){
+            var ishide = $("#content_show").css('display');
+            if(ishide == 'none'){
+                $("#content_show").show();
+                $("#details_show").hide()
+            }else{
+                $("#content_show").hide();
+                $("#details_show").show();
+            }
+        }
+
+        function hideContent(){
+            var ishide = $("#content_show").css('display');
+            if(ishide == 'block'){
+                $("#content_show").hide();
+                $("#details_show").show();
+            }
+
+
+
+        }
+
+    </script>
+</head>
+<style>
+    .selSize{
+        border-color: #ff5000;
+        color: #ff5000;
+    }
+
+    .selColor{
+        border-color: #ff5000;
+        color: #ff5000;
+    }
+
+</style>
+<body style="background: #f6f6f6;" data-id="{$product['id']}">
+
+<div class="head_bb">
+    <p><a href="javascript:window.history.go(-1);"><img src="__IMG__/b1.png" alt=""></a></p>
+</div>
+
+
+<!-- 详情 -->
+<div id="details_show" style="    display: block;
+    margin-top: 16%;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding-bottom: 8%;
+    background: #fff;
+">
+    <div class="detanr">
+        <div class="detanr_bt">
+            <div class="tx" style="width: 15vmin;
+    height: 15vmin;
+    border-radius: 100%;
+    float: left;
+    margin-right: 3%;"><img src="__TXIMG__<?php echo M('member')->where(array('member_id'=>$product['seluid']))->getfield('avatar'); ?>" style="width: 100%;height:100%;border-radius: 100%;"></div>
+            <div class="tx_r" style="width:80%;float:left;">
+                <h3 style="
+    height: 10vmin;
+    line-height: 10vmin;s">中奖人：<i style="color: #f00"><?php echo M('member')->where(array('member_id'=>$product['seluid']))->getfield('uname'); ?></i></h3>
+                <h3 style="font-size:4vmin;padding: 2% 0;display: block">{$product['name']}</h3>
+                <p class="jg">¥{$product['price']} </p>
+                <p>快递：<if condition="$product['freight'] gt 0">{$product['freight']}<else/>免运费</if> <span>{$product['address']}</span></p>
+                <p>{$product['s_desc']|tercept}</p>
+            </div>
+
+
+            <!--<span onclick ="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><i class="iconfont">&#xe64f;</i><p>分享</p></span>-->
+        </div>
+
+    </div>
+
+
+</div>
+<!-- 参数 -->
+<div id="params_show" style="display: none;">
+    <div class="visual_bt"  >
+        <div class="visual_btl"><img src="{$product['pic']}" alt=""></div>
+        <div class="visual_btr">
+            <p class="btrjg" onclick="hideParams()">¥ {$product['price']} <span><i class="iconfont">&#xe638;</i></span></p>
+            <p>库存{$product['stock']}件</p>
+            <p>请选择</p>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <neq name="product['color_cate']" value="">
+        <div class="demo-box">
+            <h3>颜色分类</h3>
+            <input type="hidden" value="{$colorList[0]}" class="yanse">
+            <table class="demo-table">
+                <tr>
+                    <td>
+                        <ul class="ui-choose" id="color_ul" data-str="">
+                            <foreach name="colorList" item="color">
+                                <li>{$color}</li>
+                            </foreach>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </neq>
+
+    <neq name="product['csize']" value="">
+        <div class="demo-box">
+            <h3>尺码</h3>
+            <input type="hidden" value="{$sizeList[0]}" class="chima">
+            <table class="demo-table">
+                <tr>
+                    <td>
+                        <ul class="ui-choose" id="size_ul" data-str="">
+                            <!-- class="selected " -->
+                            <foreach name="sizeList" item="size">
+                                <li>{$size}</li>
+                            </foreach>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </neq>
+
+    <div class="demo-box">
+        <h3>购买数量</h3>
+        <div id="content">
+            <div class="aac">
+                <span class="jian" style="cursor: pointer;">-</span>
+                <input readonly="readonly" class="num" name="num" id="bnum" type="text" value="1">
+                <span class="jia" style="cursor: pointer;">+</span>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div style="height: 15vmin;"></div>
+    <div class="size_foot">
+        <!--<a id="join_car" style="background: linear-gradient(to left, #ff9902, #ffc500);">加入购物车</a>-->
+        <!--<a id="buy_now" style="float: right;">立即购买</a>-->
+    </div>
+</div>
+<style>
+    .spcs_nr img{width:100%; height:auto}
+    table{max-width:100%;border: none;}
+</style>
+<div id="content_show" style="display: none;">
+    <div class="spcs_nr">
+        <h3 onclick="showContent();">产品详情</h3>
+        {$product['content']|htmlspecialchars_decode}
+    </div>
+
+    <div class="spcs_foor" onclick="hideContent();">
+        完成
+    </div>
+
+</div>
+
+<!--<div id="light" class="white_content">-->
+<!--<h3>分享</h3>-->
+<!--<ul>-->
+<!--<li><a href=""><i class="iconfont iconb1">&#xe628;</i><p>复制链接</p></a></li>-->
+<!--<li><a href=""><i class="iconfont iconb2">&#xe673;</i><p>微信</p></a></li>-->
+<!--<li><a href="{:U('Home/share')}"><i class="iconfont iconb3">&#xe541;</i><p>果友</p></a></li>-->
+<!--</ul>-->
+<!--<div style="clear: both;"></div>-->
+<!--<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="qx">取消</a>-->
+<!--</div>-->
+
+
+</body>
+</html>

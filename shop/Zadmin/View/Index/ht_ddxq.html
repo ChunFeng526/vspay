@@ -1,0 +1,132 @@
+      <include file="common:css" />
+ 
+    <!-- 头部 -->
+      <include file="common:head" />
+      <!-- 头部结束 -->
+      <!-- 左侧 -->
+      <include file="common:side" />
+
+		<div class="hyxq">
+			<div class="hyxq_bottom">
+				<h3>订单详情</h3>
+			    <form action="{:U('Index/xxddzt')}" method="post"> 
+                   <i style="color: #969231;">修改订单状态：</i>
+                   <select class="form-select" class="btn3" name="gms_zt" id="page" value="订单状态" type="text"; style="width: 131px;height: 22px;border:1px solid #dcdcdc;color: #a4a4a4;font-size: 12px;margin-top: 15px;"/>
+						<option <eq name="info['order_state']" value='0' >selected="selected"</eq> value="0">未支付</option>
+						<option <eq name="info['order_state']" value='1' >selected="selected"</eq> value="1">已支付</option>
+						<option <eq name="info['order_state']" value='2' >selected="selected"</eq> value="2">已发货</option>
+						<option <eq name="info['order_state']" value='3' >selected="selected"</eq> value="3">已完成</option>
+		            </select>
+		           	 <i style="color: #969231;">快递单号：</i>
+					  <input type="text" name="kd_no" value="{$info.kd_no}" >
+					
+					  <input type="hidden" name="order_id" value="{$info.order_id}">
+					  &nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="submit" value="确认修改" class="sll">
+				</form>
+
+				<table class="content_table3">
+
+					<tr>
+						<td>订单编号</td>
+						<td style="width:600px;" >{$info.order_no}</td>
+					</tr>
+					<tr>
+						<td>收货人</td>
+						<td>{$info.order_buy_name}</td>
+					</tr>
+					<tr>
+						<td>收货人手机</td>
+						<td>{$info.order_buy_mobile}</td>
+					</tr>
+					<tr>
+						<td>收货地址</td>
+						<td>{$info.order_buy_address}</td>
+					</tr>
+					<tr>
+						<td>下单会员</td>
+						<td>
+							{$info.username}
+						</td>
+					</tr>
+					
+					<tr>
+						<td>订单总额</td>
+						<td><span style="color:red">￥{$info.order_total_price}</span></td>
+					</tr>
+					<tr>
+						<td>金额</td>
+						<td><span style="color:red">￥{$info['order_paymoney']+0}</span></td>
+					</tr>
+					<tr>
+						<td>购物果</td>
+						<td><span style="color:red">￥{$info['order_payguozi']+0}</span></td>
+					</tr>
+					<tr>
+						<td>下单时间</td>
+						<td>{$info['order_time']|date='Y-m-d H:i:s',###}</td>
+					</tr>
+				
+					<tr>
+						<td>支付方式</td>
+						<td>{$info.order_pay_type}</td>
+					</tr>
+					<tr>
+						<td>备注</td>
+						<td>{$info.order_content}</td>
+					</tr>
+
+					<tr style="background:#a0c3a0">
+						<td colspan="2">
+						<h1 style="background:#f1c094;text-align:center;">购买商品</h1>
+							<style type="text/css">
+								.tb tr td {
+										    text-align: center;
+										    line-height: 32px !important;
+										    border: 1px solid #a5a5a5;
+										}
+
+							</style>
+							<table class="tb">
+								<tr>
+									<td style="width: 400px;">名称</td>
+									<td>单价</td>
+									<td>数量</td>
+									<td>产品参数</td>
+									<td>操作</td>
+								</tr>
+								<empty name="info_detail" >
+									<tr>
+										<td>{$info.order_shopname}</td>
+										<td>￥{$info.com_xj}</td>
+										<td>{$info.order_shopnum}</td>
+										<td>{$info.order_shopcs}</td>
+										<td><a href="{:U('Goods/ht_spadd',array('com_id'=>$info['order_shopid']))}">查看</a></td>
+									</tr>
+									<else />
+									<foreach name="info_detail" item="v" >
+										<tr>
+											<td>{$v.com_name}</td>
+											<td>￥{$v.com_price}</td>
+											<td>{$v.com_count}</td>
+											<td>{$v.com_cs}</td>
+											<td><a href="{:U('Goods/ht_spadd',array('com_id'=>$v['com_id']))}">查看</a></td>
+										</tr>
+									</foreach>
+								</empty>
+							</table>
+
+
+						</td>
+					</tr>
+				
+				</table>
+				<div class="anniu">
+					
+					<p><a href="javascript:history.back(-1)">返回</a></p>	
+				</div>
+			</div>
+		</div>
+      
+       <include file="common:js" />		
+</html>

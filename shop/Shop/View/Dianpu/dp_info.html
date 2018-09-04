@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{$config['SITE_TITLE']}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/foot.css">
+
+
+    <link rel="stylesheet" href="__CSS__/head.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style22.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+
+    <!--弹框JS-->
+    <script type="text/javascript" src="__LAYERJS__/layer.js"></script>
+
+    <!-- Demo styles -->
+      <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+
+   <!--   <script type="text/javascript" src="__JS__/webuploader.min.js"></script>  -->
+ <script type="text/javascript" src="__JS__/upload.js"></script>
+
+</head>
+<body>
+<div class="header">
+    <div class="header_l" style="width: 15%;">
+        <a href="javascript:window.history.go(-1);"><img src="__IMG__/lpg.png" alt=""><span>我的店铺</span></a>
+    </div>
+    <div class="header_c" style="width: 70%;"><h1 style="color:#000"></h1></div>
+    <div class="header_r" style="width: 15%;"></div>
+    <!-- <span><a href=""><img src="" alt=""></a></span> -->
+</div>
+<form id="form"  name="dp_info" method="post" action="{:U('dianpu/adddp_info')}" enctype="multipart/form-data">
+<table width="96%" border="0" cellspacing="0" cellpadding="0" class="dp_dinfo" align="right">
+<tr>
+  <td width="25%" ><span>店铺网址</span></td>
+  <td width="75%" align="right" ><a href="{:U('dianpu/index',array('did'=>$dianpu['userid']))}" class="dp_link"><input name="" type="text" value="http://www.huiyunx.com/shop/dianpu/index.html" readonly class="input_style"><img src="__IMG__/icon_editnext.png" class="img_mar"></a></td>
+</tr>
+  <tr>
+    <td width="25%"><span>店铺名称</span></td>
+    <td align="right" ><input name="shop_name" type="text" value="{$dianpu.shop_name}" class="input_style"><img src="__IMG__/icon_editnext.png" class="img_mar"></td>
+    </tr>
+        <td width="25%"><span>店铺地址</span></td>
+    <td align="right" ><input name="shop_address" type="text" value="{$dianpu.shop_address}" class="input_style"><img src="__IMG__/icon_editnext.png" class="img_mar"></td>
+    </tr>
+
+        <tr>
+    <td ><span>店铺Logo</span></td>
+    <td align="right" class="mid">
+    <div style="float:right">
+    <img <if condition="$dianpu['shop_logo']"> src="{$dianpu.shop_logo}"<else/> src="__IMG__/2code.png" </if>  class="dpinfo_rimg dp_logoimg" id='show_logo'>
+    <img src="__IMG__/icon_editnext.png" class="img_mar">
+    </div><div class="dp_bgdiv">
+    <input id="input-logo" class="choose_file" accept="image/png,image/gif,image/jpg" type="file"  value="{$dianpu['shop_logo']}" name="shop_logo" onchange="c()">
+    </div>
+    </td>
+    </tr>
+
+    <tr>
+    <td ><span>店铺分类</span></td>
+    <td align="right" >
+    <label for="choose1"></label>
+    <select name="shop_type" id="choose1" class="dp_sel">
+     <if condition="($dianpu['shop_type'] eq null)  ">
+      <option value="" selected>-分类-</option>
+         <else />
+    <option value="{$dianpu['shop_type']}">
+    <?php
+    $type['type']=$dianpu['shop_type'];
+    $mm=M('product_cate')->where($type)->find();
+    echo $mm['name'];
+    ?>
+    </option>
+       </if>
+      <foreach name="d_type" item="v_d">
+    <option value="{$v_d['type']}">{$v_d.name}</option>
+
+   </foreach>
+  
+
+    </select>
+    <img src="__IMG__/icon_editnext.png" class="img_mar">
+
+    </td>
+    </tr>
+
+    <tr>
+    <td><span>店铺背景</span></td>
+    <td align="right">
+    <div style="float:right"> 
+    <img <if condition="$dianpu['shop_beijing']"> src="{$dianpu['shop_beijing']}"<else/> src="__IMG__/2code.png" </if>  class="dpinfo_rimg dp_imgbg" id='show_beijing' height="50" width="100">
+    <img src="__IMG__/icon_editnext.png" class="img_mar">
+    </div>
+    <div class="dp_bgdiv"><input id="input-beijing" class="choose_file " accept="image/png,image/gif,image/jpg" type="file"  value="{$dianpu.shop_beijing}" name="shop_beijing" onchange="d()">
+    </div>
+    </td>
+    </tr>
+
+    <tr>
+    <td><span>店铺广告背景</span></td>
+    <td align="right">
+    <div style="float:right"> 
+    <img <if condition="$dianpu['shop_guanggao']"> src="{$dianpu.shop_guanggao}"<else/> src="__IMG__/2code.png" </if>  class="dpinfo_rimg dp_imgbg" id='show_guanggao' height="50" width="100">
+    <img src="__IMG__/icon_editnext.png" class="img_mar">
+    </div>
+    <div class="dp_bgdiv">
+    <input id="input-guanggao" class="choose_file " accept="image/png,image/gif,image/jpg" type="file" value="{$dianpu.shop_guanggao}" name="shop_guanggao" onchange="h()">
+    </div>
+    </td>
+    </tr>
+
+     </tbody></table>
+    <div class="mar_line"><h4>店铺交易信息</h4></div>
+    <table width="96%" border="0" cellspacing="0" cellpadding="0" class="dp_dinfo" align="right" >
+<tbody>
+<tr>
+    <td width="32%"><span>开户行</span></td>
+    <td align="right" width="68%"><input name="kaihuhang" type="text" value="{$dianpu.kaihuhang}" class="input_style"><img src="__IMG__/icon_editnext.png" class="img_mar"></td>
+    </tr>
+    <tr>
+    <td width="32%"><span>开户姓名</span></td>
+    <td align="right" width="68%"><input name="name" type="text" value="{$dianpu.name}" class="input_style"><img src="__IMG__/icon_editnext.png" class="img_mar"></td>
+    </tr>
+  <tr style="height:13vmin; overflow:hidden;">
+    <td width="32%"><span>银行卡号</span></td>
+    <td align="right" width="68%"><input name="bank" type="text" value="{$dianpu.bank}" class="input_style"><img src="__IMG__/icon_editnext.png" class="img_mar"></td>
+    </tr>
+
+<tr style="height:13vmin; overflow:hidden;">
+    <td width="32%"><span>手机号码</span></td>
+    <td align="right" width="68%"><input name="shop_phone" type="text" value="{$dianpu.shop_phone}" class="input_style"><img src="__IMG__/icon_editnext.png" class="img_mar"></td>
+    </tr>
+
+
+  <tr>
+    <td><span>收款二维码</span></td>
+    <td align="right" class="mid">
+    <div style="float:right;">
+    <img <if condition="$dianpu['shop_Vpay']"> src="{$dianpu.shop_Vpay}"<else/> src="__IMG__/2code.png" </if>  class="codeimg" id='show_Vpay'>
+    <img src="__IMG__/icon_editnext.png" class="img_mar">
+    </div>
+    <div class="dp_bgdiv">
+    <input id="input-Vpay" class="choose_file" accept="image/png,image/gif,image/jpg" type="file"  value="{$dianpu.shop_Vpay}" name="shop_Vpay" onchange="e()">
+    </div>
+    </td>
+    </tr>
+
+    <tr>
+    <td><span>支付宝收款二维码</span></td>
+    <td align="right" class="mid">
+    <div style="float:right;">
+    <img <if condition="$dianpu['shop_zhifubao']"> src="{$dianpu.shop_zhifubao}"<else/> src="__IMG__/2code.png" </if>  class="codeimg" id='show_zhifubao'>
+    <img src="__IMG__/icon_editnext.png" class="img_mar">
+    </div>
+    <div class="dp_bgdiv">
+    <input id="input-zhifubao" class="choose_file" accept="image/png,image/gif,image/jpg" type="file"  value="{$dianpu.shop_zhifubao}"  name="shop_zhifubao" onchange="ff();">
+    </div>
+    </td>
+    </tr>
+    <td><span>微信收款二维码</span></td>
+    <td align="right" class="mid">
+    <div style="float:right;">
+    <img class="codeimg" <if condition="$dianpu['shop_weixin']"> src="{$dianpu.shop_weixin}"<else/> src="__IMG__/2code.png" </if> id='show_weixin' >
+    <img src="__IMG__/icon_editnext.png" class="img_mar">
+    </div>
+    <div class="dp_bgdiv">
+    <input id="input-weixin" class="choose_file" accept="image/png,image/gif,image/jpg" type="file" value="{$dianpu['shop_weixin']}" name="shop_weixin" onchange="g();">
+    </div>
+    </td>
+    </tr>
+
+</tbody></table>
+</form>
+<div class="btn_bg"><a class="btn_save" href="javascript:document:form.submit();">保存</a></div>
+
+<style>
+    .selectcc {
+        width: 83%;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        font-family: "微软雅黑";
+        /*很关键：将默认的select选择框样式清除*/
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right: 14px;
+
+    }
+</style>
+<empty name="addtype">
+    <div class="submit saveinfo" style="display: none"><a href="javascript:void(0)">确定</a></div>
+</empty>
+
+</body>
+</html>
+<script>
+    $('.saveinfo').click(function () {
+      var uname =  $("input[ name='realname' ] ").val();
+      var zfb =  $("input[ name='zfb' ] ").val();
+      var bankname =  $("input[ name='bankname' ] ").val();
+      var banknumber =  $("input[ name='banknumber' ] ").val();
+
+        $.ajax({
+            url: "{:U('Member/Savepersonal')}",
+            type: "post",
+            data: {
+                'uname': uname,
+                'zfb': zfb,
+                'bankname': bankname,
+                'banknumber': banknumber,
+            },
+            datatype: "json",
+            success: function (mes) {
+                if (mes.status == 1) {
+                    layer.msg(mes.info, {shift: -1, time: 1200}, function () {
+                        window.location.href = "{:U('member/mine')}";
+                    });
+                } else {
+                    layer.msg(mes.info, {shift: -1, time: 1200}, function () {
+                    });
+                }
+            }
+        })
+    })
+
+function c() {
+var r= new FileReader();
+f=document.getElementById('input-logo').files[0];
+r.readAsDataURL(f);
+r.onload=function  (e) {
+document.getElementById('show_logo').src=this.result;
+};
+}
+function d () {
+var r= new FileReader();
+f=document.getElementById('input-beijing').files[0];
+r.readAsDataURL(f);
+r.onload=function  (e) {
+document.getElementById('show_beijing').src=this.result;
+};
+}
+function e () {
+var r= new FileReader();
+f=document.getElementById('input-Vpay').files[0];
+r.readAsDataURL(f);
+r.onload=function  (e) {
+document.getElementById('show_Vpay').src=this.result;
+};
+}
+function ff () {
+  var r= new FileReader();
+  f=document.getElementById('input-zhifubao').files[0];
+  r.readAsDataURL(f);
+  r.onload=function  (e) {
+    document.getElementById('show_zhifubao').src=this.result;
+  };
+}
+function g () {
+var r= new FileReader();
+f=document.getElementById('input-weixin').files[0];
+r.readAsDataURL(f);
+r.onload=function  (e) {
+document.getElementById('show_weixin').src=this.result;
+};
+}
+function h () {
+var r= new FileReader();
+f=document.getElementById('input-guanggao').files[0];
+r.readAsDataURL(f);
+r.onload=function  (e) {
+document.getElementById('show_guanggao').src=this.result;
+};
+}
+</script>

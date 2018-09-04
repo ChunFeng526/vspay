@@ -1,0 +1,1879 @@
+[ 2018-07-11T00:22:51+08:00 ] 27.154.44.184 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:36:18+08:00 ] 123.132.242.24 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-11T09:37:28+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:37:45+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:37:53+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:39:20+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:39:27+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:39:59+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:45:01+08:00 ] 123.132.242.24 /admin/Config/group/group/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+
+[ 2018-07-11T09:45:01+08:00 ] 123.132.242.24 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-11T09:45:13+08:00 ] 123.132.242.24 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005859s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2018-07-11T09:45:28+08:00 ] 123.132.242.24 /admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+
+[ 2018-07-11T09:45:28+08:00 ] 123.132.242.24 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002929s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-11T09:48:13+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:48:20+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0088s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:48:25+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:48:31+08:00 ] 123.132.242.24 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-11T09:53:56+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013672s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T09:54:07+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0088s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T10:17:07+08:00 ] 123.132.242.24 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-11T10:17:20+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admintkf' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-11T10:17:34+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0137s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T10:17:46+08:00 ] 123.132.242.24 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0146s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T10:23:01+08:00 ] 27.154.44.184 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0107s ]
+
+[ 2018-07-11T10:23:01+08:00 ] 27.154.44.184 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-11T10:23:10+08:00 ] 27.154.44.184 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T10:33:22+08:00 ] 101.28.27.195 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+
+[ 2018-07-11T10:33:22+08:00 ] 101.28.27.195 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2018-07-11T10:33:37+08:00 ] 101.28.27.195 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T10:33:44+08:00 ] 101.28.27.195 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T10:41:30+08:00 ] 101.28.27.195 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T11:12:34+08:00 ] 1.199.131.224 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011719s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014649s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+
+[ 2018-07-11T11:12:34+08:00 ] 1.199.131.224 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-11T11:12:46+08:00 ] 1.199.131.224 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0137s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T11:13:22+08:00 ] 1.199.131.224 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+
+[ 2018-07-11T11:13:22+08:00 ] 1.199.131.224 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-11T11:13:31+08:00 ] 1.199.131.224 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T11:13:40+08:00 ] 1.199.131.224 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.006835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006835s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T11:15:41+08:00 ] 1.199.131.224 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.009766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014649s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T11:26:34+08:00 ] 101.28.27.195 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T11:32:54+08:00 ] 59.32.95.234 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0088s ]
+
+[ 2018-07-11T11:32:55+08:00 ] 59.32.95.106 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-07-11T11:33:03+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:16:16+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+
+[ 2018-07-11T12:16:17+08:00 ] 59.32.95.106 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.042968s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2018-07-11T12:16:21+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:16:25+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.008789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009766s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0078s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:18:36+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:18:38+08:00 ] 59.32.95.106 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2018-07-11T12:18:45+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.009766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011719s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:19:25+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.008789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009766s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 189 行.
+
+[ 2018-07-11T12:19:27+08:00 ] 59.32.95.106 /admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0039s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\phpStudy\WWW\vspay\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1531238400 AND 1531324800 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1146:Table 'vpay2018.ysk_trading' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_trading`
+ERR: 1146:Table 'vpay2018.ysk_trading' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_trading`
+
+[ 2018-07-11T12:19:29+08:00 ] 59.32.95.106 /admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: gid D:\phpStudy\WWW\vspay\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1531238400 AND 1531324800 ) LIMIT 1   [ RunTime:0.0059s ]
+ERR: 1146:Table 'vpay2018.ysk_trading' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_trading`
+ERR: 1146:Table 'vpay2018.ysk_trading' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_trading`
+
+[ 2018-07-11T12:21:24+08:00 ] 59.32.95.106 /admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0029s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\phpStudy\WWW\vspay\shop\Admin\Controller\AdminController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_group` LIMIT 1   [ RunTime:0.0039s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc' at line 1
+ [ SQL语句 ] : SELECT * FROM `ysk_menu` WHERE `status` = 1 AND ( id IN () ) AND `gid` = 1 AND `level` = 1 ORDER BY sort asc, id asc 
+
+[ 2018-07-11T12:21:29+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:23:23+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:26:46+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005859s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008789s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:30:00+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+
+[ 2018-07-11T12:31:15+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+ERR: 1017:Can't find file: 'ysk_upload' (errno: 2)
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_upload`
+ERR: 1017:Can't find file: 'ysk_upload' (errno: 2)
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_upload`
+
+[ 2018-07-11T12:31:18+08:00 ] 59.32.95.106 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-11T12:31:27+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+ERR: 1017:Can't find file: 'ysk_upload' (errno: 2)
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_upload`
+ERR: 1017:Can't find file: 'ysk_upload' (errno: 2)
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_upload`
+
+[ 2018-07-11T12:33:35+08:00 ] 59.32.95.234 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:33:38+08:00 ] 59.32.95.234 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.008789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-11T12:33:43+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:33:52+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:34:57+08:00 ] 59.32.95.106 /admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 91 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_upload`
+NOTIC: [8] Undefined index: email D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 94 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_group`
+SQL: SELECT * FROM `ysk_group` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: avatar D:\phpStudy\WWW\vspay\shop\Admin\Model\ManageModel.class.php 第 189 行.
+
+[ 2018-07-11T12:34:59+08:00 ] 59.32.95.106 /admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008789s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_menu`
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: gid D:\phpStudy\WWW\vspay\shop\Admin\Controller\AdminController.class.php 第 55 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0029s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1531238400 AND 1531324800 ) LIMIT 1   [ RunTime:0.0039s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_trading`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_trading_free`
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading` WHERE ( create_time BETWEEN 1531238400 AND 1531324800 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading_free` WHERE ( create_time BETWEEN 1531238400 AND 1531324800 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_trading_free` LIMIT 1   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\7278058fa3c501c35aba3e8d579773ef.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-07-11T12:35:02+08:00 ] 59.32.95.106 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_group`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_menu`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: map D:\phpStudy\WWW\vspay\shop\Admin\Common\function.php 第 107 行.
+NOTIC: [8] Undefined variable: level D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 42 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Db\Driver.class.php 第 503 行.
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Db\Driver.class.php 第 503 行.
+SQL: SELECT a.userid,a.username,a.email,a.yinbi,a.account,a.mobile,a.reg_date,a.status,a.pid,b.cangku_num,b.fengmi_num FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  ORDER BY a.userid desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 75 行.
+NOTIC: [8] Undefined index: date_start D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 156 行.
+NOTIC: [8] Undefined index: date_end D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 159 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 172 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_store`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = '8570' LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = '8569' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.199219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-07-11T12:35:05+08:00 ] 59.32.95.106 /admin/User/edit/id/8569.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_group`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_menu`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0029s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `ysk_user` WHERE `id` = '8569' LIMIT 1  
+SQL: SELECT `account` FROM `ysk_user` WHERE `userid` = null LIMIT 1   [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: quanxian D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 320 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: meta_title D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 73 行.
+NOTIC: [8] Undefined index: userid D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 145 行.
+NOTIC: [8] Undefined index: account D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 159 行.
+NOTIC: [8] Undefined index: username D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 165 行.
+NOTIC: [8] Undefined index: mobile D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 172 行.
+NOTIC: [8] Undefined index: sex D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-07-11T12:35:09+08:00 ] 59.32.95.106 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_group`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_menu`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: map D:\phpStudy\WWW\vspay\shop\Admin\Common\function.php 第 107 行.
+NOTIC: [8] Undefined variable: level D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 42 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Db\Driver.class.php 第 503 行.
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Db\Driver.class.php 第 503 行.
+SQL: SELECT a.userid,a.username,a.email,a.yinbi,a.account,a.mobile,a.reg_date,a.status,a.pid,b.cangku_num,b.fengmi_num FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  ORDER BY a.userid desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 75 行.
+NOTIC: [8] Undefined index: date_start D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 156 行.
+NOTIC: [8] Undefined index: date_end D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 159 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 172 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_store`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = '8570' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = '8569' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2018-07-11T12:35:11+08:00 ] 59.32.95.106 /admin/User/edit/id/8570.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_group`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_menu`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `ysk_user` WHERE `id` = '8570' LIMIT 1  
+SQL: SELECT `account` FROM `ysk_user` WHERE `userid` = null LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: quanxian D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 320 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 73 行.
+NOTIC: [8] Undefined index: userid D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 145 行.
+NOTIC: [8] Undefined index: account D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 159 行.
+NOTIC: [8] Undefined index: username D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 165 行.
+NOTIC: [8] Undefined index: mobile D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 172 行.
+NOTIC: [8] Undefined index: sex D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\3ec631e684f552bd735a80cb6088e63a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-11T12:35:30+08:00 ] 59.32.95.106 /admin/User/edit/id/8570.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_group`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_menu`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ysk_user` WHERE `account` = '13824360753' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `mobile` = '13824360753' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1055 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1055 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1055 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1055 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1055 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1055 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1055 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1055 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2018-07-11T12:35:33+08:00 ] 59.32.95.106 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_group`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_menu`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\phpStudy\WWW\vspay\shop\Admin\Common\function.php 第 107 行.
+NOTIC: [8] Undefined variable: level D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 42 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Db\Driver.class.php 第 503 行.
+SQL: SELECT COUNT(*) AS tp_count FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\vspay\ThinkPHP\Library\Think\Db\Driver.class.php 第 503 行.
+SQL: SELECT a.userid,a.username,a.email,a.yinbi,a.account,a.mobile,a.reg_date,a.status,a.pid,b.cangku_num,b.fengmi_num FROM ysk_user a left JOIN ysk_store b on a.userid=b.uid  ORDER BY a.userid desc LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003906s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Undefined variable: meta_title D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 5 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 75 行.
+NOTIC: [8] Undefined index: date_start D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 156 行.
+NOTIC: [8] Undefined index: date_end D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 159 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 172 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_store`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = '8570' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+SQL: SELECT `account` FROM `ysk_user` WHERE ( userid =0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = '8569' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\phpStudy\WWW\vspay\shop\Runtime\Cache\Admin\9a111d1ff7e1d627679d543589aa53f1.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-11T12:35:35+08:00 ] 59.32.95.106 /admin/User/userlogin/userid/8570.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_group`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_menu`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '7' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = '1' ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'userlogin' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_user`
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `ysk_user` WHERE `id` = 8570 LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2018-07-11T12:35:51+08:00 ] 59.32.95.106 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006836s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:36:31+08:00 ] 59.32.95.106 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:36:33+08:00 ] 59.32.95.106 /admin/User/edit/id/8570.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.018555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019531s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:36:34+08:00 ] 59.32.95.106 /admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\vspay\shop\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:36:38+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.005860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005860s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:36:47+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.010742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010742s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:36:49+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.074218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.074218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:36:49+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:37:14+08:00 ] 59.32.95.234 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: SQLSTATE[HY000] [1049] Unknown database 'vpay1'
+
+[ 2018-07-11T12:37:15+08:00 ] 59.32.95.234 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: SQLSTATE[HY000] [1049] Unknown database 'vpay1'
+
+[ 2018-07-11T12:37:15+08:00 ] 59.32.95.234 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011719s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: SQLSTATE[HY000] [1049] Unknown database 'vpay1'
+
+[ 2018-07-11T12:37:21+08:00 ] 59.32.95.234 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.008789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011719s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: SQLSTATE[HY000] [1049] Unknown database 'vpay2'
+
+[ 2018-07-11T12:37:22+08:00 ] 59.32.95.234 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: SQLSTATE[HY000] [1049] Unknown database 'vpay2'
+
+[ 2018-07-11T12:37:22+08:00 ] 59.32.95.234 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: SQLSTATE[HY000] [1049] Unknown database 'vpay2'
+
+[ 2018-07-11T12:38:35+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:38:36+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.009765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011719s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:38:36+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:38:37+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:38:37+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:38:38+08:00 ] 59.32.95.106 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.006836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T12:56:53+08:00 ] 123.132.242.24 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.197266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.197266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-11T13:17:02+08:00 ] 123.132.242.24 /admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-07-11T13:17:36+08:00 ] 123.132.242.24 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
+[ 2018-07-11T13:17:46+08:00 ] 123.132.242.24 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\phpStudy\WWW\vspay\ThinkPHP\Common\functions.php 第 588 行.
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+ERR: 1030:Got error 28 from storage engine
+ [ SQL语句 ] : SHOW COLUMNS FROM `ysk_admin`
+
